@@ -13,7 +13,7 @@
 
 
 ## 搭建教学（有任何问题请加群-群里老哥24小时解决问题）
-###  **_文字教程_**  : https://yaiwiki.likesrt.com/blog/ (最新教程请关注网站)
+###  **_文字教程_**  : https://yaiwiki.likesrt.com/blog (最新教程请关注网站,请复制链接,不要跳转，跳转会报错)
 
 ###  **_教程视频_**  : [B站视频教程-小白可搭建](https://space.bilibili.com/342298458/channel/seriesdetail?sid=3077994&ctype=0)
 ###  **_教程视频_**  : [B站视频教程-小白可搭建](https://space.bilibili.com/342298458/channel/seriesdetail?sid=3077994&ctype=0)
