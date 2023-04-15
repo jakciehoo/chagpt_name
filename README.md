@@ -7,17 +7,13 @@
 
 * 后台管理源码: [点我进入](https://gitee.com/e0cia/chatgpt_wechat_manager)
 
-*小程序需配合java程序，上面的链接为Java开源程序的搭建以及教程
-
-*下面将详细介绍此套系统的前端搭建过程谢谢！
+* github地址： [点我进入](https://github.com/e0cia)
 
 
 ## 搭建教学（有任何问题请加群-群里老哥24小时解决问题）
-###  **_文字教程_**  : https://yaiwiki.likesrt.com/archives/no1.html (最新教程请关注网站,请复制链接,不要跳转，跳转会报错)
+###  **_安装教程_**  : [点我进入](https://yaiwiki.likesrt.com/archives/no1.html)
 
-###  **_教程视频_**  : [B站视频教程-小白可搭建](https://space.bilibili.com/342298458/channel/seriesdetail?sid=3077994&ctype=0)
-###  **_教程视频_**  : [B站视频教程-小白可搭建](https://space.bilibili.com/342298458/channel/seriesdetail?sid=3077994&ctype=0)
-###  **_教程视频_**  : [B站视频教程-小白可搭建](https://space.bilibili.com/342298458/channel/seriesdetail?sid=3077994&ctype=0)
+
 
 
 >  ** 所需要的现成的文件（这些文件网上均可下载），请进入qq群下载现成的文件 ** 
