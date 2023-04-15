@@ -1,194 +1,114 @@
 <template>
-	<view class="container">
-		<view  class="notice">
-			<u-notice-bar v-if="notice" :text="notice"></u-notice-bar>
-		</view>
-		<view class="form">
-			<view class="logo">
-				<u--image src="/static/wxlogo.png" shape="circle" width="200rpx" height="200rpx">
-				</u--image>
-			</view>
-			<u-transition :show="true" mode="slide-left">
-				<view class="title">{{weichat_title}}</view>
-			</u-transition>
-			<u-transition :show="true" mode="slide-right">
-				<view class="desc" style="text-align: center;">拥有最权威的解答</view>
-				<view class="desc" style="text-align: center;">采用的为官方接口</view>
-			</u-transition>
-			<u-transition :show="true" mode="slide-right">
-				<view class="desc" style="text-align: center;">{{weichat_adv}}</view>
-			</u-transition>
-			<view class="btn-group">
-				<view class="btn">
-					<u-button open-type="share" shape="circle" color="#26B3A0" :plain="true" icon="share" text="推荐给朋友">
-					</u-button>
-				</view>
-				<view class="btn">
-						<u-button @click="gonavigatechat" shape="circle" color="#26B3A0" :plain="true" icon="chat-fill" text="对话模式(聊天)"></u-button>
-				</view>
-				<view class="btn">
-					<u-button @click="gonavigate" shape="circle" color="#26B3A0" :plain="true" icon="play-right-fill"
-						text="提问模式(问答)"></u-button>
-				</view>
+	<view class="contant">
+		<view class="notice-c">
+			<view class="padd">
+				<u-notice-bar bgColor="#F7FBFF" color="#3387FF" fontSize="12" :text="weichat_notice"></u-notice-bar>
 			</view>
 		</view>
+		<view class="main">
+			<image class="logoImg" src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/logo-index.png"></image>
+			<view class="row text">
+				你好！我是<view style="font-weight: 700;">元AI</view>
+			</view>
+			<view class="text">我可以回答你的任何问题</view>
+			<view class="loginIndex">
+				<u-tag  @click="startDig()" color="#ffffff" borderColor="#3d89ff" bgColor="#3d89ff" text="开始对话" plain size="large" type="warning"></u-tag>
+			</view>
+
+		</view>
+		<view class="rule">违规微信社区规定发言将会被限制对话</view>
 	</view>
 </template>
 
 <script>
-	import request from "../../../request/request.js";
 	export default {
 		data() {
 			return {
-				notice: "",
-				weichat_title: "",
-				weichat_adv: "",
-				version:""
-			};
-		},
-		onLoad() {
-			this.getCacheContent()
+
+				weichat_notice: uni.getStorageSync('baseConfig').weichat_notice
+			}
 		},
 		methods: {
-			onToForm() {
+			startDig() {
 				uni.switchTab({
-					url: '/pages/main/form/index'
+					url:'/pages/main/chat/index'
 				})
-			},
-			toMiniProgram(appId, cUrl) {
-				uni.navigateToMiniProgram({
-					appId: "wx461ff8f867f3d028",
-					path: `${cUrl||""}`,
-					extraData: {
-
-					},
-					success(res) {
-						// 打开成功
-					}
-				})
-			},
-			gonavigate() {
-				uni.switchTab({
-					//保留当前页面，跳转到应用内的某个页面
-			 	url: '/pages/main/form/index',
-				})
-			},
-			gonavigatechat() {
-				uni.navigateTo({
-					//保留当前页面，跳转到应用内的某个页面
-			 	url: '/pages/main/chat/index',
-				})
-			},
-			
-			
-			getCacheContent() {
-				let that = this;
-				that.getRequestContent();
-				
-				// let content = uni.getStorageSync('weichat_content'); //获取缓存内容
-				// //如果有内容，则返回内容
-				// if (content) {
-				// 	console.log("获取的内容",content)
-				// 	 // uni.removeStorageSync("weichat_content");
-				// 	this.notice = content.weichat_notice;
-				// 	this.weichat_title = content.weichat_name;
-				// 	this.weichat_adv = content.weichat_adv;
-				// } else { 
-				// 	//设置缓存
-				// that.getRequestContent();
-				// }
-			},
-			getRequestContent(){
-				
-				request('', '/ai/configInfo', 'POST', {}, {}).then(res => {
-					
-					if (res.code == 200) {
-						// uni.setStorageSync('weichat_content', res.data);
-						this.notice = res.data.weichat_notice;
-						this.weichat_title = res.data.weichat_name;
-						this.weichat_adv = res.data.weichat_adv;
-					}
-				})
-				
-			},
-			/**
-			   * 用户点击右上角分享
-			   */
-			onShareAppMessage: function () {
-			
-			},
-			onShareTimeline: function () {
-			},
-			
+			}
+		},
+		onLoad(options) {
+			uni.setStorageSync('invitationCode', options.intivateCode);
 		}
 	}
 </script>
 
-<style lang="scss">
-	.notice {
-		margin-top: 20%;
+<style>
+	page {
+		background-color: #F7FBFF;
 	}
 
-	.form {
+	.showText {
+		font-size: 30rpx;
+		color: #898D99;
+		background-color: white;
+		border-radius: 12rpx;
+		padding: 20rpx;
+	}
+
+	.rule {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		padding: 10rpx 20rpx;
+		font-size: 24rpx;
+		color: #898D99;
+		text-align: center;
+	}
+
+	.main {
+		margin-top: 200rpx;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		margin-top: 10%;
+		/* height: 100vh; */
+	}
 
-		.title {
-			font-size: 38rpx;
-			font-weight: bolder;
-			margin-top: 15rpx;
-		}
+	.tips {}
 
-		.desc {
-			margin-top: 15rpx;
-			font-size: 28rpx;
-			color: #666;
-		}
+	.logoImg {
+		width: 210rpx;
+		height: 210rpx;
+	}
 
-		.ad-box {
-			margin-top: 20px;
-		}
+	.text {
+		font-size: 44rpx;
+		color: #3387FF;
+		margin-top: 20rpx;
+	}
 
-		.btn-group {
-			width: 80%;
+	.row {
 
-			.tips {
-				color: red;
-			}
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
 
-			.btn {
-				margin: 30rpx 0rpx;
+		width: 100%;
 
-				.u-button {
-					height: 100rpx;
-				}
-			}
-		}
+	}
 
-		.desc-box {
-			margin: 0 30rpx;
-			padding-bottom: 50rpx;
+	.notice-c {
+		margin: 0 auto;
+		margin-top: 10px;
+		width: 90%;
+		border: 1px solid #3387FF;
+		border-radius: 10px;
+	}
 
-			.title {
-				text-align: center;
-				margin-bottom: 50rpx;
-			}
-
-			.cont {
-				margin-top: 30rpx;
-			}
-
-			.sub-title {
-				margin-top: 60rpx;
-				font-weight: bolder;
-			}
-
-			.sub-cont {
-				margin-top: 20rpx;
-			}
-		}
+	.padd {
+		padding: 4px;
+	}
+	.loginIndex{
+		margin-top: 60rpx;
 	}
 </style>

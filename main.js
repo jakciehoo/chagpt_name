@@ -1,6 +1,7 @@
 import App from './App'
 import uView from "uview-ui";
-
+import share from '@/util/share.js'
+Vue.mixin(share)
 Vue.use(uView);
 // #ifndef VUE3
 import Vue from 'vue'

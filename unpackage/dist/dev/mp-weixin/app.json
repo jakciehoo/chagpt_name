@@ -1,21 +1,25 @@
 {
   "pages": [
     "pages/main/index/index",
+    "pages/main/chatList/chatList",
+    "pages/main/answeEmploy/answeEmploy",
+    "pages/main/agreement/userReder",
+    "pages/main/agreement/useReder",
     "pages/main/chat/index",
-    "pages/main/ask/index",
-    "pages/main/form/index",
-    "pages/main/answer/index"
+    "pages/main/joinvip/joinvip",
+    "pages/main/minefragment/minefragment",
+    "pages/main/login/login",
+    "pages/main/rolefragment/rolefragment",
+    "pages/main/replyquestion/replyquestion"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
+    "navigationBarTitleText": "元AI",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
   "tabBar": {
-    "color": "#999999",
-    "selectedColor": "#26B3A0",
     "borderStyle": "white",
     "backgroundColor": "#ffffff",
     "list": [
@@ -26,16 +30,22 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/main/form/index",
-        "iconPath": "static/tabbar/ask_selected.png",
-        "selectedIconPath": "static/tabbar/ask.png",
-        "text": "对答"
+        "pagePath": "pages/main/chat/index",
+        "iconPath": "static/tabbar/answer.png",
+        "selectedIconPath": "static/tabbar/answer_selected.png",
+        "text": "问答"
       },
       {
-        "pagePath": "pages/main/ask/index",
-        "iconPath": "static/tabbar/answer_selected.png",
-        "selectedIconPath": "static/tabbar/answer.png",
-        "text": "问答"
+        "pagePath": "pages/main/rolefragment/rolefragment",
+        "iconPath": "static/tabbar/explore.png",
+        "selectedIconPath": "static/tabbar/explore_selected.png",
+        "text": "探索"
+      },
+      {
+        "pagePath": "pages/main/minefragment/minefragment",
+        "iconPath": "static/tabbar/my.png",
+        "selectedIconPath": "static/tabbar/my_selected.png",
+        "text": "我的"
       }
     ]
   },

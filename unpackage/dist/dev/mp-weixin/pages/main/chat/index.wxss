@@ -29,6 +29,7 @@
   background-color: #f9f9f9;
   width: 750rpx;
   height: 110rpx;
+  padding-left: 5rpx;
 }
 .center-box {
   width: 720rpx;
@@ -39,10 +40,10 @@
   height: 100%;
 }
 .dh-input {
-  width: 500rpx;
+  width: 620rpx;
   height: 65rpx;
-  border-radius: 30rpx;
-  padding-left: 15rpx;
+  border-radius: 15rpx;
+  padding-left: 20rpx;
   background-color: #FFFFFF;
 }
 .box-normal {
@@ -59,8 +60,8 @@
 }
 .chat-img {
   border-radius: 50%;
-  width: 100rpx;
-  height: 100rpx;
+  width: 42px;
+  height: 42px;
   background-color: #f7f7f7;
 }
 .padding-chat {
@@ -89,5 +90,78 @@
   padding: 3px;
   border-radius: 5px;
   position: relative;
+}
+@-webkit-keyframes jump {
+0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    background-color: #F9F9F9;
+}
+40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #3186fb;
+}
+}
+@keyframes jump {
+0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    background-color: #F9F9F9;
+}
+40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #3186fb;
+}
+}
+.dot0,
+.dot1,
+.dot2,
+.dot3 {
+  background: #417e5c;
+  width: 30rpx;
+  height: 30rpx;
+  border-color: #464646;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot0 {
+  -webkit-animation: jump 1.3s -0.64s linear infinite;
+          animation: jump 1.3s -0.64s linear infinite;
+}
+.dot1 {
+  -webkit-animation: jump 1.3s -0.32s linear infinite;
+          animation: jump 1.3s -0.32s linear infinite;
+}
+.dot2 {
+  -webkit-animation: jump 1.3s -0.16s linear infinite;
+          animation: jump 1.3s -0.16s linear infinite;
+}
+.dot3 {
+  -webkit-animation: jump 1.3s linear infinite;
+          animation: jump 1.3s linear infinite;
+}
+.loading {
+  padding: 17rpx 20rpx;
+}
+.bg-color {
+  background-color: unset !important;
+  background-image: linear-gradient(100deg, #c399fe 0%, #3186fb 100%);
+}
+.flex-row-start {
+  align-items: unset;
+}
+button::after {
+  border: none;
+}
+.tb-text .u-button :hover {
+  background-color: inherit !important;
+  color: inherit;
+  border-color: inherit;
 }
 

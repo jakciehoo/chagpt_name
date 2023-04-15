@@ -1,85 +1,161 @@
-{   "easycom": {	
+{
+	"easycom": {
 		"custom": {
 			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue",
-			"cl-(.*)": "cl-uni/components/cl-$1/cl-$1.vue"
+			"cl-(.*)": "cl-uni/components/cl-$1/cl-$1.vue",
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
 		}
-		
 	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages,
-	{
-		"path": "pages/main/index/index",
-		"style": {
-			"navigationBarTitleText": "AI生活智能工具箱",
-			"enablePullDownRefresh": false,
-			"navigationStyle": "custom"
-		}
-	},
-	{
-		"path": "pages/main/chat/index",
-		"style": {
-			"app-plus": {
-				"softinputNavBar": "none"
-			},
-			"navigationStyle":"default",
-			"navigationBarTitleText":"AI生活智能工具箱",
-			"navigationBarBackgroundColor": "#26B3A0",
-			"navigationBarTextStyle": "white"
-		}
-	},
+		{
+			"path": "pages/main/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#3388fe",
+				"navigationBarTextStyle": "white",
+				"disableScroll": true
+			}
+		
+		},
+		{
+			"path": "pages/main/chatList/chatList",
+			"style": {
+				"navigationBarTitleText": "历史对话",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#3388fe",
+				"navigationBarTextStyle": "white"
+			}
 
-   {
-		"path": "pages/main/ask/index",
-		"style": {
-			"navigationBarTitleText": "问答收录",
-			"enablePullDownRefresh": false,
-			"navigationBarBackgroundColor": "#26B3A0",
-			"navigationBarTextStyle": "white"
+		},
+		{
+			"path": "pages/main/answeEmploy/answeEmploy",
+			"style": {
+				"navigationBarTitleText": "我的问答",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#3388fe",
+				"navigationBarTextStyle": "white"
+			}
+
+		},
+		{
+			"path": "pages/main/agreement/userReder",
+			"style": {
+				"navigationBarTitleText": "用户协议",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#3388fe",
+				"navigationBarTextStyle": "white"
+			}
+		
+		},
+		{
+			"path": "pages/main/agreement/useReder",
+			"style": {
+				"navigationBarTitleText": "使用协议",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#3388fe",
+				"navigationBarTextStyle": "white"
+			}
+		
+		},
+		{
+			"path": "pages/main/chat/index",
+			"style": {
+				"app-plus": {
+					"softinputNavBar": "none"
+				},
+				"navigationStyle": "default",
+				"navigationBarTitleText": "智能问答",
+				"navigationBarBackgroundColor": "#3388fe",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/main/joinvip/joinvip",
+			"style": {
+				"navigationBarTitleText": "会员充值",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#3388fe",
+				"navigationBarTextStyle": "white",
+				"navigationStyle": "custom"
+			}
+
+		},
+		{
+			"path": "pages/main/minefragment/minefragment",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#3388fe",
+				"navigationBarTextStyle": "white",
+				"navigationStyle": "custom"
+			}
+		},
+
+
+		{
+			"path": "pages/main/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"disableScroll": true
+			}
+
+		}, {
+			"path": "pages/main/rolefragment/rolefragment",
+			"style": {
+				"navigationBarTitleText": "角色模型",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#3388fe",
+				"navigationBarTextStyle": "white"
+			}
+
+		},
+		{
+			"path": "pages/main/replyquestion/replyquestion",
+			"style": {
+				"navigationBarTitleText": "问答模式",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#3388fe",
+				"navigationBarTextStyle": "white"
+			}
+
 		}
-	}, {
-		"path": "pages/main/form/index",
-		"style": {
-			"navigationBarTitleText": "AI生活智能工具箱",
-			"enablePullDownRefresh": false,
-			"navigationBarBackgroundColor": "#26B3A0",
-			"navigationBarTextStyle": "white"
-		}
-	}, {
-		"path": "pages/main/answer/index",
-		"style": {
-			"navigationBarTitleText": "AI生活智能工具箱",
-			"enablePullDownRefresh": false,
-			"navigationBarBackgroundColor": "#26B3A0",
-			"navigationBarTextStyle": "white"
-		}
-	}
 	],
 	"tabBar": {
-		"color": "#999999",
-		"selectedColor": "#26B3A0",
 		"borderStyle": "white",
 		"backgroundColor": "#ffffff",
 		"list": [{
-			"pagePath": "pages/main/index/index",
-			"iconPath": "static/tabbar/home_blue2.png",
-			"selectedIconPath": "static/tabbar/home_blue3_selected.png",
-			"text": "首页"
-		},
-		{
-			"pagePath": "pages/main/form/index",
-			"iconPath": "static/tabbar/ask_selected.png",
-			"selectedIconPath": "static/tabbar/ask.png",
-			"text": "对答"
-		},
-		{
-			"pagePath": "pages/main/ask/index",
-			"iconPath": "static/tabbar/answer_selected.png",
-			"selectedIconPath": "static/tabbar/answer.png",
-			"text": "问答"
-		}]
+				"pagePath": "pages/main/index/index",
+				"iconPath": "static/tabbar/home_blue2.png",
+				"selectedIconPath": "static/tabbar/home_blue3_selected.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/main/chat/index",
+				"iconPath": "static/tabbar/answer.png",
+				"selectedIconPath": "static/tabbar/answer_selected.png",
+				"text": "问答"
+			},
+			{
+				"pagePath": "pages/main/rolefragment/rolefragment",
+				"iconPath": "static/tabbar/explore.png",
+				"selectedIconPath": "static/tabbar/explore_selected.png",
+				"text": "探索"
+			},
+			{
+				"pagePath": "pages/main/minefragment/minefragment",
+				"iconPath": "static/tabbar/my.png",
+				"selectedIconPath": "static/tabbar/my_selected.png",
+				"text": "我的"
+			}
+		]
 	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "元AI",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	}

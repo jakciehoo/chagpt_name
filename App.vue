@@ -1,8 +1,9 @@
 <script>
+	import util from "@/util/util.js";
 	export default {
 		onLaunch: function() {
-			console.log('小程序更新检测')
 			this.updateVersion()
+			util.getbaseConfig()
 		},
 		onShow: function() {
 			console.log('App Show')
@@ -11,6 +12,7 @@
 			console.log('App Hide')
 		},
 		methods:{
+
 			updateVersion(){
 				const updateManager = wx.getUpdateManager()
 				updateManager.onCheckForUpdate(function (res) {

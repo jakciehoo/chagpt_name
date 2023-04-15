@@ -1,11 +1,11 @@
 {
-  "navigationBarTitleText": "AI生活智能工具箱",
+  "navigationBarTitleText": "首页",
   "enablePullDownRefresh": false,
-  "navigationStyle": "custom",
+  "navigationBarBackgroundColor": "#3388fe",
+  "navigationBarTextStyle": "white",
+  "disableScroll": true,
   "usingComponents": {
     "u-notice-bar": "/node-modules/uview-ui/components/u-notice-bar/u-notice-bar",
-    "u--image": "/node-modules/uview-ui/components/u--image/u--image",
-    "u-transition": "/node-modules/uview-ui/components/u-transition/u-transition",
-    "u-button": "/node-modules/uview-ui/components/u-button/u-button"
+    "u-tag": "/node-modules/uview-ui/components/u-tag/u-tag"
   }
 }

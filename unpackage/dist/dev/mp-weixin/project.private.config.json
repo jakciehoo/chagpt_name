@@ -3,7 +3,9 @@
   "projectname": "tixingxiangmu",
   "setting": {
     "compileHotReLoad": true,
-    "urlCheck": false
+    "urlCheck": false,
+    "bigPackageSizeSupport": true,
+    "autoAudits": false
   },
-  "libVersion": "2.16.1"
+  "libVersion": "2.27.3"
 }

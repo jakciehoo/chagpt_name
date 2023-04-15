@@ -1,0 +1,272 @@
+
+page {
+	background-color: #F6F6F6;
+}
+.height90 {
+	height: 95rpx;
+}
+.height45 {
+	height: 50rpx;
+}
+.itemRowCloum {
+	width: -webkit-fill-available;
+	position: absolute;
+	left: 0;
+	margin-left: 92rpx;
+	margin-top: 20rpx;
+}
+.topBg {
+	width: 100%;
+	height: 470rpx;
+}
+.rowline {
+	width: -webkit-fill-available;
+	height: 1rpx;
+	margin-top: 20rpx;
+	background-color: #E9E7E7;
+}
+.userrowline {
+	width: -webkit-fill-available;
+	height: 1rpx;
+	background-color: #20494A4C;
+}
+.itemRowImgRight {
+	width: 12rpx;
+	height: 24rpx;
+	position: absolute;
+	right: 0;
+}
+.itemRowTextRight {
+	position: absolute;
+	right: 0;
+	margin-right: 50rpx;
+	font-size: 21rpx;
+	color: #8A8E99;
+}
+.itemRowImgLeft {
+	width: 79rpx;
+	height: 79rpx;
+	margin-right: 22rpx;
+}
+.itemrow {
+	position: relative;
+	font-size: 27rpx;
+	color: #14171A;
+	font-weight: 500;
+
+	padding-bottom: 20rpx;
+}
+.itemBorderW {
+	width: -webkit-fill-available;
+	margin-left: 26rpx;
+	margin-right: 26rpx;
+	/* margin: 0 auto; */
+	margin-top: 40px;
+	background-color: #fff;
+	padding: 18px;
+	margin-bottom: 120rpx;
+	border-radius: 8px;
+}
+.line {
+	height: 53rpx;
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 1rpx;
+}
+.numDesText {
+	font-size: 25rpx;
+	color: #1B1B1B;
+	margin-top: 10rpx;
+}
+.numText {
+	font-size: 40rpx;
+	font-weight: 500;
+	color: #AF691D;
+}
+.vipTip {
+	margin-left: 13rpx;
+	text-align: center;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.vipText {
+	color: white;
+	font-size: 26rpx;
+	position: absolute;
+	top: 0;
+	font-weight: 600;
+}
+.userDes {
+	font-size: 26rpx;
+	height: 26rpx;
+	color: black;
+	margin-top: 10rpx;
+}
+.userName {
+	font-size: 38rpx;
+	font-weight: 700;
+	color: black;
+}
+.header .title {
+	text-align: center;
+	font-size: 31rpx;
+	font-weight: 600;
+	color: #FFFFFF;
+	flex-direction: row;
+	align-items: center;
+	/*  padding-top: 33px;
+	    padding-bottom: 40px; */
+}
+.position_top {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	/* padding-top: 90rpx; */
+}
+.mineInfo {
+	width: -webkit-fill-available;
+	height: 406rpx;
+	position: relative;
+	margin-left: 13rpx;
+	margin-right: 13rpx;
+	margin-top: 45rpx;
+}
+.header {
+	width: 100%;
+	position: relative;
+	z-index: 999;
+}
+.header .user {
+	position: absolute;
+	top: 0;
+	padding:
+		65rpx 40rpx;
+	height: 100%;
+	width: 100%;
+}
+.header .user .row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.header .user .num {
+	height: 20%;
+	margin-top: 30rpx;
+	width: 100%;
+	text-align: center;
+}
+.userRow {
+	height: 70%;
+}
+.switchType {
+	width: 80vw;
+	background-color: #ffffff;
+	padding: 50rpx 32rpx;
+	display: flex;
+	border-radius: 18rpx;
+	flex-direction: column;
+	align-items: center;
+	/* position: relative; */
+}
+.switchOp {
+	padding: 50rpx 32rpx;
+}
+.mini-setting {
+	z-index: 100;
+	position: absolute;
+	top: 35px;
+	right: 4px;
+	width: 50px;
+	height: 50px;
+}
+.dialog {
+	width: 80vw;
+	background-color: #ffffff;
+	padding: 50rpx 32rpx;
+	display: flex;
+	border-radius: 18rpx;
+	flex-direction: column;
+	align-items: center;
+	/* position: relative; */
+}
+.closeImg {
+	right: 0;
+	width: 18rpx;
+	height: 18rpx;
+	position: absolute;
+	top: 32rpx;
+	right: 32rpx;
+}
+.head {
+	/* box-shadow: 0rpx 0rpx 12rpx 0rpx rgba(0,0,0,0.15); */
+	border-radius: 50%;
+	/* width: 153rpx; */
+	margin-top: 15rpx;
+	/* height: 153rpx; */
+	position: relative;
+}
+.photoBorder {
+	z-index: 10;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 37.5rpx;
+	height: 37.5rpx;
+	text-align: center;
+	border-radius: 50%;
+	left: 72px;
+	background: linear-gradient(0deg, #599EFF, #C399FF);
+}
+.photoIcon {
+	width: 22rpx;
+	height: 17rpx;
+}
+.avatar-wrapper {
+	background-color: rgba(0, 0, 0, 0.0);
+}
+.nikeName {
+	margin-top: 43rpx;
+	margin-bottom: 25rpx;
+	border-radius: 6rpx;
+	background: #f8f8f8;
+	height: 56rpx;
+	text-align: center;
+	width: 320rpx;
+	font-size: 27rpx;
+}
+.dialogComitBtn {
+	width: 320rpx;
+	background: #3388FF;
+	border-radius: 6rpx;
+	font-size: 27rpx;
+	height: 56rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	color: white;
+}
+.pop-bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+.head button::after {
+	border: none;
+}
+.button-none :active{
+	background-color: #ffe6fa;
+}
+

@@ -53,7 +53,8 @@
         "appid" : "wx74378f1d2e142c4d",
         "setting" : {
             "urlCheck" : true,
-            "minified" : true
+            "minified" : true,
+            "es6" : false
         },
         "usingComponents" : true,
         "requiredPrivateInfos" : [ "getLocation", "chooseLocation", "chooseAddress" ]

@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "会员充值",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#3388fe",
+  "navigationBarTextStyle": "white",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "u-avatar": "/node-modules/uview-ui/components/u-avatar/u-avatar",
+    "u-empty": "/node-modules/uview-ui/components/u-empty/u-empty"
+  }
+}
