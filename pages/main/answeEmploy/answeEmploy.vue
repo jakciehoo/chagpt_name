@@ -13,7 +13,7 @@
 			<block v-for="(item,index) in qList">
 				<view class="panel" :class="'panel'+index">
 					<view class="head">
-						<view class="title">问：{{item.anserTitle}}</view>
+						<view class="title">问：{{lengthLimitText(item.anserTitle,30)}}</view>
 					</view>
 					<view class="content" :class="[{'example':cIndex===index}]" @click="onClickContent(index)">
 						<rich-text :nodes="item.anserContent"></rich-text>
@@ -37,6 +37,7 @@
 
 <script>
 	import request from "../../../request/request.js";
+	import util from "../../../util/util.js";
 	export default {
 		data() {
 			return {
@@ -58,6 +59,9 @@
 			this.pageScrollTop = e.scrollTop;
 		},
 		methods: {
+			lengthLimitText(text, num) {
+				return util.lengthLimit(text, num);
+			},
 			onSubmit() {
 				uni.navigateTo({
 					url: '/pages/main/answer/index'
@@ -188,6 +192,8 @@
 				-webkit-line-clamp: 3;
 				line-clamp: 3;
 				-webkit-box-orient: vertical;
+				line-height: 22px;
+				letter-spacing: 2px;
 			}
 
 			.example {

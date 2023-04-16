@@ -350,6 +350,9 @@
 						'avatar': this.avatarUrl
 					}
 					this.updateUser(param);
+				}else{
+					util.message("名称或者头像不可为空")
+					uni.hideLoading()
 				}
 			},
 			updateUser(param) {

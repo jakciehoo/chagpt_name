@@ -29,13 +29,13 @@
 			<view v-for="(item,index) in itemList" :key="index" class="role">
 				<view style="width: 331rpx;height: 254rpx;" @click="checkContent(index,item)">
 					<view v-if="item.check" class="itemSelect">
-						<view class="title">{{item.modelName}}</view>
-						<view class="content">{{item.modelContent}}</view>
+						<view class="title">{{lengthLimitText(item.modelName,7)}}</view>
+						<view class="content">{{lengthLimitText(item.modelContent,36)}}</view>
 						<view class="itemCheck">建立对话</view>
 					</view>
 					<view v-if="!item.check" class="itemUnSelect">
 						<view class="title">{{item.modelName}}</view>
-						<view class="content">{{item.modelContent}}</view>
+						<view class="content">{{lengthLimitText(item.modelContent,36)}}</view>
 					</view>
 				</view>
 
@@ -349,7 +349,7 @@
 	}
 
 	.title {
-		font-size: 32rpx;
+		font-size: 25rpx;
 		font-weight: 700;
 		color: #000000;
 	}
@@ -358,6 +358,9 @@
 		font-size: 25rpx;
 		color: #626262;
 		margin-top: 20rpx;
+		line-height: 20px;
+		/* margin: 3.2%; */
+		letter-spacing: 1px;
 	}
 
 	.itemCheck {
@@ -379,7 +382,7 @@
 	.itemSelect {
 		background-color: #F2F8FF;
 		position: relative;
-		padding: 42rpx 22rpx;
+		padding: 31rpx 22rpx;
 		width: 100%;
 		height: 100%;
 		border: 1rpx solid #3387FF;
