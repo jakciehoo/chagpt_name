@@ -2,6 +2,7 @@
 
 
 ## 前端介绍
+* 前端下载：releases下载[发行版](https://gitee.com/e0cia/chatgpt_wechat_font/releases/tag/V4.0)
 
 * 后台源码: [点我进入](https://gitee.com/e0cia/chatgpt_wechat_houtai)
 
