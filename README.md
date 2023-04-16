@@ -13,7 +13,7 @@
 
 ## 搭建教学（有任何问题请加群-群里老哥24小时解决问题）
 ###  **_安装教程_**  : [点我进入](https://yaiwiki.likesrt.com/archives/no1.html)
-###  **_详细视频教程【上述安装教程中也包含此视频】_**  : [点我进入](https://space.bilibili.com/342298458/channel/seriesdetail?sid=3077994&ctype=0)
+###  **_详细视频教程【上述安装教程中也包含此视频】_**  : [点我进入](https://space.bilibili.com/342298458/channel/series)
 ## 交流群
 QQ群： ![加入QQ群](https://yuan-ai.oss-cn-beijing.aliyuncs.com/qqgroup.jpg)
 
