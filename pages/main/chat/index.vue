@@ -539,6 +539,7 @@
 						mask: false,
 						complete: function() {
 							setTimeout(function() {
+								socket.close()
 								uni.switchTab({
 									url: '/pages/main/rolefragment/rolefragment'
 								})
@@ -620,6 +621,7 @@
 				this.baseConfig = uni.getStorageSync('baseConfig')
 			},
 			clickMore() {
+				socket.close()
 				uni.switchTab({
 					url: '/pages/main/minefragment/minefragment'
 				})
@@ -631,6 +633,7 @@
 				})
 			},
 			resetModel() {
+				socket.close()
 				uni.switchTab({
 					url: '/pages/main/rolefragment/rolefragment'
 				})
