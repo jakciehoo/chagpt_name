@@ -567,6 +567,9 @@
 	}
 
 	.position_top {
+		//#ifndef MP-WEIXIN
+		margin-top: 20px;
+		// #endif
 		position: absolute;
 		top: 0;
 		width: 100%;

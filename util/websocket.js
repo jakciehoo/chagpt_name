@@ -19,7 +19,6 @@ class websocket {
 		this.user_token = uni.getStorageSync('token')
 		this.user = user ? user : {},
 			this.TO = false;
-		console.log("websocket!!!!!");
 		// 连接和监听
 		if (this.user) {
 			this.connectSocket()
@@ -51,10 +50,11 @@ class websocket {
 	}
 	// 连接socket
 	connectSocket() {
-		console.log("链接connectSocket")
+		console.log(uni.getStorageSync('authorization'))
 		let that = this;
 		this.socket = uni.connectSocket({
 			url: this.url+'/'+uni.getStorageSync('userInfo').userId,
+			withCredentials: true,
 			header: {
 					    'Content-Type': 'text/event-stream',
 					    'Authorization': uni.getStorageSync('authorization')

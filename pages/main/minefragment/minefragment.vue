@@ -11,11 +11,14 @@
 				<view class="mineInfo">
 					<image style="width: -webkit-fill-available" src="../../../static/mine_info_bg.png"></image>
 					<view class="top"></view>
+					
+					
+					<!--  #ifndef H5 -->
 					<view @click="updateUserInfoShow()" class="mini-setting">
 						<image src="../../../static/setting.png" style="width: 34rpx;height: 34rpx;">
 						</image>
 					</view>
-
+					<!--  #endif -->
 					<view class="user">
 						<view class="row userRow">
 							<u--image shape="circle" :src="userInfo.avatar" width="80px" height="80px">
@@ -136,6 +139,7 @@
 						<view class="rowline"></view>
 					</view>
 				</view>
+				<!--  #ifndef H5 -->
 				<view class="row itemrow">
 					<image class="itemRowImgLeft" src="../../../static/mine_share_icon.png"></image>
 					<view class="itemRowCloum">
@@ -152,6 +156,7 @@
 						<view class="rowline" style="margin-top: 0rpx;"></view>
 					</view>
 				</view>
+				<!--  #endif -->
 				<view @click="gohistory()" class="row itemrow">
 					<image class="itemRowImgLeft" src="../../../static/history.png"></image>
 					<view class="itemRowCloum">
@@ -177,6 +182,8 @@
 					</view>
 				</view>
 
+
+				<!--  #ifndef H5 -->	
 				<view class="row itemrow">
 
 					<image class="itemRowImgLeft" src="../../../static/mine_tophone_icon.png"></image>
@@ -194,7 +201,9 @@
 						<view class="rowline"></view>
 					</view>
 				</view>
-				<view class="row itemrow">
+				<!--  #endif -->
+				
+<!-- 				<view class="row itemrow">
 					<image class="itemRowImgLeft" src="../../../static/mine_aboutus_icon.png"></image>
 					<view class="itemRowCloum">
 						<view class="row">
@@ -204,7 +213,7 @@
 						</view>
 						<view class="rowline"></view>
 					</view>
-				</view>
+				</view> -->
 				
 				
 				<view @click="exit()" class="row itemrow">
@@ -231,7 +240,7 @@
 			<u-popup :round="15" :closeOnClickOverlay="false" :show="show" @close="close" @open="open" mode="center">
 
 				<view class="dialog">
-					<image @click="close" class="closeImg" src="../../../static/close_icon.png"></image>
+					<image  @click="close" class="closeImg" src="../../../static/close_icon.png"></image>
 
 					<view class="head">
 
@@ -714,8 +723,8 @@
 
 	.closeImg {
 		right: 0;
-		width: 18rpx;
-		height: 18rpx;
+		width: 31rpx;
+		height: 31rpx;
 		position: absolute;
 		top: 32rpx;
 		right: 32rpx;

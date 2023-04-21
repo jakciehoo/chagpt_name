@@ -1,5 +1,5 @@
 {
-    "name" : "tixingxiangmu",
+    "name" : "元AI智能程序",
     "appid" : "__UNI__6790D00",
     "description" : "",
     "versionName" : "1.0.0",
@@ -71,5 +71,13 @@
     "uniStatistics" : {
         "enable" : false
     },
-    "vueVersion" : "2"
+    "vueVersion" : "2",
+    "h5" : {
+        "devServer" : {
+            "disableHostCheck" : true // 设为true
+        },
+        "router" : {
+            "mode" : "hash"
+        }
+    }
 }

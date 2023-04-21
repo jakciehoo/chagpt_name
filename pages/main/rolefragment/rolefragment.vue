@@ -97,7 +97,7 @@
 			</scroll-view>
 		</u-popup>
 		<u-modal @confirm="confirmDigModel()" @cancel="modalColse()" @touchmove.stop.prevent="preStop()"
-			showCancelButton="true" :show="modalShow" :zoom="true">
+			:showCancelButton="true" :show="modalShow" :zoom="true">
 			<view>
 				<u--form>
 					<u-form-item labelWidth="80px" label="对话备注" borderBottom>
@@ -232,7 +232,7 @@
 			conDig(item) {
 				uni.setStorageSync('digId', item.id);
 				// uni.$emit('digId', item.id)
-				uni.switchTab({
+				uni.navigateTo({
 					url: '/pages/main/chat/index'
 				})
 			},
@@ -265,12 +265,10 @@
 						}
 					})
 				}
-
 			},
 			lengthLimitText(text, num) {
 				return util.lengthLimit(text, num);
 			},
-			
 			preStop() {
 				return
 			},
@@ -281,7 +279,7 @@
 						this.modalShow = false;
 						this.historyDigList.unshift(res.data)
 						uni.setStorageSync('digId', res.data.id);
-						uni.switchTab({
+						uni.navigateTo({
 							url: '/pages/main/chat/index'
 						})
 					} else {

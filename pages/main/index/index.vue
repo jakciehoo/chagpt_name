@@ -21,22 +21,63 @@
 </template>
 
 <script>
+	import request from "../../../request/request.js";
+	import util from "../../../util/util.js";
 	export default {
 		data() {
 			return {
-
 				weichat_notice: uni.getStorageSync('baseConfig').weichat_notice
-			}
-		},
-		methods: {
-			startDig() {
-				uni.switchTab({
-					url:'/pages/main/chat/index'
-				})
 			}
 		},
 		onLoad(options) {
 			uni.setStorageSync('invitationCode', options.intivateCode);
+			// #ifndef MP-WEIXIN
+			
+			let url = window.location.href; 
+			// 获取url中的参数部分 
+			let params = url.split('?')[1]; 
+			// 将参数部分转换为对象 
+			let paramsObj = {}; 
+			if (params) { 
+			  params.split('&').forEach(item => { 
+			    let arr = item.split('='); 
+			    paramsObj[arr[0]] = arr[1]; 
+			  }); 
+			} 
+			let jsCode = paramsObj['code']; 
+			if(util.isNotBlank(jsCode) && util.isBlank(uni.getStorageSync('authorization'))){
+				
+				this.wxH5loginJwt(jsCode)
+			}
+			// #endif
+		},
+		methods: {
+			startDig() {
+				uni.switchTab({
+					url:'/pages/main/rolefragment/rolefragment'
+				})
+			},
+			/**微信H5登录
+			 * @param {Object} jsCode
+			 */
+			wxH5loginJwt(jsCode) {
+				console.log("开始登陆",jsCode)
+				let param = {
+					'jsCode': jsCode,
+					'inviteCode': uni.getStorageSync('invitationCode')
+				}
+				request('', '/authorization/wx/h5/registerOrLogin', 'POST', param, {}).then(res => {
+					if (res.code == 200) {
+						uni.setStorageSync('authorization', res.data.token)
+						uni.setStorageSync('userInfo', res.data.userInfo)
+						// this.toUserCenter()
+						util.message("登录成功");
+					} else {
+						util.message("登录失败,请重试", 'error')
+					}
+					uni.hideLoading()
+				})
+			},
 		}
 	}
 </script>

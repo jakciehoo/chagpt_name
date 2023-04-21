@@ -1,5 +1,16 @@
 <template>
 	<view class="container">
+		<!--  #ifdef H5 -->
+			<view>
+				<!-- 2.0.19支持autoBack，默认为false -->
+		        <u-navbar
+		            title="问答记录"
+		            :autoBack="true"
+					:placeholder="true"
+		        >
+		        </u-navbar>
+			</view>
+			<!--  #endif -->
 		<view class="bg"></view>
 		<view class="form">
 			<view class="header">

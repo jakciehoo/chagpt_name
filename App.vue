@@ -45,11 +45,14 @@
 </script>
 
 <style lang="scss">
-	
 	@import "colorui/main.css";
 	@import "colorui/icon.css";
 	@import "static/css/index-app.css";
 	
 	@import "uview-ui/index.scss";
 	@import "cl-uni/index.scss";
+	/* #ifdef H5 */ 
+	
+		uni-page-head { display: none; } 
+	/* #endif */
 </style>

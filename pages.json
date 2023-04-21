@@ -19,6 +19,18 @@
 		
 		},
 		{
+		"path": "pages/main/login/login_h5",
+		"style": {
+			"navigationBarTitleText": "登录",
+			"enablePullDownRefresh": false,
+			"navigationBarBackgroundColor": "#3388fe",
+			"navigationBarTextStyle": "white",
+			"disableScroll": true
+		}
+	
+	},
+
+		{
 			"path": "pages/main/chatList/chatList",
 			"style": {
 				"navigationBarTitleText": "历史对话",
@@ -133,12 +145,12 @@
 				"selectedIconPath": "static/tabbar/home_blue3_selected.png",
 				"text": "首页"
 			},
-			{
-				"pagePath": "pages/main/chat/index",
-				"iconPath": "static/tabbar/answer.png",
-				"selectedIconPath": "static/tabbar/answer_selected.png",
-				"text": "问答"
-			},
+			// {
+			// 	"pagePath": "pages/main/chat/index",
+			// 	"iconPath": "static/tabbar/answer.png",
+			// 	"selectedIconPath": "static/tabbar/answer_selected.png",
+			// 	"text": "问答"
+			// },
 			{
 				"pagePath": "pages/main/rolefragment/rolefragment",
 				"iconPath": "static/tabbar/explore.png",

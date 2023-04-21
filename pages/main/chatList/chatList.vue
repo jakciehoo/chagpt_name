@@ -1,5 +1,16 @@
 <template>
 	<view class="main">
+		<!--  #ifdef H5 -->
+			<view>
+				<!-- 2.0.19支持autoBack，默认为false -->
+		        <u-navbar
+		            title="对话记录"
+		            :autoBack="true"
+					:placeholder="true"
+		        >
+		        </u-navbar>
+			</view>
+			<!--  #endif -->
 		<view v-if="chatList.length<=0" style="margin-top: 200rpx;">
 			<u-empty mode="data" icon="http://cdn.uviewui.com/uview/empty/data.png" text="暂无数据">
 			</u-empty>
@@ -86,7 +97,7 @@
 			conDig(item) {
 				uni.setStorageSync('digId', item.id);
 				uni.$emit('digId', item.id)
-				uni.switchTab({
+				uni.navigateTo({
 					url: '/pages/main/chat/index'
 				})
 			},

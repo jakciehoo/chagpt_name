@@ -13,7 +13,6 @@ const request = (urlType= '', url = '', type = '', data = {}, header = {
 	var that = this
 	let  options = {}
     return new Promise((resolve, reject) => {
-		
 		options.url = `${baseConfig.baseUrl}` + url;
 		options.timeout = 100000;
 		options.method = type;
@@ -38,7 +37,6 @@ const request = (urlType= '', url = '', type = '', data = {}, header = {
 			           	url: '/pages/main/login/login'
 			           })
 			        } else if (res.data.code == 500) {
-						console.log('状态码500',res.data)
 			            resolve(res.data);
 			        }  else {
 			           uni.showToast({

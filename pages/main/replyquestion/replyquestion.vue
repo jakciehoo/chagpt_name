@@ -1,5 +1,16 @@
 <template>
 	<view>
+		<!--  #ifdef H5 -->
+			<view>
+				<!-- 2.0.19支持autoBack，默认为false -->
+		        <u-navbar
+		            title="问答中心"
+		            :autoBack="true"
+					:placeholder="true"
+		        >
+		        </u-navbar>
+			</view>
+			<!--  #endif -->
 		<view class="cloum">
 			<view >
 				<view class="row" style="justify-content: flex-end; margin-top: 30rpx;">
@@ -59,8 +70,7 @@
 				copyData: '',
 				askContent: '',
 				isReplyIng: false,
-				changeAnswerTextContent: '',
-				text11:'asasasasasasabc我爱你'
+				changeAnswerTextContent: ''
 			}
 		},
 		onLoad(options) {
@@ -112,7 +122,6 @@
 				}
 			},
 			aksContent(e) {
-				let text11a = this.text11;
 				let param = {
 					prompt: e
 				}
@@ -123,20 +132,27 @@
 					if (res.code == 500 && (msgerr.search("429") != -1)) {
 						util.message("访问太过频繁,请稍后重试", 'error', function() {
 							setTimeout(() => {
-
 								uni.switchTab({
 									url:'/pages/main/rolefragment/rolefragment'
 								})
 							}, 1000)
 						});
-						
-					
+					}else{
+						util.message(msgerr, 'error', function() {
+							setTimeout(() => {
+								uni.switchTab({
+									url:'/pages/main/rolefragment/rolefragment'
+								})
+							}, 1000)
+						});
 					}
 				})
 			}
 		},
 		onHide() {
-
+			socket.close()
+		},
+		onUnload() {
 			socket.close()
 		},
 		onShow() {
@@ -149,8 +165,6 @@
 	page {
 		background-color: #f6f6f6;
 	}
-
-
 	@keyframes jump {
 
 		0%,

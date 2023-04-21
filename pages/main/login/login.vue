@@ -22,7 +22,7 @@
 
 			<view class="btn">
 
-				<view class="comitBtn" @click="getUserProfile">
+				<view class="comitBtn" @click="loginRequest()">
 					授权登录
 				</view>
 				<view class="cancelBtn" @click="backIndex">
@@ -63,6 +63,11 @@
 			}
 		},
 		onLoad() {
+			// #ifndef MP-WEIXIN
+				uni.navigateTo({
+					url:'./login_h5'
+				})
+			// #endif
 			this.isLogin()
 			this.getCacheContent()
 			this.getStatusBarHeight()
@@ -126,36 +131,34 @@
 				this.isSelectImage = true
 			},
 			//登录用户,获取用户的信息
-			getUserProfile(e) {
-				if (!this.isagreeU) {
-					util.message("请先阅读《使用协议》与《用户协议》");
-				   return;
-				}
-
-				let that = this;
-				// if(this.isSelectImage && util.isNotBlank(this.nickname)){
-				if (true) {
-					util.message("登录中", "loadding")
-					wx.login({
-						success(res) {
-							if (res.code) {
-								that.loginJwt(res.code)
-							} else {
-								uni.hideLoading()
-								util.message("登录失败", 'error')
-							}
+			loginRequest() {
+				
+			if (!this.isagreeU) {
+				util.message("请先阅读《使用协议》与《用户协议》");
+			   return;
+			}
+			// #ifdef MP-WEIXIN
+			let that = this;
+				util.message("登录中", "loadding")
+				uni.login({
+					success(res) {
+						if (res.code) {
+							that.loginJwt(res.code)
+						} else {
+							uni.hideLoading()
+							util.message("登录失败", 'error')
 						}
-					})
-				} else {
-
-					uni.hideLoading()
-				}
+					},
+					fail(res) {
+						uni.hideLoading()
+					}
+				})
+			// #endif
 			},
 			loginJwt(jsCode) {
 				let param = {
 					'jsCode': jsCode,
-					'inviteCode': uni.getStorageSync('invitationCode'),
-					'nickName': '固定测试'
+					'inviteCode': uni.getStorageSync('invitationCode')
 				}
 				request('', '/authorization/wx/registerOrLogin', 'POST', param, {}).then(res => {
 					if (res.code == 200) {
@@ -190,7 +193,6 @@
 		/* height: 153rpx; */
 		position: relative;
 	}
-
 	.photoBorder {
 		z-index: 10;
 		position: absolute;

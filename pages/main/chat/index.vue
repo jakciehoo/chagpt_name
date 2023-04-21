@@ -1,8 +1,22 @@
 <template>
 	<view>
-
+		
+		
 		<!-- 空盒子用来防止消息过少时 拉起键盘会遮盖消息 -->
 		<view :animation="anData" style="height:0;"></view>
+		
+		<!--  #ifdef H5 -->
+			<view>
+				<!-- 2.0.19支持autoBack，默认为false -->
+		        <u-navbar
+		            title="聊天中心"
+		            :autoBack="true"
+					:placeholder="true"
+		        >
+		        </u-navbar>
+			</view>
+			<!--  #endif -->
+		
 		<!-- 消息体 -->
 		<scroll-view @click="ckAddScroolw()" scroll-with-animation scroll-y="true" @touchmove="hideKey"
 			style="width: 750rpx;" :style="{'height':srcollHeight}" :scroll-top="go">
@@ -157,7 +171,6 @@
 							<text>在线客服</text>
 						</view>
 
-
 					</u-col>
 				</u-row>
 				<u-row gutter="10">
@@ -232,6 +245,9 @@
 			l = query.screenWidth / 750
 			wh = query.windowHeight
 			this.srcollHeight = query.windowHeight + "px"
+		},
+		onUnload() {
+			socket.close()
 		},
 		data() {
 			return {
@@ -801,5 +817,27 @@
 		background-color: inherit !important;
 		color: inherit;
 		border-color: inherit;
+	}
+	.backImg {
+		width: 18rpx;
+		height: 30rpx;
+		position: absolute;
+		left: 0;
+		margin-left: 20rpx;
+		margin-top: 6rpx
+	}
+	.header .title {
+		text-align: center;
+		font-size: 31rpx;
+		position: relative;
+		font-weight: 600;
+		color: #FFFFFF;
+		width: 100vw;
+	
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		/*  padding-top: 33px;
+		    padding-bottom: 40px; */
 	}
 </style>
