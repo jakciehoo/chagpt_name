@@ -12,7 +12,7 @@
 
 ## 搭建教学（有问题可以加群交流）
 ###  **_超简单安装教程_**  : [点我进入](https://yaiwiki.likesrt.com/archives/239.html)
-
+###  **_部署常见问题处理_**  : [点我进入](https://yaiwiki.likesrt.com/archives/304.html)
 ```
 ##源码部署教程
 所需环境：
