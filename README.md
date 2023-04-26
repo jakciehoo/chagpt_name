@@ -1,27 +1,27 @@
 <h4 align="center">chatgpt全网开源程序功能最全版本</h4>
 
 
-所有代码编译包均在:
-**链接：https://pan.baidu.com/s/1yjhYu9aaAaI1GWPne3PJYg 提取码：1111**
-
 ## 前端介绍
-* 前端下载：releases下载[发行版](https://gitee.com/e0cia/chatgpt_wechat_font/releases/tag/V4.0)
 
-* 后台源码: [点我进入](https://gitee.com/e0cia/chatgpt_wechat_houtai)
+* 服务端源码: [点我进入](https://gitee.com/e0cia/chatgpt_wechat_houtai)
 
 * 后台管理源码: [点我进入](https://gitee.com/e0cia/chatgpt_wechat_manager)
 
 * github地址： [点我进入](https://github.com/e0cia)
 
 
-## 搭建教学（有任何问题请加群-群里老哥24小时解决问题）
-###  **_安装教程_**  : [点我进入](https://yaiwiki.likesrt.com/archives/no1.html)
-###  **_详细视频教程【上述安装教程中也包含此视频】_**  : [点我进入](https://space.bilibili.com/342298458/channel/series)
+## 搭建教学（有问题可以加群交流）
+###  **_超简单安装教程_**  : [点我进入](https://yaiwiki.likesrt.com/archives/239.html)
+
 ## 交流群
 QQ群： ![加入QQ群](https://yuan-ai.oss-cn-beijing.aliyuncs.com/qqgroup.jpg)
-
 微信群： ![加入QQ群](https://yuan-ai.oss-cn-beijing.aliyuncs.com/wxgroup.png)
-
+<table>
+    <tr>
+        <td>QQ群<img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/qqgroup.jpg"/></td>
+        <td>微信群<img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/wxgroup.png"/></td>
+    </tr>
+</table>
 ## 小程序简介
 
 **功能简介** 
