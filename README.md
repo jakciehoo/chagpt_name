@@ -13,9 +13,19 @@
 ## 搭建教学（有问题可以加群交流）
 ###  **_超简单安装教程_**  : [点我进入](https://yaiwiki.likesrt.com/archives/239.html)
 
+```
+##源码部署教程
+所需环境：
+NodeJS v16.20.0
+HBuilderX
+微信开发者工具
+1. 拉取代码
+2. npm install
+3. 修改配置文件
+4. 运行到微信开发者工具
+```
+
 ## 交流群
-QQ群： ![加入QQ群](https://yuan-ai.oss-cn-beijing.aliyuncs.com/qqgroup.jpg)
-微信群： ![加入QQ群](https://yuan-ai.oss-cn-beijing.aliyuncs.com/wxgroup.png)
 <table>
     <tr>
         <td>QQ群<img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/qqgroup.jpg"/></td>
