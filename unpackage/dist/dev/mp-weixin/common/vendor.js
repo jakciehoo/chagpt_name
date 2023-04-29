@@ -947,7 +947,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_NAME":"tixingxiangmu","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"元AI智能程序","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -7647,7 +7647,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_NAME":"tixingxiangmu","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_NAME":"元AI智能程序","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -7668,14 +7668,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_NAME":"tixingxiangmu","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"元AI智能程序","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_NAME":"tixingxiangmu","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"元AI智能程序","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -7761,7 +7761,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"VUE_APP_NAME":"tixingxiangmu","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"元AI智能程序","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -8635,9 +8635,9 @@ function resolveLocaleChain(locale) {
 
 /***/ }),
 /* 5 */
-/*!*********************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/pages.json ***!
-  \*********************************************************/
+/*!*******************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/pages.json ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -8648,9 +8648,9 @@ function resolveLocaleChain(locale) {
 /* 7 */,
 /* 8 */,
 /* 9 */
-/*!***********************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/util/util.js ***!
-  \***********************************************************/
+/*!*********************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/util/util.js ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8863,9 +8863,9 @@ module.exports = util;
 
 /***/ }),
 /* 10 */
-/*!*****************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/request/request.js ***!
-  \*****************************************************************/
+/*!***************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/request/request.js ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8885,7 +8885,6 @@ var request = function request()
   var that = _this;
   var options = {};
   return new Promise(function (resolve, reject) {
-
     options.url = "".concat(_baseConfig.default.baseUrl) + url;
     options.timeout = 100000;
     options.method = type;
@@ -8910,7 +8909,6 @@ var request = function request()
               url: '/pages/main/login/login' });
 
           } else if (res.data.code == 500) {
-            console.log('状态码500', res.data);
             resolve(res.data);
           } else {
             uni.showToast({
@@ -8940,9 +8938,9 @@ request;exports.default = _default;
 
 /***/ }),
 /* 11 */
-/*!*****************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/util/baseConfig.js ***!
-  \*****************************************************************/
+/*!***************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/util/baseConfig.js ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8951,12 +8949,8 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 {
   //后端接口
-  baseUrl: 'https://api.bot.hongchiqingyun.com',
-  baseWsUrl: "wss://api.bot.hongchiqingyun.com/websocket/chat"
-  //后端接口
-  // baseUrl: 'http://127.0.0.1:8081',
-  // baseWsUrl: "ws://127.0.0.1:8081/websocket/chat"
-};exports.default = _default;
+  baseUrl: 'http://120.48.124.77:8081',
+  baseWsUrl: "ws://120.48.124.77:8081/websocket/chat" };exports.default = _default;
 
 /***/ }),
 /* 12 */,
@@ -9090,9 +9084,9 @@ function normalizeComponent (
 
 /***/ }),
 /* 15 */
-/*!*****************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/index.js ***!
-  \*****************************************************************************/
+/*!***************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/index.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9179,9 +9173,9 @@ var install = function install(Vue) {
 
 /***/ }),
 /* 16 */
-/*!****************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/mixin/mixin.js ***!
-  \****************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/mixin/mixin.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9348,9 +9342,9 @@ var install = function install(Vue) {
 
 /***/ }),
 /* 17 */
-/*!******************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/mixin/mpMixin.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/mixin/mpMixin.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9363,9 +9357,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 18 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/luch-request/index.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/luch-request/index.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9376,9 +9370,9 @@ _Request.default;exports.default = _default;
 
 /***/ }),
 /* 19 */
-/*!******************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/luch-request/core/Request.js ***!
-  \******************************************************************************************************/
+/*!****************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/luch-request/core/Request.js ***!
+  \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9584,9 +9578,9 @@ Request = /*#__PURE__*/function () {
 
 /***/ }),
 /* 20 */
-/*!**************************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/luch-request/core/dispatchRequest.js ***!
-  \**************************************************************************************************************/
+/*!************************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/luch-request/core/dispatchRequest.js ***!
+  \************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9597,9 +9591,9 @@ function _default(config) {return (0, _index.default)(config);};exports.default 
 
 /***/ }),
 /* 21 */
-/*!********************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/luch-request/adapters/index.js ***!
-  \********************************************************************************************************/
+/*!******************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/luch-request/adapters/index.js ***!
+  \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9705,9 +9699,9 @@ function _default(config) {return new Promise(function (resolve, reject) {
 
 /***/ }),
 /* 22 */
-/*!**********************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/luch-request/helpers/buildURL.js ***!
-  \**********************************************************************************************************/
+/*!********************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/luch-request/helpers/buildURL.js ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9784,9 +9778,9 @@ function buildURL(url, params) {
 
 /***/ }),
 /* 23 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/luch-request/utils.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/luch-request/utils.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9925,9 +9919,9 @@ function isUndefined(val) {
 
 /***/ }),
 /* 24 */
-/*!************************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/luch-request/core/buildFullPath.js ***!
-  \************************************************************************************************************/
+/*!**********************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/luch-request/core/buildFullPath.js ***!
+  \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9955,9 +9949,9 @@ function buildFullPath(baseURL, requestedURL) {
 
 /***/ }),
 /* 25 */
-/*!***************************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/luch-request/helpers/isAbsoluteURL.js ***!
-  \***************************************************************************************************************/
+/*!*************************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/luch-request/helpers/isAbsoluteURL.js ***!
+  \*************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9979,9 +9973,9 @@ function isAbsoluteURL(url) {
 
 /***/ }),
 /* 26 */
-/*!*************************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/luch-request/helpers/combineURLs.js ***!
-  \*************************************************************************************************************/
+/*!***********************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/luch-request/helpers/combineURLs.js ***!
+  \***********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10003,9 +9997,9 @@ function combineURLs(baseURL, relativeURL) {
 
 /***/ }),
 /* 27 */
-/*!*****************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/luch-request/core/settle.js ***!
-  \*****************************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/luch-request/core/settle.js ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10029,9 +10023,9 @@ function settle(resolve, reject, response) {var
 
 /***/ }),
 /* 28 */
-/*!*****************************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/luch-request/core/InterceptorManager.js ***!
-  \*****************************************************************************************************************/
+/*!***************************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/luch-request/core/InterceptorManager.js ***!
+  \***************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10089,9 +10083,9 @@ InterceptorManager;exports.default = _default;
 
 /***/ }),
 /* 29 */
-/*!**********************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/luch-request/core/mergeConfig.js ***!
-  \**********************************************************************************************************/
+/*!********************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/luch-request/core/mergeConfig.js ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10202,9 +10196,9 @@ function _default(globalsConfig) {var config2 = arguments.length > 1 && argument
 
 /***/ }),
 /* 30 */
-/*!*******************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/luch-request/core/defaults.js ***!
-  \*******************************************************************************************************/
+/*!*****************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/luch-request/core/defaults.js ***!
+  \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10240,9 +10234,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 31 */
-/*!*****************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/luch-request/utils/clone.js ***!
-  \*****************************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/luch-request/utils/clone.js ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10511,7 +10505,7 @@ var clone = function () {
 }();var _default =
 
 clone;exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../../hubuder/HBuilder/HBuilderX/plugins/uniapp-cli/node_modules/buffer/index.js */ 32).Buffer))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../hubuder/HBuilder/HBuilderX/plugins/uniapp-cli/node_modules/buffer/index.js */ 32).Buffer))
 
 /***/ }),
 /* 32 */
@@ -12588,9 +12582,9 @@ module.exports = Array.isArray || function (arr) {
 
 /***/ }),
 /* 36 */
-/*!***************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/util/route.js ***!
-  \***************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/util/route.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13511,9 +13505,9 @@ if (hadRuntime) {
 
 /***/ }),
 /* 40 */
-/*!***************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/function/colorGradient.js ***!
-  \***************************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/function/colorGradient.js ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13654,9 +13648,9 @@ function colorToRgba(color, alpha) {
 
 /***/ }),
 /* 41 */
-/*!******************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/function/test.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/function/test.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13951,9 +13945,9 @@ function regExp(o) {
 
 /***/ }),
 /* 42 */
-/*!**********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/function/debounce.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/function/debounce.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13990,9 +13984,9 @@ debounce;exports.default = _default;
 
 /***/ }),
 /* 43 */
-/*!**********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/function/throttle.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/function/throttle.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14030,9 +14024,9 @@ throttle;exports.default = _default;
 
 /***/ }),
 /* 44 */
-/*!*******************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/function/index.js ***!
-  \*******************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/function/index.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14745,9 +14739,9 @@ function setConfig(_ref3)
 
 /***/ }),
 /* 45 */
-/*!*******************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/function/digit.js ***!
-  \*******************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/function/digit.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14920,9 +14914,9 @@ function enableBoundaryChecking() {var flag = arguments.length > 0 && arguments[
 
 /***/ }),
 /* 46 */
-/*!******************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/config.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/config.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14963,9 +14957,9 @@ if (true) {
 
 /***/ }),
 /* 47 */
-/*!*****************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props.js ***!
-  \*****************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15162,9 +15156,9 @@ _upload.default);exports.default = _default;
 
 /***/ }),
 /* 48 */
-/*!*****************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/actionSheet.js ***!
-  \*****************************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/actionSheet.js ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15195,9 +15189,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 49 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/album.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/album.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15228,9 +15222,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 50 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/alert.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/alert.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15258,9 +15252,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 51 */
-/*!************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/avatar.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/avatar.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15294,9 +15288,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 52 */
-/*!*****************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/avatarGroup.js ***!
-  \*****************************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/avatarGroup.js ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15325,9 +15319,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 53 */
-/*!*************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/backtop.js ***!
-  \*************************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/backtop.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15359,9 +15353,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 54 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/badge.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/badge.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15394,9 +15388,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 55 */
-/*!************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/button.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/button.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15444,9 +15438,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 56 */
-/*!**************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/calendar.js ***!
-  \**************************************************************************************************/
+/*!************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/calendar.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15494,9 +15488,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 57 */
-/*!*****************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/carKeyboard.js ***!
-  \*****************************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/carKeyboard.js ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15517,9 +15511,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 58 */
-/*!**********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/cell.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/cell.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15560,9 +15554,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 59 */
-/*!***************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/cellGroup.js ***!
-  \***************************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/cellGroup.js ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15585,9 +15579,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 60 */
-/*!**************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/checkbox.js ***!
-  \**************************************************************************************************/
+/*!************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/checkbox.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15620,9 +15614,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 61 */
-/*!*******************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/checkboxGroup.js ***!
-  \*******************************************************************************************************/
+/*!*****************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/checkboxGroup.js ***!
+  \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15657,9 +15651,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 62 */
-/*!********************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/circleProgress.js ***!
-  \********************************************************************************************************/
+/*!******************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/circleProgress.js ***!
+  \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15680,9 +15674,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 63 */
-/*!**********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/code.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/code.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15709,9 +15703,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 64 */
-/*!***************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/codeInput.js ***!
-  \***************************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/codeInput.js ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15745,9 +15739,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 65 */
-/*!*********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/col.js ***!
-  \*********************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/col.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15772,9 +15766,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 66 */
-/*!**************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/collapse.js ***!
-  \**************************************************************************************************/
+/*!************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/collapse.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15797,9 +15791,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 67 */
-/*!******************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/collapseItem.js ***!
-  \******************************************************************************************************/
+/*!****************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/collapseItem.js ***!
+  \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15830,9 +15824,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 68 */
-/*!******************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/columnNotice.js ***!
-  \******************************************************************************************************/
+/*!****************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/columnNotice.js ***!
+  \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15862,9 +15856,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 69 */
-/*!***************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/countDown.js ***!
-  \***************************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/countDown.js ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15888,9 +15882,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 70 */
-/*!*************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/countTo.js ***!
-  \*************************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/countTo.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15921,9 +15915,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 71 */
-/*!********************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/datetimePicker.js ***!
-  \********************************************************************************************************/
+/*!******************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/datetimePicker.js ***!
+  \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15965,9 +15959,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 72 */
-/*!*************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/divider.js ***!
-  \*************************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/divider.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15995,9 +15989,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 73 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/empty.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/empty.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16028,9 +16022,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 74 */
-/*!**********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/form.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/form.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16058,9 +16052,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 75 */
-/*!**************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/formItem.js ***!
-  \**************************************************************************************************/
+/*!************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/formItem.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16088,9 +16082,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 76 */
-/*!*********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/gap.js ***!
-  \*********************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/gap.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16115,9 +16109,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 77 */
-/*!**********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/grid.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/grid.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16140,9 +16134,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 78 */
-/*!**************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/gridItem.js ***!
-  \**************************************************************************************************/
+/*!************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/gridItem.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16164,9 +16158,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 79 */
-/*!**********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/icon.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/icon.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16208,9 +16202,9 @@ var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 46));f
 
 /***/ }),
 /* 80 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/image.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/image.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16246,9 +16240,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 81 */
-/*!*****************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/indexAnchor.js ***!
-  \*****************************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/indexAnchor.js ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16273,9 +16267,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 82 */
-/*!***************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/indexList.js ***!
-  \***************************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/indexList.js ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16300,9 +16294,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 83 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/input.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/input.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16356,9 +16350,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 84 */
-/*!**************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/keyboard.js ***!
-  \**************************************************************************************************/
+/*!************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/keyboard.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16394,9 +16388,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 85 */
-/*!**********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/line.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/line.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16422,9 +16416,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 86 */
-/*!******************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/lineProgress.js ***!
-  \******************************************************************************************************/
+/*!****************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/lineProgress.js ***!
+  \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16449,9 +16443,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 87 */
-/*!**********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/link.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/link.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16483,9 +16477,9 @@ var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 46));f
 
 /***/ }),
 /* 88 */
-/*!**********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/list.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/list.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16519,9 +16513,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 89 */
-/*!**************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/listItem.js ***!
-  \**************************************************************************************************/
+/*!************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/listItem.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16542,9 +16536,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 90 */
-/*!*****************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/loadingIcon.js ***!
-  \*****************************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/loadingIcon.js ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16580,9 +16574,9 @@ var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 46));f
 
 /***/ }),
 /* 91 */
-/*!*****************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/loadingPage.js ***!
-  \*****************************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/loadingPage.js ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16610,9 +16604,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 92 */
-/*!**************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/loadmore.js ***!
-  \**************************************************************************************************/
+/*!************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/loadmore.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16647,9 +16641,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 93 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/modal.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/modal.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16685,9 +16679,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 94 */
-/*!************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/navbar.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/navbar.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16724,9 +16718,9 @@ var _color = _interopRequireDefault(__webpack_require__(/*! ../color */ 95));fun
 
 /***/ }),
 /* 95 */
-/*!*****************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/color.js ***!
-  \*****************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/color.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16751,9 +16745,9 @@ color;exports.default = _default;
 
 /***/ }),
 /* 96 */
-/*!***************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/noNetwork.js ***!
-  \***************************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/noNetwork.js ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16776,9 +16770,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 97 */
-/*!***************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/noticeBar.js ***!
-  \***************************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/noticeBar.js ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16811,9 +16805,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 98 */
-/*!************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/notify.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/notify.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16841,9 +16835,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 99 */
-/*!***************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/numberBox.js ***!
-  \***************************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/numberBox.js ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16884,9 +16878,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 100 */
-/*!********************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/numberKeyboard.js ***!
-  \********************************************************************************************************/
+/*!******************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/numberKeyboard.js ***!
+  \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16909,9 +16903,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 101 */
-/*!*************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/overlay.js ***!
-  \*************************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/overlay.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16935,9 +16929,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 102 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/parse.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/parse.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16965,9 +16959,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 103 */
-/*!************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/picker.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/picker.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17003,9 +16997,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 104 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/popup.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/popup.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17040,9 +17034,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 105 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/radio.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/radio.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17075,9 +17069,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 106 */
-/*!****************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/radioGroup.js ***!
-  \****************************************************************************************************/
+/*!**************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/radioGroup.js ***!
+  \**************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17113,9 +17107,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 107 */
-/*!**********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/rate.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/rate.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17147,9 +17141,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 108 */
-/*!**************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/readMore.js ***!
-  \**************************************************************************************************/
+/*!************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/readMore.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17177,9 +17171,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 109 */
-/*!*********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/row.js ***!
-  \*********************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/row.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17202,9 +17196,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 110 */
-/*!***************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/rowNotice.js ***!
-  \***************************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/rowNotice.js ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17231,9 +17225,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 111 */
-/*!****************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/scrollList.js ***!
-  \****************************************************************************************************/
+/*!**************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/scrollList.js ***!
+  \**************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17259,9 +17253,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 112 */
-/*!************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/search.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/search.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17304,9 +17298,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 113 */
-/*!*************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/section.js ***!
-  \*************************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/section.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17336,9 +17330,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 114 */
-/*!**************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/skeleton.js ***!
-  \**************************************************************************************************/
+/*!************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/skeleton.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17369,9 +17363,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 115 */
-/*!************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/slider.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/slider.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17402,9 +17396,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 116 */
-/*!***************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/statusBar.js ***!
-  \***************************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/statusBar.js ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17425,9 +17419,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 117 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/steps.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/steps.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17454,9 +17448,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 118 */
-/*!***************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/stepsItem.js ***!
-  \***************************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/stepsItem.js ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17480,9 +17474,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 119 */
-/*!************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/sticky.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/sticky.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17508,9 +17502,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 120 */
-/*!****************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/subsection.js ***!
-  \****************************************************************************************************/
+/*!**************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/subsection.js ***!
+  \**************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17539,9 +17533,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 121 */
-/*!*****************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/swipeAction.js ***!
-  \*****************************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/swipeAction.js ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17562,9 +17556,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 122 */
-/*!*********************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/swipeActionItem.js ***!
-  \*********************************************************************************************************/
+/*!*******************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/swipeActionItem.js ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17591,9 +17585,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 123 */
-/*!************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/swiper.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/swiper.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17637,9 +17631,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 124 */
-/*!**********************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/swipterIndicator.js ***!
-  \**********************************************************************************************************/
+/*!********************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/swipterIndicator.js ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17664,9 +17658,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 125 */
-/*!************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/switch.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/switch.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17696,9 +17690,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 126 */
-/*!************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/tabbar.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/tabbar.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17726,9 +17720,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 127 */
-/*!****************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/tabbarItem.js ***!
-  \****************************************************************************************************/
+/*!**************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/tabbarItem.js ***!
+  \**************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17754,9 +17748,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 128 */
-/*!**********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/tabs.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/tabs.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17794,9 +17788,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 129 */
-/*!*********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/tag.js ***!
-  \*********************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/tag.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17831,9 +17825,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 130 */
-/*!**********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/text.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/text.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17876,9 +17870,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 131 */
-/*!**************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/textarea.js ***!
-  \**************************************************************************************************/
+/*!************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/textarea.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17920,9 +17914,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 132 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/toast.js ***!
-  \***********************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/toast.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17957,9 +17951,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 133 */
-/*!*************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/toolbar.js ***!
-  \*************************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/toolbar.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17985,9 +17979,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 134 */
-/*!*************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/tooltip.js ***!
-  \*************************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/tooltip.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18018,9 +18012,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 135 */
-/*!****************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/transition.js ***!
-  \****************************************************************************************************/
+/*!**************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/transition.js ***!
+  \**************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18044,9 +18038,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 136 */
-/*!************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/props/upload.js ***!
-  \************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/props/upload.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18088,9 +18082,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 137 */
-/*!******************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/config/zIndex.js ***!
-  \******************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/config/zIndex.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18117,9 +18111,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 138 */
-/*!**********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/function/platform.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/function/platform.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18202,9 +18196,9 @@ platform;exports.default = _default;
 
 /***/ }),
 /* 139 */
-/*!************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/util/share.js ***!
-  \************************************************************/
+/*!**********************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/util/share.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18280,10 +18274,18 @@ platform;exports.default = _default;
 /* 179 */,
 /* 180 */,
 /* 181 */,
-/* 182 */
-/*!****************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/util/websocket.js ***!
-  \****************************************************************/
+/* 182 */,
+/* 183 */,
+/* 184 */,
+/* 185 */,
+/* 186 */,
+/* 187 */,
+/* 188 */,
+/* 189 */,
+/* 190 */
+/*!**************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/util/websocket.js ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18309,7 +18311,6 @@ websocket = /*#__PURE__*/function () {
     this.user_token = uni.getStorageSync('token');
     this.user = user ? user : {},
     this.TO = false;
-    console.log("websocket!!!!!");
     // 连接和监听
     if (this.user) {
       this.connectSocket();
@@ -18341,10 +18342,11 @@ websocket = /*#__PURE__*/function () {
     }
     // 连接socket
   }, { key: "connectSocket", value: function connectSocket() {var _this = this;
-      console.log("链接connectSocket");
+      console.log(uni.getStorageSync('authorization'));
       var that = this;
       this.socket = uni.connectSocket({
         url: this.url + '/' + uni.getStorageSync('userInfo').userId,
+        withCredentials: true,
         header: {
           'Content-Type': 'text/event-stream',
           'Authorization': uni.getStorageSync('authorization') },
@@ -18523,10 +18525,10 @@ websocket;exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 183 */
-/*!**************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/static/js/md.js ***!
-  \**************************************************************/
+/* 191 */
+/*!************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/static/js/md.js ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18548,14 +18550,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     li: 'margin-bottom: 5 px;line-height: 26 px;color: #3a3a3a' } };exports.default = _default;
 
 /***/ }),
-/* 184 */,
-/* 185 */,
-/* 186 */,
-/* 187 */,
-/* 188 */,
-/* 189 */,
-/* 190 */,
-/* 191 */,
 /* 192 */,
 /* 193 */,
 /* 194 */,
@@ -18595,10 +18589,18 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* 228 */,
 /* 229 */,
 /* 230 */,
-/* 231 */
-/*!*****************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-notice-bar/props.js ***!
-  \*****************************************************************************************************/
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */
+/*!***************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-notice-bar/props.js ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18673,17 +18675,17 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */
-/*!**********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-tag/props.js ***!
-  \**********************************************************************************************/
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */
+/*!********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-tag/props.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18772,80 +18774,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 240 */,
-/* 241 */,
-/* 242 */,
-/* 243 */,
-/* 244 */,
-/* 245 */,
-/* 246 */,
-/* 247 */
-/*!************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-empty/props.js ***!
-  \************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
-  props: {
-    // 内置图标名称，或图片路径，建议绝对路径
-    icon: {
-      type: String,
-      default: uni.$u.props.empty.icon },
-
-    // 提示文字
-    text: {
-      type: String,
-      default: uni.$u.props.empty.text },
-
-    // 文字颜色
-    textColor: {
-      type: String,
-      default: uni.$u.props.empty.textColor },
-
-    // 文字大小
-    textSize: {
-      type: [String, Number],
-      default: uni.$u.props.empty.textSize },
-
-    // 图标的颜色
-    iconColor: {
-      type: String,
-      default: uni.$u.props.empty.iconColor },
-
-    // 图标的大小
-    iconSize: {
-      type: [String, Number],
-      default: uni.$u.props.empty.iconSize },
-
-    // 选择预置的图标类型
-    mode: {
-      type: String,
-      default: uni.$u.props.empty.mode },
-
-    //  图标宽度，单位px
-    width: {
-      type: [String, Number],
-      default: uni.$u.props.empty.width },
-
-    // 图标高度，单位px
-    height: {
-      type: [String, Number],
-      default: uni.$u.props.empty.height },
-
-    // 是否显示组件
-    show: {
-      type: Boolean,
-      default: uni.$u.props.empty.show },
-
-    // 组件距离上一个元素之间的距离，默认px单位
-    marginTop: {
-      type: [String, Number],
-      default: uni.$u.props.empty.marginTop } } };exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
 /* 248 */,
 /* 249 */,
 /* 250 */,
@@ -18854,90 +18782,94 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* 253 */,
 /* 254 */,
 /* 255 */
-/*!***************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-loadmore/props.js ***!
-  \***************************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-image/props.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
   props: {
-    // 组件状态，loadmore-加载前的状态，loading-加载中的状态，nomore-没有更多的状态
-    status: {
+    // 图片地址
+    src: {
       type: String,
-      default: uni.$u.props.loadmore.status },
+      default: uni.$u.props.image.src },
 
-    // 组件背景色
-    bgColor: {
+    // 裁剪模式
+    mode: {
       type: String,
-      default: uni.$u.props.loadmore.bgColor },
+      default: uni.$u.props.image.mode },
 
-    // 是否显示加载中的图标
-    icon: {
-      type: Boolean,
-      default: uni.$u.props.loadmore.icon },
-
-    // 字体大小
-    fontSize: {
+    // 宽度，单位任意
+    width: {
       type: [String, Number],
-      default: uni.$u.props.loadmore.fontSize },
+      default: uni.$u.props.image.width },
 
-    // 字体颜色
-    color: {
-      type: String,
-      default: uni.$u.props.loadmore.color },
-
-
-    // 加载中状态的图标，spinner-花朵状图标，circle-圆圈状，semicircle-半圆
-    loadingIcon: {
-      type: String,
-      default: uni.$u.props.loadmore.loadingIcon },
-
-    // 加载前的提示语
-    loadmoreText: {
-      type: String,
-      default: uni.$u.props.loadmore.loadmoreText },
-
-    // 加载中提示语
-    loadingText: {
-      type: String,
-      default: uni.$u.props.loadmore.loadingText },
-
-    // 没有更多的提示语
-    nomoreText: {
-      type: String,
-      default: uni.$u.props.loadmore.nomoreText },
-
-    // 在“没有更多”状态下，是否显示粗点
-    isDot: {
-      type: Boolean,
-      default: uni.$u.props.loadmore.isDot },
-
-    // 加载中图标的颜色
-    iconColor: {
-      type: String,
-      default: uni.$u.props.loadmore.iconColor },
-
-    // 上边距
-    marginTop: {
-      type: [String, Number],
-      default: uni.$u.props.loadmore.marginTop },
-
-    // 下边距
-    marginBottom: {
-      type: [String, Number],
-      default: uni.$u.props.loadmore.marginBottom },
-
-    // 高度，单位px
+    // 高度，单位任意
     height: {
       type: [String, Number],
-      default: uni.$u.props.loadmore.height },
+      default: uni.$u.props.image.height },
 
-    // 是否显示左边分割线
-    line: {
+    // 图片形状，circle-圆形，square-方形
+    shape: {
+      type: String,
+      default: uni.$u.props.image.shape },
+
+    // 圆角，单位任意
+    radius: {
+      type: [String, Number],
+      default: uni.$u.props.image.radius },
+
+    // 是否懒加载，微信小程序、App、百度小程序、字节跳动小程序
+    lazyLoad: {
       type: Boolean,
-      default: uni.$u.props.loadmore.line } } };exports.default = _default;
+      default: uni.$u.props.image.lazyLoad },
+
+    // 开启长按图片显示识别微信小程序码菜单
+    showMenuByLongpress: {
+      type: Boolean,
+      default: uni.$u.props.image.showMenuByLongpress },
+
+    // 加载中的图标，或者小图片
+    loadingIcon: {
+      type: String,
+      default: uni.$u.props.image.loadingIcon },
+
+    // 加载失败的图标，或者小图片
+    errorIcon: {
+      type: String,
+      default: uni.$u.props.image.errorIcon },
+
+    // 是否显示加载中的图标或者自定义的slot
+    showLoading: {
+      type: Boolean,
+      default: uni.$u.props.image.showLoading },
+
+    // 是否显示加载错误的图标或者自定义的slot
+    showError: {
+      type: Boolean,
+      default: uni.$u.props.image.showError },
+
+    // 是否需要淡入效果
+    fade: {
+      type: Boolean,
+      default: uni.$u.props.image.fade },
+
+    // 只支持网络资源，只对微信小程序有效
+    webp: {
+      type: Boolean,
+      default: uni.$u.props.image.webp },
+
+    // 过渡时间，单位ms
+    duration: {
+      type: [String, Number],
+      default: uni.$u.props.image.duration },
+
+    // 背景颜色，用于深色页面加载图片时，为了和背景色融合
+    bgColor: {
+      type: String,
+      default: uni.$u.props.image.bgColor } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
@@ -18946,12 +18878,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* 258 */,
 /* 259 */,
 /* 260 */,
-/* 261 */,
-/* 262 */,
-/* 263 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-icon/icons.js ***!
-  \***********************************************************************************************/
+/* 261 */
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-icon/icons.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19171,10 +19101,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   'uicon-en': "\uE692" };exports.default = _default;
 
 /***/ }),
-/* 264 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-icon/props.js ***!
-  \***********************************************************************************************/
+/* 262 */
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-icon/props.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19268,50 +19198,75 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
+/* 263 */,
+/* 264 */,
 /* 265 */,
 /* 266 */,
 /* 267 */,
 /* 268 */,
 /* 269 */,
-/* 270 */,
-/* 271 */,
-/* 272 */
-/*!**********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-row/props.js ***!
-  \**********************************************************************************************/
+/* 270 */
+/*!************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-divider/props.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
   props: {
-    // 给col添加间距，左右边距各占一半
-    gutter: {
+    // 是否虚线
+    dashed: {
+      type: Boolean,
+      default: uni.$u.props.divider.dashed },
+
+    // 是否细线
+    hairline: {
+      type: Boolean,
+      default: uni.$u.props.divider.hairline },
+
+    // 是否以点替代文字，优先于text字段起作用
+    dot: {
+      type: Boolean,
+      default: uni.$u.props.divider.dot },
+
+    // 内容文本的位置，left-左边，center-中间，right-右边
+    textPosition: {
+      type: String,
+      default: uni.$u.props.divider.textPosition },
+
+    // 文本内容
+    text: {
       type: [String, Number],
-      default: uni.$u.props.row.gutter },
+      default: uni.$u.props.divider.text },
 
-    // 水平排列方式，可选值为`start`(或`flex-start`)、`end`(或`flex-end`)、`center`、`around`(或`space-around`)、`between`(或`space-between`)
-    justify: {
-      type: String,
-      default: uni.$u.props.row.justify },
+    // 文本大小
+    textSize: {
+      type: [String, Number],
+      default: uni.$u.props.divider.textSize },
 
-    // 垂直对齐方式，可选值为top、center、bottom
-    align: {
+    // 文本颜色
+    textColor: {
       type: String,
-      default: uni.$u.props.row.align } } };exports.default = _default;
+      default: uni.$u.props.divider.textColor },
+
+    // 线条颜色
+    lineColor: {
+      type: String,
+      default: uni.$u.props.divider.lineColor } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
+/* 271 */,
+/* 272 */,
 /* 273 */,
 /* 274 */,
 /* 275 */,
 /* 276 */,
 /* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */
+/* 278 */
 /*!**********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-col/props.js ***!
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-popup/props.js ***!
   \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -19319,44 +19274,338 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
   props: {
-    // 占父容器宽度的多少等分，总分为12份
-    span: {
+    // 是否展示弹窗
+    show: {
+      type: Boolean,
+      default: uni.$u.props.popup.show },
+
+    // 是否显示遮罩
+    overlay: {
+      type: Boolean,
+      default: uni.$u.props.popup.overlay },
+
+    // 弹出的方向，可选值为 top bottom right left center
+    mode: {
+      type: String,
+      default: uni.$u.props.popup.mode },
+
+    // 动画时长，单位ms
+    duration: {
       type: [String, Number],
-      default: uni.$u.props.col.span },
+      default: uni.$u.props.popup.duration },
 
-    // 指定栅格左侧的间隔数(总12栏)
-    offset: {
+    // 是否显示关闭图标
+    closeable: {
+      type: Boolean,
+      default: uni.$u.props.popup.closeable },
+
+    // 自定义遮罩的样式
+    overlayStyle: {
+      type: [Object, String],
+      default: uni.$u.props.popup.overlayStyle },
+
+    // 点击遮罩是否关闭弹窗
+    closeOnClickOverlay: {
+      type: Boolean,
+      default: uni.$u.props.popup.closeOnClickOverlay },
+
+    // 层级
+    zIndex: {
       type: [String, Number],
-      default: uni.$u.props.col.offset },
+      default: uni.$u.props.popup.zIndex },
 
-    // 水平排列方式，可选值为`start`(或`flex-start`)、`end`(或`flex-end`)、`center`、`around`(或`space-around`)、`between`(或`space-between`)
-    justify: {
-      type: String,
-      default: uni.$u.props.col.justify },
+    // 是否为iPhoneX留出底部安全距离
+    safeAreaInsetBottom: {
+      type: Boolean,
+      default: uni.$u.props.popup.safeAreaInsetBottom },
 
-    // 垂直对齐方式，可选值为top、center、bottom、stretch
-    align: {
-      type: String,
-      default: uni.$u.props.col.align },
+    // 是否留出顶部安全距离（状态栏高度）
+    safeAreaInsetTop: {
+      type: Boolean,
+      default: uni.$u.props.popup.safeAreaInsetTop },
 
-    // 文字对齐方式
-    textAlign: {
+    // 自定义关闭图标位置，top-left为左上角，top-right为右上角，bottom-left为左下角，bottom-right为右下角
+    closeIconPos: {
       type: String,
-      default: uni.$u.props.col.textAlign } } };exports.default = _default;
+      default: uni.$u.props.popup.closeIconPos },
+
+    // 是否显示圆角
+    round: {
+      type: [Boolean, String, Number],
+      default: uni.$u.props.popup.round },
+
+    // mode=center，也即中部弹出时，是否使用缩放模式
+    zoom: {
+      type: Boolean,
+      default: uni.$u.props.popup.zoom },
+
+    // 弹窗背景色，设置为transparent可去除白色背景
+    bgColor: {
+      type: String,
+      default: uni.$u.props.popup.bgColor },
+
+    // 遮罩的透明度，0-1之间
+    overlayOpacity: {
+      type: [Number, String],
+      default: uni.$u.props.popup.overlayOpacity } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
+/* 279 */,
+/* 280 */,
 /* 281 */,
 /* 282 */,
 /* 283 */,
 /* 284 */,
 /* 285 */,
-/* 286 */,
+/* 286 */
+/*!**********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-input/props.js ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 输入的值
+    value: {
+      type: [String, Number],
+      default: uni.$u.props.input.value },
+
+    // 输入框类型
+    // number-数字输入键盘，app-vue下可以输入浮点数，app-nvue和小程序平台下只能输入整数
+    // idcard-身份证输入键盘，微信、支付宝、百度、QQ小程序
+    // digit-带小数点的数字键盘，App的nvue页面、微信、支付宝、百度、头条、QQ小程序
+    // text-文本输入键盘
+    type: {
+      type: String,
+      default: uni.$u.props.input.type },
+
+    // 如果 textarea 是在一个 position:fixed 的区域，需要显示指定属性 fixed 为 true，
+    // 兼容性：微信小程序、百度小程序、字节跳动小程序、QQ小程序
+    fixed: {
+      type: Boolean,
+      default: uni.$u.props.input.fixed },
+
+    // 是否禁用输入框
+    disabled: {
+      type: Boolean,
+      default: uni.$u.props.input.disabled },
+
+    // 禁用状态时的背景色
+    disabledColor: {
+      type: String,
+      default: uni.$u.props.input.disabledColor },
+
+    // 是否显示清除控件
+    clearable: {
+      type: Boolean,
+      default: uni.$u.props.input.clearable },
+
+    // 是否密码类型
+    password: {
+      type: Boolean,
+      default: uni.$u.props.input.password },
+
+    // 最大输入长度，设置为 -1 的时候不限制最大长度
+    maxlength: {
+      type: [String, Number],
+      default: uni.$u.props.input.maxlength },
+
+    // 	输入框为空时的占位符
+    placeholder: {
+      type: String,
+      default: uni.$u.props.input.placeholder },
+
+    // 指定placeholder的样式类，注意页面或组件的style中写了scoped时，需要在类名前写/deep/
+    placeholderClass: {
+      type: String,
+      default: uni.$u.props.input.placeholderClass },
+
+    // 指定placeholder的样式
+    placeholderStyle: {
+      type: [String, Object],
+      default: uni.$u.props.input.placeholderStyle },
+
+    // 是否显示输入字数统计，只在 type ="text"或type ="textarea"时有效
+    showWordLimit: {
+      type: Boolean,
+      default: uni.$u.props.input.showWordLimit },
+
+    // 设置右下角按钮的文字，有效值：send|search|next|go|done，兼容性详见uni-app文档
+    // https://uniapp.dcloud.io/component/input
+    // https://uniapp.dcloud.io/component/textarea
+    confirmType: {
+      type: String,
+      default: uni.$u.props.input.confirmType },
+
+    // 点击键盘右下角按钮时是否保持键盘不收起，H5无效
+    confirmHold: {
+      type: Boolean,
+      default: uni.$u.props.input.confirmHold },
+
+    // focus时，点击页面的时候不收起键盘，微信小程序有效
+    holdKeyboard: {
+      type: Boolean,
+      default: uni.$u.props.input.holdKeyboard },
+
+    // 自动获取焦点
+    // 在 H5 平台能否聚焦以及软键盘是否跟随弹出，取决于当前浏览器本身的实现。nvue 页面不支持，需使用组件的 focus()、blur() 方法控制焦点
+    focus: {
+      type: Boolean,
+      default: uni.$u.props.input.focus },
+
+    // 键盘收起时，是否自动失去焦点，目前仅App3.0.0+有效
+    autoBlur: {
+      type: Boolean,
+      default: uni.$u.props.input.autoBlur },
+
+    // 是否去掉 iOS 下的默认内边距，仅微信小程序，且type=textarea时有效
+    disableDefaultPadding: {
+      type: Boolean,
+      default: uni.$u.props.input.disableDefaultPadding },
+
+    // 指定focus时光标的位置
+    cursor: {
+      type: [String, Number],
+      default: uni.$u.props.input.cursor },
+
+    // 输入框聚焦时底部与键盘的距离
+    cursorSpacing: {
+      type: [String, Number],
+      default: uni.$u.props.input.cursorSpacing },
+
+    // 光标起始位置，自动聚集时有效，需与selection-end搭配使用
+    selectionStart: {
+      type: [String, Number],
+      default: uni.$u.props.input.selectionStart },
+
+    // 光标结束位置，自动聚集时有效，需与selection-start搭配使用
+    selectionEnd: {
+      type: [String, Number],
+      default: uni.$u.props.input.selectionEnd },
+
+    // 键盘弹起时，是否自动上推页面
+    adjustPosition: {
+      type: Boolean,
+      default: uni.$u.props.input.adjustPosition },
+
+    // 输入框内容对齐方式，可选值为：left|center|right
+    inputAlign: {
+      type: String,
+      default: uni.$u.props.input.inputAlign },
+
+    // 输入框字体的大小
+    fontSize: {
+      type: [String, Number],
+      default: uni.$u.props.input.fontSize },
+
+    // 输入框字体颜色
+    color: {
+      type: String,
+      default: uni.$u.props.input.color },
+
+    // 输入框前置图标
+    prefixIcon: {
+      type: String,
+      default: uni.$u.props.input.prefixIcon },
+
+    // 前置图标样式，对象或字符串
+    prefixIconStyle: {
+      type: [String, Object],
+      default: uni.$u.props.input.prefixIconStyle },
+
+    // 输入框后置图标
+    suffixIcon: {
+      type: String,
+      default: uni.$u.props.input.suffixIcon },
+
+    // 后置图标样式，对象或字符串
+    suffixIconStyle: {
+      type: [String, Object],
+      default: uni.$u.props.input.suffixIconStyle },
+
+    // 边框类型，surround-四周边框，bottom-底部边框，none-无边框
+    border: {
+      type: String,
+      default: uni.$u.props.input.border },
+
+    // 是否只读，与disabled不同之处在于disabled会置灰组件，而readonly则不会
+    readonly: {
+      type: Boolean,
+      default: uni.$u.props.input.readonly },
+
+    // 输入框形状，circle-圆形，square-方形
+    shape: {
+      type: String,
+      default: uni.$u.props.input.shape },
+
+    // 用于处理或者过滤输入框内容的方法
+    formatter: {
+      type: [Function, null],
+      default: uni.$u.props.input.formatter } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
 /* 287 */,
-/* 288 */
-/*!*****************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/mixin/button.js ***!
-  \*****************************************************************************************/
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-code/props.js ***!
+  \*********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 倒计时总秒数
+    seconds: {
+      type: [String, Number],
+      default: uni.$u.props.code.seconds },
+
+    // 尚未开始时提示
+    startText: {
+      type: String,
+      default: uni.$u.props.code.startText },
+
+    // 正在倒计时中的提示
+    changeText: {
+      type: String,
+      default: uni.$u.props.code.changeText },
+
+    // 倒计时结束时的提示
+    endText: {
+      type: String,
+      default: uni.$u.props.code.endText },
+
+    // 是否在H5刷新或各端返回再进入时继续倒计时
+    keepRunning: {
+      type: Boolean,
+      default: uni.$u.props.code.keepRunning },
+
+    // 为了区分多个页面，或者一个页面多个倒计时组件本地存储的继续倒计时变了
+    uniqueKey: {
+      type: String,
+      default: uni.$u.props.code.uniqueKey } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */
+/*!***************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/mixin/button.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19374,10 +19623,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     openType: String } };exports.default = _default;
 
 /***/ }),
-/* 289 */
-/*!*******************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/mixin/openType.js ***!
-  \*******************************************************************************************/
+/* 301 */
+/*!*****************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/mixin/openType.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19407,10 +19656,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     } } };exports.default = _default;
 
 /***/ }),
-/* 290 */
-/*!*************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-button/props.js ***!
-  \*************************************************************************************************/
+/* 302 */
+/*!***********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-button/props.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19576,17 +19825,264 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 291 */,
-/* 292 */,
-/* 293 */,
-/* 294 */,
-/* 295 */,
-/* 296 */,
-/* 297 */,
-/* 298 */
-/*!*****************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/mp-html/parser.js ***!
-  \*****************************************************************************/
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */,
+/* 309 */,
+/* 310 */
+/*!**********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-empty/props.js ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 内置图标名称，或图片路径，建议绝对路径
+    icon: {
+      type: String,
+      default: uni.$u.props.empty.icon },
+
+    // 提示文字
+    text: {
+      type: String,
+      default: uni.$u.props.empty.text },
+
+    // 文字颜色
+    textColor: {
+      type: String,
+      default: uni.$u.props.empty.textColor },
+
+    // 文字大小
+    textSize: {
+      type: [String, Number],
+      default: uni.$u.props.empty.textSize },
+
+    // 图标的颜色
+    iconColor: {
+      type: String,
+      default: uni.$u.props.empty.iconColor },
+
+    // 图标的大小
+    iconSize: {
+      type: [String, Number],
+      default: uni.$u.props.empty.iconSize },
+
+    // 选择预置的图标类型
+    mode: {
+      type: String,
+      default: uni.$u.props.empty.mode },
+
+    //  图标宽度，单位px
+    width: {
+      type: [String, Number],
+      default: uni.$u.props.empty.width },
+
+    // 图标高度，单位px
+    height: {
+      type: [String, Number],
+      default: uni.$u.props.empty.height },
+
+    // 是否显示组件
+    show: {
+      type: Boolean,
+      default: uni.$u.props.empty.show },
+
+    // 组件距离上一个元素之间的距离，默认px单位
+    marginTop: {
+      type: [String, Number],
+      default: uni.$u.props.empty.marginTop } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 311 */,
+/* 312 */,
+/* 313 */,
+/* 314 */,
+/* 315 */,
+/* 316 */,
+/* 317 */,
+/* 318 */
+/*!*************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-loadmore/props.js ***!
+  \*************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 组件状态，loadmore-加载前的状态，loading-加载中的状态，nomore-没有更多的状态
+    status: {
+      type: String,
+      default: uni.$u.props.loadmore.status },
+
+    // 组件背景色
+    bgColor: {
+      type: String,
+      default: uni.$u.props.loadmore.bgColor },
+
+    // 是否显示加载中的图标
+    icon: {
+      type: Boolean,
+      default: uni.$u.props.loadmore.icon },
+
+    // 字体大小
+    fontSize: {
+      type: [String, Number],
+      default: uni.$u.props.loadmore.fontSize },
+
+    // 字体颜色
+    color: {
+      type: String,
+      default: uni.$u.props.loadmore.color },
+
+
+    // 加载中状态的图标，spinner-花朵状图标，circle-圆圈状，semicircle-半圆
+    loadingIcon: {
+      type: String,
+      default: uni.$u.props.loadmore.loadingIcon },
+
+    // 加载前的提示语
+    loadmoreText: {
+      type: String,
+      default: uni.$u.props.loadmore.loadmoreText },
+
+    // 加载中提示语
+    loadingText: {
+      type: String,
+      default: uni.$u.props.loadmore.loadingText },
+
+    // 没有更多的提示语
+    nomoreText: {
+      type: String,
+      default: uni.$u.props.loadmore.nomoreText },
+
+    // 在“没有更多”状态下，是否显示粗点
+    isDot: {
+      type: Boolean,
+      default: uni.$u.props.loadmore.isDot },
+
+    // 加载中图标的颜色
+    iconColor: {
+      type: String,
+      default: uni.$u.props.loadmore.iconColor },
+
+    // 上边距
+    marginTop: {
+      type: [String, Number],
+      default: uni.$u.props.loadmore.marginTop },
+
+    // 下边距
+    marginBottom: {
+      type: [String, Number],
+      default: uni.$u.props.loadmore.marginBottom },
+
+    // 高度，单位px
+    height: {
+      type: [String, Number],
+      default: uni.$u.props.loadmore.height },
+
+    // 是否显示左边分割线
+    line: {
+      type: Boolean,
+      default: uni.$u.props.loadmore.line } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 319 */,
+/* 320 */,
+/* 321 */,
+/* 322 */,
+/* 323 */,
+/* 324 */,
+/* 325 */,
+/* 326 */
+/*!********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-row/props.js ***!
+  \********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 给col添加间距，左右边距各占一半
+    gutter: {
+      type: [String, Number],
+      default: uni.$u.props.row.gutter },
+
+    // 水平排列方式，可选值为`start`(或`flex-start`)、`end`(或`flex-end`)、`center`、`around`(或`space-around`)、`between`(或`space-between`)
+    justify: {
+      type: String,
+      default: uni.$u.props.row.justify },
+
+    // 垂直对齐方式，可选值为top、center、bottom
+    align: {
+      type: String,
+      default: uni.$u.props.row.align } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 327 */,
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */
+/*!********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-col/props.js ***!
+  \********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 占父容器宽度的多少等分，总分为12份
+    span: {
+      type: [String, Number],
+      default: uni.$u.props.col.span },
+
+    // 指定栅格左侧的间隔数(总12栏)
+    offset: {
+      type: [String, Number],
+      default: uni.$u.props.col.offset },
+
+    // 水平排列方式，可选值为`start`(或`flex-start`)、`end`(或`flex-end`)、`center`、`around`(或`space-around`)、`between`(或`space-between`)
+    justify: {
+      type: String,
+      default: uni.$u.props.col.justify },
+
+    // 垂直对齐方式，可选值为top、center、bottom、stretch
+    align: {
+      type: String,
+      default: uni.$u.props.col.align },
+
+    // 文字对齐方式
+    textAlign: {
+      type: String,
+      default: uni.$u.props.col.textAlign } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 335 */,
+/* 336 */,
+/* 337 */,
+/* 338 */,
+/* 339 */,
+/* 340 */,
+/* 341 */,
+/* 342 */
+/*!***************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/mp-html/parser.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20936,10 +21432,10 @@ Parser;exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 299 */
-/*!*************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/mp-html/markdown/index.js ***!
-  \*************************************************************************************/
+/* 343 */
+/*!***********************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/mp-html/markdown/index.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20949,7 +21445,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-var _marked = _interopRequireDefault(__webpack_require__(/*! ./marked.min */ 300));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} /**
+var _marked = _interopRequireDefault(__webpack_require__(/*! ./marked.min */ 344));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} /**
                                                                                                                                                              * @fileoverview markdown 插件
                                                                                                                                                              * Include marked (https://github.com/markedjs/marked)
                                                                                                                                                              * Include github-markdown-css (https://github.com/sindresorhus/github-markdown-css)
@@ -20980,10 +21476,10 @@ Markdown.prototype.onParse = function (node, vm) {
 Markdown;exports.default = _default;
 
 /***/ }),
-/* 300 */
-/*!******************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/mp-html/markdown/marked.min.js ***!
-  \******************************************************************************************/
+/* 344 */
+/*!****************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/mp-html/markdown/marked.min.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20996,10 +21492,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 function t() {"use strict";function i(e, t) {for (var n = 0; n < t.length; n++) {var r = t[n];r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r);}}function s(e, t) {(null == t || t > e.length) && (t = e.length);for (var n = 0, r = new Array(t); n < t; n++) {r[n] = e[n];}return r;}function p(e, t) {var n;if ("undefined" != typeof Symbol && null != e[Symbol.iterator]) return (n = e[Symbol.iterator]()).next.bind(n);if (Array.isArray(e) || (n = function (e, t) {if (e) {if ("string" == typeof e) return s(e, t);var n = Object.prototype.toString.call(e).slice(8, -1);return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(e) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? s(e, t) : void 0;}}(e)) || t && e && "number" == typeof e.length) {n && (e = n);var r = 0;return function () {return r >= e.length ? { done: !0 } : { done: !1, value: e[r++] };};}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function n(e) {return c[e];}var e,t = (function (t) {function e() {return { baseUrl: null, breaks: !1, gfm: !0, headerIds: !0, headerPrefix: "", highlight: null, langPrefix: "language-", mangle: !0, pedantic: !1, renderer: null, sanitize: !1, sanitizer: null, silent: !1, smartLists: !1, smartypants: !1, tokenizer: null, walkTokens: null, xhtml: !1 };}t.exports = { defaults: e(), getDefaults: e, changeDefaults: function changeDefaults(e) {t.exports.defaults = e;} };}(e = { exports: {} }), e.exports),r = (t.defaults, t.getDefaults, t.changeDefaults, /[&<>"']/),l = /[&<>"']/g,a = /[<>"']|&(?!#?\w+;)/,o = /[<>"']|&(?!#?\w+;)/g,c = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" };var u = /&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/gi;function h(e) {return e.replace(u, function (e, t) {return "colon" === (t = t.toLowerCase()) ? ":" : "#" === t.charAt(0) ? "x" === t.charAt(1) ? String.fromCharCode(parseInt(t.substring(2), 16)) : String.fromCharCode(+t.substring(1)) : "";});}var g = /(^|[^\[])\^/g;var f = /[^\w:]/g,d = /^$|^[a-z][a-z0-9+.-]*:|^[?#]/i;var k = {},b = /^[^:]+:\/*[^/]*$/,m = /^([^:]+:)[\s\S]*$/,x = /^([^:]+:\/*[^/]*)[\s\S]*$/;function w(e, t) {k[" " + e] || (b.test(e) ? k[" " + e] = e + "/" : k[" " + e] = v(e, "/", !0));var n = -1 === (e = k[" " + e]).indexOf(":");return "//" === t.substring(0, 2) ? n ? t : e.replace(m, "$1") + t : "/" === t.charAt(0) ? n ? t : e.replace(x, "$1") + t : e + t;}function v(e, t, n) {var r = e.length;if (0 === r) return "";for (var i = 0; i < r;) {var s = e.charAt(r - i - 1);if (s !== t || n) {if (s === t || !n) break;i++;} else i++;}return e.substr(0, r - i);}var _ = function _(e, t) {if (t) {if (r.test(e)) return e.replace(l, n);} else if (a.test(e)) return e.replace(o, n);return e;},y = h,z = function z(n, e) {n = n.source || n, e = e || "";var r = { replace: function replace(e, t) {return t = (t = t.source || t).replace(g, "$1"), n = n.replace(e, t), r;}, getRegex: function getRegex() {return new RegExp(n, e);} };return r;},S = function S(e, t, n) {if (e) {var r;try {r = decodeURIComponent(h(n)).replace(f, "").toLowerCase();} catch (e) {return null;}if (0 === r.indexOf("javascript:") || 0 === r.indexOf("vbscript:") || 0 === r.indexOf("data:")) return null;}t && !d.test(n) && (n = w(t, n));try {n = encodeURI(n).replace(/%25/g, "%");} catch (e) {return null;}return n;},$ = { exec: function exec() {} },A = function A(e) {for (var t, n, r = 1; r < arguments.length; r++) {for (n in t = arguments[r]) {Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n]);}}return e;},R = function R(e, t) {var n = e.replace(/\|/g, function (e, t, n) {for (var r = !1, i = t; 0 <= --i && "\\" === n[i];) {r = !r;}return r ? "|" : " |";}).split(/ \|/),r = 0;if (n.length > t) n.splice(t);else for (; n.length < t;) {n.push("");}for (; r < n.length; r++) {n[r] = n[r].trim().replace(/\\\|/g, "|");}return n;},T = function T(e, t) {if (-1 === e.indexOf(t[1])) return -1;for (var n = e.length, r = 0, i = 0; i < n; i++) {if ("\\" === e[i]) i++;else if (e[i] === t[0]) r++;else if (e[i] === t[1] && --r < 0) return i;}return -1;},I = function I(e) {e && e.sanitize && !e.silent && console.warn("marked(): sanitize and sanitizer parameters are deprecated since version 0.7.0, should not be used and will be removed in the future. Read more here: https://marked.js.org/#/USING_ADVANCED.md#options");},Z = function Z(e, t) {if (t < 1) return "";for (var n = ""; 1 < t;) {1 & t && (n += e), t >>= 1, e += e;}return n + e;},q = t.defaults,O = v,C = R,U = _,j = T;function E(e, t, n) {var r = t.href,i = t.title ? U(t.title) : null,t = e[1].replace(/\\([\[\]])/g, "$1");return "!" !== e[0].charAt(0) ? { type: "link", raw: n, href: r, title: i, text: t } : { type: "image", raw: n, href: r, title: i, text: U(t) };}var D = function () {function e(e) {this.options = e || q;}var t = e.prototype;return t.space = function (e) {e = this.rules.block.newline.exec(e);if (e) return 1 < e[0].length ? { type: "space", raw: e[0] } : { raw: "\n" };}, t.code = function (e, t) {e = this.rules.block.code.exec(e);if (e) {t = t[t.length - 1];if (t && "paragraph" === t.type) return { raw: e[0], text: e[0].trimRight() };t = e[0].replace(/^ {4}/gm, "");return { type: "code", raw: e[0], codeBlockStyle: "indented", text: this.options.pedantic ? t : O(t, "\n") };}}, t.fences = function (e) {var t = this.rules.block.fences.exec(e);if (t) {var n = t[0],e = function (e, t) {if (null === (e = e.match(/^(\s+)(?:```)/))) return t;var n = e[1];return t.split("\n").map(function (e) {var t = e.match(/^\s+/);return null !== t && t[0].length >= n.length ? e.slice(n.length) : e;}).join("\n");}(n, t[3] || "");return { type: "code", raw: n, lang: t[2] && t[2].trim(), text: e };}}, t.heading = function (e) {e = this.rules.block.heading.exec(e);if (e) return { type: "heading", raw: e[0], depth: e[1].length, text: e[2] };}, t.nptable = function (e) {e = this.rules.block.nptable.exec(e);if (e) {var t = { type: "table", header: C(e[1].replace(/^ *| *\| *$/g, "")), align: e[2].replace(/^ *|\| *$/g, "").split(/ *\| */), cells: e[3] ? e[3].replace(/\n$/, "").split("\n") : [], raw: e[0] };if (t.header.length === t.align.length) {for (var n = t.align.length, r = 0; r < n; r++) {/^ *-+: *$/.test(t.align[r]) ? t.align[r] = "right" : /^ *:-+: *$/.test(t.align[r]) ? t.align[r] = "center" : /^ *:-+ *$/.test(t.align[r]) ? t.align[r] = "left" : t.align[r] = null;}for (n = t.cells.length, r = 0; r < n; r++) {t.cells[r] = C(t.cells[r], t.header.length);}return t;}}}, t.hr = function (e) {e = this.rules.block.hr.exec(e);if (e) return { type: "hr", raw: e[0] };}, t.blockquote = function (e) {var t = this.rules.block.blockquote.exec(e);if (t) {e = t[0].replace(/^ *> ?/gm, "");return { type: "blockquote", raw: t[0], text: e };}}, t.list = function (e) {e = this.rules.block.list.exec(e);if (e) {for (var t, n, r, i, s, l = e[0], a = e[2], o = 1 < a.length, c = { type: "list", raw: l, ordered: o, start: o ? +a.slice(0, -1) : "", loose: !1, items: [] }, u = e[0].match(this.rules.block.item), p = !1, h = u.length, g = this.rules.block.listItemStart.exec(u[0]), f = 0; f < h; f++) {if (l = t = u[f], f !== h - 1) {if ((r = this.rules.block.listItemStart.exec(u[f + 1]))[1].length > g[0].length || 3 < r[1].length) {u.splice(f, 2, u[f] + "\n" + u[f + 1]), f--, h--;continue;}(!this.options.pedantic || this.options.smartLists ? r[2][r[2].length - 1] !== a[a.length - 1] : o == (1 === r[2].length)) && (n = u.slice(f + 1).join("\n"), c.raw = c.raw.substring(0, c.raw.length - n.length), f = h - 1), g = r;}r = t.length, ~(t = t.replace(/^ *([*+-]|\d+[.)]) ?/, "")).indexOf("\n ") && (r -= t.length, t = this.options.pedantic ? t.replace(/^ {1,4}/gm, "") : t.replace(new RegExp("^ {1," + r + "}", "gm"), "")), r = p || /\n\n(?!\s*$)/.test(t), f !== h - 1 && (p = "\n" === t.charAt(t.length - 1), r = r || p), r && (c.loose = !0), this.options.gfm && (s = void 0, (i = /^\[[ xX]\] /.test(t)) && (s = " " !== t[1], t = t.replace(/^\[[ xX]\] +/, ""))), c.items.push({ type: "list_item", raw: l, task: i, checked: s, loose: r, text: t });}return c;}}, t.html = function (e) {e = this.rules.block.html.exec(e);if (e) return { type: this.options.sanitize ? "paragraph" : "html", raw: e[0], pre: !this.options.sanitizer && ("pre" === e[1] || "script" === e[1] || "style" === e[1]), text: this.options.sanitize ? this.options.sanitizer ? this.options.sanitizer(e[0]) : U(e[0]) : e[0] };}, t.def = function (e) {e = this.rules.block.def.exec(e);if (e) return e[3] && (e[3] = e[3].substring(1, e[3].length - 1)), { tag: e[1].toLowerCase().replace(/\s+/g, " "), raw: e[0], href: e[2], title: e[3] };}, t.table = function (e) {e = this.rules.block.table.exec(e);if (e) {var t = { type: "table", header: C(e[1].replace(/^ *| *\| *$/g, "")), align: e[2].replace(/^ *|\| *$/g, "").split(/ *\| */), cells: e[3] ? e[3].replace(/\n$/, "").split("\n") : [] };if (t.header.length === t.align.length) {t.raw = e[0];for (var n = t.align.length, r = 0; r < n; r++) {/^ *-+: *$/.test(t.align[r]) ? t.align[r] = "right" : /^ *:-+: *$/.test(t.align[r]) ? t.align[r] = "center" : /^ *:-+ *$/.test(t.align[r]) ? t.align[r] = "left" : t.align[r] = null;}for (n = t.cells.length, r = 0; r < n; r++) {t.cells[r] = C(t.cells[r].replace(/^ *\| *| *\| *$/g, ""), t.header.length);}return t;}}}, t.lheading = function (e) {e = this.rules.block.lheading.exec(e);if (e) return { type: "heading", raw: e[0], depth: "=" === e[2].charAt(0) ? 1 : 2, text: e[1] };}, t.paragraph = function (e) {e = this.rules.block.paragraph.exec(e);if (e) return { type: "paragraph", raw: e[0], text: "\n" === e[1].charAt(e[1].length - 1) ? e[1].slice(0, -1) : e[1] };}, t.text = function (e, t) {e = this.rules.block.text.exec(e);if (e) {t = t[t.length - 1];return t && "text" === t.type ? { raw: e[0], text: e[0] } : { type: "text", raw: e[0], text: e[0] };}}, t.escape = function (e) {e = this.rules.inline.escape.exec(e);if (e) return { type: "escape", raw: e[0], text: U(e[1]) };}, t.tag = function (e, t, n) {e = this.rules.inline.tag.exec(e);if (e) return !t && /^<a /i.test(e[0]) ? t = !0 : t && /^<\/a>/i.test(e[0]) && (t = !1), !n && /^<(pre|code|kbd|script)(\s|>)/i.test(e[0]) ? n = !0 : n && /^<\/(pre|code|kbd|script)(\s|>)/i.test(e[0]) && (n = !1), { type: this.options.sanitize ? "text" : "html", raw: e[0], inLink: t, inRawBlock: n, text: this.options.sanitize ? this.options.sanitizer ? this.options.sanitizer(e[0]) : U(e[0]) : e[0] };}, t.link = function (e) {var t = this.rules.inline.link.exec(e);if (t) {e = j(t[2], "()");-1 < e && (r = (0 === t[0].indexOf("!") ? 5 : 4) + t[1].length + e, t[2] = t[2].substring(0, e), t[0] = t[0].substring(0, r).trim(), t[3] = "");var n,e = t[2],r = "";return r = this.options.pedantic ? (n = /^([^'"]*[^\s])\s+(['"])(.*)\2/.exec(e), n ? (e = n[1], n[3]) : "") : t[3] ? t[3].slice(1, -1) : "", E(t, { href: (e = e.trim().replace(/^<([\s\S]*)>$/, "$1")) && e.replace(this.rules.inline._escapes, "$1"), title: r && r.replace(this.rules.inline._escapes, "$1") }, t[0]);}}, t.reflink = function (e, t) {if ((n = this.rules.inline.reflink.exec(e)) || (n = this.rules.inline.nolink.exec(e))) {e = (n[2] || n[1]).replace(/\s+/g, " ");if ((e = t[e.toLowerCase()]) && e.href) return E(n, e, n[0]);var n = n[0].charAt(0);return { type: "text", raw: n, text: n };}}, t.strong = function (e, t, n) {void 0 === n && (n = "");var r = this.rules.inline.strong.start.exec(e);if (r && (!r[1] || r[1] && ("" === n || this.rules.inline.punctuation.exec(n)))) {t = t.slice(-1 * e.length);var i,s = "**" === r[0] ? this.rules.inline.strong.endAst : this.rules.inline.strong.endUnd;for (s.lastIndex = 0; null != (r = s.exec(t));) {if (i = this.rules.inline.strong.middle.exec(t.slice(0, r.index + 3))) return { type: "strong", raw: e.slice(0, i[0].length), text: e.slice(2, i[0].length - 2) };}}}, t.em = function (e, t, n) {void 0 === n && (n = "");var r = this.rules.inline.em.start.exec(e);if (r && (!r[1] || r[1] && ("" === n || this.rules.inline.punctuation.exec(n)))) {t = t.slice(-1 * e.length);var i,s = "*" === r[0] ? this.rules.inline.em.endAst : this.rules.inline.em.endUnd;for (s.lastIndex = 0; null != (r = s.exec(t));) {if (i = this.rules.inline.em.middle.exec(t.slice(0, r.index + 2))) return { type: "em", raw: e.slice(0, i[0].length), text: e.slice(1, i[0].length - 1) };}}}, t.codespan = function (e) {var t = this.rules.inline.code.exec(e);if (t) {var n = t[2].replace(/\n/g, " "),r = /[^ ]/.test(n),e = n.startsWith(" ") && n.endsWith(" ");return r && e && (n = n.substring(1, n.length - 1)), n = U(n, !0), { type: "codespan", raw: t[0], text: n };}}, t.br = function (e) {e = this.rules.inline.br.exec(e);if (e) return { type: "br", raw: e[0] };}, t.del = function (e) {e = this.rules.inline.del.exec(e);if (e) return { type: "del", raw: e[0], text: e[2] };}, t.autolink = function (e, t) {e = this.rules.inline.autolink.exec(e);if (e) {var n,t = "@" === e[2] ? "mailto:" + (n = U(this.options.mangle ? t(e[1]) : e[1])) : n = U(e[1]);return { type: "link", raw: e[0], text: n, href: t, tokens: [{ type: "text", raw: n, text: n }] };}}, t.url = function (e, t) {var n, r, i, s;if (n = this.rules.inline.url.exec(e)) {if ("@" === n[2]) i = "mailto:" + (r = U(this.options.mangle ? t(n[0]) : n[0]));else {for (; s = n[0], n[0] = this.rules.inline._backpedal.exec(n[0])[0], s !== n[0];) {;}r = U(n[0]), i = "www." === n[1] ? "http://" + r : r;}return { type: "link", raw: n[0], text: r, href: i, tokens: [{ type: "text", raw: r, text: r }] };}}, t.inlineText = function (e, t, n) {e = this.rules.inline.text.exec(e);if (e) {n = t ? this.options.sanitize ? this.options.sanitizer ? this.options.sanitizer(e[0]) : U(e[0]) : e[0] : U(this.options.smartypants ? n(e[0]) : e[0]);return { type: "text", raw: e[0], text: n };}}, e;}(),R = $,T = z,$ = A,z = { newline: /^\n+/, code: /^( {4}[^\n]+\n*)+/, fences: /^ {0,3}(`{3,}(?=[^`\n]*\n)|~{3,})([^\n]*)\n(?:|([\s\S]*?)\n)(?: {0,3}\1[~`]* *(?:\n+|$)|$)/, hr: /^ {0,3}((?:- *){3,}|(?:_ *){3,}|(?:\* *){3,})(?:\n+|$)/, heading: /^ {0,3}(#{1,6}) +([^\n]*?)(?: +#+)? *(?:\n+|$)/, blockquote: /^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/, list: /^( {0,3})(bull) [\s\S]+?(?:hr|def|\n{2,}(?! )(?! {0,3}bull )\n*|\s*$)/, html: "^ {0,3}(?:<(script|pre|style)[\\s>][\\s\\S]*?(?:</\\1>[^\\n]*\\n+|$)|comment[^\\n]*(\\n+|$)|<\\?[\\s\\S]*?(?:\\?>\\n*|$)|<![A-Z][\\s\\S]*?(?:>\\n*|$)|<!\\[CDATA\\[[\\s\\S]*?(?:\\]\\]>\\n*|$)|</?(tag)(?: +|\\n|/?>)[\\s\\S]*?(?:\\n{2,}|$)|<(?!script|pre|style)([a-z][\\w-]*)(?:attribute)*? */?>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:\\n{2,}|$)|</(?!script|pre|style)[a-z][\\w-]*\\s*>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:\\n{2,}|$))", def: /^ {0,3}\[(label)\]: *\n? *<?([^\s>]+)>?(?:(?: +\n? *| *\n *)(title))? *(?:\n+|$)/, nptable: R, table: R, lheading: /^([^\n]+)\n {0,3}(=+|-+) *(?:\n+|$)/, _paragraph: /^([^\n]+(?:\n(?!hr|heading|lheading|blockquote|fences|list|html)[^\n]+)*)/, text: /^[^\n]+/, _label: /(?!\s*\])(?:\\[\[\]]|[^\[\]])+/, _title: /(?:"(?:\\"?|[^"\\])*"|'[^'\n]*(?:\n[^'\n]+)*\n?'|\([^()]*\))/ };z.def = T(z.def).replace("label", z._label).replace("title", z._title).getRegex(), z.bullet = /(?:[*+-]|\d{1,9}[.)])/, z.item = /^( *)(bull) ?[^\n]*(?:\n(?! *bull ?)[^\n]*)*/, z.item = T(z.item, "gm").replace(/bull/g, z.bullet).getRegex(), z.listItemStart = T(/^( *)(bull)/).replace("bull", z.bullet).getRegex(), z.list = T(z.list).replace(/bull/g, z.bullet).replace("hr", "\\n+(?=\\1?(?:(?:- *){3,}|(?:_ *){3,}|(?:\\* *){3,})(?:\\n+|$))").replace("def", "\\n+(?=" + z.def.source + ")").getRegex(), z._tag = "address|article|aside|base|basefont|blockquote|body|caption|center|col|colgroup|dd|details|dialog|dir|div|dl|dt|fieldset|figcaption|figure|footer|form|frame|frameset|h[1-6]|head|header|hr|html|iframe|legend|li|link|main|menu|menuitem|meta|nav|noframes|ol|optgroup|option|p|param|section|source|summary|table|tbody|td|tfoot|th|thead|title|tr|track|ul", z._comment = /<!--(?!-?>)[\s\S]*?(?:-->|$)/, z.html = T(z.html, "i").replace("comment", z._comment).replace("tag", z._tag).replace("attribute", / +[a-zA-Z:_][\w.:-]*(?: *= *"[^"\n]*"| *= *'[^'\n]*'| *= *[^\s"'=<>`]+)?/).getRegex(), z.paragraph = T(z._paragraph).replace("hr", z.hr).replace("heading", " {0,3}#{1,6} ").replace("|lheading", "").replace("blockquote", " {0,3}>").replace("fences", " {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list", " {0,3}(?:[*+-]|1[.)]) ").replace("html", "</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|!--)").replace("tag", z._tag).getRegex(), z.blockquote = T(z.blockquote).replace("paragraph", z.paragraph).getRegex(), z.normal = $({}, z), z.gfm = $({}, z.normal, { nptable: "^ *([^|\\n ].*\\|.*)\\n {0,3}([-:]+ *\\|[-| :]*)(?:\\n((?:(?!\\n|hr|heading|blockquote|code|fences|list|html).*(?:\\n|$))*)\\n*|$)", table: "^ *\\|(.+)\\n {0,3}\\|?( *[-:]+[-| :]*)(?:\\n *((?:(?!\\n|hr|heading|blockquote|code|fences|list|html).*(?:\\n|$))*)\\n*|$)" }), z.gfm.nptable = T(z.gfm.nptable).replace("hr", z.hr).replace("heading", " {0,3}#{1,6} ").replace("blockquote", " {0,3}>").replace("code", " {4}[^\\n]").replace("fences", " {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list", " {0,3}(?:[*+-]|1[.)]) ").replace("html", "</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|!--)").replace("tag", z._tag).getRegex(), z.gfm.table = T(z.gfm.table).replace("hr", z.hr).replace("heading", " {0,3}#{1,6} ").replace("blockquote", " {0,3}>").replace("code", " {4}[^\\n]").replace("fences", " {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list", " {0,3}(?:[*+-]|1[.)]) ").replace("html", "</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|!--)").replace("tag", z._tag).getRegex(), z.pedantic = $({}, z.normal, { html: T("^ *(?:comment *(?:\\n|\\s*$)|<(tag)[\\s\\S]+?</\\1> *(?:\\n{2,}|\\s*$)|<tag(?:\"[^\"]*\"|'[^']*'|\\s[^'\"/>\\s]*)*?/?> *(?:\\n{2,}|\\s*$))").replace("comment", z._comment).replace(/tag/g, "(?!(?:a|em|strong|small|s|cite|q|dfn|abbr|data|time|code|var|samp|kbd|sub|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo|span|br|wbr|ins|del|img)\\b)\\w+(?!:|[^\\w\\s@]*@)\\b").getRegex(), def: /^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +(["(][^\n]+[")]))? *(?:\n+|$)/, heading: /^ *(#{1,6}) *([^\n]+?) *(?:#+ *)?(?:\n+|$)/, fences: R, paragraph: T(z.normal._paragraph).replace("hr", z.hr).replace("heading", " *#{1,6} *[^\n]").replace("lheading", z.lheading).replace("blockquote", " {0,3}>").replace("|fences", "").replace("|list", "").replace("|html", "").getRegex() });R = { escape: /^\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/, autolink: /^<(scheme:[^\s\x00-\x1f<>]*|email)>/, url: R, tag: "^comment|^</[a-zA-Z][\\w:-]*\\s*>|^<[a-zA-Z][\\w-]*(?:attribute)*?\\s*/?>|^<\\?[\\s\\S]*?\\?>|^<![a-zA-Z]+\\s[\\s\\S]*?>|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>", link: /^!?\[(label)\]\(\s*(href)(?:\s+(title))?\s*\)/, reflink: /^!?\[(label)\]\[(?!\s*\])((?:\\[\[\]]?|[^\[\]\\])+)\]/, nolink: /^!?\[(?!\s*\])((?:\[[^\[\]]*\]|\\[\[\]]|[^\[\]])*)\](?:\[\])?/, reflinkSearch: "reflink|nolink(?!\\()", strong: { start: /^(?:(\*\*(?=[*punctuation]))|\*\*)(?![\s])|__/, middle: /^\*\*(?:(?:(?!overlapSkip)(?:[^*]|\\\*)|overlapSkip)|\*(?:(?!overlapSkip)(?:[^*]|\\\*)|overlapSkip)*?\*)+?\*\*$|^__(?![\s])((?:(?:(?!overlapSkip)(?:[^_]|\\_)|overlapSkip)|_(?:(?!overlapSkip)(?:[^_]|\\_)|overlapSkip)*?_)+?)__$/, endAst: /[^punctuation\s]\*\*(?!\*)|[punctuation]\*\*(?!\*)(?:(?=[punctuation_\s]|$))/, endUnd: /[^\s]__(?!_)(?:(?=[punctuation*\s])|$)/ }, em: { start: /^(?:(\*(?=[punctuation]))|\*)(?![*\s])|_/, middle: /^\*(?:(?:(?!overlapSkip)(?:[^*]|\\\*)|overlapSkip)|\*(?:(?!overlapSkip)(?:[^*]|\\\*)|overlapSkip)*?\*)+?\*$|^_(?![_\s])(?:(?:(?!overlapSkip)(?:[^_]|\\_)|overlapSkip)|_(?:(?!overlapSkip)(?:[^_]|\\_)|overlapSkip)*?_)+?_$/, endAst: /[^punctuation\s]\*(?!\*)|[punctuation]\*(?!\*)(?:(?=[punctuation_\s]|$))/, endUnd: /[^\s]_(?!_)(?:(?=[punctuation*\s])|$)/ }, code: /^(`+)([^`]|[^`][\s\S]*?[^`])\1(?!`)/, br: /^( {2,}|\\)\n(?!\s*$)/, del: R, text: /^(`+|[^`])(?:(?= {2,}\n)|[\s\S]*?(?:(?=[\\<!\[`*]|\b_|$)|[^ ](?= {2,}\n)))/, punctuation: /^([\s*punctuation])/, _punctuation: "!\"#$%&'()+\\-.,/:;<=>?@\\[\\]`^{|}~" };R.punctuation = T(R.punctuation).replace(/punctuation/g, R._punctuation).getRegex(), R._blockSkip = "\\[[^\\]]*?\\]\\([^\\)]*?\\)|`[^`]*?`|<[^>]*?>", R._overlapSkip = "__[^_]*?__|\\*\\*\\[^\\*\\]*?\\*\\*", R._comment = T(z._comment).replace("(?:--\x3e|$)", "--\x3e").getRegex(), R.em.start = T(R.em.start).replace(/punctuation/g, R._punctuation).getRegex(), R.em.middle = T(R.em.middle).replace(/punctuation/g, R._punctuation).replace(/overlapSkip/g, R._overlapSkip).getRegex(), R.em.endAst = T(R.em.endAst, "g").replace(/punctuation/g, R._punctuation).getRegex(), R.em.endUnd = T(R.em.endUnd, "g").replace(/punctuation/g, R._punctuation).getRegex(), R.strong.start = T(R.strong.start).replace(/punctuation/g, R._punctuation).getRegex(), R.strong.middle = T(R.strong.middle).replace(/punctuation/g, R._punctuation).replace(/overlapSkip/g, R._overlapSkip).getRegex(), R.strong.endAst = T(R.strong.endAst, "g").replace(/punctuation/g, R._punctuation).getRegex(), R.strong.endUnd = T(R.strong.endUnd, "g").replace(/punctuation/g, R._punctuation).getRegex(), R.blockSkip = T(R._blockSkip, "g").getRegex(), R.overlapSkip = T(R._overlapSkip, "g").getRegex(), R._escapes = /\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/g, R._scheme = /[a-zA-Z][a-zA-Z0-9+.-]{1,31}/, R._email = /[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+(@)[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+(?![-_])/, R.autolink = T(R.autolink).replace("scheme", R._scheme).replace("email", R._email).getRegex(), R._attribute = /\s+[a-zA-Z:_][\w.:-]*(?:\s*=\s*"[^"]*"|\s*=\s*'[^']*'|\s*=\s*[^\s"'=<>`]+)?/, R.tag = T(R.tag).replace("comment", R._comment).replace("attribute", R._attribute).getRegex(), R._label = /(?:\[(?:\\.|[^\[\]\\])*\]|\\.|`[^`]*`|[^\[\]\\`])*?/, R._href = /<(?:\\[<>]?|[^\s<>\\])*>|[^\s\x00-\x1f]*/, R._title = /"(?:\\"?|[^"\\])*"|'(?:\\'?|[^'\\])*'|\((?:\\\)?|[^)\\])*\)/, R.link = T(R.link).replace("label", R._label).replace("href", R._href).replace("title", R._title).getRegex(), R.reflink = T(R.reflink).replace("label", R._label).getRegex(), R.reflinkSearch = T(R.reflinkSearch, "g").replace("reflink", R.reflink).replace("nolink", R.nolink).getRegex(), R.normal = $({}, R), R.pedantic = $({}, R.normal, { strong: { start: /^__|\*\*/, middle: /^__(?=\S)([\s\S]*?\S)__(?!_)|^\*\*(?=\S)([\s\S]*?\S)\*\*(?!\*)/, endAst: /\*\*(?!\*)/g, endUnd: /__(?!_)/g }, em: { start: /^_|\*/, middle: /^()\*(?=\S)([\s\S]*?\S)\*(?!\*)|^_(?=\S)([\s\S]*?\S)_(?!_)/, endAst: /\*(?!\*)/g, endUnd: /_(?!_)/g }, link: T(/^!?\[(label)\]\((.*?)\)/).replace("label", R._label).getRegex(), reflink: T(/^!?\[(label)\]\s*\[([^\]]*)\]/).replace("label", R._label).getRegex() }), R.gfm = $({}, R.normal, { escape: T(R.escape).replace("])", "~|])").getRegex(), _extended_email: /[A-Za-z0-9._+-]+(@)[a-zA-Z0-9-_]+(?:\.[a-zA-Z0-9-_]*[a-zA-Z0-9])+(?![-_])/, url: /^((?:ftp|https?):\/\/|www\.)(?:[a-zA-Z0-9\-]+\.?)+[^\s<]*|^email/, _backpedal: /(?:[^?!.,:;*_~()&]+|\([^)]*\)|&(?![a-zA-Z0-9]+;$)|[?!.,:;*_~)]+(?!$))+/, del: /^(~~?)(?=[^\s~])([\s\S]*?[^\s~])\1(?=[^~]|$)/, text: /^([`~]+|[^`~])(?:(?= {2,}\n)|[\s\S]*?(?:(?=[\\<!\[`*~]|\b_|https?:\/\/|ftp:\/\/|www\.|$)|[^ ](?= {2,}\n)|[^a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-](?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@))|(?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@))/ }), R.gfm.url = T(R.gfm.url, "i").replace("email", R.gfm._extended_email).getRegex(), R.breaks = $({}, R.gfm, { br: T(R.br).replace("{2,}", "*").getRegex(), text: T(R.gfm.text).replace("\\b_", "\\b_| {2,}\\n").replace(/\{2,\}/g, "*").getRegex() });var R = { block: z, inline: R },P = t.defaults,L = R.block,N = R.inline,B = Z;function F(e) {return e.replace(/---/g, "—").replace(/--/g, "–").replace(/(^|[-\u2014/(\[{"\s])'/g, "$1‘").replace(/'/g, "’").replace(/(^|[-\u2014/(\[{\u2018\s])"/g, "$1“").replace(/"/g, "”").replace(/\.{3}/g, "…");}function M(e) {for (var t, n = "", r = e.length, i = 0; i < r; i++) {t = e.charCodeAt(i), .5 < Math.random() && (t = "x" + t.toString(16)), n += "&#" + t + ";";}return n;}var W = function () {function n(e) {this.tokens = [], this.tokens.links = Object.create(null), this.options = e || P, this.options.tokenizer = this.options.tokenizer || new D(), this.tokenizer = this.options.tokenizer, this.tokenizer.options = this.options;e = { block: L.normal, inline: N.normal };this.options.pedantic ? (e.block = L.pedantic, e.inline = N.pedantic) : this.options.gfm && (e.block = L.gfm, this.options.breaks ? e.inline = N.breaks : e.inline = N.gfm), this.tokenizer.rules = e;}n.lex = function (e, t) {return new n(t).lex(e);}, n.lexInline = function (e, t) {return new n(t).inlineTokens(e);};var e,t,r = n.prototype;return r.lex = function (e) {return e = e.replace(/\r\n|\r/g, "\n").replace(/\t/g, "    "), this.blockTokens(e, this.tokens, !0), this.inline(this.tokens), this.tokens;}, r.blockTokens = function (e, t, n) {var r, i, s, l;for (void 0 === t && (t = []), void 0 === n && (n = !0), e = e.replace(/^ +$/gm, ""); e;) {if (r = this.tokenizer.space(e)) e = e.substring(r.raw.length), r.type && t.push(r);else if (r = this.tokenizer.code(e, t)) e = e.substring(r.raw.length), r.type ? t.push(r) : ((l = t[t.length - 1]).raw += "\n" + r.raw, l.text += "\n" + r.text);else if (r = this.tokenizer.fences(e)) e = e.substring(r.raw.length), t.push(r);else if (r = this.tokenizer.heading(e)) e = e.substring(r.raw.length), t.push(r);else if (r = this.tokenizer.nptable(e)) e = e.substring(r.raw.length), t.push(r);else if (r = this.tokenizer.hr(e)) e = e.substring(r.raw.length), t.push(r);else if (r = this.tokenizer.blockquote(e)) e = e.substring(r.raw.length), r.tokens = this.blockTokens(r.text, [], n), t.push(r);else if (r = this.tokenizer.list(e)) {for (e = e.substring(r.raw.length), s = r.items.length, i = 0; i < s; i++) {r.items[i].tokens = this.blockTokens(r.items[i].text, [], !1);}t.push(r);} else if (r = this.tokenizer.html(e)) e = e.substring(r.raw.length), t.push(r);else if (n && (r = this.tokenizer.def(e))) e = e.substring(r.raw.length), this.tokens.links[r.tag] || (this.tokens.links[r.tag] = { href: r.href, title: r.title });else if (r = this.tokenizer.table(e)) e = e.substring(r.raw.length), t.push(r);else if (r = this.tokenizer.lheading(e)) e = e.substring(r.raw.length), t.push(r);else if (n && (r = this.tokenizer.paragraph(e))) e = e.substring(r.raw.length), t.push(r);else if (r = this.tokenizer.text(e, t)) e = e.substring(r.raw.length), r.type ? t.push(r) : ((l = t[t.length - 1]).raw += "\n" + r.raw, l.text += "\n" + r.text);else if (e) {var a = "Infinite loop on byte: " + e.charCodeAt(0);if (this.options.silent) {console.error(a);break;}throw new Error(a);}}return t;}, r.inline = function (e) {for (var t, n, r, i, s, l = e.length, a = 0; a < l; a++) {switch ((s = e[a]).type) {case "paragraph":case "text":case "heading":s.tokens = [], this.inlineTokens(s.text, s.tokens);break;case "table":for (s.tokens = { header: [], cells: [] }, r = s.header.length, t = 0; t < r; t++) {s.tokens.header[t] = [], this.inlineTokens(s.header[t], s.tokens.header[t]);}for (r = s.cells.length, t = 0; t < r; t++) {for (i = s.cells[t], s.tokens.cells[t] = [], n = 0; n < i.length; n++) {s.tokens.cells[t][n] = [], this.inlineTokens(i[n], s.tokens.cells[t][n]);}}break;case "blockquote":this.inline(s.tokens);break;case "list":for (r = s.items.length, t = 0; t < r; t++) {this.inline(s.items[t].tokens);}}}return e;}, r.inlineTokens = function (e, t, n, r) {var i;void 0 === t && (t = []), void 0 === n && (n = !1), void 0 === r && (r = !1);var s,l,a,o = e;if (this.tokens.links) {var c = Object.keys(this.tokens.links);if (0 < c.length) for (; null != (s = this.tokenizer.rules.inline.reflinkSearch.exec(o));) {c.includes(s[0].slice(s[0].lastIndexOf("[") + 1, -1)) && (o = o.slice(0, s.index) + "[" + B("a", s[0].length - 2) + "]" + o.slice(this.tokenizer.rules.inline.reflinkSearch.lastIndex));}}for (; null != (s = this.tokenizer.rules.inline.blockSkip.exec(o));) {o = o.slice(0, s.index) + "[" + B("a", s[0].length - 2) + "]" + o.slice(this.tokenizer.rules.inline.blockSkip.lastIndex);}for (; e;) {if (l || (a = ""), l = !1, i = this.tokenizer.escape(e)) e = e.substring(i.raw.length), t.push(i);else if (i = this.tokenizer.tag(e, n, r)) e = e.substring(i.raw.length), n = i.inLink, r = i.inRawBlock, t.push(i);else if (i = this.tokenizer.link(e)) e = e.substring(i.raw.length), "link" === i.type && (i.tokens = this.inlineTokens(i.text, [], !0, r)), t.push(i);else if (i = this.tokenizer.reflink(e, this.tokens.links)) e = e.substring(i.raw.length), "link" === i.type && (i.tokens = this.inlineTokens(i.text, [], !0, r)), t.push(i);else if (i = this.tokenizer.strong(e, o, a)) e = e.substring(i.raw.length), i.tokens = this.inlineTokens(i.text, [], n, r), t.push(i);else if (i = this.tokenizer.em(e, o, a)) e = e.substring(i.raw.length), i.tokens = this.inlineTokens(i.text, [], n, r), t.push(i);else if (i = this.tokenizer.codespan(e)) e = e.substring(i.raw.length), t.push(i);else if (i = this.tokenizer.br(e)) e = e.substring(i.raw.length), t.push(i);else if (i = this.tokenizer.del(e)) e = e.substring(i.raw.length), i.tokens = this.inlineTokens(i.text, [], n, r), t.push(i);else if (i = this.tokenizer.autolink(e, M)) e = e.substring(i.raw.length), t.push(i);else if (n || !(i = this.tokenizer.url(e, M))) {if (i = this.tokenizer.inlineText(e, r, F)) e = e.substring(i.raw.length), a = i.raw.slice(-1), l = !0, t.push(i);else if (e) {var u = "Infinite loop on byte: " + e.charCodeAt(0);if (this.options.silent) {console.error(u);break;}throw new Error(u);}} else e = e.substring(i.raw.length), t.push(i);}return t;}, e = n, t = [{ key: "rules", get: function get() {return { block: L, inline: N };} }], (r = null) && i(e.prototype, r), t && i(e, t), n;}(),X = t.defaults,G = S,V = _,H = function () {function e(e) {this.options = e || X;}var t = e.prototype;return t.code = function (e, t, n) {var r = (t || "").match(/\S*/)[0];return !this.options.highlight || null != (t = this.options.highlight(e, r)) && t !== e && (n = !0, e = t), r ? '<pre><code class="' + this.options.langPrefix + V(r, !0) + '">' + (n ? e : V(e, !0)) + "</code></pre>\n" : "<pre><code>" + (n ? e : V(e, !0)) + "</code></pre>\n";}, t.blockquote = function (e) {return "<blockquote>\n" + e + "</blockquote>\n";}, t.html = function (e) {return e;}, t.heading = function (e, t, n, r) {return this.options.headerIds ? "<h" + t + ' id="' + this.options.headerPrefix + r.slug(n) + '">' + e + "</h" + t + ">\n" : "<h" + t + ">" + e + "</h" + t + ">\n";}, t.hr = function () {return this.options.xhtml ? "<hr/>\n" : "<hr>\n";}, t.list = function (e, t, n) {var r = t ? "ol" : "ul";return "<" + r + (t && 1 !== n ? ' start="' + n + '"' : "") + ">\n" + e + "</" + r + ">\n";}, t.listitem = function (e) {return "<li>" + e + "</li>\n";}, t.checkbox = function (e) {return "<input " + (e ? 'checked="" ' : "") + 'disabled="" type="checkbox"' + (this.options.xhtml ? " /" : "") + "> ";}, t.paragraph = function (e) {return "<p>" + e + "</p>\n";}, t.table = function (e, t) {return "<table>\n<thead>\n" + e + "</thead>\n" + (t = t && "<tbody>" + t + "</tbody>") + "</table>\n";}, t.tablerow = function (e) {return "<tr>\n" + e + "</tr>\n";}, t.tablecell = function (e, t) {var n = t.header ? "th" : "td";return (t.align ? "<" + n + ' align="' + t.align + '">' : "<" + n + ">") + e + "</" + n + ">\n";}, t.strong = function (e) {return "<strong>" + e + "</strong>";}, t.em = function (e) {return "<em>" + e + "</em>";}, t.codespan = function (e) {return "<code>" + e + "</code>";}, t.br = function () {return this.options.xhtml ? "<br/>" : "<br>";}, t.del = function (e) {return "<del>" + e + "</del>";}, t.link = function (e, t, n) {if (null === (e = G(this.options.sanitize, this.options.baseUrl, e))) return n;e = '<a href="' + V(e) + '"';return t && (e += ' title="' + t + '"'), e += ">" + n + "</a>";}, t.image = function (e, t, n) {if (null === (e = G(this.options.sanitize, this.options.baseUrl, e))) return n;n = '<img src="' + e + '" alt="' + n + '"';return t && (n += ' title="' + t + '"'), n += this.options.xhtml ? "/>" : ">";}, t.text = function (e) {return e;}, e;}(),J = function () {function e() {}var t = e.prototype;return t.strong = function (e) {return e;}, t.em = function (e) {return e;}, t.codespan = function (e) {return e;}, t.del = function (e) {return e;}, t.html = function (e) {return e;}, t.text = function (e) {return e;}, t.link = function (e, t, n) {return "" + n;}, t.image = function (e, t, n) {return "" + n;}, t.br = function () {return "";}, e;}(),K = function () {function e() {this.seen = {};}var t = e.prototype;return t.serialize = function (e) {return e.toLowerCase().trim().replace(/<[!\/a-z].*?>/gi, "").replace(/[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,./:;<=>?@[\]^`{|}~]/g, "").replace(/\s/g, "-");}, t.getNextSafeSlug = function (e, t) {var n = e,r = 0;if (this.seen.hasOwnProperty(n)) for (r = this.seen[e]; n = e + "-" + ++r, this.seen.hasOwnProperty(n);) {;}return t || (this.seen[e] = r, this.seen[n] = 0), n;}, t.slug = function (e, t) {void 0 === t && (t = {});var n = this.serialize(e);return this.getNextSafeSlug(n, t.dryrun);}, e;}(),Q = t.defaults,Y = y,ee = function () {function n(e) {this.options = e || Q, this.options.renderer = this.options.renderer || new H(), this.renderer = this.options.renderer, this.renderer.options = this.options, this.textRenderer = new J(), this.slugger = new K();}n.parse = function (e, t) {return new n(t).parse(e);}, n.parseInline = function (e, t) {return new n(t).parseInline(e);};var e = n.prototype;return e.parse = function (e, t) {void 0 === t && (t = !0);for (var n, r, i, s, l, a, o, c, u, p, h, g, f, d, k, b = "", m = e.length, x = 0; x < m; x++) {switch ((c = e[x]).type) {case "space":continue;case "hr":b += this.renderer.hr();continue;case "heading":b += this.renderer.heading(this.parseInline(c.tokens), c.depth, Y(this.parseInline(c.tokens, this.textRenderer)), this.slugger);continue;case "code":b += this.renderer.code(c.text, c.lang, c.escaped);continue;case "table":for (a = u = "", i = c.header.length, n = 0; n < i; n++) {a += this.renderer.tablecell(this.parseInline(c.tokens.header[n]), { header: !0, align: c.align[n] });}for (u += this.renderer.tablerow(a), o = "", i = c.cells.length, n = 0; n < i; n++) {for (a = "", s = (l = c.tokens.cells[n]).length, r = 0; r < s; r++) {a += this.renderer.tablecell(this.parseInline(l[r]), { header: !1, align: c.align[r] });}o += this.renderer.tablerow(a);}b += this.renderer.table(u, o);continue;case "blockquote":o = this.parse(c.tokens), b += this.renderer.blockquote(o);continue;case "list":for (u = c.ordered, w = c.start, p = c.loose, i = c.items.length, o = "", n = 0; n < i; n++) {f = (g = c.items[n]).checked, d = g.task, h = "", g.task && (k = this.renderer.checkbox(f), p ? 0 < g.tokens.length && "text" === g.tokens[0].type ? (g.tokens[0].text = k + " " + g.tokens[0].text, g.tokens[0].tokens && 0 < g.tokens[0].tokens.length && "text" === g.tokens[0].tokens[0].type && (g.tokens[0].tokens[0].text = k + " " + g.tokens[0].tokens[0].text)) : g.tokens.unshift({ type: "text", text: k }) : h += k), h += this.parse(g.tokens, p), o += this.renderer.listitem(h, d, f);}b += this.renderer.list(o, u, w);continue;case "html":b += this.renderer.html(c.text);continue;case "paragraph":b += this.renderer.paragraph(this.parseInline(c.tokens));continue;case "text":for (o = c.tokens ? this.parseInline(c.tokens) : c.text; x + 1 < m && "text" === e[x + 1].type;) {o += "\n" + ((c = e[++x]).tokens ? this.parseInline(c.tokens) : c.text);}b += t ? this.renderer.paragraph(o) : o;continue;default:var w = 'Token with "' + c.type + '" type was not found.';if (this.options.silent) return void console.error(w);throw new Error(w);}}return b;}, e.parseInline = function (e, t) {t = t || this.renderer;for (var n, r = "", i = e.length, s = 0; s < i; s++) {switch ((n = e[s]).type) {case "escape":r += t.text(n.text);break;case "html":r += t.html(n.text);break;case "link":r += t.link(n.href, n.title, this.parseInline(n.tokens, t));break;case "image":r += t.image(n.href, n.title, n.text);break;case "strong":r += t.strong(this.parseInline(n.tokens, t));break;case "em":r += t.em(this.parseInline(n.tokens, t));break;case "codespan":r += t.codespan(n.text);break;case "br":r += t.br();break;case "del":r += t.del(this.parseInline(n.tokens, t));break;case "text":r += t.text(n.text);break;default:var l = 'Token with "' + n.type + '" type was not found.';if (this.options.silent) return void console.error(l);throw new Error(l);}}return r;}, n;}(),te = A,ne = I,re = _,_ = t.getDefaults,ie = t.changeDefaults,t = t.defaults;function se(e, n, r) {if (null == e) throw new Error("marked(): input parameter is undefined or null");if ("string" != typeof e) throw new Error("marked(): input parameter is of type " + Object.prototype.toString.call(e) + ", string expected");if ("function" == typeof n && (r = n, n = null), n = te({}, se.defaults, n || {}), ne(n), r) {var i,s = n.highlight;try {i = W.lex(e, n);} catch (e) {return r(e);}var l = function l(t) {var e;if (!t) try {e = ee.parse(i, n);} catch (e) {t = e;}return n.highlight = s, t ? r(t) : r(null, e);};if (!s || s.length < 3) return l();if (delete n.highlight, !i.length) return l();var a = 0;return se.walkTokens(i, function (n) {"code" === n.type && (a++, setTimeout(function () {s(n.text, n.lang, function (e, t) {return e ? l(e) : (null != t && t !== n.text && (n.text = t, n.escaped = !0), void (0 === --a && l()));});}, 0));}), void (0 === a && l());}try {var t = W.lex(e, n);return n.walkTokens && se.walkTokens(t, n.walkTokens), ee.parse(t, n);} catch (e) {if (e.message += "\nPlease report this to https://github.com/markedjs/marked.", n.silent) return "<p>An error occurred:</p><pre>" + re(e.message + "", !0) + "</pre>";throw e;}}return se.options = se.setOptions = function (e) {return te(se.defaults, e), ie(se.defaults), se;}, se.getDefaults = _, se.defaults = t, se.use = function (a) {var t,n = te({}, a);a.renderer && function () {var e,l = se.defaults.renderer || new H();for (e in a.renderer) {!function (i) {var s = l[i];l[i] = function () {for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) {t[n] = arguments[n];}var r = a.renderer[i].apply(l, t);return !1 === r && (r = s.apply(l, t)), r;};}(e);}n.renderer = l;}(), a.tokenizer && function () {var e,l = se.defaults.tokenizer || new D();for (e in a.tokenizer) {!function (i) {var s = l[i];l[i] = function () {for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) {t[n] = arguments[n];}var r = a.tokenizer[i].apply(l, t);return !1 === r && (r = s.apply(l, t)), r;};}(e);}n.tokenizer = l;}(), a.walkTokens && (t = se.defaults.walkTokens, n.walkTokens = function (e) {a.walkTokens(e), t && t(e);}), se.setOptions(n);}, se.walkTokens = function (e, t) {for (var n, r = p(e); !(n = r()).done;) {var i = n.value;switch (t(i), i.type) {case "table":for (var s = p(i.tokens.header); !(l = s()).done;) {var l = l.value;se.walkTokens(l, t);}for (var a, o = p(i.tokens.cells); !(a = o()).done;) {for (var c = p(a.value); !(u = c()).done;) {var u = u.value;se.walkTokens(u, t);}}break;case "list":se.walkTokens(i.items, t);break;default:i.tokens && se.walkTokens(i.tokens, t);}}}, se.parseInline = function (e, t) {if (null == e) throw new Error("marked.parseInline(): input parameter is undefined or null");if ("string" != typeof e) throw new Error("marked.parseInline(): input parameter is of type " + Object.prototype.toString.call(e) + ", string expected");t = te({}, se.defaults, t || {}), ne(t);try {var n = W.lexInline(e, t);return t.walkTokens && se.walkTokens(n, t.walkTokens), ee.parseInline(n, t);} catch (e) {if (e.message += "\nPlease report this to https://github.com/markedjs/marked.", t.silent) return "<p>An error occurred:</p><pre>" + re(e.message + "", !0) + "</pre>";throw e;}}, se.Parser = ee, se.parser = ee.parse, se.Renderer = H, se.TextRenderer = J, se.Lexer = W, se.lexer = W.lex, se.Tokenizer = D, se.Slugger = K, se.parse = se;};var _default = t();exports.default = _default;
 
 /***/ }),
-/* 301 */
-/*!**********************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/mp-html/audio/index.js ***!
-  \**********************************************************************************/
+/* 345 */
+/*!********************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/mp-html/audio/index.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21007,7 +21503,7 @@ function t() {"use strict";function i(e, t) {for (var n = 0; n < t.length; n++) 
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
 
-var _context = _interopRequireDefault(__webpack_require__(/*! ./context */ 302));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} /**
+var _context = _interopRequireDefault(__webpack_require__(/*! ./context */ 346));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} /**
                                                                                                                                                            * @fileoverview audio 插件
                                                                                                                                                            */var index = 0;
 function Audio(vm) {
@@ -21040,10 +21536,10 @@ Audio.prototype.onLoad = function () {var _this = this;
 Audio;exports.default = _default;
 
 /***/ }),
-/* 302 */
-/*!************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/mp-html/audio/context.js ***!
-  \************************************************************************************/
+/* 346 */
+/*!**********************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/mp-html/audio/context.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21056,10 +21552,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   remove: function remove(id) {ctx[id] = undefined;} };exports.default = _default;
 
 /***/ }),
-/* 303 */
-/*!**********************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/mp-html/emoji/index.js ***!
-  \**********************************************************************************/
+/* 347 */
+/*!********************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/mp-html/emoji/index.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21269,10 +21765,10 @@ Emoji.prototype.onGetContent = function (content) {
 Emoji;exports.default = _default;
 
 /***/ }),
-/* 304 */
-/*!**************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/mp-html/highlight/index.js ***!
-  \**************************************************************************************/
+/* 348 */
+/*!************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/mp-html/highlight/index.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21281,9 +21777,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-var _prism = _interopRequireDefault(__webpack_require__(/*! ./prism.min */ 305));
-var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 306));
-var _parser = _interopRequireDefault(__webpack_require__(/*! ../parser */ 298));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} /**
+var _prism = _interopRequireDefault(__webpack_require__(/*! ./prism.min */ 349));
+var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 350));
+var _parser = _interopRequireDefault(__webpack_require__(/*! ../parser */ 342));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} /**
                                                                                                                                                           * @fileoverview highlight 插件
                                                                                                                                                           * Include prismjs (https://prismjs.com)
                                                                                                                                                           */function Highlight(vm) {this.vm = vm;
@@ -21375,10 +21871,10 @@ Highlight.prototype.onParse = function (node, vm) {
 Highlight;exports.default = _default;
 
 /***/ }),
-/* 305 */
-/*!******************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/mp-html/highlight/prism.min.js ***!
-  \******************************************************************************************/
+/* 349 */
+/*!****************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/mp-html/highlight/prism.min.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21402,13 +21898,13 @@ Prism.languages.sql = { comment: { pattern: /(^|[^\\])(?:\/\*[\s\S]*?\*\/|(?:--|
 Prism.languages.plsql = Prism.languages.extend("sql", { comment: { pattern: /\/\*[\s\S]*?\*\/|--.*/, greedy: !0 }, keyword: /\b(?:A|ACCESSIBLE|ADD|AGENT|AGGREGATE|ALL|ALTER|AND|ANY|ARRAY|AS|ASC|AT|ATTRIBUTE|AUTHID|AVG|BEGIN|BETWEEN|BFILE_BASE|BINARY|BLOB_BASE|BLOCK|BODY|BOTH|BOUND|BULK|BY|BYTE|C|CALL|CALLING|CASCADE|CASE|CHAR|CHARACTER|CHARSET|CHARSETFORM|CHARSETID|CHAR_BASE|CHECK|CLOB_BASE|CLONE|CLOSE|CLUSTER|CLUSTERS|COLAUTH|COLLECT|COLUMNS|COMMENT|COMMIT|COMMITTED|COMPILED|COMPRESS|CONNECT|CONSTANT|CONSTRUCTOR|CONTEXT|CONTINUE|CONVERT|COUNT|CRASH|CREATE|CREDENTIAL|CURRENT|CURSOR|CUSTOMDATUM|DANGLING|DATA|DATE|DATE_BASE|DAY|DECLARE|DEFAULT|DEFINE|DELETE|DESC|DETERMINISTIC|DIRECTORY|DISTINCT|DOUBLE|DROP|DURATION|ELEMENT|ELSE|ELSIF|EMPTY|END|ESCAPE|EXCEPT|EXCEPTION|EXCEPTIONS|EXCLUSIVE|EXECUTE|EXISTS|EXIT|EXTERNAL|FETCH|FINAL|FIRST|FIXED|FLOAT|FOR|FORALL|FORCE|FROM|FUNCTION|GENERAL|GOTO|GRANT|GROUP|HASH|HAVING|HEAP|HIDDEN|HOUR|IDENTIFIED|IF|IMMEDIATE|IMMUTABLE|IN|INCLUDING|INDEX|INDEXES|INDICATOR|INDICES|INFINITE|INSERT|INSTANTIABLE|INT|INTERFACE|INTERSECT|INTERVAL|INTO|INVALIDATE|IS|ISOLATION|JAVA|LANGUAGE|LARGE|LEADING|LENGTH|LEVEL|LIBRARY|LIKE|LIKE2|LIKE4|LIKEC|LIMIT|LIMITED|LOCAL|LOCK|LONG|LOOP|MAP|MAX|MAXLEN|MEMBER|MERGE|MIN|MINUS|MINUTE|MOD|MODE|MODIFY|MONTH|MULTISET|MUTABLE|NAME|NAN|NATIONAL|NATIVE|NCHAR|NEW|NOCOMPRESS|NOCOPY|NOT|NOWAIT|NULL|NUMBER_BASE|OBJECT|OCICOLL|OCIDATE|OCIDATETIME|OCIDURATION|OCIINTERVAL|OCILOBLOCATOR|OCINUMBER|OCIRAW|OCIREF|OCIREFCURSOR|OCIROWID|OCISTRING|OCITYPE|OF|OLD|ON|ONLY|OPAQUE|OPEN|OPERATOR|OPTION|OR|ORACLE|ORADATA|ORDER|ORGANIZATION|ORLANY|ORLVARY|OTHERS|OUT|OVERLAPS|OVERRIDING|PACKAGE|PARALLEL_ENABLE|PARAMETER|PARAMETERS|PARENT|PARTITION|PASCAL|PERSISTABLE|PIPE|PIPELINED|PLUGGABLE|POLYMORPHIC|PRAGMA|PRECISION|PRIOR|PRIVATE|PROCEDURE|PUBLIC|RAISE|RANGE|RAW|READ|RECORD|REF|REFERENCE|RELIES_ON|REM|REMAINDER|RENAME|RESOURCE|RESULT|RESULT_CACHE|RETURN|RETURNING|REVERSE|REVOKE|ROLLBACK|ROW|SAMPLE|SAVE|SAVEPOINT|SB1|SB2|SB4|SECOND|SEGMENT|SELECT|SELF|SEPARATE|SEQUENCE|SERIALIZABLE|SET|SHARE|SHORT|SIZE|SIZE_T|SOME|SPARSE|SQL|SQLCODE|SQLDATA|SQLNAME|SQLSTATE|STANDARD|START|STATIC|STDDEV|STORED|STRING|STRUCT|STYLE|SUBMULTISET|SUBPARTITION|SUBSTITUTABLE|SUBTYPE|SUM|SYNONYM|TABAUTH|TABLE|TDO|THE|THEN|TIME|TIMESTAMP|TIMEZONE_ABBR|TIMEZONE_HOUR|TIMEZONE_MINUTE|TIMEZONE_REGION|TO|TRAILING|TRANSACTION|TRANSACTIONAL|TRUSTED|TYPE|UB1|UB2|UB4|UNDER|UNION|UNIQUE|UNPLUG|UNSIGNED|UNTRUSTED|UPDATE|USE|USING|VALIST|VALUE|VALUES|VARIABLE|VARIANCE|VARRAY|VARYING|VIEW|VIEWS|VOID|WHEN|WHERE|WHILE|WITH|WORK|WRAPPED|WRITE|YEAR|ZONE)\b/i, operator: /:=?|=>|[<>^~!]=|\.\.|\|\||\*\*|[-+*/%<>=@]/ }), Prism.languages.insertBefore("plsql", "operator", { label: { pattern: /<<\s*\w+\s*>>/, alias: "symbol" } });
 !function (e) {var i = e.languages.powershell = { comment: [{ pattern: /(^|[^`])<#[\s\S]*?#>/, lookbehind: !0 }, { pattern: /(^|[^`])#.*/, lookbehind: !0 }], string: [{ pattern: /"(?:`[\s\S]|[^`"])*"/, greedy: !0, inside: null }, { pattern: /'(?:[^']|'')*'/, greedy: !0 }], namespace: /\[[a-z](?:\[(?:\[[^\]]*\]|[^\[\]])*\]|[^\[\]])*\]/i, boolean: /\$(?:false|true)\b/i, variable: /\$\w+\b/, function: [/\b(?:Add|Approve|Assert|Backup|Block|Checkpoint|Clear|Close|Compare|Complete|Compress|Confirm|Connect|Convert|ConvertFrom|ConvertTo|Copy|Debug|Deny|Disable|Disconnect|Dismount|Edit|Enable|Enter|Exit|Expand|Export|Find|ForEach|Format|Get|Grant|Group|Hide|Import|Initialize|Install|Invoke|Join|Limit|Lock|Measure|Merge|Move|New|Open|Optimize|Out|Ping|Pop|Protect|Publish|Push|Read|Receive|Redo|Register|Remove|Rename|Repair|Request|Reset|Resize|Resolve|Restart|Restore|Resume|Revoke|Save|Search|Select|Send|Set|Show|Skip|Sort|Split|Start|Step|Stop|Submit|Suspend|Switch|Sync|Tee|Test|Trace|Unblock|Undo|Uninstall|Unlock|Unprotect|Unpublish|Unregister|Update|Use|Wait|Watch|Where|Write)-[a-z]+\b/i, /\b(?:ac|cat|chdir|clc|cli|clp|clv|compare|copy|cp|cpi|cpp|cvpa|dbp|del|diff|dir|ebp|echo|epal|epcsv|epsn|erase|fc|fl|ft|fw|gal|gbp|gc|gci|gcs|gdr|gi|gl|gm|gp|gps|group|gsv|gu|gv|gwmi|iex|ii|ipal|ipcsv|ipsn|irm|iwmi|iwr|kill|lp|ls|measure|mi|mount|move|mp|mv|nal|ndr|ni|nv|ogv|popd|ps|pushd|pwd|rbp|rd|rdr|ren|ri|rm|rmdir|rni|rnp|rp|rv|rvpa|rwmi|sal|saps|sasv|sbp|sc|select|set|shcm|si|sl|sleep|sls|sort|sp|spps|spsv|start|sv|swmi|tee|trcm|type|write)\b/i], keyword: /\b(?:Begin|Break|Catch|Class|Continue|Data|Define|Do|DynamicParam|Else|ElseIf|End|Exit|Filter|Finally|For|ForEach|From|Function|If|InlineScript|Parallel|Param|Process|Return|Sequence|Switch|Throw|Trap|Try|Until|Using|Var|While|Workflow)\b/i, operator: { pattern: /(^|\W)(?:!|-(?:b?(?:and|x?or)|as|(?:Not)?(?:Contains|In|Like|Match)|eq|ge|gt|is(?:Not)?|Join|le|lt|ne|not|Replace|sh[lr])\b|-[-=]?|\+[+=]?|[*\/%]=?)/i, lookbehind: !0 }, punctuation: /[|{}[\];(),.]/ };i.string[0].inside = { function: { pattern: /(^|[^`])\$\((?:\$\([^\r\n()]*\)|(?!\$\()[^\r\n)])*\)/, lookbehind: !0, inside: i }, boolean: i.boolean, variable: i.variable };}(Prism);
 Prism.languages.python = { comment: { pattern: /(^|[^\\])#.*/, lookbehind: !0, greedy: !0 }, "string-interpolation": { pattern: /(?:f|fr|rf)(?:("""|''')[\s\S]*?\1|("|')(?:\\.|(?!\2)[^\\\r\n])*\2)/i, greedy: !0, inside: { interpolation: { pattern: /((?:^|[^{])(?:\{\{)*)\{(?!\{)(?:[^{}]|\{(?!\{)(?:[^{}]|\{(?!\{)(?:[^{}])+\})+\})+\}/, lookbehind: !0, inside: { "format-spec": { pattern: /(:)[^:(){}]+(?=\}$)/, lookbehind: !0 }, "conversion-option": { pattern: /![sra](?=[:}]$)/, alias: "punctuation" }, rest: null } }, string: /[\s\S]+/ } }, "triple-quoted-string": { pattern: /(?:[rub]|br|rb)?("""|''')[\s\S]*?\1/i, greedy: !0, alias: "string" }, string: { pattern: /(?:[rub]|br|rb)?("|')(?:\\.|(?!\1)[^\\\r\n])*\1/i, greedy: !0 }, function: { pattern: /((?:^|\s)def[ \t]+)[a-zA-Z_]\w*(?=\s*\()/g, lookbehind: !0 }, "class-name": { pattern: /(\bclass\s+)\w+/i, lookbehind: !0 }, decorator: { pattern: /(^[\t ]*)@\w+(?:\.\w+)*/m, lookbehind: !0, alias: ["annotation", "punctuation"], inside: { punctuation: /\./ } }, keyword: /\b(?:_(?=\s*:)|and|as|assert|async|await|break|case|class|continue|def|del|elif|else|except|exec|finally|for|from|global|if|import|in|is|lambda|match|nonlocal|not|or|pass|print|raise|return|try|while|with|yield)\b/, builtin: /\b(?:__import__|abs|all|any|apply|ascii|basestring|bin|bool|buffer|bytearray|bytes|callable|chr|classmethod|cmp|coerce|compile|complex|delattr|dict|dir|divmod|enumerate|eval|execfile|file|filter|float|format|frozenset|getattr|globals|hasattr|hash|help|hex|id|input|int|intern|isinstance|issubclass|iter|len|list|locals|long|map|max|memoryview|min|next|object|oct|open|ord|pow|property|range|raw_input|reduce|reload|repr|reversed|round|set|setattr|slice|sorted|staticmethod|str|sum|super|tuple|type|unichr|unicode|vars|xrange|zip)\b/, boolean: /\b(?:False|None|True)\b/, number: /\b0(?:b(?:_?[01])+|o(?:_?[0-7])+|x(?:_?[a-f0-9])+)\b|(?:\b\d+(?:_\d+)*(?:\.(?:\d+(?:_\d+)*)?)?|\B\.\d+(?:_\d+)*)(?:e[+-]?\d+(?:_\d+)*)?j?(?!\w)/i, operator: /[-+%=]=?|!=|:=|\*\*?=?|\/\/?=?|<[<=>]?|>[=>]?|[&|^~]/, punctuation: /[{}[\];(),.:]/ }, Prism.languages.python["string-interpolation"].inside.interpolation.inside.rest = Prism.languages.python, Prism.languages.py = Prism.languages.python;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../hubuder/HBuilder/HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 2)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../hubuder/HBuilder/HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 2)))
 
 /***/ }),
-/* 306 */
-/*!***************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/mp-html/highlight/config.js ***!
-  \***************************************************************************************/
+/* 350 */
+/*!*************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/mp-html/highlight/config.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21420,10 +21916,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 };exports.default = _default;
 
 /***/ }),
-/* 307 */
-/*!**********************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/mp-html/style/index.js ***!
-  \**********************************************************************************/
+/* 351 */
+/*!********************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/mp-html/style/index.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21432,7 +21928,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-var _parser = _interopRequireDefault(__webpack_require__(/*! ./parser */ 308));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} /**
+var _parser = _interopRequireDefault(__webpack_require__(/*! ./parser */ 352));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} /**
                                                                                                                                                          * @fileoverview style 插件
                                                                                                                                                          */
 function Style() {
@@ -21559,10 +22055,10 @@ function match(node, keys) {
 Style;exports.default = _default;
 
 /***/ }),
-/* 308 */
-/*!***********************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/mp-html/style/parser.js ***!
-  \***********************************************************************************/
+/* 352 */
+/*!*********************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/mp-html/style/parser.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21744,10 +22240,10 @@ Lexer.prototype.val = function (c) {
 Parser;exports.default = _default;
 
 /***/ }),
-/* 309 */
-/*!**************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/mp-html/img-cache/index.js ***!
-  \**************************************************************************************/
+/* 353 */
+/*!************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/mp-html/img-cache/index.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21893,10 +22389,10 @@ ImgCache;exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 310 */
-/*!*************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/mp-html/editable/index.js ***!
-  \*************************************************************************************/
+/* 354 */
+/*!***********************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/mp-html/editable/index.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21904,8 +22400,8 @@ ImgCache;exports.default = _default;
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
 
-var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 311));
-var _parser = _interopRequireDefault(__webpack_require__(/*! ../parser */ 298));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} /**
+var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 355));
+var _parser = _interopRequireDefault(__webpack_require__(/*! ../parser */ 342));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} /**
                                                                                                                                                           * @fileoverview editable 插件
                                                                                                                                                           */function Editable(vm) {var _this = this;
   this.vm = vm;
@@ -22435,10 +22931,10 @@ Editable.prototype.onParse = function (node) {
 Editable;exports.default = _default;
 
 /***/ }),
-/* 311 */
-/*!**************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/mp-html/editable/config.js ***!
-  \**************************************************************************************/
+/* 355 */
+/*!************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/mp-html/editable/config.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22455,17 +22951,17 @@ var _default = {
   media: ['封面', '循环', '自动播放', '上移', '下移', '删除'] };exports.default = _default;
 
 /***/ }),
-/* 312 */,
-/* 313 */,
-/* 314 */,
-/* 315 */,
-/* 316 */,
-/* 317 */,
-/* 318 */,
-/* 319 */
-/*!*************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-avatar/props.js ***!
-  \*************************************************************************************************/
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */,
+/* 363 */
+/*!***********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-avatar/props.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22548,114 +23044,17 @@ var _default = {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 320 */,
-/* 321 */,
-/* 322 */,
-/* 323 */,
-/* 324 */,
-/* 325 */,
-/* 326 */,
-/* 327 */
-/*!************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-image/props.js ***!
-  \************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
-  props: {
-    // 图片地址
-    src: {
-      type: String,
-      default: uni.$u.props.image.src },
-
-    // 裁剪模式
-    mode: {
-      type: String,
-      default: uni.$u.props.image.mode },
-
-    // 宽度，单位任意
-    width: {
-      type: [String, Number],
-      default: uni.$u.props.image.width },
-
-    // 高度，单位任意
-    height: {
-      type: [String, Number],
-      default: uni.$u.props.image.height },
-
-    // 图片形状，circle-圆形，square-方形
-    shape: {
-      type: String,
-      default: uni.$u.props.image.shape },
-
-    // 圆角，单位任意
-    radius: {
-      type: [String, Number],
-      default: uni.$u.props.image.radius },
-
-    // 是否懒加载，微信小程序、App、百度小程序、字节跳动小程序
-    lazyLoad: {
-      type: Boolean,
-      default: uni.$u.props.image.lazyLoad },
-
-    // 开启长按图片显示识别微信小程序码菜单
-    showMenuByLongpress: {
-      type: Boolean,
-      default: uni.$u.props.image.showMenuByLongpress },
-
-    // 加载中的图标，或者小图片
-    loadingIcon: {
-      type: String,
-      default: uni.$u.props.image.loadingIcon },
-
-    // 加载失败的图标，或者小图片
-    errorIcon: {
-      type: String,
-      default: uni.$u.props.image.errorIcon },
-
-    // 是否显示加载中的图标或者自定义的slot
-    showLoading: {
-      type: Boolean,
-      default: uni.$u.props.image.showLoading },
-
-    // 是否显示加载错误的图标或者自定义的slot
-    showError: {
-      type: Boolean,
-      default: uni.$u.props.image.showError },
-
-    // 是否需要淡入效果
-    fade: {
-      type: Boolean,
-      default: uni.$u.props.image.fade },
-
-    // 只支持网络资源，只对微信小程序有效
-    webp: {
-      type: Boolean,
-      default: uni.$u.props.image.webp },
-
-    // 过渡时间，单位ms
-    duration: {
-      type: [String, Number],
-      default: uni.$u.props.image.duration },
-
-    // 背景颜色，用于深色页面加载图片时，为了和背景色融合
-    bgColor: {
-      type: String,
-      default: uni.$u.props.image.bgColor } } };exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-/* 328 */,
-/* 329 */,
-/* 330 */,
-/* 331 */,
-/* 332 */,
-/* 333 */
-/*!*******************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-action-sheet/props.js ***!
-  \*******************************************************************************************************/
+/* 364 */,
+/* 365 */,
+/* 366 */,
+/* 367 */,
+/* 368 */,
+/* 369 */,
+/* 370 */,
+/* 371 */
+/*!*****************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-action-sheet/props.js ***!
+  \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22714,170 +23113,17 @@ var _default = {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 334 */,
-/* 335 */,
-/* 336 */,
-/* 337 */,
-/* 338 */,
-/* 339 */,
-/* 340 */,
-/* 341 */
-/*!************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-popup/props.js ***!
-  \************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
-  props: {
-    // 是否展示弹窗
-    show: {
-      type: Boolean,
-      default: uni.$u.props.popup.show },
-
-    // 是否显示遮罩
-    overlay: {
-      type: Boolean,
-      default: uni.$u.props.popup.overlay },
-
-    // 弹出的方向，可选值为 top bottom right left center
-    mode: {
-      type: String,
-      default: uni.$u.props.popup.mode },
-
-    // 动画时长，单位ms
-    duration: {
-      type: [String, Number],
-      default: uni.$u.props.popup.duration },
-
-    // 是否显示关闭图标
-    closeable: {
-      type: Boolean,
-      default: uni.$u.props.popup.closeable },
-
-    // 自定义遮罩的样式
-    overlayStyle: {
-      type: [Object, String],
-      default: uni.$u.props.popup.overlayStyle },
-
-    // 点击遮罩是否关闭弹窗
-    closeOnClickOverlay: {
-      type: Boolean,
-      default: uni.$u.props.popup.closeOnClickOverlay },
-
-    // 层级
-    zIndex: {
-      type: [String, Number],
-      default: uni.$u.props.popup.zIndex },
-
-    // 是否为iPhoneX留出底部安全距离
-    safeAreaInsetBottom: {
-      type: Boolean,
-      default: uni.$u.props.popup.safeAreaInsetBottom },
-
-    // 是否留出顶部安全距离（状态栏高度）
-    safeAreaInsetTop: {
-      type: Boolean,
-      default: uni.$u.props.popup.safeAreaInsetTop },
-
-    // 自定义关闭图标位置，top-left为左上角，top-right为右上角，bottom-left为左下角，bottom-right为右下角
-    closeIconPos: {
-      type: String,
-      default: uni.$u.props.popup.closeIconPos },
-
-    // 是否显示圆角
-    round: {
-      type: [Boolean, String, Number],
-      default: uni.$u.props.popup.round },
-
-    // mode=center，也即中部弹出时，是否使用缩放模式
-    zoom: {
-      type: Boolean,
-      default: uni.$u.props.popup.zoom },
-
-    // 弹窗背景色，设置为transparent可去除白色背景
-    bgColor: {
-      type: String,
-      default: uni.$u.props.popup.bgColor },
-
-    // 遮罩的透明度，0-1之间
-    overlayOpacity: {
-      type: [Number, String],
-      default: uni.$u.props.popup.overlayOpacity } } };exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-/* 342 */,
-/* 343 */,
-/* 344 */,
-/* 345 */,
-/* 346 */,
-/* 347 */,
-/* 348 */,
-/* 349 */
-/*!**************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-divider/props.js ***!
-  \**************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
-  props: {
-    // 是否虚线
-    dashed: {
-      type: Boolean,
-      default: uni.$u.props.divider.dashed },
-
-    // 是否细线
-    hairline: {
-      type: Boolean,
-      default: uni.$u.props.divider.hairline },
-
-    // 是否以点替代文字，优先于text字段起作用
-    dot: {
-      type: Boolean,
-      default: uni.$u.props.divider.dot },
-
-    // 内容文本的位置，left-左边，center-中间，right-右边
-    textPosition: {
-      type: String,
-      default: uni.$u.props.divider.textPosition },
-
-    // 文本内容
-    text: {
-      type: [String, Number],
-      default: uni.$u.props.divider.text },
-
-    // 文本大小
-    textSize: {
-      type: [String, Number],
-      default: uni.$u.props.divider.textSize },
-
-    // 文本颜色
-    textColor: {
-      type: String,
-      default: uni.$u.props.divider.textColor },
-
-    // 线条颜色
-    lineColor: {
-      type: String,
-      default: uni.$u.props.divider.lineColor } } };exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-/* 350 */,
-/* 351 */,
-/* 352 */,
-/* 353 */,
-/* 354 */,
-/* 355 */,
-/* 356 */,
-/* 357 */
-/*!************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-modal/props.js ***!
-  \************************************************************************************************/
+/* 372 */,
+/* 373 */,
+/* 374 */,
+/* 375 */,
+/* 376 */,
+/* 377 */,
+/* 378 */,
+/* 379 */
+/*!**********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-modal/props.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22966,17 +23212,17 @@ var _default = {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 358 */,
-/* 359 */,
-/* 360 */,
-/* 361 */,
-/* 362 */,
-/* 363 */,
-/* 364 */,
-/* 365 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-form/props.js ***!
-  \***********************************************************************************************/
+/* 380 */,
+/* 381 */,
+/* 382 */,
+/* 383 */,
+/* 384 */,
+/* 385 */,
+/* 386 */,
+/* 387 */
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-form/props.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23026,15 +23272,15 @@ var _default = {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 366 */,
-/* 367 */,
-/* 368 */,
-/* 369 */,
-/* 370 */,
-/* 371 */
-/*!****************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-form-item/props.js ***!
-  \****************************************************************************************************/
+/* 388 */,
+/* 389 */,
+/* 390 */,
+/* 391 */,
+/* 392 */,
+/* 393 */
+/*!**************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-form-item/props.js ***!
+  \**************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23082,212 +23328,17 @@ var _default = {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 372 */,
-/* 373 */,
-/* 374 */,
-/* 375 */,
-/* 376 */,
-/* 377 */,
-/* 378 */,
-/* 379 */
-/*!************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-input/props.js ***!
-  \************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
-  props: {
-    // 输入的值
-    value: {
-      type: [String, Number],
-      default: uni.$u.props.input.value },
-
-    // 输入框类型
-    // number-数字输入键盘，app-vue下可以输入浮点数，app-nvue和小程序平台下只能输入整数
-    // idcard-身份证输入键盘，微信、支付宝、百度、QQ小程序
-    // digit-带小数点的数字键盘，App的nvue页面、微信、支付宝、百度、头条、QQ小程序
-    // text-文本输入键盘
-    type: {
-      type: String,
-      default: uni.$u.props.input.type },
-
-    // 如果 textarea 是在一个 position:fixed 的区域，需要显示指定属性 fixed 为 true，
-    // 兼容性：微信小程序、百度小程序、字节跳动小程序、QQ小程序
-    fixed: {
-      type: Boolean,
-      default: uni.$u.props.input.fixed },
-
-    // 是否禁用输入框
-    disabled: {
-      type: Boolean,
-      default: uni.$u.props.input.disabled },
-
-    // 禁用状态时的背景色
-    disabledColor: {
-      type: String,
-      default: uni.$u.props.input.disabledColor },
-
-    // 是否显示清除控件
-    clearable: {
-      type: Boolean,
-      default: uni.$u.props.input.clearable },
-
-    // 是否密码类型
-    password: {
-      type: Boolean,
-      default: uni.$u.props.input.password },
-
-    // 最大输入长度，设置为 -1 的时候不限制最大长度
-    maxlength: {
-      type: [String, Number],
-      default: uni.$u.props.input.maxlength },
-
-    // 	输入框为空时的占位符
-    placeholder: {
-      type: String,
-      default: uni.$u.props.input.placeholder },
-
-    // 指定placeholder的样式类，注意页面或组件的style中写了scoped时，需要在类名前写/deep/
-    placeholderClass: {
-      type: String,
-      default: uni.$u.props.input.placeholderClass },
-
-    // 指定placeholder的样式
-    placeholderStyle: {
-      type: [String, Object],
-      default: uni.$u.props.input.placeholderStyle },
-
-    // 是否显示输入字数统计，只在 type ="text"或type ="textarea"时有效
-    showWordLimit: {
-      type: Boolean,
-      default: uni.$u.props.input.showWordLimit },
-
-    // 设置右下角按钮的文字，有效值：send|search|next|go|done，兼容性详见uni-app文档
-    // https://uniapp.dcloud.io/component/input
-    // https://uniapp.dcloud.io/component/textarea
-    confirmType: {
-      type: String,
-      default: uni.$u.props.input.confirmType },
-
-    // 点击键盘右下角按钮时是否保持键盘不收起，H5无效
-    confirmHold: {
-      type: Boolean,
-      default: uni.$u.props.input.confirmHold },
-
-    // focus时，点击页面的时候不收起键盘，微信小程序有效
-    holdKeyboard: {
-      type: Boolean,
-      default: uni.$u.props.input.holdKeyboard },
-
-    // 自动获取焦点
-    // 在 H5 平台能否聚焦以及软键盘是否跟随弹出，取决于当前浏览器本身的实现。nvue 页面不支持，需使用组件的 focus()、blur() 方法控制焦点
-    focus: {
-      type: Boolean,
-      default: uni.$u.props.input.focus },
-
-    // 键盘收起时，是否自动失去焦点，目前仅App3.0.0+有效
-    autoBlur: {
-      type: Boolean,
-      default: uni.$u.props.input.autoBlur },
-
-    // 是否去掉 iOS 下的默认内边距，仅微信小程序，且type=textarea时有效
-    disableDefaultPadding: {
-      type: Boolean,
-      default: uni.$u.props.input.disableDefaultPadding },
-
-    // 指定focus时光标的位置
-    cursor: {
-      type: [String, Number],
-      default: uni.$u.props.input.cursor },
-
-    // 输入框聚焦时底部与键盘的距离
-    cursorSpacing: {
-      type: [String, Number],
-      default: uni.$u.props.input.cursorSpacing },
-
-    // 光标起始位置，自动聚集时有效，需与selection-end搭配使用
-    selectionStart: {
-      type: [String, Number],
-      default: uni.$u.props.input.selectionStart },
-
-    // 光标结束位置，自动聚集时有效，需与selection-start搭配使用
-    selectionEnd: {
-      type: [String, Number],
-      default: uni.$u.props.input.selectionEnd },
-
-    // 键盘弹起时，是否自动上推页面
-    adjustPosition: {
-      type: Boolean,
-      default: uni.$u.props.input.adjustPosition },
-
-    // 输入框内容对齐方式，可选值为：left|center|right
-    inputAlign: {
-      type: String,
-      default: uni.$u.props.input.inputAlign },
-
-    // 输入框字体的大小
-    fontSize: {
-      type: [String, Number],
-      default: uni.$u.props.input.fontSize },
-
-    // 输入框字体颜色
-    color: {
-      type: String,
-      default: uni.$u.props.input.color },
-
-    // 输入框前置图标
-    prefixIcon: {
-      type: String,
-      default: uni.$u.props.input.prefixIcon },
-
-    // 前置图标样式，对象或字符串
-    prefixIconStyle: {
-      type: [String, Object],
-      default: uni.$u.props.input.prefixIconStyle },
-
-    // 输入框后置图标
-    suffixIcon: {
-      type: String,
-      default: uni.$u.props.input.suffixIcon },
-
-    // 后置图标样式，对象或字符串
-    suffixIconStyle: {
-      type: [String, Object],
-      default: uni.$u.props.input.suffixIconStyle },
-
-    // 边框类型，surround-四周边框，bottom-底部边框，none-无边框
-    border: {
-      type: String,
-      default: uni.$u.props.input.border },
-
-    // 是否只读，与disabled不同之处在于disabled会置灰组件，而readonly则不会
-    readonly: {
-      type: Boolean,
-      default: uni.$u.props.input.readonly },
-
-    // 输入框形状，circle-圆形，square-方形
-    shape: {
-      type: String,
-      default: uni.$u.props.input.shape },
-
-    // 用于处理或者过滤输入框内容的方法
-    formatter: {
-      type: [Function, null],
-      default: uni.$u.props.input.formatter } } };exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-/* 380 */,
-/* 381 */,
-/* 382 */,
-/* 383 */,
-/* 384 */,
-/* 385 */
-/*!********************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-column-notice/props.js ***!
-  \********************************************************************************************************/
+/* 394 */,
+/* 395 */,
+/* 396 */,
+/* 397 */,
+/* 398 */,
+/* 399 */,
+/* 400 */,
+/* 401 */
+/*!******************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-column-notice/props.js ***!
+  \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23347,17 +23398,17 @@ var _default = {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 386 */,
-/* 387 */,
-/* 388 */,
-/* 389 */,
-/* 390 */,
-/* 391 */,
-/* 392 */,
-/* 393 */
-/*!*****************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-row-notice/props.js ***!
-  \*****************************************************************************************************/
+/* 402 */,
+/* 403 */,
+/* 404 */,
+/* 405 */,
+/* 406 */,
+/* 407 */,
+/* 408 */,
+/* 409 */
+/*!***************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-row-notice/props.js ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23401,17 +23452,17 @@ var _default = {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 394 */,
-/* 395 */,
-/* 396 */,
-/* 397 */,
-/* 398 */,
-/* 399 */,
-/* 400 */,
-/* 401 */
-/*!*****************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-transition/props.js ***!
-  \*****************************************************************************************************/
+/* 410 */,
+/* 411 */,
+/* 412 */,
+/* 413 */,
+/* 414 */,
+/* 415 */,
+/* 416 */,
+/* 417 */
+/*!***************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-transition/props.js ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23440,10 +23491,10 @@ var _default = {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 402 */
-/*!**********************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-transition/transition.js ***!
-  \**********************************************************************************************************/
+/* 418 */
+/*!********************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-transition/transition.js ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23451,7 +23502,7 @@ var _default = {
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 37));
 
 
-var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 403));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};} // 定义一个一定时间后自动成功的promise，让调用nextTick方法处，进入下一个then方法
+var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 419));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};} // 定义一个一定时间后自动成功的promise，让调用nextTick方法处，进入下一个then方法
 var nextTick = function nextTick() {return new Promise(function (resolve) {return setTimeout(resolve, 1000 / 50);});}; // nvue动画模块实现细节抽离在外部文件
 
 // 定义类名，通过给元素动态切换类名，赋予元素一定的css动画样式
@@ -23605,10 +23656,10 @@ var getClassNames = function getClassNames(name) {return {
     } } };exports.default = _default;
 
 /***/ }),
-/* 403 */
-/*!************************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-transition/nvue.ani-map.js ***!
-  \************************************************************************************************************/
+/* 419 */
+/*!**********************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-transition/nvue.ani-map.js ***!
+  \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23681,17 +23732,24 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     'leave-to': { opacity: 0, transform: 'scale(0.95)' } } };exports.default = _default;
 
 /***/ }),
-/* 404 */,
-/* 405 */,
-/* 406 */,
-/* 407 */,
-/* 408 */,
-/* 409 */,
-/* 410 */,
-/* 411 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-line/props.js ***!
-  \***********************************************************************************************/
+/* 420 */,
+/* 421 */,
+/* 422 */,
+/* 423 */,
+/* 424 */,
+/* 425 */,
+/* 426 */,
+/* 427 */,
+/* 428 */,
+/* 429 */,
+/* 430 */,
+/* 431 */,
+/* 432 */,
+/* 433 */,
+/* 434 */
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-line/props.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23729,17 +23787,105 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 412 */,
-/* 413 */,
-/* 414 */,
-/* 415 */,
-/* 416 */,
-/* 417 */,
-/* 418 */,
-/* 419 */
-/*!*******************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-loading-icon/props.js ***!
-  \*******************************************************************************************************/
+/* 435 */,
+/* 436 */,
+/* 437 */,
+/* 438 */,
+/* 439 */,
+/* 440 */,
+/* 441 */,
+/* 442 */
+/*!************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-overlay/props.js ***!
+  \************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 是否显示遮罩
+    show: {
+      type: Boolean,
+      default: uni.$u.props.overlay.show },
+
+    // 层级z-index
+    zIndex: {
+      type: [String, Number],
+      default: uni.$u.props.overlay.zIndex },
+
+    // 遮罩的过渡时间，单位为ms
+    duration: {
+      type: [String, Number],
+      default: uni.$u.props.overlay.duration },
+
+    // 不透明度值，当做rgba的第四个参数
+    opacity: {
+      type: [String, Number],
+      default: uni.$u.props.overlay.opacity } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 443 */,
+/* 444 */,
+/* 445 */,
+/* 446 */,
+/* 447 */,
+/* 448 */,
+/* 449 */,
+/* 450 */
+/*!***************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-status-bar/props.js ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    bgColor: {
+      type: String,
+      default: uni.$u.props.statusBar.bgColor } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 451 */,
+/* 452 */,
+/* 453 */,
+/* 454 */,
+/* 455 */,
+/* 456 */,
+/* 457 */,
+/* 458 */
+/*!****************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-safe-bottom/props.js ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {} };exports.default = _default;
+
+/***/ }),
+/* 459 */,
+/* 460 */,
+/* 461 */,
+/* 462 */,
+/* 463 */,
+/* 464 */,
+/* 465 */,
+/* 466 */,
+/* 467 */,
+/* 468 */,
+/* 469 */,
+/* 470 */,
+/* 471 */,
+/* 472 */,
+/* 473 */
+/*!*****************************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-loading-icon/props.js ***!
+  \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23803,26 +23949,26 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 420 */,
-/* 421 */,
-/* 422 */,
-/* 423 */,
-/* 424 */,
-/* 425 */,
-/* 426 */,
-/* 427 */,
-/* 428 */,
-/* 429 */,
-/* 430 */,
-/* 431 */,
-/* 432 */,
-/* 433 */,
-/* 434 */,
-/* 435 */,
-/* 436 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-text/props.js ***!
-  \***********************************************************************************************/
+/* 474 */,
+/* 475 */,
+/* 476 */,
+/* 477 */,
+/* 478 */,
+/* 479 */,
+/* 480 */,
+/* 481 */,
+/* 482 */,
+/* 483 */,
+/* 484 */,
+/* 485 */,
+/* 486 */,
+/* 487 */,
+/* 488 */,
+/* 489 */,
+/* 490 */
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-text/props.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23937,22 +24083,15 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 437 */,
-/* 438 */,
-/* 439 */,
-/* 440 */,
-/* 441 */,
-/* 442 */,
-/* 443 */,
-/* 444 */,
-/* 445 */,
-/* 446 */,
-/* 447 */,
-/* 448 */,
-/* 449 */
-/*!**********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-gap/props.js ***!
-  \**********************************************************************************************/
+/* 491 */,
+/* 492 */,
+/* 493 */,
+/* 494 */,
+/* 495 */,
+/* 496 */
+/*!********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-gap/props.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23981,98 +24120,17 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 450 */,
-/* 451 */,
-/* 452 */,
-/* 453 */,
-/* 454 */,
-/* 455 */,
-/* 456 */,
-/* 457 */
-/*!**************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-overlay/props.js ***!
-  \**************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
-  props: {
-    // 是否显示遮罩
-    show: {
-      type: Boolean,
-      default: uni.$u.props.overlay.show },
-
-    // 层级z-index
-    zIndex: {
-      type: [String, Number],
-      default: uni.$u.props.overlay.zIndex },
-
-    // 遮罩的过渡时间，单位为ms
-    duration: {
-      type: [String, Number],
-      default: uni.$u.props.overlay.duration },
-
-    // 不透明度值，当做rgba的第四个参数
-    opacity: {
-      type: [String, Number],
-      default: uni.$u.props.overlay.opacity } } };exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-/* 458 */,
-/* 459 */,
-/* 460 */,
-/* 461 */,
-/* 462 */,
-/* 463 */,
-/* 464 */,
-/* 465 */
-/*!*****************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-status-bar/props.js ***!
-  \*****************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
-  props: {
-    bgColor: {
-      type: String,
-      default: uni.$u.props.statusBar.bgColor } } };exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-/* 466 */,
-/* 467 */,
-/* 468 */,
-/* 469 */,
-/* 470 */,
-/* 471 */,
-/* 472 */,
-/* 473 */
-/*!******************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-safe-bottom/props.js ***!
-  \******************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
-  props: {} };exports.default = _default;
-
-/***/ }),
-/* 474 */,
-/* 475 */,
-/* 476 */,
-/* 477 */,
-/* 478 */,
-/* 479 */,
-/* 480 */,
-/* 481 */
-/*!*************************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/libs/util/async-validator.js ***!
-  \*************************************************************************************************/
+/* 497 */,
+/* 498 */,
+/* 499 */,
+/* 500 */,
+/* 501 */,
+/* 502 */,
+/* 503 */,
+/* 504 */
+/*!***********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/libs/util/async-validator.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24099,7 +24157,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 var formatRegExp = /%[sdj%]/g;
 var warning = function warning() {}; // don't print warning message when in production env or node runtime
 
-if (typeof process !== 'undefined' && Object({"VUE_APP_NAME":"tixingxiangmu","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}) && "development" !== 'production' && typeof window !==
+if (typeof process !== 'undefined' && Object({"VUE_APP_NAME":"元AI智能程序","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}) && "development" !== 'production' && typeof window !==
 'undefined' && typeof document !== 'undefined') {
   warning = function warning(type, errors) {
     if (typeof console !== 'undefined' && console.warn) {
@@ -25421,10 +25479,10 @@ Schema.messages = messages;var _default =
 Schema;
 // # sourceMappingURL=index.js.map
 exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../hubuder/HBuilder/HBuilderX/plugins/uniapp-cli/node_modules/node-libs-browser/mock/process.js */ 482)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../hubuder/HBuilder/HBuilderX/plugins/uniapp-cli/node_modules/node-libs-browser/mock/process.js */ 505)))
 
 /***/ }),
-/* 482 */
+/* 505 */
 /*!********************************************************!*\
   !*** ./node_modules/node-libs-browser/mock/process.js ***!
   \********************************************************/
@@ -25455,7 +25513,7 @@ exports.binding = function (name) {
     var path;
     exports.cwd = function () { return cwd };
     exports.chdir = function (dir) {
-        if (!path) path = __webpack_require__(/*! path */ 483);
+        if (!path) path = __webpack_require__(/*! path */ 506);
         cwd = path.resolve(dir, cwd);
     };
 })();
@@ -25468,7 +25526,7 @@ exports.features = {};
 
 
 /***/ }),
-/* 483 */
+/* 506 */
 /*!***********************************************!*\
   !*** ./node_modules/path-browserify/index.js ***!
   \***********************************************/
@@ -25778,32 +25836,25 @@ var substr = 'ab'.substr(-1) === 'b'
     }
 ;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 482)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 505)))
 
 /***/ }),
-/* 484 */,
-/* 485 */,
-/* 486 */,
-/* 487 */,
-/* 488 */,
-/* 489 */,
-/* 490 */,
-/* 491 */,
-/* 492 */,
-/* 493 */,
-/* 494 */,
-/* 495 */,
-/* 496 */,
-/* 497 */,
-/* 498 */,
-/* 499 */,
-/* 500 */,
-/* 501 */,
-/* 502 */,
-/* 503 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-text/value.js ***!
-  \***********************************************************************************************/
+/* 507 */,
+/* 508 */,
+/* 509 */,
+/* 510 */,
+/* 511 */,
+/* 512 */,
+/* 513 */,
+/* 514 */,
+/* 515 */,
+/* 516 */,
+/* 517 */,
+/* 518 */,
+/* 519 */
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-text/value.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25894,17 +25945,17 @@ var substr = 'ab'.substr(-1) === 'b'
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 504 */,
-/* 505 */,
-/* 506 */,
-/* 507 */,
-/* 508 */,
-/* 509 */,
-/* 510 */,
-/* 511 */
-/*!***********************************************************************************************!*\
-  !*** D:/mitpro/dev_peocess_use/uni-font-dev/node_modules/uview-ui/components/u-link/props.js ***!
-  \***********************************************************************************************/
+/* 520 */,
+/* 521 */,
+/* 522 */,
+/* 523 */,
+/* 524 */,
+/* 525 */,
+/* 526 */,
+/* 527 */
+/*!*********************************************************************************************!*\
+  !*** D:/gitgpt更新代码不修改/chatgpt_wechat_font/node_modules/uview-ui/components/u-link/props.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

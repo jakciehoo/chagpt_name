@@ -114,7 +114,7 @@
 		</scroll-view>
 
 		<!-- 底部导航栏 -->
-		<view @click="isToLogin()" class="flex-column-center" style="position: fixed;bottom: -180px;"
+		<view @click="isToLogin()" class="flex-column-center" style="position: fixed;bottom: -190px;"
 			:animation="animationData">
 			<view class="bottom-dh-char flex-row-around" style="font-size: 55rpx;">
 				<!-- vue无法使用软键盘"发送" -->
@@ -142,13 +142,6 @@
 						</view>
 					</u-col>
 					<u-col span="3">
-						<view @click="clickTask()" class="tb-text">
-							<image src="../../../static/task.png" style="width: 100rpx;height: 100rpx;">
-							</image>
-							<text>任务中心</text>
-						</view>
-					</u-col>
-					<u-col span="3">
 						<view class="tb-text">
 							<u-button hover-class="none" class="button-none" open-type="share"
 								customStyle="height: 100rpx;border-style: unset;">
@@ -172,8 +165,6 @@
 						</view>
 
 					</u-col>
-				</u-row>
-				<u-row gutter="10">
 					<u-col @click="clickMore()" span="3">
 						<view class="tb-text">
 							<image src="../../../static/more.png" style="width: 100rpx;height: 100rpx;">
@@ -181,7 +172,6 @@
 							<text>更多</text>
 						</view>
 					</u-col>
-
 				</u-row>
 			</view>
 
@@ -284,7 +274,6 @@
 			socket.close()
 		},
 		onShow() {
-			
 			this.updateDigId();
 			this.initDigo();
 			this.initSocket();
@@ -385,8 +374,6 @@
 				} else {
 					this.getUserProfile();
 				}
-
-
 			},
 			//历史信息
 			historyChat() {
@@ -644,6 +631,7 @@
 
 			},
 			clickTask() {
+				socket.close()
 				uni.navigateTo({
 					url: '/pages/main/joinvip/joinvip'
 				})
@@ -655,6 +643,7 @@
 				})
 			},
 			clickHistory() {
+				socket.close()
 				uni.navigateTo({
 					url: '/pages/main/chatList/chatList'
 				})
@@ -693,7 +682,7 @@
 
 	.box-normal {
 		width: 750rpx;
-		height: 180px;
+		height: 190px;
 		background-color: #FFFFFF;
 	}
 

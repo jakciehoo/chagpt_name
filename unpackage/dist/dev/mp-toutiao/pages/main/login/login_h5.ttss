@@ -1,0 +1,218 @@
+
+page {
+		background: #FFFFFF;
+}
+
+
+
+	/* /deep/.u-popup__content { 
+        background-color: #00000000 !important;
+    } */
+.head {
+		/* box-shadow: 0rpx 0rpx 12rpx 0rpx rgba(0,0,0,0.15); */
+		border-radius: 50%;
+		/* width: 153rpx; */
+		margin-top: 15rpx;
+		/* height: 153rpx; */
+		position: relative;
+}
+.photoBorder {
+		z-index: 10;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 37.5rpx;
+		height: 37.5rpx;
+		text-align: center;
+		border-radius: 50%;
+		left: 72px;
+		background: linear-gradient(0deg, #599EFF, #C399FF);
+}
+.photoIcon {
+		width: 22rpx;
+		height: 17rpx;
+}
+.dialog {
+		width: 80vw;
+		background-color: #ffffff;
+		padding: 50rpx 32rpx;
+		display: flex;
+		border-radius: 18rpx;
+		flex-direction: column;
+		align-items: center;
+		/* position: relative; */
+}
+.dialogComitBtn {
+		width: 320rpx;
+		background: #3388FF;
+		border-radius: 6rpx;
+		font-size: 27rpx;
+		height: 56rpx;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		color: white;
+}
+.closeImg {
+		right: 0;
+		width: 18rpx;
+		height: 18rpx;
+		position: absolute;
+		top: 32rpx;
+		right: 32rpx;
+}
+.comitBtn {
+		width: 45%;
+		background: #3388FF;
+		border-radius: 12rpx;
+		font-size: 35rpx;
+		font-weight: 500;
+		padding: 25rpx;
+		text-align: center;
+		color: white;
+}
+.cancelBtn {
+		width: 45%;
+		margin-top: 27rpx;
+		background: #ffffff;
+		border-radius: 12rpx;
+		font-size: 35rpx;
+		font-weight: 500;
+		text-align: center;
+		padding: 25rpx;
+		border: #494A4C solid 1.8rpx;
+		color: #494A4C;
+}
+.btn {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 170rpx;
+		width: 100%;
+}
+.weChatDes {
+		font-size: 27rpx;
+		color: #494A4C;
+		width: 50%;
+		text-align: center;
+		line-height: 31rpx;
+		margin-top: 16rpx;
+}
+.weChatName {
+		font-size: 35rpx;
+		font-weight: 700;
+		color: #14171A;
+		margin-top: 25rpx;
+}
+.topMainBg {
+		width: 100%;
+		height: 410rpx;
+}
+.main {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+}
+.row {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		flex-wrap: wrap;
+}
+.backImg {
+		width: 16rpx;
+		z-index: 999;
+		height: 28rpx;
+		margin-left: 18rpx;
+}
+.position {
+		position: relative;
+		width: 100%;
+		height: 50rpx;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+}
+.title {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		text-align: center;
+		font-size: 35rpx;
+		font-weight: 500;
+		color: white
+}
+.logoBorder {
+		border: #FFFFFF solid 5rpx;
+		border-radius: 25rpx;
+		width: -webkit-max-content;
+		width: max-content;
+		margin-top: 190rpx;
+}
+.icon-agreement {
+		width: 14px;
+		height: 14px;
+		border: 1px solid #007AFF;
+		border-radius: 50px;
+		margin-right: 8px;
+}
+.content {
+		margin-top: 30px;
+}
+.text-title {
+		font-size: 20px;
+		margin: 0 30px 25px;
+		font-weight: 700;
+}
+.login-body {
+		margin-bottom: 40px;
+}
+.login-body .input {
+		height: 50px;
+		padding: 0 15px;
+		background: #f7f7f7;
+		border-radius: 8px;
+		flex-direction: row;
+		margin: 0 30px 20px;
+		font-style: normal;
+		font-size: 15px;
+		font-family: Droid Sans Fallback;
+}
+.u-flex {
+		display: flex;
+		align-items: center;
+}
+.but-conmire {
+		background: #007AFF;
+		font-size: 17px;
+		color: #fff;
+		margin: 0 30px 20px;
+		text-align: center;
+		line-height: 45px;
+		height: 45px;
+		border-radius: 8px;
+		font-weight: 700;
+}
+.reg {
+		font-size: 13px;
+		margin-top: 8px;
+		color: #c7c7cc;
+}
+.bbottom-login {
+		margin-top: 20px;
+		width: 80%;
+}
+.other-login-type {
+		display: flex;
+}
+.other-login-type .other {
+		padding: 3px;
+		border: 1px solid #2979ff;
+		border-radius: 50%;
+}
+

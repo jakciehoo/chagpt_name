@@ -1,0 +1,16 @@
+{
+  "navigationBarTitleText": "登录",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#3388fe",
+  "navigationBarTextStyle": "white",
+  "disableScroll": true,
+  "usingComponents": {
+    "u--image": "/node-modules/uview-ui/components/u--image/u--image",
+    "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon",
+    "u-divider": "/node-modules/uview-ui/components/u-divider/u-divider",
+    "u-popup": "/node-modules/uview-ui/components/u-popup/u-popup",
+    "u--input": "/node-modules/uview-ui/components/u--input/u--input",
+    "u-code": "/node-modules/uview-ui/components/u-code/u-code",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button"
+  }
+}

@@ -266,6 +266,9 @@ page {
 	    padding-bottom: 40px; */
 }
 .position_top {
+
+
+
 	position: absolute;
 	top: 0;
 	width: 100%;

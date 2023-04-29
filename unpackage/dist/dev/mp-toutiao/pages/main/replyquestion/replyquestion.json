@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "问答模式",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#3388fe",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "mp-html": "/node-modules/mp-html/mp-html"
+  }
+}

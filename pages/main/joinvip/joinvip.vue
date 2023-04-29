@@ -12,8 +12,6 @@
 						</view>
 						<view class="mineInfo">
 							<view class="row userRow">
-								<!-- 	<u--image shape="circle" :src="userInfo.avatar" width="80px" height="80px">
-								</u--image> -->
 								<u-avatar :src="userInfo.avatar" shape="circle" size="80px"></u-avatar>
 								<view style="margin-left: 30rpx; text-align: left;">
 									<view class="row">
@@ -84,8 +82,8 @@
 											</view>
 										</view>
 									</view> -->
-									<u-empty mode="data" icon="http://cdn.uviewui.com/uview/empty/data.png" text="暂无套餐">
-									</u-empty>
+		<!-- 							<u-empty mode="data" icon="http://cdn.uviewui.com/uview/empty/data.png" text="暂无套餐">
+									</u-empty> -->
 								</view>
 
 								<!-- <view class="tips">不限次聊天, 元Al协助工作更快落地</view> -->
@@ -112,7 +110,7 @@
 								</view> -->
 							</view>
 
-							<view class="bule_btn">确认协议并支付</view>
+							<view  @click="useIntivateCard" class="bule_btn">确认充值</view>
 						</view>
 					</view>
 				</view>

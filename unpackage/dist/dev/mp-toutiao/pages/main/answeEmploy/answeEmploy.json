@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "我的问答",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#3388fe",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "u-empty": "/node-modules/uview-ui/components/u-empty/u-empty",
+    "u-loadmore": "/node-modules/uview-ui/components/u-loadmore/u-loadmore"
+  }
+}

@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<view class="topRound">
+<!-- 		<view class="topRound">
 			<textarea maxlength="-1" v-model="content" class="textInput" placeholder="填写您的问题，支持长按粘贴您的问题(不支持连续对话)"
 				placeholder-class=""></textarea>
 
@@ -8,7 +8,7 @@
 				<view @click="pasteContent" class="pasteBtn">粘贴问题</view>
 				<view @click="askto" class="comitBtn">提交问题</view>
 			</view>
-		</view>
+		</view> -->
 
 		<scroll-view scroll-x="true">
 			<view class="row fwarp">

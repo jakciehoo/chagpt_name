@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/main/index/index",
+    "pages/main/login/login_h5",
     "pages/main/chatList/chatList",
     "pages/main/answeEmploy/answeEmploy",
     "pages/main/agreement/userReder",
@@ -28,12 +29,6 @@
         "iconPath": "static/tabbar/home_blue2.png",
         "selectedIconPath": "static/tabbar/home_blue3_selected.png",
         "text": "首页"
-      },
-      {
-        "pagePath": "pages/main/chat/index",
-        "iconPath": "static/tabbar/answer.png",
-        "selectedIconPath": "static/tabbar/answer_selected.png",
-        "text": "问答"
       },
       {
         "pagePath": "pages/main/rolefragment/rolefragment",

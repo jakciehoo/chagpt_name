@@ -168,7 +168,7 @@
 						<view class="rowline"></view>
 					</view>
 				</view>
-				<view @click="myAskAndAnswer()" class="row itemrow">
+<!-- 				<view @click="myAskAndAnswer()" class="row itemrow">
 
 					<image class="itemRowImgLeft" src="../../../static/mine_message_icon.png"></image>
 					<view  class="itemRowCloum">
@@ -180,7 +180,7 @@
 
 						<view class="rowline"></view>
 					</view>
-				</view>
+				</view> -->
 
 
 				<!--  #ifndef H5 -->	

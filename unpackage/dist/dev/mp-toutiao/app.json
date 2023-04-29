@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/main/index/index",
+    "pages/main/login/login_h5",
+    "pages/main/chatList/chatList",
+    "pages/main/answeEmploy/answeEmploy",
+    "pages/main/agreement/userReder",
+    "pages/main/agreement/useReder",
+    "pages/main/chat/index",
+    "pages/main/joinvip/joinvip",
+    "pages/main/minefragment/minefragment",
+    "pages/main/login/login",
+    "pages/main/rolefragment/rolefragment",
+    "pages/main/replyquestion/replyquestion"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "元AI",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/main/index/index",
+        "iconPath": "static/tabbar/home_blue2.png",
+        "selectedIconPath": "static/tabbar/home_blue3_selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/main/rolefragment/rolefragment",
+        "iconPath": "static/tabbar/explore.png",
+        "selectedIconPath": "static/tabbar/explore_selected.png",
+        "text": "探索"
+      },
+      {
+        "pagePath": "pages/main/minefragment/minefragment",
+        "iconPath": "static/tabbar/my.png",
+        "selectedIconPath": "static/tabbar/my_selected.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
