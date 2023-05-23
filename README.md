@@ -19,6 +19,7 @@
 HBuilderX
 微信开发者工具
 1. 拉取代码
+1.1 不可以npm install 不可以yarn install 不可以pnpm install
 2. 修改配置文件
 3. 运行到微信开发者工具
 ```
