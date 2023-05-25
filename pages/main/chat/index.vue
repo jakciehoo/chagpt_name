@@ -204,10 +204,11 @@
 		components: {
 			mpHtml
 		},
-		onLoad() {
+		onLoad(options) {
 			// this.chatchWindowsHeight();
 			this.initbaseConfig();
 			uni.$on('onMessage', this.onMessage);
+			this.firstAskMsg = options.msg;
 			// 如果需要缓存消息缓存msgList即可
 			// 监听键盘拉起
 			// 因为无法控制键盘拉起的速度,所以这里尽量以慢速处理
@@ -266,7 +267,8 @@
 				changeAnswerTextContent: '',
 				isReplyIng: false,
 				placeholder: '暂时未登录,请登录!',
-				baseConfig: {}
+				baseConfig: {},
+				firstAskMsg:""
 			}
 		},
 		onHide() {
@@ -314,6 +316,7 @@
 							});
 						});
 						this.msgGo(1000)
+						this.askFirstQuest()
 					}
 				})
 			},
@@ -455,6 +458,15 @@
 
 					}).exec();
 				}, timel)
+			},
+			
+			askFirstQuest() {
+				setTimeout(() => {
+					if (util.isNotBlank(this.firstAskMsg)) {
+						var msg = '您是世界顶级起名大师，您可以先问我3个问题，然后请帮我' + this.firstAskMsg + '，感谢！'
+						this.answer(msg)
+					}
+				}, 3000)
 			},
 			// 回答问题的业务逻辑
 			answer(askItem) {

@@ -20007,9 +20007,9 @@ exports.default = _default;
 /* 281 */,
 /* 282 */,
 /* 283 */
-/*!***********************************************************************************************************!*\
-  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-tag/props.js ***!
-  \***********************************************************************************************************/
+/*!*************************************************************************************************************!*\
+  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-empty/props.js ***!
+  \*************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20022,85 +20022,60 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = {
   props: {
-    // 标签类型info、primary、success、warning、error
-    type: {
-      type: String,
-      default: uni.$u.props.tag.type
-    },
-    // 不可用
-    disabled: {
-      type: [Boolean, String],
-      default: uni.$u.props.tag.disabled
-    },
-    // 标签的大小，large，medium，mini
-    size: {
-      type: String,
-      default: uni.$u.props.tag.size
-    },
-    // tag的形状，circle（两边半圆形）, square（方形，带圆角）
-    shape: {
-      type: String,
-      default: uni.$u.props.tag.shape
-    },
-    // 标签文字
-    text: {
-      type: [String, Number],
-      default: uni.$u.props.tag.text
-    },
-    // 背景颜色，默认为空字符串，即不处理
-    bgColor: {
-      type: String,
-      default: uni.$u.props.tag.bgColor
-    },
-    // 标签字体颜色，默认为空字符串，即不处理
-    color: {
-      type: String,
-      default: uni.$u.props.tag.color
-    },
-    // 标签的边框颜色
-    borderColor: {
-      type: String,
-      default: uni.$u.props.tag.borderColor
-    },
-    // 关闭按钮图标的颜色
-    closeColor: {
-      type: String,
-      default: uni.$u.props.tag.closeColor
-    },
-    // 点击时返回的索引值，用于区分例遍的数组哪个元素被点击了
-    name: {
-      type: [String, Number],
-      default: uni.$u.props.tag.name
-    },
-    // // 模式选择，dark|light|plain
-    // mode: {
-    // 	type: String,
-    // 	default: 'light'
-    // },
-    // 镂空时是否填充背景色
-    plainFill: {
-      type: Boolean,
-      default: uni.$u.props.tag.plainFill
-    },
-    // 是否镂空
-    plain: {
-      type: Boolean,
-      default: uni.$u.props.tag.plain
-    },
-    // 是否可关闭
-    closable: {
-      type: Boolean,
-      default: uni.$u.props.tag.closable
-    },
-    // 是否显示
-    show: {
-      type: Boolean,
-      default: uni.$u.props.tag.show
-    },
-    // 内置图标，或绝对路径的图片
+    // 内置图标名称，或图片路径，建议绝对路径
     icon: {
       type: String,
-      default: uni.$u.props.tag.icon
+      default: uni.$u.props.empty.icon
+    },
+    // 提示文字
+    text: {
+      type: String,
+      default: uni.$u.props.empty.text
+    },
+    // 文字颜色
+    textColor: {
+      type: String,
+      default: uni.$u.props.empty.textColor
+    },
+    // 文字大小
+    textSize: {
+      type: [String, Number],
+      default: uni.$u.props.empty.textSize
+    },
+    // 图标的颜色
+    iconColor: {
+      type: String,
+      default: uni.$u.props.empty.iconColor
+    },
+    // 图标的大小
+    iconSize: {
+      type: [String, Number],
+      default: uni.$u.props.empty.iconSize
+    },
+    // 选择预置的图标类型
+    mode: {
+      type: String,
+      default: uni.$u.props.empty.mode
+    },
+    //  图标宽度，单位px
+    width: {
+      type: [String, Number],
+      default: uni.$u.props.empty.width
+    },
+    // 图标高度，单位px
+    height: {
+      type: [String, Number],
+      default: uni.$u.props.empty.height
+    },
+    // 是否显示组件
+    show: {
+      type: Boolean,
+      default: uni.$u.props.empty.show
+    },
+    // 组件距离上一个元素之间的距离，默认px单位
+    marginTop: {
+      type: [String, Number],
+      default: uni.$u.props.empty.marginTop
     }
   }
 };
@@ -21263,90 +21238,6 @@ exports.default = _default;
 /* 344 */,
 /* 345 */,
 /* 346 */
-/*!*************************************************************************************************************!*\
-  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-empty/props.js ***!
-  \*************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 内置图标名称，或图片路径，建议绝对路径
-    icon: {
-      type: String,
-      default: uni.$u.props.empty.icon
-    },
-    // 提示文字
-    text: {
-      type: String,
-      default: uni.$u.props.empty.text
-    },
-    // 文字颜色
-    textColor: {
-      type: String,
-      default: uni.$u.props.empty.textColor
-    },
-    // 文字大小
-    textSize: {
-      type: [String, Number],
-      default: uni.$u.props.empty.textSize
-    },
-    // 图标的颜色
-    iconColor: {
-      type: String,
-      default: uni.$u.props.empty.iconColor
-    },
-    // 图标的大小
-    iconSize: {
-      type: [String, Number],
-      default: uni.$u.props.empty.iconSize
-    },
-    // 选择预置的图标类型
-    mode: {
-      type: String,
-      default: uni.$u.props.empty.mode
-    },
-    //  图标宽度，单位px
-    width: {
-      type: [String, Number],
-      default: uni.$u.props.empty.width
-    },
-    // 图标高度，单位px
-    height: {
-      type: [String, Number],
-      default: uni.$u.props.empty.height
-    },
-    // 是否显示组件
-    show: {
-      type: Boolean,
-      default: uni.$u.props.empty.show
-    },
-    // 组件距离上一个元素之间的距离，默认px单位
-    marginTop: {
-      type: [String, Number],
-      default: uni.$u.props.empty.marginTop
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 347 */,
-/* 348 */,
-/* 349 */,
-/* 350 */,
-/* 351 */,
-/* 352 */,
-/* 353 */,
-/* 354 */
 /*!****************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-loadmore/props.js ***!
   \****************************************************************************************************************/
@@ -21443,14 +21334,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 355 */,
-/* 356 */,
-/* 357 */,
-/* 358 */,
-/* 359 */,
-/* 360 */,
-/* 361 */,
-/* 362 */
+/* 347 */,
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */
 /*!***********************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-row/props.js ***!
   \***********************************************************************************************************/
@@ -21487,14 +21378,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 363 */,
-/* 364 */,
-/* 365 */,
-/* 366 */,
-/* 367 */,
-/* 368 */,
-/* 369 */,
-/* 370 */
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */
 /*!***********************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-col/props.js ***!
   \***********************************************************************************************************/
@@ -21541,14 +21432,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 371 */,
-/* 372 */,
-/* 373 */,
-/* 374 */,
-/* 375 */,
-/* 376 */,
-/* 377 */,
-/* 378 */
+/* 363 */,
+/* 364 */,
+/* 365 */,
+/* 366 */,
+/* 367 */,
+/* 368 */,
+/* 369 */,
+/* 370 */
 /*!******************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/parser.js ***!
   \******************************************************************************************/
@@ -22766,7 +22657,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"], __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/wx.js */ 1)["default"]))
 
 /***/ }),
-/* 379 */
+/* 371 */
 /*!**************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/markdown/index.js ***!
   \**************************************************************************************************/
@@ -22781,7 +22672,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _marked = _interopRequireDefault(__webpack_require__(/*! ./marked.min */ 380));
+var _marked = _interopRequireDefault(__webpack_require__(/*! ./marked.min */ 372));
 /**
  * @fileoverview markdown 插件
  * Include marked (https://github.com/markedjs/marked)
@@ -22815,7 +22706,7 @@ var _default = Markdown;
 exports.default = _default;
 
 /***/ }),
-/* 380 */
+/* 372 */
 /*!*******************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/markdown/marked.min.js ***!
   \*******************************************************************************************************/
@@ -23942,7 +23833,7 @@ var _default = t();
 exports.default = _default;
 
 /***/ }),
-/* 381 */
+/* 373 */
 /*!***********************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/audio/index.js ***!
   \***********************************************************************************************/
@@ -23957,7 +23848,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _context = _interopRequireDefault(__webpack_require__(/*! ./context */ 382));
+var _context = _interopRequireDefault(__webpack_require__(/*! ./context */ 374));
 /**
  * @fileoverview audio 插件
  */
@@ -23991,7 +23882,7 @@ var _default = Audio;
 exports.default = _default;
 
 /***/ }),
-/* 382 */
+/* 374 */
 /*!*************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/audio/context.js ***!
   \*************************************************************************************************/
@@ -24020,7 +23911,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 383 */
+/* 375 */
 /*!***********************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/emoji/index.js ***!
   \***********************************************************************************************/
@@ -24234,7 +24125,7 @@ var _default = Emoji;
 exports.default = _default;
 
 /***/ }),
-/* 384 */
+/* 376 */
 /*!***************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/highlight/index.js ***!
   \***************************************************************************************************/
@@ -24249,9 +24140,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _prism = _interopRequireDefault(__webpack_require__(/*! ./prism.min */ 385));
-var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 386));
-var _parser = _interopRequireDefault(__webpack_require__(/*! ../parser */ 378));
+var _prism = _interopRequireDefault(__webpack_require__(/*! ./prism.min */ 377));
+var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 378));
+var _parser = _interopRequireDefault(__webpack_require__(/*! ../parser */ 370));
 /**
  * @fileoverview highlight 插件
  * Include prismjs (https://prismjs.com)
@@ -24347,7 +24238,7 @@ var _default = Highlight;
 exports.default = _default;
 
 /***/ }),
-/* 385 */
+/* 377 */
 /*!*******************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/highlight/prism.min.js ***!
   \*******************************************************************************************************/
@@ -26029,7 +25920,7 @@ Prism.languages.python = {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 3)))
 
 /***/ }),
-/* 386 */
+/* 378 */
 /*!****************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/highlight/config.js ***!
   \****************************************************************************************************/
@@ -26053,7 +25944,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 387 */
+/* 379 */
 /*!***********************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/style/index.js ***!
   \***********************************************************************************************/
@@ -26068,7 +25959,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _parser = _interopRequireDefault(__webpack_require__(/*! ./parser */ 388));
+var _parser = _interopRequireDefault(__webpack_require__(/*! ./parser */ 380));
 /**
  * @fileoverview style 插件
  */
@@ -26197,7 +26088,7 @@ var _default = Style;
 exports.default = _default;
 
 /***/ }),
-/* 388 */
+/* 380 */
 /*!************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/style/parser.js ***!
   \************************************************************************************************/
@@ -26383,7 +26274,7 @@ var _default = Parser;
 exports.default = _default;
 
 /***/ }),
-/* 389 */
+/* 381 */
 /*!***************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/img-cache/index.js ***!
   \***************************************************************************************************/
@@ -26475,7 +26366,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 390 */
+/* 382 */
 /*!**************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/editable/index.js ***!
   \**************************************************************************************************/
@@ -26490,8 +26381,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 391));
-var _parser = _interopRequireDefault(__webpack_require__(/*! ../parser */ 378));
+var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 383));
+var _parser = _interopRequireDefault(__webpack_require__(/*! ../parser */ 370));
 /**
  * @fileoverview editable 插件
  */
@@ -27025,7 +26916,7 @@ var _default = Editable;
 exports.default = _default;
 
 /***/ }),
-/* 391 */
+/* 383 */
 /*!***************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/editable/config.js ***!
   \***************************************************************************************************/
@@ -27053,14 +26944,14 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 392 */,
-/* 393 */,
-/* 394 */,
-/* 395 */,
-/* 396 */,
-/* 397 */,
-/* 398 */,
-/* 399 */
+/* 384 */,
+/* 385 */,
+/* 386 */,
+/* 387 */,
+/* 388 */,
+/* 389 */,
+/* 390 */,
+/* 391 */
 /*!**************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-avatar/props.js ***!
   \**************************************************************************************************************/
@@ -27156,14 +27047,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 400 */,
-/* 401 */,
-/* 402 */,
-/* 403 */,
-/* 404 */,
-/* 405 */,
-/* 406 */,
-/* 407 */
+/* 392 */,
+/* 393 */,
+/* 394 */,
+/* 395 */,
+/* 396 */,
+/* 397 */,
+/* 398 */,
+/* 399 */
 /*!********************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-action-sheet/props.js ***!
   \********************************************************************************************************************/
@@ -27235,14 +27126,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 408 */,
-/* 409 */,
-/* 410 */,
-/* 411 */,
-/* 412 */,
-/* 413 */,
-/* 414 */,
-/* 415 */
+/* 400 */,
+/* 401 */,
+/* 402 */,
+/* 403 */,
+/* 404 */,
+/* 405 */,
+/* 406 */,
+/* 407 */
 /*!*************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-modal/props.js ***!
   \*************************************************************************************************************/
@@ -27344,14 +27235,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 416 */,
-/* 417 */,
-/* 418 */,
-/* 419 */,
-/* 420 */,
-/* 421 */,
-/* 422 */,
-/* 423 */
+/* 408 */,
+/* 409 */,
+/* 410 */,
+/* 411 */,
+/* 412 */,
+/* 413 */,
+/* 414 */,
+/* 415 */
 /*!************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-form/props.js ***!
   \************************************************************************************************************/
@@ -27414,12 +27305,12 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 424 */,
-/* 425 */,
-/* 426 */,
-/* 427 */,
-/* 428 */,
-/* 429 */
+/* 416 */,
+/* 417 */,
+/* 418 */,
+/* 419 */,
+/* 420 */,
+/* 421 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-form-item/props.js ***!
   \*****************************************************************************************************************/
@@ -27480,14 +27371,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 430 */,
-/* 431 */,
-/* 432 */,
-/* 433 */,
-/* 434 */,
-/* 435 */,
-/* 436 */,
-/* 437 */
+/* 422 */,
+/* 423 */,
+/* 424 */,
+/* 425 */,
+/* 426 */,
+/* 427 */,
+/* 428 */,
+/* 429 */
 /*!******************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-subsection/props.js ***!
   \******************************************************************************************************************/
@@ -27554,21 +27445,21 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 430 */,
+/* 431 */,
+/* 432 */,
+/* 433 */,
+/* 434 */,
+/* 435 */,
+/* 436 */,
+/* 437 */,
 /* 438 */,
 /* 439 */,
 /* 440 */,
 /* 441 */,
 /* 442 */,
 /* 443 */,
-/* 444 */,
-/* 445 */,
-/* 446 */,
-/* 447 */,
-/* 448 */,
-/* 449 */,
-/* 450 */,
-/* 451 */,
-/* 452 */
+/* 444 */
 /*!**************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-picker/props.js ***!
   \**************************************************************************************************************/
@@ -27663,6 +27554,115 @@ var _default = {
     immediateChange: {
       type: Boolean,
       default: uni.$u.props.picker.immediateChange
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 445 */,
+/* 446 */,
+/* 447 */,
+/* 448 */,
+/* 449 */,
+/* 450 */,
+/* 451 */,
+/* 452 */
+/*!***********************************************************************************************************!*\
+  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-tag/props.js ***!
+  \***********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 标签类型info、primary、success、warning、error
+    type: {
+      type: String,
+      default: uni.$u.props.tag.type
+    },
+    // 不可用
+    disabled: {
+      type: [Boolean, String],
+      default: uni.$u.props.tag.disabled
+    },
+    // 标签的大小，large，medium，mini
+    size: {
+      type: String,
+      default: uni.$u.props.tag.size
+    },
+    // tag的形状，circle（两边半圆形）, square（方形，带圆角）
+    shape: {
+      type: String,
+      default: uni.$u.props.tag.shape
+    },
+    // 标签文字
+    text: {
+      type: [String, Number],
+      default: uni.$u.props.tag.text
+    },
+    // 背景颜色，默认为空字符串，即不处理
+    bgColor: {
+      type: String,
+      default: uni.$u.props.tag.bgColor
+    },
+    // 标签字体颜色，默认为空字符串，即不处理
+    color: {
+      type: String,
+      default: uni.$u.props.tag.color
+    },
+    // 标签的边框颜色
+    borderColor: {
+      type: String,
+      default: uni.$u.props.tag.borderColor
+    },
+    // 关闭按钮图标的颜色
+    closeColor: {
+      type: String,
+      default: uni.$u.props.tag.closeColor
+    },
+    // 点击时返回的索引值，用于区分例遍的数组哪个元素被点击了
+    name: {
+      type: [String, Number],
+      default: uni.$u.props.tag.name
+    },
+    // // 模式选择，dark|light|plain
+    // mode: {
+    // 	type: String,
+    // 	default: 'light'
+    // },
+    // 镂空时是否填充背景色
+    plainFill: {
+      type: Boolean,
+      default: uni.$u.props.tag.plainFill
+    },
+    // 是否镂空
+    plain: {
+      type: Boolean,
+      default: uni.$u.props.tag.plain
+    },
+    // 是否可关闭
+    closable: {
+      type: Boolean,
+      default: uni.$u.props.tag.closable
+    },
+    // 是否显示
+    show: {
+      type: Boolean,
+      default: uni.$u.props.tag.show
+    },
+    // 内置图标，或绝对路径的图片
+    icon: {
+      type: String,
+      default: uni.$u.props.tag.icon
     }
   }
 };
@@ -28872,7 +28872,121 @@ exports.default = _default;
 /* 490 */,
 /* 491 */,
 /* 492 */,
-/* 493 */
+/* 493 */,
+/* 494 */,
+/* 495 */,
+/* 496 */,
+/* 497 */,
+/* 498 */,
+/* 499 */,
+/* 500 */
+/*!************************************************************************************************************!*\
+  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-line/props.js ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    color: {
+      type: String,
+      default: uni.$u.props.line.color
+    },
+    // 长度，竖向时表现为高度，横向时表现为长度，可以为百分比，带px单位的值等
+    length: {
+      type: [String, Number],
+      default: uni.$u.props.line.length
+    },
+    // 线条方向，col-竖向，row-横向
+    direction: {
+      type: String,
+      default: uni.$u.props.line.direction
+    },
+    // 是否显示细边框
+    hairline: {
+      type: Boolean,
+      default: uni.$u.props.line.hairline
+    },
+    // 线条与上下左右元素的间距，字符串形式，如"30px"、"20px 30px"
+    margin: {
+      type: [String, Number],
+      default: uni.$u.props.line.margin
+    },
+    // 是否虚线，true-实线，false-虚线
+    dashed: {
+      type: Boolean,
+      default: uni.$u.props.line.dashed
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 501 */,
+/* 502 */,
+/* 503 */,
+/* 504 */,
+/* 505 */,
+/* 506 */,
+/* 507 */,
+/* 508 */
+/*!***************************************************************************************************************!*\
+  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-overlay/props.js ***!
+  \***************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 是否显示遮罩
+    show: {
+      type: Boolean,
+      default: uni.$u.props.overlay.show
+    },
+    // 层级z-index
+    zIndex: {
+      type: [String, Number],
+      default: uni.$u.props.overlay.zIndex
+    },
+    // 遮罩的过渡时间，单位为ms
+    duration: {
+      type: [String, Number],
+      default: uni.$u.props.overlay.duration
+    },
+    // 不透明度值，当做rgba的第四个参数
+    opacity: {
+      type: [String, Number],
+      default: uni.$u.props.overlay.opacity
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 509 */,
+/* 510 */,
+/* 511 */,
+/* 512 */,
+/* 513 */,
+/* 514 */,
+/* 515 */,
+/* 516 */
 /*!******************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-transition/props.js ***!
   \******************************************************************************************************************/
@@ -28914,7 +29028,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 494 */
+/* 517 */
 /*!***********************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-transition/transition.js ***!
   \***********************************************************************************************************************/
@@ -28931,7 +29045,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 58));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 60));
-var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 495));
+var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 518));
 // 定义一个一定时间后自动成功的promise，让调用nextTick方法处，进入下一个then方法
 var nextTick = function nextTick() {
   return new Promise(function (resolve) {
@@ -29023,7 +29137,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 495 */
+/* 518 */
 /*!*************************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-transition/nvue.ani-map.js ***!
   \*************************************************************************************************************************/
@@ -29214,120 +29328,6 @@ var _default = {
   }
 };
 exports.default = _default;
-
-/***/ }),
-/* 496 */,
-/* 497 */,
-/* 498 */,
-/* 499 */,
-/* 500 */,
-/* 501 */,
-/* 502 */,
-/* 503 */,
-/* 504 */,
-/* 505 */,
-/* 506 */,
-/* 507 */,
-/* 508 */,
-/* 509 */,
-/* 510 */
-/*!************************************************************************************************************!*\
-  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-line/props.js ***!
-  \************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    color: {
-      type: String,
-      default: uni.$u.props.line.color
-    },
-    // 长度，竖向时表现为高度，横向时表现为长度，可以为百分比，带px单位的值等
-    length: {
-      type: [String, Number],
-      default: uni.$u.props.line.length
-    },
-    // 线条方向，col-竖向，row-横向
-    direction: {
-      type: String,
-      default: uni.$u.props.line.direction
-    },
-    // 是否显示细边框
-    hairline: {
-      type: Boolean,
-      default: uni.$u.props.line.hairline
-    },
-    // 线条与上下左右元素的间距，字符串形式，如"30px"、"20px 30px"
-    margin: {
-      type: [String, Number],
-      default: uni.$u.props.line.margin
-    },
-    // 是否虚线，true-实线，false-虚线
-    dashed: {
-      type: Boolean,
-      default: uni.$u.props.line.dashed
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 511 */,
-/* 512 */,
-/* 513 */,
-/* 514 */,
-/* 515 */,
-/* 516 */,
-/* 517 */,
-/* 518 */
-/*!***************************************************************************************************************!*\
-  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-overlay/props.js ***!
-  \***************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 是否显示遮罩
-    show: {
-      type: Boolean,
-      default: uni.$u.props.overlay.show
-    },
-    // 层级z-index
-    zIndex: {
-      type: [String, Number],
-      default: uni.$u.props.overlay.zIndex
-    },
-    // 遮罩的过渡时间，单位为ms
-    duration: {
-      type: [String, Number],
-      default: uni.$u.props.overlay.duration
-    },
-    // 不透明度值，当做rgba的第四个参数
-    opacity: {
-      type: [String, Number],
-      default: uni.$u.props.overlay.opacity
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
 /* 519 */,

@@ -103,8 +103,8 @@ try {
     uNoticeBar: function () {
       return Promise.all(/*! import() | node-modules/uview-ui/components/u-notice-bar/u-notice-bar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-notice-bar/u-notice-bar")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-notice-bar/u-notice-bar.vue */ 270))
     },
-    uTag: function () {
-      return Promise.all(/*! import() | node-modules/uview-ui/components/u-tag/u-tag */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-tag/u-tag")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-tag/u-tag.vue */ 278))
+    uEmpty: function () {
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u-empty/u-empty */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-empty/u-empty")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-empty/u-empty.vue */ 278))
     },
   }
 } catch (e) {
@@ -128,6 +128,30 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+  var g0 = _vm.itemList.length
+  var l0 = !(g0 <= 0)
+    ? _vm.__map(_vm.itemList, function (item, index) {
+        var $orig = _vm.__get_orig(item)
+        var m0 = item.check ? _vm.lengthLimitText(item.modelName, 7) : null
+        var m1 = item.check ? _vm.lengthLimitText(item.modelContent, 36) : null
+        var m2 = !item.check ? _vm.lengthLimitText(item.modelContent, 36) : null
+        return {
+          $orig: $orig,
+          m0: m0,
+          m1: m1,
+          m2: m2,
+        }
+      })
+    : null
+  _vm.$mp.data = Object.assign(
+    {},
+    {
+      $root: {
+        g0: g0,
+        l0: l0,
+      },
+    }
+  )
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -168,8 +192,23 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ 18));
 var _request = _interopRequireDefault(__webpack_require__(/*! ../../../request/request.js */ 31));
 var _util = _interopRequireDefault(__webpack_require__(/*! ../../../util/util.js */ 30));
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -195,11 +234,34 @@ var _util = _interopRequireDefault(__webpack_require__(/*! ../../../util/util.js
 var _default = {
   data: function data() {
     return {
-      weichat_notice: uni.getStorageSync('baseConfig').weichat_notice
+      weichat_notice: uni.getStorageSync('baseConfig').weichat_notice,
+      isLoaddingFinash: false,
+      page: 1,
+      size: 10,
+      totalPage: 0,
+      historyParam: {},
+      modelInfo: {},
+      popShow: false,
+      content: '',
+      //可以询问问题-无法联系对话
+      //顶部tag
+      tagsList: [],
+      //内容item
+      itemList: [],
+      //往期对话列表List
+      historyDigList: [],
+      modalShow: false,
+      digTitle: ""
     };
   },
   onLoad: function onLoad(options) {
     uni.setStorageSync('invitationCode', options.intivateCode);
+    this.getTabList();
+  },
+  onHide: function onHide() {
+    this.modalShow = false;
+    this.popShow = false;
+    this.historyDigList = [];
   },
   methods: {
     startDig: function startDig() {
@@ -227,7 +289,212 @@ var _default = {
         }
         uni.hideLoading();
       });
+    },
+    modalShowClick: function modalShowClick() {
+      this.modalShow = true;
+      this.popShow = false;
+    },
+    modalColse: function modalColse() {
+      this.modalShow = false;
+    },
+    confirmDigModel: function confirmDigModel(item) {
+      var modelInfoTemp = Object.assign({}, item);
+      modelInfoTemp.modelName = item.modelName;
+      if (_util.default.isBlank(modelInfoTemp.modelName)) {
+        _util.default.message("对话主题不可为空", "error");
+      } else {
+        this.creatNewDig(modelInfoTemp);
+      }
+    },
+    closePopShow: function closePopShow() {
+      this.historyDigList = [];
+      this.popShow = false;
+      this.isLoaddingFinash = false;
+      this.page = 1;
+      this.size = 10;
+      this.totalPage = 0;
+      this.historyParam = {};
+    },
+    openPopShow: function openPopShow() {
+      this.popShow = true;
+    },
+    comitQuestion: function comitQuestion() {
+      uni.navigateTo({
+        url: '/pages/main/replyquestion/replyquestion'
+      });
+      uni.showToast({
+        title: '提交问题啊吧啊吧'
+      });
+    },
+    checkItem: function checkItem(index, item) {
+      for (var i = 0; i < this.tagsList.length; i++) {
+        this.tagsList[i].check = false;
+      }
+      this.tagsList[index].check = true;
+      this.$forceUpdate();
+      this.getModelList(item.id);
+    },
+    checkContent: function checkContent(index, item) {
+      for (var i = 0; i < this.itemList.length; i++) {
+        this.itemList[i].check = false;
+      }
+      this.itemList[index].check = true;
+      this.modelInfo = item;
+      this.checkHaveDigHistory(item.id);
+    },
+    checkHaveDigHistory: function checkHaveDigHistory(dialogueRoleIdP) {
+      var _this = this;
+      if (_util.default.isBlank(dialogueRoleIdP) && _util.default.isBlank(this.historyParam.dialogueRoleId)) {
+        _util.default.message("模型ID为空");
+      } else {
+        this.popShow = true;
+        this.historyParam = {
+          dialogueRoleId: dialogueRoleIdP,
+          pageNum: this.page,
+          pageSize: this.size
+        };
+        (0, _request.default)('', '/cricleai/diglogue/creatDigFlag', 'GET', this.historyParam, {}).then(function (res) {
+          if (res.code == 200) {
+            if (_this.page == 1) {
+              _this.historyDigList = res.rows;
+              //处理整数部分
+              _this.totalPage = Math.floor(res.total / _this.size) + 1;
+            } else {
+              _this.historyDigList = [].concat((0, _toConsumableArray2.default)(_this.historyDigList), (0, _toConsumableArray2.default)(res.rows));
+            }
+            if (_this.historyDigList.length < 1) {
+              _this.confirmDigModel(_this.modelInfo);
+            } else {
+              _this.conDig(_this.historyDigList[0]);
+            }
+          } else {
+            _util.default.message("查询错误", 'error');
+          }
+        });
+      }
+      uni.stopPullDownRefresh();
+    },
+    pasteContent: function pasteContent() {
+      var that = this;
+      uni.getClipboardData({
+        success: function success(res) {
+          that.content = res.data;
+        }
+      });
+    },
+    conDig: function conDig(item) {
+      uni.setStorageSync('digId', item.id);
+      // uni.$emit('digId', item.id)
+      var askMsg = this.modelInfo.modelName;
+      uni.navigateTo({
+        url: '/pages/main/chat/index?msg=' + askMsg
+      });
+    },
+    getTabList: function getTabList() {
+      var _this2 = this;
+      (0, _request.default)('', '/cricleai/roleChange/list', 'POST', {}, {}).then(function (res) {
+        if (res.code == 200) {
+          _this2.tagsList = [];
+          var newArr = [];
+          newArr = res.data;
+          if (_util.default.isNotBlank(newArr)) {
+            for (var i = 0; i < newArr.length; i++) {
+              var item = newArr[i];
+              if (item.roleName.includes('起名')) {
+                _this2.tagsList.push(item);
+              }
+            }
+          }
+          if (_util.default.isNotBlank(_this2.tagsList)) {
+            _this2.tagsList[0].check = true;
+            _this2.getModelList(_this2.tagsList[0].id);
+          }
+        } else {
+          _util.default.message("查询错误", 'error');
+        }
+      });
+    },
+    getModelList: function getModelList(dRoleId) {
+      var _this3 = this;
+      if (_util.default.isBlank(dRoleId)) {
+        _util.default.message("查询错误", 'error');
+      } else {
+        (0, _request.default)('', '/cricleai/usermodel/list?dRoleId=' + dRoleId, 'POST', {}, {}).then(function (res) {
+          if (res.code == 200) {
+            _this3.itemList = res.data;
+            if (_this3.itemList.length > 0) {
+              _this3.itemList[0].check = true;
+            }
+          } else {
+            _util.default.message("查询错误", 'error');
+          }
+        });
+      }
+    },
+    lengthLimitText: function lengthLimitText(text, num) {
+      return _util.default.lengthLimit(text, num);
+    },
+    preStop: function preStop() {
+      return;
+    },
+    creatNewDig: function creatNewDig(modelInfoTemp) {
+      var _this4 = this;
+      (0, _request.default)('', '/cricleai/diglogue/creatNewDig', 'POST', modelInfoTemp, {}).then(function (res) {
+        if (res.code == 200) {
+          _this4.digTitle = '';
+          _this4.modalShow = false;
+          _this4.historyDigList.unshift(res.data);
+          var askMsg = modelInfoTemp.modelName;
+          uni.navigateTo({
+            url: '/pages/main/chat/index?msg=' + askMsg
+          });
+        } else {
+          _util.default.message("查询错误", 'error');
+        }
+      });
+    },
+    deteleDig: function deteleDig(item, index) {
+      var _this5 = this;
+      (0, _request.default)('', '/cricleai/diglogue/deteleDig?id=' + item.id, 'POST', {}, {}).then(function (res) {
+        if (res.code == 200) {
+          _this5.historyDigList.splice(index, 1);
+
+          // this.checkHaveDigHistory(this.historyParam.dialogueRoleId)
+          _util.default.message("删除成功");
+          // this.checkHaveDigHistory(item.dialogueRoleId)
+        } else {
+          _util.default.message("删除失败", 'error');
+        }
+      });
+    },
+    askto: function askto() {
+      if (_util.default.isBlank(this.content)) {
+        _util.default.message("对话内容不允许为空", 'error');
+      } else {
+        var param = {
+          askContent: this.content
+        };
+        uni.navigateTo({
+          url: '/pages/main/replyquestion/replyquestion?askContent=' + encodeURIComponent(JSON.stringify(param))
+        });
+      }
     }
+  },
+  // 触底的事件
+  onReachBottom: function onReachBottom() {
+    if (this.totalPage == this.page) {
+      this.isLoaddingFinash = true;
+    }
+    if (this.totalPage > this.page) {
+      this.page = this.page + 1;
+      this.checkHaveDigHistory(this.historyParam.dialogueRoleId);
+    }
+  },
+  // 页面下拉时触发，与 onLoad 等生命周期函数平级
+  onPullDownRefresh: function onPullDownRefresh() {
+    // console.log('refresh');
+    // this.page = 1
+    // this.getData()
   }
 };
 exports.default = _default;

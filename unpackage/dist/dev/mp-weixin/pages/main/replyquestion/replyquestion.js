@@ -200,7 +200,7 @@ var _md2 = _interopRequireDefault(__webpack_require__(/*! ../../../static/js/md 
 var socket = null;
 var mpHtml = function mpHtml() {
   Promise.all(/*! require.ensure | node-modules/mp-html/mp-html */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/mp-html/mp-html")]).then((function () {
-    return resolve(__webpack_require__(/*! @/node_modules/mp-html/mp-html */ 373));
+    return resolve(__webpack_require__(/*! @/node_modules/mp-html/mp-html */ 365));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {

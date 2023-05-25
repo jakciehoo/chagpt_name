@@ -122,7 +122,7 @@ exports.default = void 0;
 var _props = _interopRequireDefault(__webpack_require__(/*! ../u-image/props.js */ 291));
 var uvImage = function uvImage() {
   __webpack_require__.e(/*! require.ensure | node-modules/uview-ui/components/u-image/u-image */ "node-modules/uview-ui/components/u-image/u-image").then((function () {
-    return resolve(__webpack_require__(/*! ../u-image/u-image.vue */ 498));
+    return resolve(__webpack_require__(/*! ../u-image/u-image.vue */ 488));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {

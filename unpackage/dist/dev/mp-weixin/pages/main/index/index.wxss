@@ -1,6 +1,6 @@
 
 page {
-	background-color: #F7FBFF;
+	background-color: #fff;
 }
 .showText {
 	font-size: 30rpx;
@@ -19,7 +19,7 @@ page {
 	text-align: center;
 }
 .main {
-	margin-top: 200rpx;
+	margin-top: 10rpx;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -57,5 +57,233 @@ page {
 }
 .loginIndex{
 	margin-top: 60rpx;
+}
+.title {
+	font-size: 25rpx;
+	font-weight: 700;
+	color: #000000;
+}
+.content {
+	font-size: 25rpx;
+	color: #626262;
+	margin-top: 20rpx;
+	line-height: 20px;
+	/* margin: 3.2%; */
+	letter-spacing: 1px;
+}
+.itemCheck {
+	background-color: #3387FF;
+	border-radius: 0rpx 12rpx 0rpx 12rpx;
+	padding: 7rpx 13rpx;
+	padding-left: 13rpx;
+	padding-right: 13rpx;
+	padding-top: 5rpx;
+	padding-bottom: 9rpx;
+	font-size: 18rpx;
+	color: white;
+	width: -webkit-max-content;
+	width: max-content;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.itemSelect {
+	background-color: #F2F8FF;
+	position: relative;
+	padding: 31rpx 22rpx;
+	width: 100%;
+	height: 100%;
+	border: 1rpx solid #3387FF;
+	border-radius: 15rpx;
+}
+.itemUnSelect {
+	background-color: #F2F8FF;
+	position: relative;
+	padding: 42rpx 22rpx;
+	width: 100%;
+	height: 100%;
+	border: 1rpx solid #F2F8FF;
+	border-radius: 15rpx;
+}
+.role-model {
+	display: flex;
+	flex-direction: row;
+	/* justify-content: center; */
+	flex-wrap: wrap;
+	align-items: center;
+}
+.role-model .role {
+	width: 42%;
+	/* display: flex; */
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 7px 12px;
+	position: relative;
+}
+.select {
+	background-color: #3387FF;
+	color: white;
+	margin-bottom: 30rpx;
+	font-size: 32rpx;
+	display: flex;
+	justify-content: center;
+	width: 154rpx;
+	align-items: center;
+	height: 62rpx;
+	text-align: center;
+	font-weight: 700;
+	margin-top: 30rpx;
+	border-radius: 10rpx;
+}
+.unselect {
+	color: #494A4C;
+	width: 154rpx;
+	margin-bottom: 30rpx;
+	font-size: 28rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 62rpx;
+	text-align: center;
+	font-weight: 400;
+	margin-top: 30rpx;
+	border-radius: 10rpx;
+}
+.fwarp {
+	white-space: nowrap;
+	flex-wrap: nowrap;
+	margin-left: 30rpx;
+}
+.pasteBtn {
+	border: 0.6rpx solid #3387FF;
+	border-radius: 50rpx;
+	padding: 10rpx 50rpx;
+	font-size: 35rpx;
+	color: #3387FF;
+	font-weight: 500;
+}
+.comitBtn {
+	border: 0.6rpx solid #3387FF;
+	border-radius: 50rpx;
+	padding: 10rpx 50rpx;
+	font-size: 35rpx;
+	margin-left: 60rpx;
+	color: #ffffff;
+	background-color: #3387FF;
+	font-weight: 500;
+}
+.center {
+	justify-content: center;
+	margin-top: 30rpx;
+}
+.row {
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	width: 100%;
+}
+.textInput {
+	border: 1rpx solid #3387FF;
+	border-radius: 10rpx;
+	width: -webkit-fill-available;
+	padding: 20rpx;
+	font-size: 28rpx;
+	color: #000000;
+}
+.textInputPlaceholder {
+	font-size: 28rpx;
+	color: #898D99;
+}
+.topRound {
+	margin: 30rpx;
+	box-shadow: 0rpx 0rpx 6rpx 6rpx rgba(0, 0, 0, 0.05);
+	border-radius: 13rpx;
+	padding: 30rpx;
+}
+.page-main {
+	height: 800rpx;
+}
+.elegant-list {
+	width: 100%;
+	padding: 32rpx 0;
+	/* height: auto; */
+	border: 1px solid #3389ff;
+	position: relative;
+	background: #F1F9FF;
+	margin-top: 10px;
+	border-radius: 12px;
+}
+.page-main .elegant-list:first-child {
+	margin-top: 0px;
+}
+.card-user {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0 32rpx;
+}
+.user-info {
+	margin-left: 16rpx;
+}
+.user-name {
+	font-size: 23rpx;
+	line-height: 44rpx;
+	font-weight: bold;
+	color: #191919;
+}
+.user-time {
+	font-size: 24rpx;
+	line-height: 36rpx;
+	color: #999999;
+}
+.user-img {
+	width: 72rpx;
+	height: 72rpx;
+	border-radius: 72rpx;
+	border: solid #f0f0f0 1px;
+}
+.dig-list {
+	font-weight: 700;
+	font-size: 20px;
+	padding: 10px;
+	margin: 0 auto;
+}
+.countie-dig {
+	font-size: 20rpx;
+	width: 113rpx;
+	background: #3389ff;
+	padding: 5px;
+	color: #FFFFFF;
+	border-radius: 12px;
+	margin: auto;
+	text-align: center;
+	margin-right: 0px;
+}
+.left-new {
+	background-color: #3389ff;
+	border-radius: 12rpx 0rpx 12rpx 0rpx;
+	padding: 7rpx 13rpx;
+	padding-left: 13rpx;
+	padding-right: 13rpx;
+	padding-top: 5rpx;
+	padding-bottom: 9rpx;
+	font-size: 18rpx;
+	color: white;
+	width: -webkit-max-content;
+	width: max-content;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+.closeImg {
+	right: 0;
+	width: 18rpx;
+	height: 18rpx;
+	position: absolute;
+	top: 12rpx;
+	right: 12rpx;
 }
 
