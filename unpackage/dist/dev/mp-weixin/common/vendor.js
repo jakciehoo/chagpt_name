@@ -19897,7 +19897,21 @@ exports.default = _default;
 /* 258 */,
 /* 259 */,
 /* 260 */,
-/* 261 */
+/* 261 */,
+/* 262 */,
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */,
+/* 270 */,
+/* 271 */,
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */
 /*!******************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-notice-bar/props.js ***!
   \******************************************************************************************************************/
@@ -19985,14 +19999,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 262 */,
-/* 263 */,
-/* 264 */,
-/* 265 */,
-/* 266 */,
-/* 267 */,
-/* 268 */,
-/* 269 */
+/* 276 */,
+/* 277 */,
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */,
+/* 282 */,
+/* 283 */
 /*!***********************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-tag/props.js ***!
   \***********************************************************************************************************/
@@ -20094,14 +20108,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 270 */,
-/* 271 */,
-/* 272 */,
-/* 273 */,
-/* 274 */,
-/* 275 */,
-/* 276 */,
-/* 277 */
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */
 /*!*************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-image/props.js ***!
   \*************************************************************************************************************/
@@ -20203,12 +20217,12 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 278 */,
-/* 279 */,
-/* 280 */,
-/* 281 */,
-/* 282 */,
-/* 283 */
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */
 /*!************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-icon/icons.js ***!
   \************************************************************************************************************/
@@ -20439,7 +20453,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 284 */
+/* 298 */
 /*!************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-icon/props.js ***!
   \************************************************************************************************************/
@@ -20546,14 +20560,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 285 */,
-/* 286 */,
-/* 287 */,
-/* 288 */,
-/* 289 */,
-/* 290 */,
-/* 291 */,
-/* 292 */
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */
 /*!***************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-divider/props.js ***!
   \***************************************************************************************************************/
@@ -20615,14 +20629,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 293 */,
-/* 294 */,
-/* 295 */,
-/* 296 */,
-/* 297 */,
-/* 298 */,
-/* 299 */,
-/* 300 */
+/* 307 */,
+/* 308 */,
+/* 309 */,
+/* 310 */,
+/* 311 */,
+/* 312 */,
+/* 313 */,
+/* 314 */
 /*!*************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-popup/props.js ***!
   \*************************************************************************************************************/
@@ -20719,14 +20733,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 301 */,
-/* 302 */,
-/* 303 */,
-/* 304 */,
-/* 305 */,
-/* 306 */,
-/* 307 */,
-/* 308 */
+/* 315 */,
+/* 316 */,
+/* 317 */,
+/* 318 */,
+/* 319 */,
+/* 320 */,
+/* 321 */,
+/* 322 */
 /*!*************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-input/props.js ***!
   \*************************************************************************************************************/
@@ -20926,12 +20940,12 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 309 */,
-/* 310 */,
-/* 311 */,
-/* 312 */,
-/* 313 */,
-/* 314 */
+/* 323 */,
+/* 324 */,
+/* 325 */,
+/* 326 */,
+/* 327 */,
+/* 328 */
 /*!************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-code/props.js ***!
   \************************************************************************************************************/
@@ -20983,14 +20997,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 315 */,
-/* 316 */,
-/* 317 */,
-/* 318 */,
-/* 319 */,
-/* 320 */,
-/* 321 */,
-/* 322 */
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */,
+/* 335 */,
+/* 336 */
 /*!******************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/libs/mixin/button.js ***!
   \******************************************************************************************************/
@@ -21020,7 +21034,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 323 */
+/* 337 */
 /*!********************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/libs/mixin/openType.js ***!
   \********************************************************************************************************/
@@ -21062,7 +21076,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 324 */
+/* 338 */
 /*!**************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-button/props.js ***!
   \**************************************************************************************************************/
@@ -21241,14 +21255,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 325 */,
-/* 326 */,
-/* 327 */,
-/* 328 */,
-/* 329 */,
-/* 330 */,
-/* 331 */,
-/* 332 */
+/* 339 */,
+/* 340 */,
+/* 341 */,
+/* 342 */,
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */
 /*!*************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-empty/props.js ***!
   \*************************************************************************************************************/
@@ -21325,14 +21339,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 333 */,
-/* 334 */,
-/* 335 */,
-/* 336 */,
-/* 337 */,
-/* 338 */,
-/* 339 */,
-/* 340 */
+/* 347 */,
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */
 /*!****************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-loadmore/props.js ***!
   \****************************************************************************************************************/
@@ -21429,14 +21443,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 341 */,
-/* 342 */,
-/* 343 */,
-/* 344 */,
-/* 345 */,
-/* 346 */,
-/* 347 */,
-/* 348 */
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */
 /*!***********************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-row/props.js ***!
   \***********************************************************************************************************/
@@ -21473,14 +21487,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 349 */,
-/* 350 */,
-/* 351 */,
-/* 352 */,
-/* 353 */,
-/* 354 */,
-/* 355 */,
-/* 356 */
+/* 363 */,
+/* 364 */,
+/* 365 */,
+/* 366 */,
+/* 367 */,
+/* 368 */,
+/* 369 */,
+/* 370 */
 /*!***********************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-col/props.js ***!
   \***********************************************************************************************************/
@@ -21527,14 +21541,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 357 */,
-/* 358 */,
-/* 359 */,
-/* 360 */,
-/* 361 */,
-/* 362 */,
-/* 363 */,
-/* 364 */
+/* 371 */,
+/* 372 */,
+/* 373 */,
+/* 374 */,
+/* 375 */,
+/* 376 */,
+/* 377 */,
+/* 378 */
 /*!******************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/parser.js ***!
   \******************************************************************************************/
@@ -22752,7 +22766,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"], __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/wx.js */ 1)["default"]))
 
 /***/ }),
-/* 365 */
+/* 379 */
 /*!**************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/markdown/index.js ***!
   \**************************************************************************************************/
@@ -22767,7 +22781,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _marked = _interopRequireDefault(__webpack_require__(/*! ./marked.min */ 366));
+var _marked = _interopRequireDefault(__webpack_require__(/*! ./marked.min */ 380));
 /**
  * @fileoverview markdown 插件
  * Include marked (https://github.com/markedjs/marked)
@@ -22801,7 +22815,7 @@ var _default = Markdown;
 exports.default = _default;
 
 /***/ }),
-/* 366 */
+/* 380 */
 /*!*******************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/markdown/marked.min.js ***!
   \*******************************************************************************************************/
@@ -23928,7 +23942,7 @@ var _default = t();
 exports.default = _default;
 
 /***/ }),
-/* 367 */
+/* 381 */
 /*!***********************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/audio/index.js ***!
   \***********************************************************************************************/
@@ -23943,7 +23957,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _context = _interopRequireDefault(__webpack_require__(/*! ./context */ 368));
+var _context = _interopRequireDefault(__webpack_require__(/*! ./context */ 382));
 /**
  * @fileoverview audio 插件
  */
@@ -23977,7 +23991,7 @@ var _default = Audio;
 exports.default = _default;
 
 /***/ }),
-/* 368 */
+/* 382 */
 /*!*************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/audio/context.js ***!
   \*************************************************************************************************/
@@ -24006,7 +24020,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 369 */
+/* 383 */
 /*!***********************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/emoji/index.js ***!
   \***********************************************************************************************/
@@ -24220,7 +24234,7 @@ var _default = Emoji;
 exports.default = _default;
 
 /***/ }),
-/* 370 */
+/* 384 */
 /*!***************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/highlight/index.js ***!
   \***************************************************************************************************/
@@ -24235,9 +24249,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _prism = _interopRequireDefault(__webpack_require__(/*! ./prism.min */ 371));
-var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 372));
-var _parser = _interopRequireDefault(__webpack_require__(/*! ../parser */ 364));
+var _prism = _interopRequireDefault(__webpack_require__(/*! ./prism.min */ 385));
+var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 386));
+var _parser = _interopRequireDefault(__webpack_require__(/*! ../parser */ 378));
 /**
  * @fileoverview highlight 插件
  * Include prismjs (https://prismjs.com)
@@ -24333,7 +24347,7 @@ var _default = Highlight;
 exports.default = _default;
 
 /***/ }),
-/* 371 */
+/* 385 */
 /*!*******************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/highlight/prism.min.js ***!
   \*******************************************************************************************************/
@@ -26015,7 +26029,7 @@ Prism.languages.python = {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 3)))
 
 /***/ }),
-/* 372 */
+/* 386 */
 /*!****************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/highlight/config.js ***!
   \****************************************************************************************************/
@@ -26039,7 +26053,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 373 */
+/* 387 */
 /*!***********************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/style/index.js ***!
   \***********************************************************************************************/
@@ -26054,7 +26068,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _parser = _interopRequireDefault(__webpack_require__(/*! ./parser */ 374));
+var _parser = _interopRequireDefault(__webpack_require__(/*! ./parser */ 388));
 /**
  * @fileoverview style 插件
  */
@@ -26183,7 +26197,7 @@ var _default = Style;
 exports.default = _default;
 
 /***/ }),
-/* 374 */
+/* 388 */
 /*!************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/style/parser.js ***!
   \************************************************************************************************/
@@ -26369,7 +26383,7 @@ var _default = Parser;
 exports.default = _default;
 
 /***/ }),
-/* 375 */
+/* 389 */
 /*!***************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/img-cache/index.js ***!
   \***************************************************************************************************/
@@ -26461,7 +26475,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 376 */
+/* 390 */
 /*!**************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/editable/index.js ***!
   \**************************************************************************************************/
@@ -26476,8 +26490,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 377));
-var _parser = _interopRequireDefault(__webpack_require__(/*! ../parser */ 364));
+var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 391));
+var _parser = _interopRequireDefault(__webpack_require__(/*! ../parser */ 378));
 /**
  * @fileoverview editable 插件
  */
@@ -27011,7 +27025,7 @@ var _default = Editable;
 exports.default = _default;
 
 /***/ }),
-/* 377 */
+/* 391 */
 /*!***************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/editable/config.js ***!
   \***************************************************************************************************/
@@ -27039,14 +27053,14 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 378 */,
-/* 379 */,
-/* 380 */,
-/* 381 */,
-/* 382 */,
-/* 383 */,
-/* 384 */,
-/* 385 */
+/* 392 */,
+/* 393 */,
+/* 394 */,
+/* 395 */,
+/* 396 */,
+/* 397 */,
+/* 398 */,
+/* 399 */
 /*!**************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-avatar/props.js ***!
   \**************************************************************************************************************/
@@ -27142,14 +27156,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 386 */,
-/* 387 */,
-/* 388 */,
-/* 389 */,
-/* 390 */,
-/* 391 */,
-/* 392 */,
-/* 393 */
+/* 400 */,
+/* 401 */,
+/* 402 */,
+/* 403 */,
+/* 404 */,
+/* 405 */,
+/* 406 */,
+/* 407 */
 /*!********************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-action-sheet/props.js ***!
   \********************************************************************************************************************/
@@ -27221,14 +27235,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 394 */,
-/* 395 */,
-/* 396 */,
-/* 397 */,
-/* 398 */,
-/* 399 */,
-/* 400 */,
-/* 401 */
+/* 408 */,
+/* 409 */,
+/* 410 */,
+/* 411 */,
+/* 412 */,
+/* 413 */,
+/* 414 */,
+/* 415 */
 /*!*************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-modal/props.js ***!
   \*************************************************************************************************************/
@@ -27330,14 +27344,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 402 */,
-/* 403 */,
-/* 404 */,
-/* 405 */,
-/* 406 */,
-/* 407 */,
-/* 408 */,
-/* 409 */
+/* 416 */,
+/* 417 */,
+/* 418 */,
+/* 419 */,
+/* 420 */,
+/* 421 */,
+/* 422 */,
+/* 423 */
 /*!************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-form/props.js ***!
   \************************************************************************************************************/
@@ -27400,12 +27414,12 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 410 */,
-/* 411 */,
-/* 412 */,
-/* 413 */,
-/* 414 */,
-/* 415 */
+/* 424 */,
+/* 425 */,
+/* 426 */,
+/* 427 */,
+/* 428 */,
+/* 429 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-form-item/props.js ***!
   \*****************************************************************************************************************/
@@ -27466,14 +27480,1255 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 416 */,
-/* 417 */,
-/* 418 */,
-/* 419 */,
-/* 420 */,
-/* 421 */,
-/* 422 */,
-/* 423 */
+/* 430 */,
+/* 431 */,
+/* 432 */,
+/* 433 */,
+/* 434 */,
+/* 435 */,
+/* 436 */,
+/* 437 */
+/*!******************************************************************************************************************!*\
+  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-subsection/props.js ***!
+  \******************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // tab的数据
+    list: {
+      type: Array,
+      default: uni.$u.props.subsection.list
+    },
+    // 当前活动的tab的index
+    current: {
+      type: [String, Number],
+      default: uni.$u.props.subsection.current
+    },
+    // 激活的颜色
+    activeColor: {
+      type: String,
+      default: uni.$u.props.subsection.activeColor
+    },
+    // 未激活的颜色
+    inactiveColor: {
+      type: String,
+      default: uni.$u.props.subsection.inactiveColor
+    },
+    // 模式选择，mode=button为按钮形式，mode=subsection时为分段模式
+    mode: {
+      type: String,
+      default: uni.$u.props.subsection.mode
+    },
+    // 字体大小
+    fontSize: {
+      type: [String, Number],
+      default: uni.$u.props.subsection.fontSize
+    },
+    // 激活tab的字体是否加粗
+    bold: {
+      type: Boolean,
+      default: uni.$u.props.subsection.bold
+    },
+    // mode = button时，组件背景颜色
+    bgColor: {
+      type: String,
+      default: uni.$u.props.subsection.bgColor
+    },
+    // 从list元素对象中读取的键名
+    keyName: {
+      type: String,
+      default: uni.$u.props.subsection.keyName
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 438 */,
+/* 439 */,
+/* 440 */,
+/* 441 */,
+/* 442 */,
+/* 443 */,
+/* 444 */,
+/* 445 */,
+/* 446 */,
+/* 447 */,
+/* 448 */,
+/* 449 */,
+/* 450 */,
+/* 451 */,
+/* 452 */
+/*!**************************************************************************************************************!*\
+  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-picker/props.js ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 是否展示picker弹窗
+    show: {
+      type: Boolean,
+      default: uni.$u.props.picker.show
+    },
+    // 是否展示顶部的操作栏
+    showToolbar: {
+      type: Boolean,
+      default: uni.$u.props.picker.showToolbar
+    },
+    // 顶部标题
+    title: {
+      type: String,
+      default: uni.$u.props.picker.title
+    },
+    // 对象数组，设置每一列的数据
+    columns: {
+      type: Array,
+      default: uni.$u.props.picker.columns
+    },
+    // 是否显示加载中状态
+    loading: {
+      type: Boolean,
+      default: uni.$u.props.picker.loading
+    },
+    // 各列中，单个选项的高度
+    itemHeight: {
+      type: [String, Number],
+      default: uni.$u.props.picker.itemHeight
+    },
+    // 取消按钮的文字
+    cancelText: {
+      type: String,
+      default: uni.$u.props.picker.cancelText
+    },
+    // 确认按钮的文字
+    confirmText: {
+      type: String,
+      default: uni.$u.props.picker.confirmText
+    },
+    // 取消按钮的颜色
+    cancelColor: {
+      type: String,
+      default: uni.$u.props.picker.cancelColor
+    },
+    // 确认按钮的颜色
+    confirmColor: {
+      type: String,
+      default: uni.$u.props.picker.confirmColor
+    },
+    // 选择器只有一列时，默认选中项的索引，从0开始
+    singleIndex: {
+      type: [String, Number],
+      default: uni.$u.props.picker.singleIndex
+    },
+    // 每列中可见选项的数量
+    visibleItemCount: {
+      type: [String, Number],
+      default: uni.$u.props.picker.visibleItemCount
+    },
+    // 选项对象中，需要展示的属性键名
+    keyName: {
+      type: String,
+      default: uni.$u.props.picker.keyName
+    },
+    // 是否允许点击遮罩关闭选择器
+    closeOnClickOverlay: {
+      type: Boolean,
+      default: uni.$u.props.picker.closeOnClickOverlay
+    },
+    // 各列的默认索引
+    defaultIndex: {
+      type: Array,
+      default: uni.$u.props.picker.defaultIndex
+    },
+    // 是否在手指松开时立即触发 change 事件。若不开启则会在滚动动画结束后触发 change 事件，只在微信2.21.1及以上有效
+    immediateChange: {
+      type: Boolean,
+      default: uni.$u.props.picker.immediateChange
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 453 */,
+/* 454 */,
+/* 455 */,
+/* 456 */,
+/* 457 */,
+/* 458 */,
+/* 459 */,
+/* 460 */
+/*!*********************************************************************************************************************!*\
+  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-line-progress/props.js ***!
+  \*********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 激活部分的颜色
+    activeColor: {
+      type: String,
+      default: uni.$u.props.lineProgress.activeColor
+    },
+    inactiveColor: {
+      type: String,
+      default: uni.$u.props.lineProgress.color
+    },
+    // 进度百分比，数值
+    percentage: {
+      type: [String, Number],
+      default: uni.$u.props.lineProgress.inactiveColor
+    },
+    // 是否在进度条内部显示百分比的值
+    showText: {
+      type: Boolean,
+      default: uni.$u.props.lineProgress.showText
+    },
+    // 进度条的高度，单位px
+    height: {
+      type: [String, Number],
+      default: uni.$u.props.lineProgress.height
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 461 */,
+/* 462 */,
+/* 463 */,
+/* 464 */,
+/* 465 */,
+/* 466 */,
+/* 467 */,
+/* 468 */
+/*!*************************************************************************************************************!*\
+  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-parse/props.js ***!
+  \*************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    content: String,
+    copyLink: {
+      type: Boolean,
+      default: uni.$u.props.parse.copyLink
+    },
+    domain: String,
+    errorImg: {
+      type: String,
+      default: uni.$u.props.parse.errorImg
+    },
+    lazyLoad: {
+      type: Boolean,
+      default: uni.$u.props.parse.lazyLoad
+    },
+    loadingImg: {
+      type: String,
+      default: uni.$u.props.parse.loadingImg
+    },
+    pauseVideo: {
+      type: Boolean,
+      default: uni.$u.props.parse.pauseVideo
+    },
+    previewImg: {
+      type: Boolean,
+      default: uni.$u.props.parse.previewImg
+    },
+    scrollTable: Boolean,
+    selectable: Boolean,
+    setTitle: {
+      type: Boolean,
+      default: uni.$u.props.parse.setTitle
+    },
+    showImgMenu: {
+      type: Boolean,
+      default: uni.$u.props.parse.showImgMenu
+    },
+    tagStyle: Object,
+    useAnchor: null
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 469 */
+/*!**************************************************************************************************************!*\
+  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-parse/parser.js ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni, wx) {
+
+/**
+ * @fileoverview html 解析器
+ */
+// 配置
+var _defineProperty = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11);
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+var config = {
+  // 信任的标签（保持标签名不变）
+  trustTags: makeMap('a,abbr,ad,audio,b,blockquote,br,code,col,colgroup,dd,del,dl,dt,div,em,fieldset,h1,h2,h3,h4,h5,h6,hr,i,img,ins,label,legend,li,ol,p,q,ruby,rt,source,span,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,title,ul,video'),
+  // 块级标签（转为 div，其他的非信任标签转为 span）
+  blockTags: makeMap('address,article,aside,body,caption,center,cite,footer,header,html,nav,pre,section'),
+  // 要移除的标签
+  ignoreTags: makeMap('area,base,canvas,embed,frame,head,iframe,input,link,map,meta,param,rp,script,source,style,textarea,title,track,wbr'),
+  // 自闭合的标签
+  voidTags: makeMap('area,base,br,col,circle,ellipse,embed,frame,hr,img,input,line,link,meta,param,path,polygon,rect,source,track,use,wbr'),
+  // html 实体
+  entities: {
+    lt: '<',
+    gt: '>',
+    quot: '"',
+    apos: "'",
+    ensp: "\u2002",
+    emsp: "\u2003",
+    nbsp: '\xA0',
+    semi: ';',
+    ndash: '–',
+    mdash: '—',
+    middot: '·',
+    lsquo: '‘',
+    rsquo: '’',
+    ldquo: '“',
+    rdquo: '”',
+    bull: '•',
+    hellip: '…'
+  },
+  // 默认的标签样式
+  tagStyle: {
+    address: 'font-style:italic',
+    big: 'display:inline;font-size:1.2em',
+    caption: 'display:table-caption;text-align:center',
+    center: 'text-align:center',
+    cite: 'font-style:italic',
+    dd: 'margin-left:40px',
+    mark: 'background-color:yellow',
+    pre: 'font-family:monospace;white-space:pre',
+    s: 'text-decoration:line-through',
+    small: 'display:inline;font-size:0.8em',
+    u: 'text-decoration:underline'
+  }
+};
+var _uni$getSystemInfoSyn = uni.getSystemInfoSync(),
+  windowWidth = _uni$getSystemInfoSyn.windowWidth;
+var blankChar = makeMap(' ,\r,\n,\t,\f');
+var idIndex = 0;
+
+/**
+ * @description 创建 map
+ * @param {String} str 逗号分隔
+ */
+
+function makeMap(str) {
+  var map = Object.create(null);
+  var list = str.split(',');
+  for (var i = list.length; i--;) {
+    map[list[i]] = true;
+  }
+  return map;
+}
+/**
+ * @description 解码 html 实体
+ * @param {String} str 要解码的字符串
+ * @param {Boolean} amp 要不要解码 &amp;
+ * @returns {String} 解码后的字符串
+ */
+
+function decodeEntity(str, amp) {
+  var i = str.indexOf('&');
+  while (i != -1) {
+    var j = str.indexOf(';', i + 3);
+    var code = void 0;
+    if (j == -1) break;
+    if (str[i + 1] == '#') {
+      // &#123; 形式的实体
+      code = parseInt((str[i + 2] == 'x' ? '0' : '') + str.substring(i + 2, j));
+      if (!isNaN(code)) str = str.substr(0, i) + String.fromCharCode(code) + str.substr(j + 1);
+    } else {
+      // &nbsp; 形式的实体
+      code = str.substring(i + 1, j);
+      if (config.entities[code] || code == 'amp' && amp) str = str.substr(0, i) + (config.entities[code] || '&') + str.substr(j + 1);
+    }
+    i = str.indexOf('&', i + 1);
+  }
+  return str;
+}
+/**
+ * @description html 解析器
+ * @param {Object} vm 组件实例
+ */
+
+function parser(vm) {
+  this.options = vm || {};
+  this.tagStyle = Object.assign(config.tagStyle, this.options.tagStyle);
+  this.imgList = vm.imgList || [];
+  this.plugins = vm.plugins || [];
+  this.attrs = Object.create(null);
+  this.stack = [];
+  this.nodes = [];
+}
+/**
+ * @description 执行解析
+ * @param {String} content 要解析的文本
+ */
+
+parser.prototype.parse = function (content) {
+  // 插件处理
+  for (var i = this.plugins.length; i--;) {
+    if (this.plugins[i].onUpdate) content = this.plugins[i].onUpdate(content, config) || content;
+  }
+  new lexer(this).parse(content); // 出栈未闭合的标签
+
+  while (this.stack.length) {
+    this.popNode();
+  }
+  return this.nodes;
+};
+/**
+ * @description 将标签暴露出来（不被 rich-text 包含）
+ */
+
+parser.prototype.expose = function () {
+  for (var i = this.stack.length; i--;) {
+    var item = this.stack[i];
+    if (item.name == 'a' || item.c) return;
+    item.c = 1;
+  }
+};
+/**
+ * @description 处理插件
+ * @param {Object} node 要处理的标签
+ * @returns {Boolean} 是否要移除此标签
+ */
+
+parser.prototype.hook = function (node) {
+  for (var i = this.plugins.length; i--;) {
+    if (this.plugins[i].onParse && this.plugins[i].onParse(node, this) == false) return false;
+  }
+  return true;
+};
+/**
+ * @description 将链接拼接上主域名
+ * @param {String} url 需要拼接的链接
+ * @returns {String} 拼接后的链接
+ */
+
+parser.prototype.getUrl = function (url) {
+  var domain = this.options.domain;
+  if (url[0] == '/') {
+    // // 开头的补充协议名
+    if (url[1] == '/') url = "".concat(domain ? domain.split('://')[0] : 'http', ":").concat(url); // 否则补充整个域名
+    else if (domain) url = domain + url;
+  } else if (domain && !url.includes('data:') && !url.includes('://')) url = "".concat(domain, "/").concat(url);
+  return url;
+};
+/**
+ * @description 解析样式表
+ * @param {Object} node 标签
+ * @returns {Object}
+ */
+
+parser.prototype.parseStyle = function (node) {
+  var attrs = node.attrs;
+  var list = (this.tagStyle[node.name] || '').split(';').concat((attrs.style || '').split(';'));
+  var styleObj = {};
+  var tmp = '';
+  if (attrs.id) {
+    // 暴露锚点
+    if (this.options.useAnchor) this.expose();else if (node.name != 'img' && node.name != 'a' && node.name != 'video' && node.name != 'audio') attrs.id = void 0;
+  } // 转换 width 和 height 属性
+
+  if (attrs.width) {
+    styleObj.width = parseFloat(attrs.width) + (attrs.width.includes('%') ? '%' : 'px');
+    attrs.width = void 0;
+  }
+  if (attrs.height) {
+    styleObj.height = parseFloat(attrs.height) + (attrs.height.includes('%') ? '%' : 'px');
+    attrs.height = void 0;
+  }
+  for (var i = 0, len = list.length; i < len; i++) {
+    var info = list[i].split(':');
+    if (info.length < 2) continue;
+    var key = info.shift().trim().toLowerCase();
+    var value = info.join(':').trim(); // 兼容性的 css 不压缩
+
+    if (value[0] == '-' && value.lastIndexOf('-') > 0 || value.includes('safe')) tmp += ';'.concat(key, ':').concat(value); // 重复的样式进行覆盖
+    else if (!styleObj[key] || value.includes('import') || !styleObj[key].includes('import')) {
+      // 填充链接
+      if (value.includes('url')) {
+        var j = value.indexOf('(') + 1;
+        if (j) {
+          while (value[j] == '"' || value[j] == "'" || blankChar[value[j]]) {
+            j++;
+          }
+          value = value.substr(0, j) + this.getUrl(value.substr(j));
+        }
+      } // 转换 rpx（rich-text 内部不支持 rpx）
+      else if (value.includes('rpx')) {
+        value = value.replace(/[0-9.]+\s*rpx/g, function ($) {
+          return "".concat(parseFloat($) * windowWidth / 750, "px");
+        });
+      }
+      styleObj[key] = value;
+    }
+  }
+  node.attrs.style = tmp;
+  return styleObj;
+};
+/**
+ * @description 解析到标签名
+ * @param {String} name 标签名
+ * @private
+ */
+
+parser.prototype.onTagName = function (name) {
+  this.tagName = this.xml ? name : name.toLowerCase();
+  if (this.tagName == 'svg') this.xml = true; // svg 标签内大小写敏感
+};
+/**
+ * @description 解析到属性名
+ * @param {String} name 属性名
+ * @private
+ */
+
+parser.prototype.onAttrName = function (name) {
+  name = this.xml ? name : name.toLowerCase();
+  if (name.substr(0, 5) == 'data-') {
+    // data-src 自动转为 src
+    if (name == 'data-src' && !this.attrs.src) this.attrName = 'src'; // a 和 img 标签保留 data- 的属性，可以在 imgtap 和 linktap 事件中使用
+    else if (this.tagName == 'img' || this.tagName == 'a') this.attrName = name; // 剩余的移除以减小大小
+    else this.attrName = void 0;
+  } else {
+    this.attrName = name;
+    this.attrs[name] = 'T'; // boolean 型属性缺省设置
+  }
+};
+/**
+ * @description 解析到属性值
+ * @param {String} val 属性值
+ * @private
+ */
+
+parser.prototype.onAttrVal = function (val) {
+  var name = this.attrName || ''; // 部分属性进行实体解码
+
+  if (name == 'style' || name == 'href') this.attrs[name] = decodeEntity(val, true); // 拼接主域名
+  else if (name.includes('src')) this.attrs[name] = this.getUrl(decodeEntity(val, true));else if (name) this.attrs[name] = val;
+};
+/**
+ * @description 解析到标签开始
+ * @param {Boolean} selfClose 是否有自闭合标识 />
+ * @private
+ */
+
+parser.prototype.onOpenTag = function (selfClose) {
+  // 拼装 node
+  var node = Object.create(null);
+  node.name = this.tagName;
+  node.attrs = this.attrs;
+  this.attrs = Object.create(null);
+  var attrs = node.attrs;
+  var parent = this.stack[this.stack.length - 1];
+  var siblings = parent ? parent.children : this.nodes;
+  var close = this.xml ? selfClose : config.voidTags[node.name]; // 转换 embed 标签
+
+  if (node.name == 'embed') {
+    var src = attrs.src || ''; // 按照后缀名和 type 将 embed 转为 video 或 audio
+
+    if (src.includes('.mp4') || src.includes('.3gp') || src.includes('.m3u8') || (attrs.type || '').includes('video')) node.name = 'video';else if (src.includes('.mp3') || src.includes('.wav') || src.includes('.aac') || src.includes('.m4a') || (attrs.type || '').includes('audio')) node.name = 'audio';
+    if (attrs.autostart) attrs.autoplay = 'T';
+    attrs.controls = 'T';
+  }
+  // 处理音视频
+
+  if (node.name == 'video' || node.name == 'audio') {
+    // 设置 id 以便获取 context
+    if (node.name == 'video' && !attrs.id) attrs.id = "v".concat(idIndex++); // 没有设置 controls 也没有设置 autoplay 的自动设置 controls
+
+    if (!attrs.controls && !attrs.autoplay) attrs.controls = 'T'; // 用数组存储所有可用的 source
+
+    node.src = [];
+    if (attrs.src) {
+      node.src.push(attrs.src);
+      attrs.src = void 0;
+    }
+    this.expose();
+  }
+  // 处理自闭合标签
+
+  if (close) {
+    if (!this.hook(node) || config.ignoreTags[node.name]) {
+      // 通过 base 标签设置主域名
+      if (node.name == 'base' && !this.options.domain) this.options.domain = attrs.href;
+      // 设置 source 标签（仅父节点为 video 或 audio 时有效）
+      else if (node.name == 'source' && parent && (parent.name == 'video' || parent.name == 'audio') && attrs.src) parent.src.push(attrs.src);
+      return;
+    } // 解析 style
+
+    var styleObj = this.parseStyle(node); // 处理图片
+
+    if (node.name == 'img') {
+      if (attrs.src) {
+        // 标记 webp
+        if (attrs.src.includes('webp')) node.webp = 'T'; // data url 图片如果没有设置 original-src 默认为不可预览的小图片
+
+        if (attrs.src.includes('data:') && !attrs['original-src']) attrs.ignore = 'T';
+        if (!attrs.ignore || node.webp || attrs.src.includes('cloud://')) {
+          for (var i = this.stack.length; i--;) {
+            var item = this.stack[i];
+            if (item.name == 'a') {
+              node.a = item.attrs;
+              break;
+            }
+            var style = item.attrs.style || '';
+            if (style.includes('flex:') && !style.includes('flex:0') && !style.includes('flex: 0') && (!styleObj.width || !styleObj.width.includes('%'))) {
+              styleObj.width = '100% !important';
+              styleObj.height = '';
+              for (var j = i + 1; j < this.stack.length; j++) {
+                this.stack[j].attrs.style = (this.stack[j].attrs.style || '').replace('inline-', '');
+              }
+            } else if (style.includes('flex') && styleObj.width == '100%') {
+              for (var _j = i + 1; _j < this.stack.length; _j++) {
+                var _style = this.stack[_j].attrs.style || '';
+                if (!_style.includes(';width') && !_style.includes(' width') && _style.indexOf('width') != 0) {
+                  styleObj.width = '';
+                  break;
+                }
+              }
+            } else if (style.includes('inline-block')) {
+              if (styleObj.width && styleObj.width[styleObj.width.length - 1] == '%') {
+                item.attrs.style += ";max-width:".concat(styleObj.width);
+                styleObj.width = '';
+              } else item.attrs.style += ';max-width:100%';
+            }
+            item.c = 1;
+          }
+          attrs.i = this.imgList.length.toString();
+          var _src = attrs['original-src'] || attrs.src;
+          if (this.imgList.includes(_src)) {
+            // 如果有重复的链接则对域名进行随机大小写变换避免预览时错位
+            var _i = _src.indexOf('://');
+            if (_i != -1) {
+              _i += 3;
+              var newSrc = _src.substr(0, _i);
+              for (; _i < _src.length; _i++) {
+                if (_src[_i] == '/') break;
+                newSrc += Math.random() > 0.5 ? _src[_i].toUpperCase() : _src[_i];
+              }
+              newSrc += _src.substr(_i);
+              _src = newSrc;
+            }
+          }
+          this.imgList.push(_src);
+        }
+      }
+      if (styleObj.display == 'inline') styleObj.display = '';
+      if (attrs.ignore) {
+        styleObj['max-width'] = styleObj['max-width'] || '100%';
+        attrs.style += ';-webkit-touch-callout:none';
+      }
+      // 设置的宽度超出屏幕，为避免变形，高度转为自动
+
+      if (parseInt(styleObj.width) > windowWidth) styleObj.height = void 0; // 记录是否设置了宽高
+
+      if (styleObj.width) {
+        if (styleObj.width.includes('auto')) styleObj.width = '';else {
+          node.w = 'T';
+          if (styleObj.height && !styleObj.height.includes('auto')) node.h = 'T';
+        }
+      }
+    } else if (node.name == 'svg') {
+      siblings.push(node);
+      this.stack.push(node);
+      this.popNode();
+      return;
+    }
+    for (var key in styleObj) {
+      if (styleObj[key]) attrs.style += ';'.concat(key, ':').concat(styleObj[key].replace(' !important', ''));
+    }
+    attrs.style = attrs.style.substr(1) || void 0;
+  } else {
+    if (node.name == 'pre' || (attrs.style || '').includes('white-space') && attrs.style.includes('pre')) this.pre = node.pre = true;
+    node.children = [];
+    this.stack.push(node);
+  } // 加入节点树
+
+  siblings.push(node);
+};
+/**
+ * @description 解析到标签结束
+ * @param {String} name 标签名
+ * @private
+ */
+
+parser.prototype.onCloseTag = function (name) {
+  // 依次出栈到匹配为止
+  name = this.xml ? name : name.toLowerCase();
+  var i;
+  for (i = this.stack.length; i--;) {
+    if (this.stack[i].name == name) break;
+  }
+  if (i != -1) {
+    while (this.stack.length > i) {
+      this.popNode();
+    }
+  } else if (name == 'p' || name == 'br') {
+    var siblings = this.stack.length ? this.stack[this.stack.length - 1].children : this.nodes;
+    siblings.push({
+      name: name,
+      attrs: {}
+    });
+  }
+};
+/**
+ * @description 处理标签出栈
+ * @private
+ */
+
+parser.prototype.popNode = function () {
+  var node = this.stack.pop();
+  var attrs = node.attrs;
+  var children = node.children;
+  var parent = this.stack[this.stack.length - 1];
+  var siblings = parent ? parent.children : this.nodes;
+  if (!this.hook(node) || config.ignoreTags[node.name]) {
+    // 获取标题
+    if (node.name == 'title' && children.length && children[0].type == 'text' && this.options.setTitle) {
+      uni.setNavigationBarTitle({
+        title: children[0].text
+      });
+    }
+    siblings.pop();
+    return;
+  }
+  if (node.pre) {
+    // 是否合并空白符标识
+    node.pre = this.pre = void 0;
+    for (var i = this.stack.length; i--;) {
+      if (this.stack[i].pre) this.pre = true;
+    }
+  }
+  var styleObj = {}; // 转换 svg
+
+  if (node.name == 'svg') {
+    var src = '';
+    var _attrs = attrs,
+      style = _attrs.style;
+    attrs.style = '';
+    attrs.xmlns = 'http://www.w3.org/2000/svg';
+    (function traversal(node) {
+      src += "<".concat(node.name);
+      for (var item in node.attrs) {
+        var val = node.attrs[item];
+        if (val) {
+          if (item == 'viewbox') item = 'viewBox';
+          src += ' '.concat(item, '="').concat(val, '"');
+        }
+      }
+      if (!node.children) src += '/>';else {
+        src += '>';
+        for (var _i2 = 0; _i2 < node.children.length; _i2++) {
+          traversal(node.children[_i2]);
+        }
+        src += "</".concat(node.name, ">");
+      }
+    })(node);
+    node.name = 'img';
+    node.attrs = {
+      src: "data:image/svg+xml;utf8,".concat(src.replace(/#/g, '%23')),
+      style: style,
+      ignore: 'T'
+    };
+    node.children = void 0;
+    this.xml = false;
+    return;
+  }
+  // 转换 align 属性
+
+  if (attrs.align) {
+    if (node.name == 'table') {
+      if (attrs.align == 'center') styleObj['margin-inline-start'] = styleObj['margin-inline-end'] = 'auto';else styleObj.float = attrs.align;
+    } else styleObj['text-align'] = attrs.align;
+    attrs.align = void 0;
+  } // 转换 font 标签的属性
+
+  if (node.name == 'font') {
+    if (attrs.color) {
+      styleObj.color = attrs.color;
+      attrs.color = void 0;
+    }
+    if (attrs.face) {
+      styleObj['font-family'] = attrs.face;
+      attrs.face = void 0;
+    }
+    if (attrs.size) {
+      var size = parseInt(attrs.size);
+      if (!isNaN(size)) {
+        if (size < 1) size = 1;else if (size > 7) size = 7;
+        styleObj['font-size'] = ['xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'][size - 1];
+      }
+      attrs.size = void 0;
+    }
+  }
+  // 一些编辑器的自带 class
+
+  if ((attrs.class || '').includes('align-center')) styleObj['text-align'] = 'center';
+  Object.assign(styleObj, this.parseStyle(node));
+  if (parseInt(styleObj.width) > windowWidth) {
+    styleObj['max-width'] = '100%';
+    styleObj['box-sizing'] = 'border-box';
+  }
+  if (config.blockTags[node.name]) node.name = 'div'; // 未知标签转为 span，避免无法显示
+  else if (!config.trustTags[node.name] && !this.xml) node.name = 'span';
+  if (node.name == 'a' || node.name == 'ad') this.expose();
+
+  // 列表处理
+  else if ((node.name == 'ul' || node.name == 'ol') && node.c) {
+    var types = {
+      a: 'lower-alpha',
+      A: 'upper-alpha',
+      i: 'lower-roman',
+      I: 'upper-roman'
+    };
+    if (types[attrs.type]) {
+      attrs.style += ";list-style-type:".concat(types[attrs.type]);
+      attrs.type = void 0;
+    }
+    for (var _i4 = children.length; _i4--;) {
+      if (children[_i4].name == 'li') children[_i4].c = 1;
+    }
+  } // 表格处理
+  else if (node.name == 'table') {
+    // cellpadding、cellspacing、border 这几个常用表格属性需要通过转换实现
+    var padding = parseFloat(attrs.cellpadding);
+    var spacing = parseFloat(attrs.cellspacing);
+    var border = parseFloat(attrs.border);
+    if (node.c) {
+      // padding 和 spacing 默认 2
+      if (isNaN(padding)) padding = 2;
+      if (isNaN(spacing)) spacing = 2;
+    }
+    if (border) attrs.style += ";border:".concat(border, "px solid gray");
+    if (node.flag && node.c) {
+      // 有 colspan 或 rowspan 且含有链接的表格通过 grid 布局实现
+      styleObj.display = 'grid';
+      if (spacing) {
+        styleObj['grid-gap'] = "".concat(spacing, "px");
+        styleObj.padding = "".concat(spacing, "px");
+      } // 无间隔的情况下避免边框重叠
+      else if (border) attrs.style += ';border-left:0;border-top:0';
+      var width = [];
+      // 表格的列宽
+      var trList = [];
+      // tr 列表
+      var cells = [];
+      // 保存新的单元格
+      var map = {}; // 被合并单元格占用的格子
+
+      (function traversal(nodes) {
+        for (var _i5 = 0; _i5 < nodes.length; _i5++) {
+          if (nodes[_i5].name == 'tr') trList.push(nodes[_i5]);else traversal(nodes[_i5].children || []);
+        }
+      })(children);
+      for (var row = 1; row <= trList.length; row++) {
+        var col = 1;
+        for (var j = 0; j < trList[row - 1].children.length; j++, col++) {
+          var td = trList[row - 1].children[j];
+          if (td.name == 'td' || td.name == 'th') {
+            // 这个格子被上面的单元格占用，则列号++
+            while (map["".concat(row, ".").concat(col)]) {
+              col++;
+            }
+            var _style2 = td.attrs.style || '';
+            var start = _style2.indexOf('width') ? _style2.indexOf(';width') : 0; // 提取出 td 的宽度
+
+            if (start != -1) {
+              var end = _style2.indexOf(';', start + 6);
+              if (end == -1) end = _style2.length;
+              if (!td.attrs.colspan) width[col] = _style2.substring(start ? start + 7 : 6, end);
+              _style2 = _style2.substr(0, start) + _style2.substr(end);
+            }
+            _style2 += (border ? ';border:'.concat(border, 'px solid gray') + (spacing ? '' : ';border-right:0;border-bottom:0') : '') + (padding ? ';padding:'.concat(padding, 'px') : ''); // 处理列合并
+
+            if (td.attrs.colspan) {
+              _style2 += ';grid-column-start:'.concat(col, ';grid-column-end:').concat(col + parseInt(td.attrs.colspan));
+              if (!td.attrs.rowspan) _style2 += ';grid-row-start:'.concat(row, ';grid-row-end:').concat(row + 1);
+              col += parseInt(td.attrs.colspan) - 1;
+            } // 处理行合并
+
+            if (td.attrs.rowspan) {
+              _style2 += ';grid-row-start:'.concat(row, ';grid-row-end:').concat(row + parseInt(td.attrs.rowspan));
+              if (!td.attrs.colspan) _style2 += ';grid-column-start:'.concat(col, ';grid-column-end:').concat(col + 1); // 记录下方单元格被占用
+
+              for (var k = 1; k < td.attrs.rowspan; k++) {
+                map["".concat(row + k, ".").concat(col)] = 1;
+              }
+            }
+            if (_style2) td.attrs.style = _style2;
+            cells.push(td);
+          }
+        }
+        if (row == 1) {
+          var temp = '';
+          for (var _i6 = 1; _i6 < col; _i6++) {
+            temp += "".concat(width[_i6] ? width[_i6] : 'auto', " ");
+          }
+          styleObj['grid-template-columns'] = temp;
+        }
+      }
+      node.children = cells;
+    } else {
+      // 没有使用合并单元格的表格通过 table 布局实现
+      if (node.c) styleObj.display = 'table';
+      if (!isNaN(spacing)) styleObj['border-spacing'] = "".concat(spacing, "px");
+      if (border || padding) {
+        // 遍历
+        (function traversal(nodes) {
+          for (var _i7 = 0; _i7 < nodes.length; _i7++) {
+            var _td = nodes[_i7];
+            if (_td.name == 'th' || _td.name == 'td') {
+              if (border) _td.attrs.style = 'border:'.concat(border, 'px solid gray;').concat(_td.attrs.style || '');
+              if (padding) _td.attrs.style = 'padding:'.concat(padding, 'px;').concat(_td.attrs.style || '');
+            } else if (_td.children) traversal(_td.children);
+          }
+        })(children);
+      }
+    } // 给表格添加一个单独的横向滚动层
+
+    if (this.options.scrollTable && !(attrs.style || '').includes('inline')) {
+      var table = _objectSpread({}, node);
+      node.name = 'div';
+      node.attrs = {
+        style: 'overflow:auto'
+      };
+      node.children = [table];
+      attrs = table.attrs;
+    }
+  } else if ((node.name == 'td' || node.name == 'th') && (attrs.colspan || attrs.rowspan)) {
+    for (var _i8 = this.stack.length; _i8--;) {
+      if (this.stack[_i8].name == 'table') {
+        this.stack[_i8].flag = 1; // 指示含有合并单元格
+
+        break;
+      }
+    }
+  } // 转换 ruby
+  else if (node.name == 'ruby') {
+    node.name = 'span';
+    for (var _i9 = 0; _i9 < children.length - 1; _i9++) {
+      if (children[_i9].type == 'text' && children[_i9 + 1].name == 'rt') {
+        children[_i9] = {
+          name: 'div',
+          attrs: {
+            style: 'display:inline-block'
+          },
+          children: [{
+            name: 'div',
+            attrs: {
+              style: 'font-size:50%;text-align:start'
+            },
+            children: children[_i9 + 1].children
+          }, children[_i9]]
+        };
+        children.splice(_i9 + 1, 1);
+      }
+    }
+  } else if (node.c) {
+    node.c = 2;
+    for (var _i10 = node.children.length; _i10--;) {
+      if (!node.children[_i10].c || node.children[_i10].name == 'table') node.c = 1;
+    }
+  }
+  if ((styleObj.display || '').includes('flex') && !node.c) {
+    for (var _i11 = children.length; _i11--;) {
+      var _item = children[_i11];
+      if (_item.f) {
+        _item.attrs.style = (_item.attrs.style || '') + _item.f;
+        _item.f = void 0;
+      }
+    }
+  } // flex 布局时部分样式需要提取到 rich-text 外层
+
+  var flex = parent && (parent.attrs.style || '').includes('flex')
+  // 检查基础库版本 virtualHost 是否可用
+  && !(node.c && wx.getNFCAdapter);
+  if (flex) node.f = ';max-width:100%';
+  for (var key in styleObj) {
+    if (styleObj[key]) {
+      var val = ';'.concat(key, ':').concat(styleObj[key].replace(' !important', ''));
+      if (flex && (key.includes('flex') && key != 'flex-direction' || key == 'align-self' || styleObj[key][0] == '-' || key == 'width' && val.includes('%'))) {
+        node.f += val;
+        if (key == 'width') attrs.style += ';width:100%';
+      } else {
+        attrs.style += val;
+      }
+    }
+  }
+  attrs.style = attrs.style.substr(1) || void 0;
+};
+/**
+ * @description 解析到文本
+ * @param {String} text 文本内容
+ */
+
+parser.prototype.onText = function (text) {
+  if (!this.pre) {
+    // 合并空白符
+    var trim = '';
+    var flag;
+    for (var i = 0, len = text.length; i < len; i++) {
+      if (!blankChar[text[i]]) trim += text[i];else {
+        if (trim[trim.length - 1] != ' ') trim += ' ';
+        if (text[i] == '\n' && !flag) flag = true;
+      }
+    } // 去除含有换行符的空串
+
+    if (trim == ' ' && flag) return;
+    text = trim;
+  }
+  var node = Object.create(null);
+  node.type = 'text';
+  node.text = decodeEntity(text);
+  if (this.hook(node)) {
+    var siblings = this.stack.length ? this.stack[this.stack.length - 1].children : this.nodes;
+    siblings.push(node);
+  }
+};
+/**
+ * @description html 词法分析器
+ * @param {Object} handler 高层处理器
+ */
+
+function lexer(handler) {
+  this.handler = handler;
+}
+/**
+ * @description 执行解析
+ * @param {String} content 要解析的文本
+ */
+
+lexer.prototype.parse = function (content) {
+  this.content = content || '';
+  this.i = 0; // 标记解析位置
+
+  this.start = 0; // 标记一个单词的开始位置
+
+  this.state = this.text; // 当前状态
+
+  for (var len = this.content.length; this.i != -1 && this.i < len;) {
+    this.state();
+  }
+};
+/**
+ * @description 检查标签是否闭合
+ * @param {String} method 如果闭合要进行的操作
+ * @returns {Boolean} 是否闭合
+ * @private
+ */
+
+lexer.prototype.checkClose = function (method) {
+  var selfClose = this.content[this.i] == '/';
+  if (this.content[this.i] == '>' || selfClose && this.content[this.i + 1] == '>') {
+    if (method) this.handler[method](this.content.substring(this.start, this.i));
+    this.i += selfClose ? 2 : 1;
+    this.start = this.i;
+    this.handler.onOpenTag(selfClose);
+    if (this.handler.tagName == 'script') {
+      this.i = this.content.indexOf('</', this.i);
+      if (this.i != -1) {
+        this.i += 2;
+        this.start = this.i;
+      }
+      this.state = this.endTag;
+    } else this.state = this.text;
+    return true;
+  }
+  return false;
+};
+/**
+ * @description 文本状态
+ * @private
+ */
+
+lexer.prototype.text = function () {
+  this.i = this.content.indexOf('<', this.i); // 查找最近的标签
+
+  if (this.i == -1) {
+    // 没有标签了
+    if (this.start < this.content.length) this.handler.onText(this.content.substring(this.start, this.content.length));
+    return;
+  }
+  var c = this.content[this.i + 1];
+  if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z') {
+    // 标签开头
+    if (this.start != this.i) this.handler.onText(this.content.substring(this.start, this.i));
+    this.start = ++this.i;
+    this.state = this.tagName;
+  } else if (c == '/' || c == '!' || c == '?') {
+    if (this.start != this.i) this.handler.onText(this.content.substring(this.start, this.i));
+    var next = this.content[this.i + 2];
+    if (c == '/' && (next >= 'a' && next <= 'z' || next >= 'A' && next <= 'Z')) {
+      // 标签结尾
+      this.i += 2;
+      this.start = this.i;
+      return this.state = this.endTag;
+    } // 处理注释
+
+    var end = '-->';
+    if (c != '!' || this.content[this.i + 2] != '-' || this.content[this.i + 3] != '-') end = '>';
+    this.i = this.content.indexOf(end, this.i);
+    if (this.i != -1) {
+      this.i += end.length;
+      this.start = this.i;
+    }
+  } else this.i++;
+};
+/**
+ * @description 标签名状态
+ * @private
+ */
+
+lexer.prototype.tagName = function () {
+  if (blankChar[this.content[this.i]]) {
+    // 解析到标签名
+    this.handler.onTagName(this.content.substring(this.start, this.i));
+    while (blankChar[this.content[++this.i]]) {}
+    if (this.i < this.content.length && !this.checkClose()) {
+      this.start = this.i;
+      this.state = this.attrName;
+    }
+  } else if (!this.checkClose('onTagName')) this.i++;
+};
+/**
+ * @description 属性名状态
+ * @private
+ */
+
+lexer.prototype.attrName = function () {
+  var c = this.content[this.i];
+  if (blankChar[c] || c == '=') {
+    // 解析到属性名
+    this.handler.onAttrName(this.content.substring(this.start, this.i));
+    var needVal = c == '=';
+    var len = this.content.length;
+    while (++this.i < len) {
+      c = this.content[this.i];
+      if (!blankChar[c]) {
+        if (this.checkClose()) return;
+        if (needVal) {
+          // 等号后遇到第一个非空字符
+          this.start = this.i;
+          return this.state = this.attrVal;
+        }
+        if (this.content[this.i] == '=') needVal = true;else {
+          this.start = this.i;
+          return this.state = this.attrName;
+        }
+      }
+    }
+  } else if (!this.checkClose('onAttrName')) this.i++;
+};
+/**
+ * @description 属性值状态
+ * @private
+ */
+
+lexer.prototype.attrVal = function () {
+  var c = this.content[this.i];
+  var len = this.content.length; // 有冒号的属性
+
+  if (c == '"' || c == "'") {
+    this.start = ++this.i;
+    this.i = this.content.indexOf(c, this.i);
+    if (this.i == -1) return;
+    this.handler.onAttrVal(this.content.substring(this.start, this.i));
+  } // 没有冒号的属性
+  else {
+    for (; this.i < len; this.i++) {
+      if (blankChar[this.content[this.i]]) {
+        this.handler.onAttrVal(this.content.substring(this.start, this.i));
+        break;
+      } else if (this.checkClose('onAttrVal')) return;
+    }
+  }
+  while (blankChar[this.content[++this.i]]) {}
+  if (this.i < len && !this.checkClose()) {
+    this.start = this.i;
+    this.state = this.attrName;
+  }
+};
+/**
+ * @description 结束标签状态
+ * @returns {String} 结束的标签名
+ * @private
+ */
+
+lexer.prototype.endTag = function () {
+  var c = this.content[this.i];
+  if (blankChar[c] || c == '>' || c == '/') {
+    this.handler.onCloseTag(this.content.substring(this.start, this.i));
+    if (c != '>') {
+      this.i = this.content.indexOf('>', this.i);
+      if (this.i == -1) return;
+    }
+    this.start = ++this.i;
+    this.state = this.text;
+  } else this.i++;
+};
+module.exports = parser;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"], __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/wx.js */ 1)["default"]))
+
+/***/ }),
+/* 470 */,
+/* 471 */,
+/* 472 */,
+/* 473 */,
+/* 474 */,
+/* 475 */,
+/* 476 */,
+/* 477 */
 /*!*********************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-column-notice/props.js ***!
   \*********************************************************************************************************************/
@@ -27546,14 +28801,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 424 */,
-/* 425 */,
-/* 426 */,
-/* 427 */,
-/* 428 */,
-/* 429 */,
-/* 430 */,
-/* 431 */
+/* 478 */,
+/* 479 */,
+/* 480 */,
+/* 481 */,
+/* 482 */,
+/* 483 */,
+/* 484 */,
+/* 485 */
 /*!******************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-row-notice/props.js ***!
   \******************************************************************************************************************/
@@ -27610,14 +28865,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 432 */,
-/* 433 */,
-/* 434 */,
-/* 435 */,
-/* 436 */,
-/* 437 */,
-/* 438 */,
-/* 439 */
+/* 486 */,
+/* 487 */,
+/* 488 */,
+/* 489 */,
+/* 490 */,
+/* 491 */,
+/* 492 */,
+/* 493 */
 /*!******************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-transition/props.js ***!
   \******************************************************************************************************************/
@@ -27659,7 +28914,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 440 */
+/* 494 */
 /*!***********************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-transition/transition.js ***!
   \***********************************************************************************************************************/
@@ -27676,7 +28931,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 58));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 60));
-var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 441));
+var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 495));
 // 定义一个一定时间后自动成功的promise，让调用nextTick方法处，进入下一个then方法
 var nextTick = function nextTick() {
   return new Promise(function (resolve) {
@@ -27768,7 +29023,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 441 */
+/* 495 */
 /*!*************************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-transition/nvue.ani-map.js ***!
   \*************************************************************************************************************************/
@@ -27961,21 +29216,21 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 442 */,
-/* 443 */,
-/* 444 */,
-/* 445 */,
-/* 446 */,
-/* 447 */,
-/* 448 */,
-/* 449 */,
-/* 450 */,
-/* 451 */,
-/* 452 */,
-/* 453 */,
-/* 454 */,
-/* 455 */,
-/* 456 */
+/* 496 */,
+/* 497 */,
+/* 498 */,
+/* 499 */,
+/* 500 */,
+/* 501 */,
+/* 502 */,
+/* 503 */,
+/* 504 */,
+/* 505 */,
+/* 506 */,
+/* 507 */,
+/* 508 */,
+/* 509 */,
+/* 510 */
 /*!************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-line/props.js ***!
   \************************************************************************************************************/
@@ -28026,14 +29281,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 457 */,
-/* 458 */,
-/* 459 */,
-/* 460 */,
-/* 461 */,
-/* 462 */,
-/* 463 */,
-/* 464 */
+/* 511 */,
+/* 512 */,
+/* 513 */,
+/* 514 */,
+/* 515 */,
+/* 516 */,
+/* 517 */,
+/* 518 */
 /*!***************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-overlay/props.js ***!
   \***************************************************************************************************************/
@@ -28075,14 +29330,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 465 */,
-/* 466 */,
-/* 467 */,
-/* 468 */,
-/* 469 */,
-/* 470 */,
-/* 471 */,
-/* 472 */
+/* 519 */,
+/* 520 */,
+/* 521 */,
+/* 522 */,
+/* 523 */,
+/* 524 */,
+/* 525 */,
+/* 526 */
 /*!******************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-status-bar/props.js ***!
   \******************************************************************************************************************/
@@ -28108,14 +29363,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 473 */,
-/* 474 */,
-/* 475 */,
-/* 476 */,
-/* 477 */,
-/* 478 */,
-/* 479 */,
-/* 480 */
+/* 527 */,
+/* 528 */,
+/* 529 */,
+/* 530 */,
+/* 531 */,
+/* 532 */,
+/* 533 */,
+/* 534 */
 /*!*******************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-safe-bottom/props.js ***!
   \*******************************************************************************************************************/
@@ -28135,21 +29390,14 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 481 */,
-/* 482 */,
-/* 483 */,
-/* 484 */,
-/* 485 */,
-/* 486 */,
-/* 487 */,
-/* 488 */,
-/* 489 */,
-/* 490 */,
-/* 491 */,
-/* 492 */,
-/* 493 */,
-/* 494 */,
-/* 495 */
+/* 535 */,
+/* 536 */,
+/* 537 */,
+/* 538 */,
+/* 539 */,
+/* 540 */,
+/* 541 */,
+/* 542 */
 /*!********************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-loading-icon/props.js ***!
   \********************************************************************************************************************/
@@ -28226,23 +29474,23 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 496 */,
-/* 497 */,
-/* 498 */,
-/* 499 */,
-/* 500 */,
-/* 501 */,
-/* 502 */,
-/* 503 */,
-/* 504 */,
-/* 505 */,
-/* 506 */,
-/* 507 */,
-/* 508 */,
-/* 509 */,
-/* 510 */,
-/* 511 */,
-/* 512 */
+/* 543 */,
+/* 544 */,
+/* 545 */,
+/* 546 */,
+/* 547 */,
+/* 548 */,
+/* 549 */,
+/* 550 */,
+/* 551 */,
+/* 552 */,
+/* 553 */,
+/* 554 */,
+/* 555 */,
+/* 556 */,
+/* 557 */,
+/* 558 */,
+/* 559 */
 /*!************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-text/props.js ***!
   \************************************************************************************************************/
@@ -28370,12 +29618,12 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 513 */,
-/* 514 */,
-/* 515 */,
-/* 516 */,
-/* 517 */,
-/* 518 */
+/* 560 */,
+/* 561 */,
+/* 562 */,
+/* 563 */,
+/* 564 */,
+/* 565 */
 /*!***********************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-gap/props.js ***!
   \***********************************************************************************************************/
@@ -28417,14 +29665,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 519 */,
-/* 520 */,
-/* 521 */,
-/* 522 */,
-/* 523 */,
-/* 524 */,
-/* 525 */,
-/* 526 */
+/* 566 */,
+/* 567 */,
+/* 568 */,
+/* 569 */,
+/* 570 */,
+/* 571 */,
+/* 572 */,
+/* 573 */
 /*!**************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/libs/util/async-validator.js ***!
   \**************************************************************************************************************/
@@ -29605,10 +30853,10 @@ Schema.warning = warning;
 Schema.messages = messages;
 var _default = Schema; // # sourceMappingURL=index.js.map
 exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/node-libs-browser/mock/process.js */ 527)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/node-libs-browser/mock/process.js */ 574)))
 
 /***/ }),
-/* 527 */
+/* 574 */
 /*!********************************************************!*\
   !*** ./node_modules/node-libs-browser/mock/process.js ***!
   \********************************************************/
@@ -29639,7 +30887,7 @@ exports.binding = function (name) {
     var path;
     exports.cwd = function () { return cwd };
     exports.chdir = function (dir) {
-        if (!path) path = __webpack_require__(/*! path */ 528);
+        if (!path) path = __webpack_require__(/*! path */ 575);
         cwd = path.resolve(dir, cwd);
     };
 })();
@@ -29652,7 +30900,7 @@ exports.features = {};
 
 
 /***/ }),
-/* 528 */
+/* 575 */
 /*!***********************************************!*\
   !*** ./node_modules/path-browserify/index.js ***!
   \***********************************************/
@@ -29962,22 +31210,90 @@ var substr = 'ab'.substr(-1) === 'b'
     }
 ;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 527)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 574)))
 
 /***/ }),
-/* 529 */,
-/* 530 */,
-/* 531 */,
-/* 532 */,
-/* 533 */,
-/* 534 */,
-/* 535 */,
-/* 536 */,
-/* 537 */,
-/* 538 */,
-/* 539 */,
-/* 540 */,
-/* 541 */
+/* 576 */,
+/* 577 */,
+/* 578 */,
+/* 579 */,
+/* 580 */,
+/* 581 */
+/*!***************************************************************************************************************!*\
+  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-toolbar/props.js ***!
+  \***************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 是否展示工具条
+    show: {
+      type: Boolean,
+      default: uni.$u.props.toolbar.show
+    },
+    // 取消按钮的文字
+    cancelText: {
+      type: String,
+      default: uni.$u.props.toolbar.cancelText
+    },
+    // 确认按钮的文字
+    confirmText: {
+      type: String,
+      default: uni.$u.props.toolbar.confirmText
+    },
+    // 取消按钮的颜色
+    cancelColor: {
+      type: String,
+      default: uni.$u.props.toolbar.cancelColor
+    },
+    // 确认按钮的颜色
+    confirmColor: {
+      type: String,
+      default: uni.$u.props.toolbar.confirmColor
+    },
+    // 标题文字
+    title: {
+      type: String,
+      default: uni.$u.props.toolbar.title
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 582 */,
+/* 583 */,
+/* 584 */,
+/* 585 */,
+/* 586 */,
+/* 587 */,
+/* 588 */,
+/* 589 */,
+/* 590 */,
+/* 591 */,
+/* 592 */,
+/* 593 */,
+/* 594 */,
+/* 595 */,
+/* 596 */,
+/* 597 */,
+/* 598 */,
+/* 599 */,
+/* 600 */,
+/* 601 */,
+/* 602 */,
+/* 603 */,
+/* 604 */,
+/* 605 */
 /*!************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-text/value.js ***!
   \************************************************************************************************************/
@@ -30085,14 +31401,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 542 */,
-/* 543 */,
-/* 544 */,
-/* 545 */,
-/* 546 */,
-/* 547 */,
-/* 548 */,
-/* 549 */
+/* 606 */,
+/* 607 */,
+/* 608 */,
+/* 609 */,
+/* 610 */,
+/* 611 */,
+/* 612 */,
+/* 613 */
 /*!************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-link/props.js ***!
   \************************************************************************************************************/

@@ -10,7 +10,7 @@
 		{
 			"path": "pages/main/index/index",
 			"style": {
-				"navigationBarTitleText": "首页",
+				"navigationBarTitleText": "起名大师",
 				"enablePullDownRefresh": false,
 				"navigationBarBackgroundColor": "#3388fe",
 				"navigationBarTextStyle": "white",
@@ -117,7 +117,7 @@
 		}, {
 			"path": "pages/main/rolefragment/rolefragment",
 			"style": {
-				"navigationBarTitleText": "角色模型",
+				"navigationBarTitleText": "脑洞打开",
 				"enablePullDownRefresh": false,
 				"navigationBarBackgroundColor": "#3388fe",
 				"navigationBarTextStyle": "white"
@@ -133,6 +133,26 @@
 				"navigationBarTextStyle": "white"
 			}
 
+		},
+		{
+			"path": "pages/main/name/name",
+			"style": {
+				"navigationBarTitleText": "起名",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#3388fe",
+				"navigationBarTextStyle": "white"
+			}
+		
+		},
+		{
+			"path": "pages/main/name/create",
+			"style": {
+				"navigationBarTitleText": "起名",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#3388fe",
+				"navigationBarTextStyle": "white"
+			}
+		
 		}
 	],
 	"tabBar": {
@@ -154,7 +174,7 @@
 				"pagePath": "pages/main/rolefragment/rolefragment",
 				"iconPath": "static/tabbar/explore.png",
 				"selectedIconPath": "static/tabbar/explore_selected.png",
-				"text": "探索"
+				"text": "脑洞大开"
 			},
 			{
 				"pagePath": "pages/main/minefragment/minefragment",

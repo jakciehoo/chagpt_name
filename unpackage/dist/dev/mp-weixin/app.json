@@ -11,7 +11,9 @@
     "pages/main/minefragment/minefragment",
     "pages/main/login/login",
     "pages/main/rolefragment/rolefragment",
-    "pages/main/replyquestion/replyquestion"
+    "pages/main/replyquestion/replyquestion",
+    "pages/main/name/name",
+    "pages/main/name/create"
   ],
   "subPackages": [],
   "window": {
@@ -34,7 +36,7 @@
         "pagePath": "pages/main/rolefragment/rolefragment",
         "iconPath": "static/tabbar/explore.png",
         "selectedIconPath": "static/tabbar/explore_selected.png",
-        "text": "探索"
+        "text": "脑洞大开"
       },
       {
         "pagePath": "pages/main/minefragment/minefragment",

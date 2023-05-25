@@ -53,9 +53,10 @@
 		},
 		methods: {
 			startDig() {
-				uni.switchTab({
-					url:'/pages/main/rolefragment/rolefragment'
+				uni.navigateTo({
+					url:'/pages/main/name/name'
 				})
+				
 			},
 			/**微信H5登录
 			 * @param {Object} jsCode

@@ -239,7 +239,18 @@
 			getTabList() {
 				request('', '/cricleai/roleChange/list', 'POST', {}, {}).then(res => {
 					if (res.code == 200) {
-						this.tagsList = res.data
+						this.tagsList = [];
+						var newArr = []
+						newArr = res.data
+						if (util.isNotBlank(newArr)) {
+							for (var i = 0; i < newArr.length; i++) {
+								var item = newArr[i]
+								if(!item.roleName.includes('起名')){
+									this.tagsList.push(item)
+								}
+							}
+						}
+						
 						if (util.isNotBlank(this.tagsList)) {
 							this.tagsList[0].check = true
 							this.getModelList(this.tagsList[0].id);
