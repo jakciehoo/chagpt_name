@@ -6,7 +6,7 @@
 			</view>
 		</view>
 		<view class="main">
-			<image class="logoImg" src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/logo-index.png"></image>
+			<image class="logoImg" src="https://ec2-54-250-191-128.ap-northeast-1.compute.amazonaws.com:24893/down/00oaa7awXubU.jpeg"></image>
 			<view class="row text">
 				你好！我是<view style="font-weight: 700;">元AI</view>
 			</view>

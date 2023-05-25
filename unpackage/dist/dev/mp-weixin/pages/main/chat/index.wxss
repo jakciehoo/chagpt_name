@@ -48,7 +48,7 @@
 }
 .box-normal {
   width: 750rpx;
-  height: 180px;
+  height: 190px;
   background-color: #FFFFFF;
 }
 .tb-text view {

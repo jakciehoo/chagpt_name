@@ -1,6 +1,6 @@
 {
     "name" : "元AI智能程序",
-    "appid" : "__UNI__6790D00",
+    "appid" : "__UNI__D2440FA",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -50,7 +50,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wx74378f1d2e142c4d",
+        "appid" : "wx8bc512215c98d0db",
         "setting" : {
             "urlCheck" : true,
             "minified" : true,
@@ -78,6 +78,7 @@
         },
         "router" : {
             "mode" : "hash"
-        }
+        },
+        "title" : "AI命名大师"
     }
 }

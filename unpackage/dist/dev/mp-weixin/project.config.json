@@ -1,33 +1,30 @@
 {
-  "description": "项目配置文件。",
-  "packOptions": {
-    "ignore": []
-  },
-  "setting": {
-    "urlCheck": true,
-    "minified": true,
-    "es6": false
-  },
-  "compileType": "miniprogram",
-  "libVersion": "",
-  "appid": "wx74378f1d2e142c4d",
-  "projectname": "元AI智能程序",
-  "condition": {
-    "search": {
-      "current": -1,
-      "list": []
-    },
-    "conversation": {
-      "current": -1,
-      "list": []
-    },
-    "game": {
-      "current": -1,
-      "list": []
-    },
-    "miniprogram": {
-      "current": -1,
-      "list": []
-    }
-  }
+   "description": "项目配置文件。",
+   "packOptions": {
+      "ignore": [],
+      "include": []
+   },
+   "setting": {
+      "urlCheck": true,
+      "es6": false,
+      "postcss": false,
+      "minified": true,
+      "newFeature": true,
+      "bigPackageSizeSupport": true,
+      "babelSetting": {
+         "ignore": [],
+         "disablePlugins": [],
+         "outputPath": ""
+      },
+      "condition": false
+   },
+   "compileType": "miniprogram",
+   "libVersion": "2.32.0",
+   "appid": "wx8bc512215c98d0db",
+   "projectname": "元AI智能程序",
+   "condition": {},
+   "editorSetting": {
+      "tabIndent": "insertSpaces",
+      "tabSize": 3
+   }
 }
