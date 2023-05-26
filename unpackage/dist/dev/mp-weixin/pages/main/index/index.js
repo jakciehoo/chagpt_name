@@ -234,7 +234,7 @@ var _util = _interopRequireDefault(__webpack_require__(/*! ../../../util/util.js
 var _default = {
   data: function data() {
     return {
-      weichat_notice: uni.getStorageSync('baseConfig').weichat_desc,
+      weichat_notice: uni.getStorageSync('baseConfig').weichat_notice,
       isLoaddingFinash: false,
       page: 1,
       size: 10,
@@ -387,7 +387,7 @@ var _default = {
       // uni.$emit('digId', item.id)
       var askMsg = this.modelInfo.modelName;
       uni.navigateTo({
-        url: '/pages/main/chat/index?msg=' + askMsg
+        url: '/pages/main/name/name?msg=' + askMsg
       });
     },
     getTabList: function getTabList() {
@@ -446,7 +446,7 @@ var _default = {
           _this4.historyDigList.unshift(res.data);
           var askMsg = modelInfoTemp.modelName;
           uni.navigateTo({
-            url: '/pages/main/chat/index?msg=' + askMsg
+            url: '/pages/main/name/name?msg=' + askMsg
           });
         } else {
           _util.default.message("查询错误", 'error');

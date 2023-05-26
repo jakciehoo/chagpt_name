@@ -40,7 +40,7 @@
 	export default {
 		data() {
 			return {
-				weichat_notice: uni.getStorageSync('baseConfig').weichat_desc,
+				weichat_notice: uni.getStorageSync('baseConfig').weichat_notice,
 				isLoaddingFinash:false,
 				page: 1,
 				size: 10,
@@ -216,7 +216,7 @@
 					// uni.$emit('digId', item.id)
 					var askMsg = this.modelInfo.modelName;
 					uni.navigateTo({
-						url: '/pages/main/chat/index?msg=' + askMsg
+						url: '/pages/main/name/name?msg=' + askMsg
 						
 					})
 				},
@@ -275,7 +275,7 @@
 							this.historyDigList.unshift(res.data)
 							var askMsg = modelInfoTemp.modelName;
 							uni.navigateTo({
-								url: '/pages/main/chat/index?msg=' + askMsg 
+								url: '/pages/main/name/name?msg=' + askMsg 
 							})
 						} else {
 							util.message("查询错误", 'error')

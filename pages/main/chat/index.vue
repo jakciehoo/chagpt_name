@@ -208,6 +208,7 @@
 			// this.chatchWindowsHeight();
 			this.initbaseConfig();
 			uni.$on('onMessage', this.onMessage);
+			console.log(options.msg);
 			this.firstAskMsg = options.msg;
 			// 如果需要缓存消息缓存msgList即可
 			// 监听键盘拉起
@@ -463,7 +464,7 @@
 			askFirstQuest() {
 				setTimeout(() => {
 					if (util.isNotBlank(this.firstAskMsg)) {
-						var msg = '您是世界顶级起名大师，您可以先问我3个问题，然后请帮我' + this.firstAskMsg + '，感谢！'
+						var msg =  this.firstAskMsg
 						this.answer(msg)
 					}
 				}, 3000)
