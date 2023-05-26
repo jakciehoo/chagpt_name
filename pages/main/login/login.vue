@@ -10,14 +10,14 @@
 				</view>
 			</view>
 			<view class="logoBorder">
-				<u--image radius="25rpx" :src="logoImg" width="172rpx" height="172rpx"></u--image>
+				<u--image radius="25rpx" :src="weChatInfo.default_photo_image" width="172rpx" height="172rpx"></u--image>
 			</view>
 
 			<view class="weChatName">
 				{{weChatInfo.weichat_name}}
 			</view>
 			<view class="weChatDes">
-				{{weChatInfo.weichat_notice}}
+				{{weChatInfo.weichat_desc}}
 			</view>
 
 			<view class="btn">

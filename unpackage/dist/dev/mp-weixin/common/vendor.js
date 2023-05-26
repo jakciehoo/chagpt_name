@@ -19471,7 +19471,7 @@ var _default = {
     return {
       // 默认的全局分享内容
       share: {
-        title: '感受AI新世界',
+        title: uni.getStorageSync('baseConfig').weichat_name,
         path: '/pages/main/index/index?intivateCode=' + uni.getStorageSync('userInfo').invitationCode // 全局分享的路径，比如 首页
       }
     };

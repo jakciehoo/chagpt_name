@@ -40,7 +40,7 @@
 	export default {
 		data() {
 			return {
-				weichat_notice: uni.getStorageSync('baseConfig').weichat_notice,
+				weichat_notice: uni.getStorageSync('baseConfig').weichat_desc,
 				isLoaddingFinash:false,
 				page: 1,
 				size: 10,
@@ -388,14 +388,14 @@
 
 	.notice-c {
 		margin: 0 auto;
-		margin-top: 10px;
+		margin-top: 5px;
 		width: 90%;
 		border: 1px solid #3387FF;
 		border-radius: 10px;
 	}
 
 	.padd {
-		padding: 4px;
+		padding: 1px;
 	}
 	.loginIndex{
 		margin-top: 60rpx;

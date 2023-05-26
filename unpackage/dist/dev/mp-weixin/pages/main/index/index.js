@@ -234,7 +234,7 @@ var _util = _interopRequireDefault(__webpack_require__(/*! ../../../util/util.js
 var _default = {
   data: function data() {
     return {
-      weichat_notice: uni.getStorageSync('baseConfig').weichat_notice,
+      weichat_notice: uni.getStorageSync('baseConfig').weichat_desc,
       isLoaddingFinash: false,
       page: 1,
       size: 10,

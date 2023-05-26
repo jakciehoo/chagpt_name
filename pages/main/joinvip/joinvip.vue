@@ -100,7 +100,7 @@
 
 								<button hover-class="none" open-type="contact" class="row kfRow" @click="aboutUs">
 									<image src="../../../static/aboutus_icon.png" class="kfImg"></image>
-									<view class="aboutUs">请联系客服获取（Q群:575451625）</view>
+									<view class="aboutUs">{{baseConfig.weichat_notice}}</view>
 								</button>
 
 								<!-- 								<view class="row kfRow" @click="aboutUs">
