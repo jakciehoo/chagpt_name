@@ -27378,9 +27378,16 @@ exports.default = _default;
 /* 426 */,
 /* 427 */,
 /* 428 */,
-/* 429 */
+/* 429 */,
+/* 430 */,
+/* 431 */,
+/* 432 */,
+/* 433 */,
+/* 434 */,
+/* 435 */,
+/* 436 */
 /*!******************************************************************************************************************!*\
-  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-subsection/props.js ***!
+  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-number-box/props.js ***!
   \******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -27394,50 +27401,110 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = {
   props: {
-    // tab的数据
-    list: {
-      type: Array,
-      default: uni.$u.props.subsection.list
-    },
-    // 当前活动的tab的index
-    current: {
+    // 步进器标识符，在change回调返回
+    name: {
       type: [String, Number],
-      default: uni.$u.props.subsection.current
+      default: uni.$u.props.numberBox.name
     },
-    // 激活的颜色
-    activeColor: {
-      type: String,
-      default: uni.$u.props.subsection.activeColor
-    },
-    // 未激活的颜色
-    inactiveColor: {
-      type: String,
-      default: uni.$u.props.subsection.inactiveColor
-    },
-    // 模式选择，mode=button为按钮形式，mode=subsection时为分段模式
-    mode: {
-      type: String,
-      default: uni.$u.props.subsection.mode
-    },
-    // 字体大小
-    fontSize: {
+    // 用于双向绑定的值，初始化时设置设为默认min值(最小值)
+    value: {
       type: [String, Number],
-      default: uni.$u.props.subsection.fontSize
+      default: uni.$u.props.numberBox.value
     },
-    // 激活tab的字体是否加粗
-    bold: {
+    // 最小值
+    min: {
+      type: [String, Number],
+      default: uni.$u.props.numberBox.min
+    },
+    // 最大值
+    max: {
+      type: [String, Number],
+      default: uni.$u.props.numberBox.max
+    },
+    // 加减的步长，可为小数
+    step: {
+      type: [String, Number],
+      default: uni.$u.props.numberBox.step
+    },
+    // 是否只允许输入整数
+    integer: {
       type: Boolean,
-      default: uni.$u.props.subsection.bold
+      default: uni.$u.props.numberBox.integer
     },
-    // mode = button时，组件背景颜色
+    // 是否禁用，包括输入框，加减按钮
+    disabled: {
+      type: Boolean,
+      default: uni.$u.props.numberBox.disabled
+    },
+    // 是否禁用输入框
+    disabledInput: {
+      type: Boolean,
+      default: uni.$u.props.numberBox.disabledInput
+    },
+    // 是否开启异步变更，开启后需要手动控制输入值
+    asyncChange: {
+      type: Boolean,
+      default: uni.$u.props.numberBox.asyncChange
+    },
+    // 输入框宽度，单位为px
+    inputWidth: {
+      type: [String, Number],
+      default: uni.$u.props.numberBox.inputWidth
+    },
+    // 是否显示减少按钮
+    showMinus: {
+      type: Boolean,
+      default: uni.$u.props.numberBox.showMinus
+    },
+    // 是否显示增加按钮
+    showPlus: {
+      type: Boolean,
+      default: uni.$u.props.numberBox.showPlus
+    },
+    // 显示的小数位数
+    decimalLength: {
+      type: [String, Number, null],
+      default: uni.$u.props.numberBox.decimalLength
+    },
+    // 是否开启长按加减手势
+    longPress: {
+      type: Boolean,
+      default: uni.$u.props.numberBox.longPress
+    },
+    // 输入框文字和加减按钮图标的颜色
+    color: {
+      type: String,
+      default: uni.$u.props.numberBox.color
+    },
+    // 按钮大小，宽高等于此值，单位px，输入框高度和此值保持一致
+    buttonSize: {
+      type: [String, Number],
+      default: uni.$u.props.numberBox.buttonSize
+    },
+    // 输入框和按钮的背景颜色
     bgColor: {
       type: String,
-      default: uni.$u.props.subsection.bgColor
+      default: uni.$u.props.numberBox.bgColor
     },
-    // 从list元素对象中读取的键名
-    keyName: {
-      type: String,
-      default: uni.$u.props.subsection.keyName
+    // 指定光标于键盘的距离，避免键盘遮挡输入框，单位px
+    cursorSpacing: {
+      type: [String, Number],
+      default: uni.$u.props.numberBox.cursorSpacing
+    },
+    // 是否禁用增加按钮
+    disablePlus: {
+      type: Boolean,
+      default: uni.$u.props.numberBox.disablePlus
+    },
+    // 是否禁用减少按钮
+    disableMinus: {
+      type: Boolean,
+      default: uni.$u.props.numberBox.disableMinus
+    },
+    // 加减按钮图标的样式
+    iconStyle: {
+      type: [Object, String],
+      default: uni.$u.props.numberBox.iconStyle
     }
   }
 };
@@ -27445,13 +27512,6 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 430 */,
-/* 431 */,
-/* 432 */,
-/* 433 */,
-/* 434 */,
-/* 435 */,
-/* 436 */,
 /* 437 */,
 /* 438 */,
 /* 439 */,
@@ -27460,9 +27520,9 @@ exports.default = _default;
 /* 442 */,
 /* 443 */,
 /* 444 */
-/*!**************************************************************************************************************!*\
-  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-picker/props.js ***!
-  \**************************************************************************************************************/
+/*!***********************************************************************************************************************!*\
+  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-datetime-picker/props.js ***!
+  \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27475,85 +27535,117 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = {
   props: {
-    // 是否展示picker弹窗
+    // 是否打开组件
     show: {
       type: Boolean,
-      default: uni.$u.props.picker.show
+      default: uni.$u.props.datetimePicker.show
     },
     // 是否展示顶部的操作栏
     showToolbar: {
       type: Boolean,
-      default: uni.$u.props.picker.showToolbar
+      default: uni.$u.props.datetimePicker.showToolbar
+    },
+    // 绑定值
+    value: {
+      type: [String, Number],
+      default: uni.$u.props.datetimePicker.value
     },
     // 顶部标题
     title: {
       type: String,
-      default: uni.$u.props.picker.title
+      default: uni.$u.props.datetimePicker.title
     },
-    // 对象数组，设置每一列的数据
-    columns: {
-      type: Array,
-      default: uni.$u.props.picker.columns
+    // 展示格式，mode=date为日期选择，mode=time为时间选择，mode=year-month为年月选择，mode=datetime为日期时间选择
+    mode: {
+      type: String,
+      default: uni.$u.props.datetimePicker.mode
+    },
+    // 可选的最大时间
+    maxDate: {
+      type: Number,
+      // 最大默认值为后10年
+      default: uni.$u.props.datetimePicker.maxDate
+    },
+    // 可选的最小时间
+    minDate: {
+      type: Number,
+      // 最小默认值为前10年
+      default: uni.$u.props.datetimePicker.minDate
+    },
+    // 可选的最小小时，仅mode=time有效
+    minHour: {
+      type: Number,
+      default: uni.$u.props.datetimePicker.minHour
+    },
+    // 可选的最大小时，仅mode=time有效
+    maxHour: {
+      type: Number,
+      default: uni.$u.props.datetimePicker.maxHour
+    },
+    // 可选的最小分钟，仅mode=time有效
+    minMinute: {
+      type: Number,
+      default: uni.$u.props.datetimePicker.minMinute
+    },
+    // 可选的最大分钟，仅mode=time有效
+    maxMinute: {
+      type: Number,
+      default: uni.$u.props.datetimePicker.maxMinute
+    },
+    // 选项过滤函数
+    filter: {
+      type: [Function, null],
+      default: uni.$u.props.datetimePicker.filter
+    },
+    // 选项格式化函数
+    formatter: {
+      type: [Function, null],
+      default: uni.$u.props.datetimePicker.formatter
     },
     // 是否显示加载中状态
     loading: {
       type: Boolean,
-      default: uni.$u.props.picker.loading
+      default: uni.$u.props.datetimePicker.loading
     },
     // 各列中，单个选项的高度
     itemHeight: {
       type: [String, Number],
-      default: uni.$u.props.picker.itemHeight
+      default: uni.$u.props.datetimePicker.itemHeight
     },
     // 取消按钮的文字
     cancelText: {
       type: String,
-      default: uni.$u.props.picker.cancelText
+      default: uni.$u.props.datetimePicker.cancelText
     },
     // 确认按钮的文字
     confirmText: {
       type: String,
-      default: uni.$u.props.picker.confirmText
+      default: uni.$u.props.datetimePicker.confirmText
     },
     // 取消按钮的颜色
     cancelColor: {
       type: String,
-      default: uni.$u.props.picker.cancelColor
+      default: uni.$u.props.datetimePicker.cancelColor
     },
     // 确认按钮的颜色
     confirmColor: {
       type: String,
-      default: uni.$u.props.picker.confirmColor
-    },
-    // 选择器只有一列时，默认选中项的索引，从0开始
-    singleIndex: {
-      type: [String, Number],
-      default: uni.$u.props.picker.singleIndex
+      default: uni.$u.props.datetimePicker.confirmColor
     },
     // 每列中可见选项的数量
     visibleItemCount: {
       type: [String, Number],
-      default: uni.$u.props.picker.visibleItemCount
-    },
-    // 选项对象中，需要展示的属性键名
-    keyName: {
-      type: String,
-      default: uni.$u.props.picker.keyName
+      default: uni.$u.props.datetimePicker.visibleItemCount
     },
     // 是否允许点击遮罩关闭选择器
     closeOnClickOverlay: {
       type: Boolean,
-      default: uni.$u.props.picker.closeOnClickOverlay
+      default: uni.$u.props.datetimePicker.closeOnClickOverlay
     },
     // 各列的默认索引
     defaultIndex: {
       type: Array,
-      default: uni.$u.props.picker.defaultIndex
-    },
-    // 是否在手指松开时立即触发 change 事件。若不开启则会在滚动动画结束后触发 change 事件，只在微信2.21.1及以上有效
-    immediateChange: {
-      type: Boolean,
-      default: uni.$u.props.picker.immediateChange
+      default: uni.$u.props.datetimePicker.defaultIndex
     }
   }
 };
@@ -27561,14 +27653,326 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 445 */,
+/* 445 */
+/*!****************************************************************************************************!*\
+  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/libs/util/dayjs.js ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ 13);
+!function (t, e) {
+  ( false ? undefined : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = e() :  true ? !(__WEBPACK_AMD_DEFINE_FACTORY__ = (e),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : undefined;
+}(this, function () {
+  'use strict';
+
+  var t = 'millisecond';
+  var e = 'second';
+  var n = 'minute';
+  var r = 'hour';
+  var i = 'day';
+  var s = 'week';
+  var u = 'month';
+  var a = 'quarter';
+  var o = 'year';
+  var f = 'date';
+  var h = /^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[^0-9]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?.?(\d+)?$/;
+  var c = /\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g;
+  var d = {
+    name: 'en',
+    weekdays: 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_'),
+    months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_')
+  };
+  var $ = function $(t, e, n) {
+    var r = String(t);
+    return !r || r.length >= e ? t : "".concat(Array(e + 1 - r.length).join(n)).concat(t);
+  };
+  var l = {
+    s: $,
+    z: function z(t) {
+      var e = -t.utcOffset();
+      var n = Math.abs(e);
+      var r = Math.floor(n / 60);
+      var i = n % 60;
+      return "".concat((e <= 0 ? '+' : '-') + $(r, 2, '0'), ":").concat($(i, 2, '0'));
+    },
+    m: function t(e, n) {
+      if (e.date() < n.date()) return -t(n, e);
+      var r = 12 * (n.year() - e.year()) + (n.month() - e.month());
+      var i = e.clone().add(r, u);
+      var s = n - i < 0;
+      var a = e.clone().add(r + (s ? -1 : 1), u);
+      return +(-(r + (n - i) / (s ? i - a : a - i)) || 0);
+    },
+    a: function a(t) {
+      return t < 0 ? Math.ceil(t) || 0 : Math.floor(t);
+    },
+    p: function p(h) {
+      return {
+        M: u,
+        y: o,
+        w: s,
+        d: i,
+        D: f,
+        h: r,
+        m: n,
+        s: e,
+        ms: t,
+        Q: a
+      }[h] || String(h || '').toLowerCase().replace(/s$/, '');
+    },
+    u: function u(t) {
+      return void 0 === t;
+    }
+  };
+  var y = 'en';
+  var M = {};
+  M[y] = d;
+  var m = function m(t) {
+    return t instanceof S;
+  };
+  var D = function D(t, e, n) {
+    var r;
+    if (!t) return y;
+    if (typeof t === 'string') M[t] && (r = t), e && (M[t] = e, r = t);else {
+      var _i = t.name;
+      M[_i] = t, r = _i;
+    }
+    return !n && r && (y = r), r || !n && y;
+  };
+  var v = function v(t, e) {
+    if (m(t)) return t.clone();
+    var n = _typeof(e) === 'object' ? e : {};
+    return n.date = t, n.args = arguments, new S(n);
+  };
+  var g = l;
+  g.l = D, g.i = m, g.w = function (t, e) {
+    return v(t, {
+      locale: e.$L,
+      utc: e.$u,
+      x: e.$x,
+      $offset: e.$offset
+    });
+  };
+  var S = function () {
+    function d(t) {
+      this.$L = D(t.locale, null, !0), this.parse(t);
+    }
+    var $ = d.prototype;
+    return $.parse = function (t) {
+      this.$d = function (t) {
+        var e = t.date;
+        var n = t.utc;
+        if (e === null) return new Date(NaN);
+        if (g.u(e)) return new Date();
+        if (e instanceof Date) return new Date(e);
+        if (typeof e === 'string' && !/Z$/i.test(e)) {
+          var _r = e.match(h);
+          if (_r) {
+            var _i2 = _r[2] - 1 || 0;
+            var _s = (_r[7] || '0').substring(0, 3);
+            return n ? new Date(Date.UTC(_r[1], _i2, _r[3] || 1, _r[4] || 0, _r[5] || 0, _r[6] || 0, _s)) : new Date(_r[1], _i2, _r[3] || 1, _r[4] || 0, _r[5] || 0, _r[6] || 0, _s);
+          }
+        }
+        return new Date(e);
+      }(t), this.$x = t.x || {}, this.init();
+    }, $.init = function () {
+      var t = this.$d;
+      this.$y = t.getFullYear(), this.$M = t.getMonth(), this.$D = t.getDate(), this.$W = t.getDay(), this.$H = t.getHours(), this.$m = t.getMinutes(), this.$s = t.getSeconds(), this.$ms = t.getMilliseconds();
+    }, $.$utils = function () {
+      return g;
+    }, $.isValid = function () {
+      return !(this.$d.toString() === 'Invalid Date');
+    }, $.isSame = function (t, e) {
+      var n = v(t);
+      return this.startOf(e) <= n && n <= this.endOf(e);
+    }, $.isAfter = function (t, e) {
+      return v(t) < this.startOf(e);
+    }, $.isBefore = function (t, e) {
+      return this.endOf(e) < v(t);
+    }, $.$g = function (t, e, n) {
+      return g.u(t) ? this[e] : this.set(n, t);
+    }, $.unix = function () {
+      return Math.floor(this.valueOf() / 1e3);
+    }, $.valueOf = function () {
+      return this.$d.getTime();
+    }, $.startOf = function (t, a) {
+      var h = this;
+      var c = !!g.u(a) || a;
+      var d = g.p(t);
+      var $ = function $(t, e) {
+        var n = g.w(h.$u ? Date.UTC(h.$y, e, t) : new Date(h.$y, e, t), h);
+        return c ? n : n.endOf(i);
+      };
+      var l = function l(t, e) {
+        return g.w(h.toDate()[t].apply(h.toDate('s'), (c ? [0, 0, 0, 0] : [23, 59, 59, 999]).slice(e)), h);
+      };
+      var y = this.$W;
+      var M = this.$M;
+      var m = this.$D;
+      var D = "set".concat(this.$u ? 'UTC' : '');
+      switch (d) {
+        case o:
+          return c ? $(1, 0) : $(31, 11);
+        case u:
+          return c ? $(1, M) : $(0, M + 1);
+        case s:
+          var v = this.$locale().weekStart || 0;
+          var S = (y < v ? y + 7 : y) - v;
+          return $(c ? m - S : m + (6 - S), M);
+        case i:
+        case f:
+          return l("".concat(D, "Hours"), 0);
+        case r:
+          return l("".concat(D, "Minutes"), 1);
+        case n:
+          return l("".concat(D, "Seconds"), 2);
+        case e:
+          return l("".concat(D, "Milliseconds"), 3);
+        default:
+          return this.clone();
+      }
+    }, $.endOf = function (t) {
+      return this.startOf(t, !1);
+    }, $.$set = function (s, a) {
+      var h;
+      var c = g.p(s);
+      var d = "set".concat(this.$u ? 'UTC' : '');
+      var $ = (h = {}, h[i] = "".concat(d, "Date"), h[f] = "".concat(d, "Date"), h[u] = "".concat(d, "Month"), h[o] = "".concat(d, "FullYear"), h[r] = "".concat(d, "Hours"), h[n] = "".concat(d, "Minutes"), h[e] = "".concat(d, "Seconds"), h[t] = "".concat(d, "Milliseconds"), h)[c];
+      var l = c === i ? this.$D + (a - this.$W) : a;
+      if (c === u || c === o) {
+        var _y = this.clone().set(f, 1);
+        _y.$d[$](l), _y.init(), this.$d = _y.set(f, Math.min(this.$D, _y.daysInMonth())).$d;
+      } else $ && this.$d[$](l);
+      return this.init(), this;
+    }, $.set = function (t, e) {
+      return this.clone().$set(t, e);
+    }, $.get = function (t) {
+      return this[g.p(t)]();
+    }, $.add = function (t, a) {
+      var f;
+      var h = this;
+      t = Number(t);
+      var c = g.p(a);
+      var d = function d(e) {
+        var n = v(h);
+        return g.w(n.date(n.date() + Math.round(e * t)), h);
+      };
+      if (c === u) return this.set(u, this.$M + t);
+      if (c === o) return this.set(o, this.$y + t);
+      if (c === i) return d(1);
+      if (c === s) return d(7);
+      var $ = (f = {}, f[n] = 6e4, f[r] = 36e5, f[e] = 1e3, f)[c] || 1;
+      var l = this.$d.getTime() + t * $;
+      return g.w(l, this);
+    }, $.subtract = function (t, e) {
+      return this.add(-1 * t, e);
+    }, $.format = function (t) {
+      var e = this;
+      if (!this.isValid()) return 'Invalid Date';
+      var n = t || 'YYYY-MM-DDTHH:mm:ssZ';
+      var r = g.z(this);
+      var i = this.$locale();
+      var s = this.$H;
+      var u = this.$m;
+      var a = this.$M;
+      var o = i.weekdays;
+      var f = i.months;
+      var h = function h(t, r, i, s) {
+        return t && (t[r] || t(e, n)) || i[r].substr(0, s);
+      };
+      var d = function d(t) {
+        return g.s(s % 12 || 12, t, '0');
+      };
+      var $ = i.meridiem || function (t, e, n) {
+        var r = t < 12 ? 'AM' : 'PM';
+        return n ? r.toLowerCase() : r;
+      };
+      var l = {
+        YY: String(this.$y).slice(-2),
+        YYYY: this.$y,
+        M: a + 1,
+        MM: g.s(a + 1, 2, '0'),
+        MMM: h(i.monthsShort, a, f, 3),
+        MMMM: h(f, a),
+        D: this.$D,
+        DD: g.s(this.$D, 2, '0'),
+        d: String(this.$W),
+        dd: h(i.weekdaysMin, this.$W, o, 2),
+        ddd: h(i.weekdaysShort, this.$W, o, 3),
+        dddd: o[this.$W],
+        H: String(s),
+        HH: g.s(s, 2, '0'),
+        h: d(1),
+        hh: d(2),
+        a: $(s, u, !0),
+        A: $(s, u, !1),
+        m: String(u),
+        mm: g.s(u, 2, '0'),
+        s: String(this.$s),
+        ss: g.s(this.$s, 2, '0'),
+        SSS: g.s(this.$ms, 3, '0'),
+        Z: r
+      };
+      return n.replace(c, function (t, e) {
+        return e || l[t] || r.replace(':', '');
+      });
+    }, $.utcOffset = function () {
+      return 15 * -Math.round(this.$d.getTimezoneOffset() / 15);
+    }, $.diff = function (t, f, h) {
+      var c;
+      var d = g.p(f);
+      var $ = v(t);
+      var l = 6e4 * ($.utcOffset() - this.utcOffset());
+      var y = this - $;
+      var M = g.m(this, $);
+      return M = (c = {}, c[o] = M / 12, c[u] = M, c[a] = M / 3, c[s] = (y - l) / 6048e5, c[i] = (y - l) / 864e5, c[r] = y / 36e5, c[n] = y / 6e4, c[e] = y / 1e3, c)[d] || y, h ? M : g.a(M);
+    }, $.daysInMonth = function () {
+      return this.endOf(u).$D;
+    }, $.$locale = function () {
+      return M[this.$L];
+    }, $.locale = function (t, e) {
+      if (!t) return this.$L;
+      var n = this.clone();
+      var r = D(t, e, !0);
+      return r && (n.$L = r), n;
+    }, $.clone = function () {
+      return g.w(this.$d, this);
+    }, $.toDate = function () {
+      return new Date(this.valueOf());
+    }, $.toJSON = function () {
+      return this.isValid() ? this.toISOString() : null;
+    }, $.toISOString = function () {
+      return this.$d.toISOString();
+    }, $.toString = function () {
+      return this.$d.toUTCString();
+    }, d;
+  }();
+  var p = S.prototype;
+  return v.prototype = p, [['$ms', t], ['$s', e], ['$m', n], ['$H', r], ['$W', i], ['$M', u], ['$y', o], ['$D', f]].forEach(function (t) {
+    p[t[1]] = function (e) {
+      return this.$g(e, t[0], t[1]);
+    };
+  }), v.extend = function (t, e) {
+    return t.$i || (t(e, S, v), t.$i = !0), v;
+  }, v.locale = D, v.isDayjs = m, v.unix = function (t) {
+    return v(1e3 * t);
+  }, v.en = M[y], v.Ls = M, v.p = {}, v;
+});
+
+/***/ }),
 /* 446 */,
 /* 447 */,
 /* 448 */,
 /* 449 */,
 /* 450 */,
 /* 451 */,
-/* 452 */
+/* 452 */,
+/* 453 */
 /*!***********************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-tag/props.js ***!
   \***********************************************************************************************************/
@@ -27670,14 +28074,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 453 */,
 /* 454 */,
 /* 455 */,
 /* 456 */,
 /* 457 */,
 /* 458 */,
 /* 459 */,
-/* 460 */
+/* 460 */,
+/* 461 */
 /*!*********************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-line-progress/props.js ***!
   \*********************************************************************************************************************/
@@ -27723,14 +28127,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 461 */,
 /* 462 */,
 /* 463 */,
 /* 464 */,
 /* 465 */,
 /* 466 */,
 /* 467 */,
-/* 468 */
+/* 468 */,
+/* 469 */
 /*!*************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-parse/props.js ***!
   \*************************************************************************************************************/
@@ -27790,7 +28194,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 469 */
+/* 470 */
 /*!**************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-parse/parser.js ***!
   \**************************************************************************************************************/
@@ -28721,14 +29125,14 @@ module.exports = parser;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"], __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/wx.js */ 1)["default"]))
 
 /***/ }),
-/* 470 */,
 /* 471 */,
 /* 472 */,
 /* 473 */,
 /* 474 */,
 /* 475 */,
 /* 476 */,
-/* 477 */
+/* 477 */,
+/* 478 */
 /*!*********************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-column-notice/props.js ***!
   \*********************************************************************************************************************/
@@ -28801,14 +29205,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 478 */,
 /* 479 */,
 /* 480 */,
 /* 481 */,
 /* 482 */,
 /* 483 */,
 /* 484 */,
-/* 485 */
+/* 485 */,
+/* 486 */
 /*!******************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-row-notice/props.js ***!
   \******************************************************************************************************************/
@@ -28865,7 +29269,6 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 486 */,
 /* 487 */,
 /* 488 */,
 /* 489 */,
@@ -28879,7 +29282,8 @@ exports.default = _default;
 /* 497 */,
 /* 498 */,
 /* 499 */,
-/* 500 */
+/* 500 */,
+/* 501 */
 /*!************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-line/props.js ***!
   \************************************************************************************************************/
@@ -28930,14 +29334,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 501 */,
 /* 502 */,
 /* 503 */,
 /* 504 */,
 /* 505 */,
 /* 506 */,
 /* 507 */,
-/* 508 */
+/* 508 */,
+/* 509 */
 /*!***************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-overlay/props.js ***!
   \***************************************************************************************************************/
@@ -28979,14 +29383,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 509 */,
 /* 510 */,
 /* 511 */,
 /* 512 */,
 /* 513 */,
 /* 514 */,
 /* 515 */,
-/* 516 */
+/* 516 */,
+/* 517 */
 /*!******************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-transition/props.js ***!
   \******************************************************************************************************************/
@@ -29028,7 +29432,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 517 */
+/* 518 */
 /*!***********************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-transition/transition.js ***!
   \***********************************************************************************************************************/
@@ -29045,7 +29449,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 58));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 60));
-var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 518));
+var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 519));
 // 定义一个一定时间后自动成功的promise，让调用nextTick方法处，进入下一个then方法
 var nextTick = function nextTick() {
   return new Promise(function (resolve) {
@@ -29137,7 +29541,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 518 */
+/* 519 */
 /*!*************************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-transition/nvue.ani-map.js ***!
   \*************************************************************************************************************************/
@@ -29330,14 +29734,14 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 519 */,
 /* 520 */,
 /* 521 */,
 /* 522 */,
 /* 523 */,
 /* 524 */,
 /* 525 */,
-/* 526 */
+/* 526 */,
+/* 527 */
 /*!******************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-status-bar/props.js ***!
   \******************************************************************************************************************/
@@ -29363,14 +29767,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 527 */,
 /* 528 */,
 /* 529 */,
 /* 530 */,
 /* 531 */,
 /* 532 */,
 /* 533 */,
-/* 534 */
+/* 534 */,
+/* 535 */
 /*!*******************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-safe-bottom/props.js ***!
   \*******************************************************************************************************************/
@@ -29390,14 +29794,14 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 535 */,
 /* 536 */,
 /* 537 */,
 /* 538 */,
 /* 539 */,
 /* 540 */,
 /* 541 */,
-/* 542 */
+/* 542 */,
+/* 543 */
 /*!********************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-loading-icon/props.js ***!
   \********************************************************************************************************************/
@@ -29474,7 +29878,6 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 543 */,
 /* 544 */,
 /* 545 */,
 /* 546 */,
@@ -29490,7 +29893,8 @@ exports.default = _default;
 /* 556 */,
 /* 557 */,
 /* 558 */,
-/* 559 */
+/* 559 */,
+/* 560 */
 /*!************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-text/props.js ***!
   \************************************************************************************************************/
@@ -29618,12 +30022,12 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 560 */,
 /* 561 */,
 /* 562 */,
 /* 563 */,
 /* 564 */,
-/* 565 */
+/* 565 */,
+/* 566 */
 /*!***********************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-gap/props.js ***!
   \***********************************************************************************************************/
@@ -29665,14 +30069,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 566 */,
 /* 567 */,
 /* 568 */,
 /* 569 */,
 /* 570 */,
 /* 571 */,
 /* 572 */,
-/* 573 */
+/* 573 */,
+/* 574 */
 /*!**************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/libs/util/async-validator.js ***!
   \**************************************************************************************************************/
@@ -30853,10 +31257,10 @@ Schema.warning = warning;
 Schema.messages = messages;
 var _default = Schema; // # sourceMappingURL=index.js.map
 exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/node-libs-browser/mock/process.js */ 574)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/node-libs-browser/mock/process.js */ 575)))
 
 /***/ }),
-/* 574 */
+/* 575 */
 /*!********************************************************!*\
   !*** ./node_modules/node-libs-browser/mock/process.js ***!
   \********************************************************/
@@ -30887,7 +31291,7 @@ exports.binding = function (name) {
     var path;
     exports.cwd = function () { return cwd };
     exports.chdir = function (dir) {
-        if (!path) path = __webpack_require__(/*! path */ 575);
+        if (!path) path = __webpack_require__(/*! path */ 576);
         cwd = path.resolve(dir, cwd);
     };
 })();
@@ -30900,7 +31304,7 @@ exports.features = {};
 
 
 /***/ }),
-/* 575 */
+/* 576 */
 /*!***********************************************!*\
   !*** ./node_modules/path-browserify/index.js ***!
   \***********************************************/
@@ -31210,18 +31614,18 @@ var substr = 'ab'.substr(-1) === 'b'
     }
 ;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 574)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 575)))
 
 /***/ }),
-/* 576 */,
 /* 577 */,
 /* 578 */,
 /* 579 */,
 /* 580 */,
-/* 581 */
-/*!***************************************************************************************************************!*\
-  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-toolbar/props.js ***!
-  \***************************************************************************************************************/
+/* 581 */,
+/* 582 */
+/*!**************************************************************************************************************!*\
+  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-picker/props.js ***!
+  \**************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -31234,35 +31638,85 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = {
   props: {
-    // 是否展示工具条
+    // 是否展示picker弹窗
     show: {
       type: Boolean,
-      default: uni.$u.props.toolbar.show
+      default: uni.$u.props.picker.show
+    },
+    // 是否展示顶部的操作栏
+    showToolbar: {
+      type: Boolean,
+      default: uni.$u.props.picker.showToolbar
+    },
+    // 顶部标题
+    title: {
+      type: String,
+      default: uni.$u.props.picker.title
+    },
+    // 对象数组，设置每一列的数据
+    columns: {
+      type: Array,
+      default: uni.$u.props.picker.columns
+    },
+    // 是否显示加载中状态
+    loading: {
+      type: Boolean,
+      default: uni.$u.props.picker.loading
+    },
+    // 各列中，单个选项的高度
+    itemHeight: {
+      type: [String, Number],
+      default: uni.$u.props.picker.itemHeight
     },
     // 取消按钮的文字
     cancelText: {
       type: String,
-      default: uni.$u.props.toolbar.cancelText
+      default: uni.$u.props.picker.cancelText
     },
     // 确认按钮的文字
     confirmText: {
       type: String,
-      default: uni.$u.props.toolbar.confirmText
+      default: uni.$u.props.picker.confirmText
     },
     // 取消按钮的颜色
     cancelColor: {
       type: String,
-      default: uni.$u.props.toolbar.cancelColor
+      default: uni.$u.props.picker.cancelColor
     },
     // 确认按钮的颜色
     confirmColor: {
       type: String,
-      default: uni.$u.props.toolbar.confirmColor
+      default: uni.$u.props.picker.confirmColor
     },
-    // 标题文字
-    title: {
+    // 选择器只有一列时，默认选中项的索引，从0开始
+    singleIndex: {
+      type: [String, Number],
+      default: uni.$u.props.picker.singleIndex
+    },
+    // 每列中可见选项的数量
+    visibleItemCount: {
+      type: [String, Number],
+      default: uni.$u.props.picker.visibleItemCount
+    },
+    // 选项对象中，需要展示的属性键名
+    keyName: {
       type: String,
-      default: uni.$u.props.toolbar.title
+      default: uni.$u.props.picker.keyName
+    },
+    // 是否允许点击遮罩关闭选择器
+    closeOnClickOverlay: {
+      type: Boolean,
+      default: uni.$u.props.picker.closeOnClickOverlay
+    },
+    // 各列的默认索引
+    defaultIndex: {
+      type: Array,
+      default: uni.$u.props.picker.defaultIndex
+    },
+    // 是否在手指松开时立即触发 change 事件。若不开启则会在滚动动画结束后触发 change 事件，只在微信2.21.1及以上有效
+    immediateChange: {
+      type: Boolean,
+      default: uni.$u.props.picker.immediateChange
     }
   }
 };
@@ -31270,7 +31724,6 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 582 */,
 /* 583 */,
 /* 584 */,
 /* 585 */,
@@ -31293,7 +31746,8 @@ exports.default = _default;
 /* 602 */,
 /* 603 */,
 /* 604 */,
-/* 605 */
+/* 605 */,
+/* 606 */
 /*!************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-text/value.js ***!
   \************************************************************************************************************/
@@ -31401,14 +31855,73 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 606 */,
 /* 607 */,
 /* 608 */,
 /* 609 */,
 /* 610 */,
 /* 611 */,
 /* 612 */,
-/* 613 */
+/* 613 */,
+/* 614 */
+/*!***************************************************************************************************************!*\
+  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-toolbar/props.js ***!
+  \***************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 是否展示工具条
+    show: {
+      type: Boolean,
+      default: uni.$u.props.toolbar.show
+    },
+    // 取消按钮的文字
+    cancelText: {
+      type: String,
+      default: uni.$u.props.toolbar.cancelText
+    },
+    // 确认按钮的文字
+    confirmText: {
+      type: String,
+      default: uni.$u.props.toolbar.confirmText
+    },
+    // 取消按钮的颜色
+    cancelColor: {
+      type: String,
+      default: uni.$u.props.toolbar.cancelColor
+    },
+    // 确认按钮的颜色
+    confirmColor: {
+      type: String,
+      default: uni.$u.props.toolbar.confirmColor
+    },
+    // 标题文字
+    title: {
+      type: String,
+      default: uni.$u.props.toolbar.title
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 615 */,
+/* 616 */,
+/* 617 */,
+/* 618 */,
+/* 619 */,
+/* 620 */,
+/* 621 */,
+/* 622 */
 /*!************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-link/props.js ***!
   \************************************************************************************************************/
@@ -31463,508 +31976,6 @@ var _default = {
 };
 exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 614 */,
-/* 615 */,
-/* 616 */,
-/* 617 */,
-/* 618 */,
-/* 619 */,
-/* 620 */,
-/* 621 */,
-/* 622 */,
-/* 623 */,
-/* 624 */,
-/* 625 */,
-/* 626 */,
-/* 627 */,
-/* 628 */,
-/* 629 */,
-/* 630 */,
-/* 631 */,
-/* 632 */,
-/* 633 */,
-/* 634 */,
-/* 635 */,
-/* 636 */,
-/* 637 */,
-/* 638 */,
-/* 639 */,
-/* 640 */,
-/* 641 */,
-/* 642 */,
-/* 643 */,
-/* 644 */,
-/* 645 */,
-/* 646 */,
-/* 647 */,
-/* 648 */,
-/* 649 */,
-/* 650 */,
-/* 651 */,
-/* 652 */,
-/* 653 */,
-/* 654 */,
-/* 655 */,
-/* 656 */,
-/* 657 */,
-/* 658 */,
-/* 659 */,
-/* 660 */,
-/* 661 */,
-/* 662 */,
-/* 663 */,
-/* 664 */,
-/* 665 */,
-/* 666 */,
-/* 667 */,
-/* 668 */,
-/* 669 */,
-/* 670 */
-/*!***********************************************************************************************************************!*\
-  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-datetime-picker/props.js ***!
-  \***********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 是否打开组件
-    show: {
-      type: Boolean,
-      default: uni.$u.props.datetimePicker.show
-    },
-    // 是否展示顶部的操作栏
-    showToolbar: {
-      type: Boolean,
-      default: uni.$u.props.datetimePicker.showToolbar
-    },
-    // 绑定值
-    value: {
-      type: [String, Number],
-      default: uni.$u.props.datetimePicker.value
-    },
-    // 顶部标题
-    title: {
-      type: String,
-      default: uni.$u.props.datetimePicker.title
-    },
-    // 展示格式，mode=date为日期选择，mode=time为时间选择，mode=year-month为年月选择，mode=datetime为日期时间选择
-    mode: {
-      type: String,
-      default: uni.$u.props.datetimePicker.mode
-    },
-    // 可选的最大时间
-    maxDate: {
-      type: Number,
-      // 最大默认值为后10年
-      default: uni.$u.props.datetimePicker.maxDate
-    },
-    // 可选的最小时间
-    minDate: {
-      type: Number,
-      // 最小默认值为前10年
-      default: uni.$u.props.datetimePicker.minDate
-    },
-    // 可选的最小小时，仅mode=time有效
-    minHour: {
-      type: Number,
-      default: uni.$u.props.datetimePicker.minHour
-    },
-    // 可选的最大小时，仅mode=time有效
-    maxHour: {
-      type: Number,
-      default: uni.$u.props.datetimePicker.maxHour
-    },
-    // 可选的最小分钟，仅mode=time有效
-    minMinute: {
-      type: Number,
-      default: uni.$u.props.datetimePicker.minMinute
-    },
-    // 可选的最大分钟，仅mode=time有效
-    maxMinute: {
-      type: Number,
-      default: uni.$u.props.datetimePicker.maxMinute
-    },
-    // 选项过滤函数
-    filter: {
-      type: [Function, null],
-      default: uni.$u.props.datetimePicker.filter
-    },
-    // 选项格式化函数
-    formatter: {
-      type: [Function, null],
-      default: uni.$u.props.datetimePicker.formatter
-    },
-    // 是否显示加载中状态
-    loading: {
-      type: Boolean,
-      default: uni.$u.props.datetimePicker.loading
-    },
-    // 各列中，单个选项的高度
-    itemHeight: {
-      type: [String, Number],
-      default: uni.$u.props.datetimePicker.itemHeight
-    },
-    // 取消按钮的文字
-    cancelText: {
-      type: String,
-      default: uni.$u.props.datetimePicker.cancelText
-    },
-    // 确认按钮的文字
-    confirmText: {
-      type: String,
-      default: uni.$u.props.datetimePicker.confirmText
-    },
-    // 取消按钮的颜色
-    cancelColor: {
-      type: String,
-      default: uni.$u.props.datetimePicker.cancelColor
-    },
-    // 确认按钮的颜色
-    confirmColor: {
-      type: String,
-      default: uni.$u.props.datetimePicker.confirmColor
-    },
-    // 每列中可见选项的数量
-    visibleItemCount: {
-      type: [String, Number],
-      default: uni.$u.props.datetimePicker.visibleItemCount
-    },
-    // 是否允许点击遮罩关闭选择器
-    closeOnClickOverlay: {
-      type: Boolean,
-      default: uni.$u.props.datetimePicker.closeOnClickOverlay
-    },
-    // 各列的默认索引
-    defaultIndex: {
-      type: Array,
-      default: uni.$u.props.datetimePicker.defaultIndex
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 671 */
-/*!****************************************************************************************************!*\
-  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/libs/util/dayjs.js ***!
-  \****************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ 13);
-!function (t, e) {
-  ( false ? undefined : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = e() :  true ? !(__WEBPACK_AMD_DEFINE_FACTORY__ = (e),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
-				__WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : undefined;
-}(this, function () {
-  'use strict';
-
-  var t = 'millisecond';
-  var e = 'second';
-  var n = 'minute';
-  var r = 'hour';
-  var i = 'day';
-  var s = 'week';
-  var u = 'month';
-  var a = 'quarter';
-  var o = 'year';
-  var f = 'date';
-  var h = /^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[^0-9]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?.?(\d+)?$/;
-  var c = /\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g;
-  var d = {
-    name: 'en',
-    weekdays: 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_'),
-    months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_')
-  };
-  var $ = function $(t, e, n) {
-    var r = String(t);
-    return !r || r.length >= e ? t : "".concat(Array(e + 1 - r.length).join(n)).concat(t);
-  };
-  var l = {
-    s: $,
-    z: function z(t) {
-      var e = -t.utcOffset();
-      var n = Math.abs(e);
-      var r = Math.floor(n / 60);
-      var i = n % 60;
-      return "".concat((e <= 0 ? '+' : '-') + $(r, 2, '0'), ":").concat($(i, 2, '0'));
-    },
-    m: function t(e, n) {
-      if (e.date() < n.date()) return -t(n, e);
-      var r = 12 * (n.year() - e.year()) + (n.month() - e.month());
-      var i = e.clone().add(r, u);
-      var s = n - i < 0;
-      var a = e.clone().add(r + (s ? -1 : 1), u);
-      return +(-(r + (n - i) / (s ? i - a : a - i)) || 0);
-    },
-    a: function a(t) {
-      return t < 0 ? Math.ceil(t) || 0 : Math.floor(t);
-    },
-    p: function p(h) {
-      return {
-        M: u,
-        y: o,
-        w: s,
-        d: i,
-        D: f,
-        h: r,
-        m: n,
-        s: e,
-        ms: t,
-        Q: a
-      }[h] || String(h || '').toLowerCase().replace(/s$/, '');
-    },
-    u: function u(t) {
-      return void 0 === t;
-    }
-  };
-  var y = 'en';
-  var M = {};
-  M[y] = d;
-  var m = function m(t) {
-    return t instanceof S;
-  };
-  var D = function D(t, e, n) {
-    var r;
-    if (!t) return y;
-    if (typeof t === 'string') M[t] && (r = t), e && (M[t] = e, r = t);else {
-      var _i = t.name;
-      M[_i] = t, r = _i;
-    }
-    return !n && r && (y = r), r || !n && y;
-  };
-  var v = function v(t, e) {
-    if (m(t)) return t.clone();
-    var n = _typeof(e) === 'object' ? e : {};
-    return n.date = t, n.args = arguments, new S(n);
-  };
-  var g = l;
-  g.l = D, g.i = m, g.w = function (t, e) {
-    return v(t, {
-      locale: e.$L,
-      utc: e.$u,
-      x: e.$x,
-      $offset: e.$offset
-    });
-  };
-  var S = function () {
-    function d(t) {
-      this.$L = D(t.locale, null, !0), this.parse(t);
-    }
-    var $ = d.prototype;
-    return $.parse = function (t) {
-      this.$d = function (t) {
-        var e = t.date;
-        var n = t.utc;
-        if (e === null) return new Date(NaN);
-        if (g.u(e)) return new Date();
-        if (e instanceof Date) return new Date(e);
-        if (typeof e === 'string' && !/Z$/i.test(e)) {
-          var _r = e.match(h);
-          if (_r) {
-            var _i2 = _r[2] - 1 || 0;
-            var _s = (_r[7] || '0').substring(0, 3);
-            return n ? new Date(Date.UTC(_r[1], _i2, _r[3] || 1, _r[4] || 0, _r[5] || 0, _r[6] || 0, _s)) : new Date(_r[1], _i2, _r[3] || 1, _r[4] || 0, _r[5] || 0, _r[6] || 0, _s);
-          }
-        }
-        return new Date(e);
-      }(t), this.$x = t.x || {}, this.init();
-    }, $.init = function () {
-      var t = this.$d;
-      this.$y = t.getFullYear(), this.$M = t.getMonth(), this.$D = t.getDate(), this.$W = t.getDay(), this.$H = t.getHours(), this.$m = t.getMinutes(), this.$s = t.getSeconds(), this.$ms = t.getMilliseconds();
-    }, $.$utils = function () {
-      return g;
-    }, $.isValid = function () {
-      return !(this.$d.toString() === 'Invalid Date');
-    }, $.isSame = function (t, e) {
-      var n = v(t);
-      return this.startOf(e) <= n && n <= this.endOf(e);
-    }, $.isAfter = function (t, e) {
-      return v(t) < this.startOf(e);
-    }, $.isBefore = function (t, e) {
-      return this.endOf(e) < v(t);
-    }, $.$g = function (t, e, n) {
-      return g.u(t) ? this[e] : this.set(n, t);
-    }, $.unix = function () {
-      return Math.floor(this.valueOf() / 1e3);
-    }, $.valueOf = function () {
-      return this.$d.getTime();
-    }, $.startOf = function (t, a) {
-      var h = this;
-      var c = !!g.u(a) || a;
-      var d = g.p(t);
-      var $ = function $(t, e) {
-        var n = g.w(h.$u ? Date.UTC(h.$y, e, t) : new Date(h.$y, e, t), h);
-        return c ? n : n.endOf(i);
-      };
-      var l = function l(t, e) {
-        return g.w(h.toDate()[t].apply(h.toDate('s'), (c ? [0, 0, 0, 0] : [23, 59, 59, 999]).slice(e)), h);
-      };
-      var y = this.$W;
-      var M = this.$M;
-      var m = this.$D;
-      var D = "set".concat(this.$u ? 'UTC' : '');
-      switch (d) {
-        case o:
-          return c ? $(1, 0) : $(31, 11);
-        case u:
-          return c ? $(1, M) : $(0, M + 1);
-        case s:
-          var v = this.$locale().weekStart || 0;
-          var S = (y < v ? y + 7 : y) - v;
-          return $(c ? m - S : m + (6 - S), M);
-        case i:
-        case f:
-          return l("".concat(D, "Hours"), 0);
-        case r:
-          return l("".concat(D, "Minutes"), 1);
-        case n:
-          return l("".concat(D, "Seconds"), 2);
-        case e:
-          return l("".concat(D, "Milliseconds"), 3);
-        default:
-          return this.clone();
-      }
-    }, $.endOf = function (t) {
-      return this.startOf(t, !1);
-    }, $.$set = function (s, a) {
-      var h;
-      var c = g.p(s);
-      var d = "set".concat(this.$u ? 'UTC' : '');
-      var $ = (h = {}, h[i] = "".concat(d, "Date"), h[f] = "".concat(d, "Date"), h[u] = "".concat(d, "Month"), h[o] = "".concat(d, "FullYear"), h[r] = "".concat(d, "Hours"), h[n] = "".concat(d, "Minutes"), h[e] = "".concat(d, "Seconds"), h[t] = "".concat(d, "Milliseconds"), h)[c];
-      var l = c === i ? this.$D + (a - this.$W) : a;
-      if (c === u || c === o) {
-        var _y = this.clone().set(f, 1);
-        _y.$d[$](l), _y.init(), this.$d = _y.set(f, Math.min(this.$D, _y.daysInMonth())).$d;
-      } else $ && this.$d[$](l);
-      return this.init(), this;
-    }, $.set = function (t, e) {
-      return this.clone().$set(t, e);
-    }, $.get = function (t) {
-      return this[g.p(t)]();
-    }, $.add = function (t, a) {
-      var f;
-      var h = this;
-      t = Number(t);
-      var c = g.p(a);
-      var d = function d(e) {
-        var n = v(h);
-        return g.w(n.date(n.date() + Math.round(e * t)), h);
-      };
-      if (c === u) return this.set(u, this.$M + t);
-      if (c === o) return this.set(o, this.$y + t);
-      if (c === i) return d(1);
-      if (c === s) return d(7);
-      var $ = (f = {}, f[n] = 6e4, f[r] = 36e5, f[e] = 1e3, f)[c] || 1;
-      var l = this.$d.getTime() + t * $;
-      return g.w(l, this);
-    }, $.subtract = function (t, e) {
-      return this.add(-1 * t, e);
-    }, $.format = function (t) {
-      var e = this;
-      if (!this.isValid()) return 'Invalid Date';
-      var n = t || 'YYYY-MM-DDTHH:mm:ssZ';
-      var r = g.z(this);
-      var i = this.$locale();
-      var s = this.$H;
-      var u = this.$m;
-      var a = this.$M;
-      var o = i.weekdays;
-      var f = i.months;
-      var h = function h(t, r, i, s) {
-        return t && (t[r] || t(e, n)) || i[r].substr(0, s);
-      };
-      var d = function d(t) {
-        return g.s(s % 12 || 12, t, '0');
-      };
-      var $ = i.meridiem || function (t, e, n) {
-        var r = t < 12 ? 'AM' : 'PM';
-        return n ? r.toLowerCase() : r;
-      };
-      var l = {
-        YY: String(this.$y).slice(-2),
-        YYYY: this.$y,
-        M: a + 1,
-        MM: g.s(a + 1, 2, '0'),
-        MMM: h(i.monthsShort, a, f, 3),
-        MMMM: h(f, a),
-        D: this.$D,
-        DD: g.s(this.$D, 2, '0'),
-        d: String(this.$W),
-        dd: h(i.weekdaysMin, this.$W, o, 2),
-        ddd: h(i.weekdaysShort, this.$W, o, 3),
-        dddd: o[this.$W],
-        H: String(s),
-        HH: g.s(s, 2, '0'),
-        h: d(1),
-        hh: d(2),
-        a: $(s, u, !0),
-        A: $(s, u, !1),
-        m: String(u),
-        mm: g.s(u, 2, '0'),
-        s: String(this.$s),
-        ss: g.s(this.$s, 2, '0'),
-        SSS: g.s(this.$ms, 3, '0'),
-        Z: r
-      };
-      return n.replace(c, function (t, e) {
-        return e || l[t] || r.replace(':', '');
-      });
-    }, $.utcOffset = function () {
-      return 15 * -Math.round(this.$d.getTimezoneOffset() / 15);
-    }, $.diff = function (t, f, h) {
-      var c;
-      var d = g.p(f);
-      var $ = v(t);
-      var l = 6e4 * ($.utcOffset() - this.utcOffset());
-      var y = this - $;
-      var M = g.m(this, $);
-      return M = (c = {}, c[o] = M / 12, c[u] = M, c[a] = M / 3, c[s] = (y - l) / 6048e5, c[i] = (y - l) / 864e5, c[r] = y / 36e5, c[n] = y / 6e4, c[e] = y / 1e3, c)[d] || y, h ? M : g.a(M);
-    }, $.daysInMonth = function () {
-      return this.endOf(u).$D;
-    }, $.$locale = function () {
-      return M[this.$L];
-    }, $.locale = function (t, e) {
-      if (!t) return this.$L;
-      var n = this.clone();
-      var r = D(t, e, !0);
-      return r && (n.$L = r), n;
-    }, $.clone = function () {
-      return g.w(this.$d, this);
-    }, $.toDate = function () {
-      return new Date(this.valueOf());
-    }, $.toJSON = function () {
-      return this.isValid() ? this.toISOString() : null;
-    }, $.toISOString = function () {
-      return this.$d.toISOString();
-    }, $.toString = function () {
-      return this.$d.toUTCString();
-    }, d;
-  }();
-  var p = S.prototype;
-  return v.prototype = p, [['$ms', t], ['$s', e], ['$m', n], ['$H', r], ['$W', i], ['$M', u], ['$y', o], ['$D', f]].forEach(function (t) {
-    p[t[1]] = function (e) {
-      return this.$g(e, t[0], t[1]);
-    };
-  }), v.extend = function (t, e) {
-    return t.$i || (t(e, S, v), t.$i = !0), v;
-  }, v.locale = D, v.isDayjs = m, v.unix = function (t) {
-    return v(1e3 * t);
-  }, v.en = M[y], v.Ls = M, v.p = {}, v;
-});
 
 /***/ })
 ]]);

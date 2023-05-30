@@ -133,7 +133,7 @@ exports.default = void 0;
 var _props = _interopRequireDefault(__webpack_require__(/*! ../u-input/props.js */ 322));
 var uvInput = function uvInput() {
   Promise.all(/*! require.ensure | node-modules/uview-ui/components/u-input/u-input */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-input/u-input")]).then((function () {
-    return resolve(__webpack_require__(/*! ../u-input/u-input.vue */ 432));
+    return resolve(__webpack_require__(/*! ../u-input/u-input.vue */ 424));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {
