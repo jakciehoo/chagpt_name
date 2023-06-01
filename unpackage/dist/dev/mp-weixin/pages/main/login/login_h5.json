@@ -5,7 +5,6 @@
   "navigationBarTextStyle": "white",
   "disableScroll": true,
   "usingComponents": {
-    "u--image": "/node-modules/uview-ui/components/u--image/u--image",
     "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon",
     "u-divider": "/node-modules/uview-ui/components/u-divider/u-divider",
     "u-popup": "/node-modules/uview-ui/components/u-popup/u-popup",

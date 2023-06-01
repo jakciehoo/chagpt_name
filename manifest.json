@@ -79,6 +79,6 @@
         "router" : {
             "mode" : "hash"
         },
-        "title" : "AI命名大师"
+        "title" : "AI起名大师"
     }
 }

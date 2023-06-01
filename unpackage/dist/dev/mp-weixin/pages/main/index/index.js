@@ -362,7 +362,13 @@ var _default = {
             } else {
               _this.historyDigList = [].concat((0, _toConsumableArray2.default)(_this.historyDigList), (0, _toConsumableArray2.default)(res.rows));
             }
-            if (_this.historyDigList.length < 1) {
+            //设置当前日期
+            var todayDate = new Date().setHours(0, 0, 0, 0); //把今天的日期时分秒设置为00：00：00，返回一个时间戳, 
+            var visitedDate = uni.getStorageSync('visitedDate');
+            uni.setStorageSync('visitedDate', todayDate);
+            var isToday = todayDate === visitedDate; //时间戳相同时 True 就为今天 
+
+            if (_this.historyDigList.length < 1 || !isToday) {
               _this.confirmDigModel(_this.modelInfo);
             } else {
               _this.conDig(_this.historyDigList[0]);

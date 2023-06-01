@@ -187,7 +187,14 @@
 								} else {
 									this.historyDigList = [...this.historyDigList, ...res.rows];
 								}
-								if(this.historyDigList.length < 1) {
+								//设置当前日期
+								let todayDate = new Date().setHours(0,0,0,0);//把今天的日期时分秒设置为00：00：00，返回一个时间戳, 
+								let visitedDate = uni.getStorageSync('visitedDate');
+								uni.setStorageSync('visitedDate', todayDate);
+								
+								let isToday=(todayDate===visitedDate);//时间戳相同时 True 就为今天 
+
+								if(this.historyDigList.length < 1 || !isToday) {
 									this.confirmDigModel(this.modelInfo)
 										
 								} else {

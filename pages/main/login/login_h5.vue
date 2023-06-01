@@ -11,7 +11,7 @@
 			</view>
 
 			<view class="logoBorder">
-				<u--image radius="25rpx" :src="weChatInfo.default_photo_image" width="172rpx" height="172rpx"></u--image>
+				<image mode="scaleToFill" radius="25rpx" src="../../../static/logo.jpeg" style="width:172rpx;height:172rpx"></image>
 			</view>
 
 

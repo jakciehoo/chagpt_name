@@ -5,7 +5,6 @@
   "navigationStyle": "custom",
   "disableScroll": true,
   "usingComponents": {
-    "u--image": "/node-modules/uview-ui/components/u--image/u--image",
     "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon"
   }
 }

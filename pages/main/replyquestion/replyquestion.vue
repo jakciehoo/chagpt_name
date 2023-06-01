@@ -17,7 +17,7 @@
 					<view class='dialog u-tri'>
 						{{askContent}}
 					</view>
-					<image class="headImg" src="../../../static/logo.png"></image>
+					<image class="headImg" src="../../../static/logo.jpeg"></image>
 				</view>
 			</view>
 			<view style="margin-bottom: 100rpx;">
