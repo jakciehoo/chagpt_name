@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "起名",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#3388fe",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "u-input": "/node-modules/uview-ui/components/u-input/u-input",
+    "u-number-box": "/node-modules/uview-ui/components/u-number-box/u-number-box",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button",
+    "u-datetime-picker": "/node-modules/uview-ui/components/u-datetime-picker/u-datetime-picker"
+  }
+}

@@ -1,0 +1,1 @@
+<view ref="__r" data-ref="u-row" data-event-opts="{{[['tap',[['clickHandler',['$event']]]]]}}" class="u-row data-v-bf124e26" style="{{$root.s0}}" onTap="__e"><slot></slot></view>

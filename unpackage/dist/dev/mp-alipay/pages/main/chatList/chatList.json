@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "历史对话",
+  "pullRefresh": false,
+  "titleBarColor": "#3388fe",
+  "usingComponents": {
+    "u-empty": "/node-modules/uview-ui/components/u-empty/u-empty",
+    "u-loadmore": "/node-modules/uview-ui/components/u-loadmore/u-loadmore"
+  }
+}

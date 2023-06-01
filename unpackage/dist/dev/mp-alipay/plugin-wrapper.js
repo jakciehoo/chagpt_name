@@ -1,0 +1,1 @@
+Component({onInit(){this.props.onPluginWrap(this)},didUnmount(){this.props.onPluginWrap(this,true)}})

@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "AI起名大师",
+  "pullRefresh": false,
+  "titleBarColor": "#3388fe",
+  "usingComponents": {
+    "u-notice-bar": "/node-modules/uview-ui/components/u-notice-bar/u-notice-bar",
+    "u-empty": "/node-modules/uview-ui/components/u-empty/u-empty"
+  }
+}

@@ -1,0 +1,1 @@
+<block a:if="{{inited}}"><view ref="__r" data-ref="u-transition" data-event-opts="{{[['tap',[['clickHandler',['$event']]]],['touchMove',[['noop',['$event']]]]]}}" class="{{((('u-transition')+' '+'data-v-39e33bf2')+' '+classes)}}" style="{{$root.s0}}" onTap="__e" onTouchMove="__e"><slot></slot></view></block>

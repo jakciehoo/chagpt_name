@@ -1,0 +1,74 @@
+
+.toChat {
+	background-color: #3387FF;
+	color: white;
+	text-align: center;
+	height: 32rpx;
+	font-size: 20rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 15rpx;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+}
+.time {
+	color: #494A4C;
+	font-size: 20rpx;
+	margin-top: 20rpx;
+}
+.newChat .title {
+	font-size: 30rpx;
+	color: #3387FF;
+	font-weight: 700;
+}
+.newChat .chatCount {
+	font-size: 20rpx;
+	color: #3387FF;
+	margin-left: 10rpx;
+}
+.newChat {
+	background-color: #F1F9FF;
+	padding: 46rpx;
+	border: 1rpx solid #3387FF;
+
+	border-radius: 16rpx;
+	margin-bottom: 30rpx;
+}
+.chat {
+	background-color: #F1F9FF;
+	padding: 46rpx;
+	border: 1rpx solid #ffffff;
+
+	border-radius: 16rpx;
+	margin-bottom: 30rpx;
+}
+.chat .title {
+	font-size: 30rpx;
+	color: #131719;
+	font-weight: 700;
+}
+.chat .chatCount {
+	font-size: 20rpx;
+	color: #131719;
+	margin-left: 10rpx;
+}
+.main {
+	padding: 30rpx;
+}
+.right {
+	position: absolute;
+	right: 66rpx;
+}
+page {
+	background-color: white;
+}
+.row {
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	width: 100%;
+}
+

@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "会员充值",
+  "pullRefresh": false,
+  "titleBarColor": "#3388fe",
+  "usingComponents": {
+    "u-avatar": "/node-modules/uview-ui/components/u-avatar/u-avatar"
+  }
+}

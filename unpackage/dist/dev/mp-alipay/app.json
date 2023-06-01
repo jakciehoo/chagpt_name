@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/main/index/index",
+    "pages/main/login/login_h5",
+    "pages/main/chatList/chatList",
+    "pages/main/answeEmploy/answeEmploy",
+    "pages/main/agreement/userReder",
+    "pages/main/agreement/useReder",
+    "pages/main/chat/index",
+    "pages/main/joinvip/joinvip",
+    "pages/main/minefragment/minefragment",
+    "pages/main/login/login",
+    "pages/main/rolefragment/rolefragment",
+    "pages/main/replyquestion/replyquestion",
+    "pages/main/name/name",
+    "pages/main/name/create"
+  ],
+  "subPackages": [],
+  "window": {
+    "defaultTitle": "元AI",
+    "titleBarColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/main/index/index",
+        "name": "首页",
+        "icon": "static/tabbar/home_blue2.png",
+        "activeIcon": "static/tabbar/home_blue3_selected.png"
+      },
+      {
+        "pagePath": "pages/main/rolefragment/rolefragment",
+        "name": "脑洞大开",
+        "icon": "static/tabbar/explore.png",
+        "activeIcon": "static/tabbar/explore_selected.png"
+      },
+      {
+        "pagePath": "pages/main/minefragment/minefragment",
+        "name": "我的",
+        "icon": "static/tabbar/my.png",
+        "activeIcon": "static/tabbar/my_selected.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "plugin-wrapper": "/plugin-wrapper"
+  }
+}

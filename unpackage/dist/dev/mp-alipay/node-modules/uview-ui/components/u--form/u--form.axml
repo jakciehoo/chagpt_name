@@ -1,0 +1,1 @@
+<uv-form vue-id="10a5e8af-1" model="{{model}}" rules="{{rules}}" errorType="{{errorType}}" borderBottom="{{borderBottom}}" labelPosition="{{labelPosition}}" labelWidth="{{labelWidth}}" labelAlign="{{labelAlign}}" labelStyle="{{labelStyle}}" customStyle="{{customStyle}}" ref="__r" data-ref="uForm" onVueInit="__l" vue-slots="{{['default']}}"><slot></slot></uv-form>

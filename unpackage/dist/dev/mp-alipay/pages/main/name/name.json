@@ -1,0 +1,11 @@
+{
+  "defaultTitle": "起名",
+  "pullRefresh": false,
+  "titleBarColor": "#3388fe",
+  "usingComponents": {
+    "u-input": "/node-modules/uview-ui/components/u-input/u-input",
+    "u-number-box": "/node-modules/uview-ui/components/u-number-box/u-number-box",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button",
+    "u-datetime-picker": "/node-modules/uview-ui/components/u-datetime-picker/u-datetime-picker"
+  }
+}

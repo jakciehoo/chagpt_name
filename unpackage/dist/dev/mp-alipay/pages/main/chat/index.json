@@ -1,0 +1,11 @@
+{
+  "defaultTitle": "智能问答",
+  "titleBarColor": "#3388fe",
+  "usingComponents": {
+    "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon",
+    "u-row": "/node-modules/uview-ui/components/u-row/u-row",
+    "u-col": "/node-modules/uview-ui/components/u-col/u-col",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button",
+    "mp-html": "/node-modules/mp-html/mp-html"
+  }
+}

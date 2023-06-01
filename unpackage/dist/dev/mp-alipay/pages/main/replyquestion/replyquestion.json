@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "问答模式",
+  "pullRefresh": false,
+  "titleBarColor": "#3388fe",
+  "usingComponents": {
+    "mp-html": "/node-modules/mp-html/mp-html"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "defaultTitle": "起名",
+  "pullRefresh": false,
+  "titleBarColor": "#3388fe",
+  "usingComponents": {
+    "u-tag": "/node-modules/uview-ui/components/u-tag/u-tag",
+    "u-line-progress": "/node-modules/uview-ui/components/u-line-progress/u-line-progress",
+    "u-parse": "/node-modules/uview-ui/components/u-parse/u-parse",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button"
+  }
+}

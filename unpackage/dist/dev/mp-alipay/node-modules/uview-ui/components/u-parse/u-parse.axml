@@ -1,0 +1,1 @@
+<view class="{{((selectable?'_select ':'')+'_root')}}" id="_root"><block a:if="{{!nodes[0]}}"><slot></slot></block><block a:else><node vue-id="47eae4ab-1" childs="{{nodes}}" opts="{{[lazyLoad,loadingImg,errorImg,showImgMenu]}}" onVueInit="__l"></node></block></view>

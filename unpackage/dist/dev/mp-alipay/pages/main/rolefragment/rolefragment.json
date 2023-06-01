@@ -1,0 +1,15 @@
+{
+  "defaultTitle": "脑洞打开",
+  "pullRefresh": false,
+  "titleBarColor": "#3388fe",
+  "usingComponents": {
+    "u-empty": "/node-modules/uview-ui/components/u-empty/u-empty",
+    "u-popup": "/node-modules/uview-ui/components/u-popup/u-popup",
+    "u-divider": "/node-modules/uview-ui/components/u-divider/u-divider",
+    "u-loadmore": "/node-modules/uview-ui/components/u-loadmore/u-loadmore",
+    "u-modal": "/node-modules/uview-ui/components/u-modal/u-modal",
+    "u--form": "/node-modules/uview-ui/components/u--form/u--form",
+    "u-form-item": "/node-modules/uview-ui/components/u-form-item/u-form-item",
+    "u--input": "/node-modules/uview-ui/components/u--input/u--input"
+  }
+}
