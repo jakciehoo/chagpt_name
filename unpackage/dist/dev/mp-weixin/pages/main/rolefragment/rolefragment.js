@@ -360,7 +360,8 @@ var _default = {
       //往期对话列表List
       historyDigList: [],
       modalShow: false,
-      digTitle: ""
+      digTitle: "",
+      selectIndex: 0
     };
   },
   onHide: function onHide() {
@@ -410,6 +411,7 @@ var _default = {
         this.tagsList[i].check = false;
       }
       this.tagsList[index].check = true;
+      this.selectIndex = index;
       this.$forceUpdate();
       this.getModelList(item.id);
     },
@@ -473,14 +475,14 @@ var _default = {
           if (_util.default.isNotBlank(newArr)) {
             for (var i = 0; i < newArr.length; i++) {
               var item = newArr[i];
-              if (!item.roleName.includes('起名')) {
+              if (!item.roleName.includes('起名') && item.isUse) {
                 _this2.tagsList.push(item);
               }
             }
           }
           if (_util.default.isNotBlank(_this2.tagsList)) {
-            _this2.tagsList[0].check = true;
-            _this2.getModelList(_this2.tagsList[0].id);
+            _this2.tagsList[_this2.selectIndex].check = true;
+            _this2.getModelList(_this2.tagsList[_this2.selectIndex].id);
           }
         } else {
           _util.default.message("查询错误", 'error');
@@ -494,7 +496,16 @@ var _default = {
       } else {
         (0, _request.default)('', '/cricleai/usermodel/list?dRoleId=' + dRoleId, 'POST', {}, {}).then(function (res) {
           if (res.code == 200) {
-            _this3.itemList = res.data;
+            _this3.itemList = [];
+            var newArr = res.data;
+            if (newArr.length > 0) {
+              for (var i = 0; i < newArr.length; i++) {
+                var item = newArr[i];
+                if (item.isUse) {
+                  _this3.itemList.push(item);
+                }
+              }
+            }
             if (_this3.itemList.length > 0) {
               _this3.itemList[0].check = true;
             }

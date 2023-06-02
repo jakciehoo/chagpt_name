@@ -133,6 +133,7 @@
 				historyDigList: [],
 				modalShow: false,
 				digTitle: "",
+				selectIndex:0
 			}
 		},
 		onHide() {
@@ -182,6 +183,7 @@
 					this.tagsList[i].check = false
 				}
 				this.tagsList[index].check = true
+				this.selectIndex = index
 				this.$forceUpdate()
 				this.getModelList(item.id)
 			},
@@ -245,15 +247,15 @@
 						if (util.isNotBlank(newArr)) {
 							for (var i = 0; i < newArr.length; i++) {
 								var item = newArr[i]
-								if(!item.roleName.includes('起名')){
+								if(!item.roleName.includes('起名') && item.isUse){
 									this.tagsList.push(item)
 								}
 							}
 						}
 						
 						if (util.isNotBlank(this.tagsList)) {
-							this.tagsList[0].check = true
-							this.getModelList(this.tagsList[0].id);
+							this.tagsList[this.selectIndex].check = true
+							this.getModelList(this.tagsList[this.selectIndex].id);
 						}
 					} else {
 						util.message("查询错误", 'error')
@@ -266,7 +268,17 @@
 				} else {
 					request('', '/cricleai/usermodel/list?dRoleId=' + dRoleId, 'POST', {}, {}).then(res => {
 						if (res.code == 200) {
-							this.itemList = res.data
+							this.itemList = [];
+							var newArr = res.data;
+							if (newArr.length > 0) {
+								for (var i = 0; i < newArr.length; i++) {
+									var item = newArr[i]
+									if(item.isUse){
+										this.itemList.push(item)
+									}
+								}
+							}
+
 							if (this.itemList.length > 0) {
 								this.itemList[0].check = true
 							}
