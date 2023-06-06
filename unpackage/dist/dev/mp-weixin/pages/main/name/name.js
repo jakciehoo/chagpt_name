@@ -107,7 +107,7 @@ try {
       return Promise.all(/*! import() | node-modules/uview-ui/components/u-number-box/u-number-box */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-number-box/u-number-box")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-number-box/u-number-box.vue */ 431))
     },
     uButton: function () {
-      return Promise.all(/*! import() | node-modules/uview-ui/components/u-button/u-button */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-button/u-button")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-button/u-button.vue */ 331))
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u-button/u-button */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-button/u-button")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-button/u-button.vue */ 325))
     },
     uDatetimePicker: function () {
       return Promise.all(/*! import() | node-modules/uview-ui/components/u-datetime-picker/u-datetime-picker */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-datetime-picker/u-datetime-picker")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-datetime-picker/u-datetime-picker.vue */ 439))
@@ -362,7 +362,7 @@ var _default = {
             _util.default.message('请输入至少一个指定字');
             return false;
           }
-          var msg = '您是世界顶尖的起名大师，我要注册个商标，帮我起名字（先起10个）' + (that.zishu > 0 ? '，字数长度超过' + that.zishu + '个' : '') + (_util.default.isNotBlank(that.zi) ? '，包含字：' + that.zi : '');
+          var msg = '现在你的身份是世界顶尖的起名大师，我要注册个商标，帮我起名字（先起10个）' + (that.zishu > 0 ? '，字数长度超过' + that.zishu + '个' : '') + (_util.default.isNotBlank(that.zi) ? '，包含字：' + that.zi : '');
           uni.navigateTo({
             url: '/pages/main/chat/index?msg=' + msg
           });
@@ -376,7 +376,7 @@ var _default = {
             _util.default.message('请输入公司地区信息');
             return false;
           }
-          var msg = '您是世界顶尖的起名大师，我要给我新开的公司起名字（先起10个）' + (that.zishu > 0 ? '，字数长度超过' + that.zishu + '个' : '') + (_util.default.isNotBlank(that.diqu) ? '，公司成立在' + that.diqu : '') + (_util.default.isNotBlank(that.hangye) ? '，公司其他补充信息：' + that.hangye : '') + "，如果信息不充分，您可以问我几个问题，再帮我起1名也可，谢谢！";
+          var msg = '现在你的身份是世界顶尖的起名大师，我要给我新开的公司起名字（先起10个）' + (that.zishu > 0 ? '，字数长度超过' + that.zishu + '个' : '') + (_util.default.isNotBlank(that.diqu) ? '，公司成立在' + that.diqu : '') + (_util.default.isNotBlank(that.hangye) ? '，公司其他补充信息：' + that.hangye : '') + "，谢谢！";
           console.log(msg);
           uni.navigateTo({
             url: '/pages/main/chat/index?msg=' + msg
@@ -391,8 +391,7 @@ var _default = {
             _util.default.message('请选择出生日期(公历)');
             return false;
           }
-          var msg = '您是世界顶尖的起名大师，我要给我家宝宝起名字（先起10个），性别' + (that.sex == 1 ? '男，姓' : '女，姓') + that.xing + '，名字里包含姓是' + (that.dan == 0 ? 3 : 2) + '个字' + (_util.default.isNotBlank(that.zi) ? '，名字里还需含有' + that.zi + '这个字' : '') + (_util.default.isNotBlank(that.buchong) ? '，补充信息：' + that.buchong : '');
-          console.log(msg);
+          var msg = '现在你的身份是世界顶尖的起名大师，需要你给我家宝宝起名字（先起10个），宝宝性别：' + (that.sex == 1 ? '男，姓：' : '女，姓：') + that.xing + '，生日：' + that.shijianLabel + '，给起' + (that.dan == 0 ? '双' : '单') + '字名' + (_util.default.isNotBlank(that.zi) ? '，名字里还需含有' + that.zi + '这个字' : '') + '，名字要符合孩子年龄段的宝宝的起名的特点，还要有些内涵又有些深度，你回答的时候要把姓和名都写上，并解释起名理由（如：寓意和含义）' + (_util.default.isNotBlank(that.buchong) ? '，补充信息：' + that.buchong : '');
           uni.navigateTo({
             url: '/pages/main/chat/index?msg=' + msg
           });
@@ -402,7 +401,7 @@ var _default = {
             _util.default.message('请输入行业等补充信息');
             return false;
           }
-          var msg = '您是世界顶尖的起名大师，我要' + that.title + (_util.default.isNotBlank(that.buchong) ? '，其他补充信息：' + that.buchong : '') + "，如果信息不充分，您可以问我几个问题，再帮我起名（10个）也可，谢谢！";
+          var msg = '现在你的身份是世界顶尖的起名大师，我要' + that.title + (_util.default.isNotBlank(that.buchong) ? '，其他补充信息：' + that.buchong : '') + "，先帮我起10个名，答案中包含的你起名的理由和解释，如果信息不充分，你可以再答案最后一段追问我一个补充信息，谢谢！";
           console.log(msg);
           uni.navigateTo({
             url: '/pages/main/chat/index?msg=' + msg
@@ -457,7 +456,9 @@ var _default = {
       var Y = date.getFullYear() + "年";
       var M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '月';
       var D = date.getDate() + "日";
-      return Y + M + D;
+      var H = date.getHours() + '时';
+      var m = date.getMinutes() + '分';
+      return Y + M + D + H + m;
     },
     showDatePicker: function showDatePicker(e) {
       this.shijianShow = true;

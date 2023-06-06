@@ -61,8 +61,8 @@
 					</view>
 				</view>
 				<view class="soInput u-m-b-30">
-					<u-input v-model="shijianLabel" @focus="showDatePicker" :auto-blur="false" placeholder="请选择出生日期(公历)"  font-size="15px" placeholder-style="font-size : 15px;color : #CCCCCC"/>
-					<u-datetime-picker :show="shijianShow" v-model="shijianValue" mode="date" closeOnClickOverlay="true" @confirm="shijianChange" @cancel="shijianShow = false" @close="shijianShow = false">
+					<u-input v-model="shijianLabel" @focus="showDatePicker" :auto-blur="false" placeholder="出生日期(公历,精确到小时可算八字)"  font-size="15px" placeholder-style="font-size : 15px;color : #CCCCCC"/>
+					<u-datetime-picker :show="shijianShow" v-model="shijianValue" mode="datetime" closeOnClickOverlay="true" @confirm="shijianChange" @cancel="shijianShow = false" @close="shijianShow = false">
 					</u-datetime-picker>
 				</view>
 				<view class="soInput u-m-b-30">
@@ -190,7 +190,7 @@
 							util.message('请输入至少一个指定字');
 							return false;
 						}
-						var msg = '您是世界顶尖的起名大师，我要注册个商标，帮我起名字（先起10个）'+ (that.zishu > 0 ? ('，字数长度超过' + that.zishu + '个'):'')+ (util.isNotBlank(that.zi) ?('，包含字：' + that.zi ) : '');
+						var msg = '现在你的身份是世界顶尖的起名大师，我要注册个商标，帮我起名字（先起10个）'+ (that.zishu > 0 ? ('，字数长度超过' + that.zishu + '个'):'')+ (util.isNotBlank(that.zi) ?('，包含字：' + that.zi ) : '');
 	
 						uni.navigateTo({
 							url: '/pages/main/chat/index?msg=' + msg
@@ -206,7 +206,7 @@
 							util.message('请输入公司地区信息');
 							return false;
 						}
-						var msg = '您是世界顶尖的起名大师，我要给我新开的公司起名字（先起10个）'+ (that.zishu > 0 ? ('，字数长度超过' + that.zishu + '个'):'')+ (util.isNotBlank(that.diqu) ?('，公司成立在' + that.diqu ) : '') + (util.isNotBlank(that.hangye) ?('，公司其他补充信息：' + that.hangye) : '') + "，如果信息不充分，您可以问我几个问题，再帮我起1名也可，谢谢！";
+						var msg = '现在你的身份是世界顶尖的起名大师，我要给我新开的公司起名字（先起10个）'+ (that.zishu > 0 ? ('，字数长度超过' + that.zishu + '个'):'')+ (util.isNotBlank(that.diqu) ?('，公司成立在' + that.diqu ) : '') + (util.isNotBlank(that.hangye) ?('，公司其他补充信息：' + that.hangye) : '') + "，谢谢！";
 						console.log(msg);
 						uni.navigateTo({
 							url: '/pages/main/chat/index?msg=' + msg
@@ -222,8 +222,7 @@
 							util.message('请选择出生日期(公历)');
 							return false;
 						}
-						var msg = '您是世界顶尖的起名大师，我要给我家宝宝起名字（先起10个），性别'+ (that.sex == 1 ? '男，姓' : '女，姓') + that.xing + '，名字里包含姓是' + (that.dan == 0 ? 3 : 2) + '个字' + (util.isNotBlank(that.zi) ?('，名字里还需含有' + that.zi + '这个字') : '') + (util.isNotBlank(that.buchong) ?('，补充信息：' + that.buchong) : '');
-						console.log(msg);
+						var msg = '现在你的身份是世界顶尖的起名大师，需要你给我家宝宝起名字（先起10个），宝宝性别：'+ (that.sex == 1 ? '男，姓：' : '女，姓：') + that.xing +'，生日：' + that.shijianLabel + '，给起' + (that.dan == 0 ? '双' : '单') + '字名' + (util.isNotBlank(that.zi) ?('，名字里还需含有' + that.zi + '这个字') : '') +'，名字要符合孩子年龄段的宝宝的起名的特点，还要有些内涵又有些深度，你回答的时候要把姓和名都写上，并解释起名理由（如：寓意和含义）'+ (util.isNotBlank(that.buchong) ?('，补充信息：' + that.buchong) : '');
 						uni.navigateTo({
 							url: '/pages/main/chat/index?msg=' + msg
 							
@@ -235,7 +234,7 @@
 								return false;
 							}
 
-							var msg = '您是世界顶尖的起名大师，我要'+ that.title + (util.isNotBlank(that.buchong) ?('，其他补充信息：' + that.buchong) : '') + "，如果信息不充分，您可以问我几个问题，再帮我起名（10个）也可，谢谢！";
+							var msg = '现在你的身份是世界顶尖的起名大师，我要'+ that.title + (util.isNotBlank(that.buchong) ?('，其他补充信息：' + that.buchong) : '') + "，先帮我起10个名，答案中包含的你起名的理由和解释，如果信息不充分，你可以再答案最后一段追问我一个补充信息，谢谢！";
 							console.log(msg);
 							uni.navigateTo({
 								url: '/pages/main/chat/index?msg=' + msg
@@ -292,7 +291,9 @@
 			     var Y = date.getFullYear() + "年";
 			     var M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '月';
 			     var D = date.getDate() + "日";
-			     return Y+M+D;
+				 var H = date.getHours() +'时';
+				 var m = date.getMinutes() + '分'
+			     return Y+M+D+H +m;
 			},
 			showDatePicker(e) {
 				this.shijianShow = true;

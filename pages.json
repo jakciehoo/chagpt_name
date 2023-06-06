@@ -76,7 +76,7 @@
 					"softinputNavBar": "none"
 				},
 				"navigationStyle": "default",
-				"navigationBarTitleText": "智能问答",
+				"navigationBarTitleText": "大师问答",
 				"navigationBarBackgroundColor": "#3388fe",
 				"navigationBarTextStyle": "white"
 			}
@@ -117,7 +117,7 @@
 		}, {
 			"path": "pages/main/rolefragment/rolefragment",
 			"style": {
-				"navigationBarTitleText": "脑洞打开",
+				"navigationBarTitleText": "脑洞大开",
 				"enablePullDownRefresh": false,
 				"navigationBarBackgroundColor": "#3388fe",
 				"navigationBarTextStyle": "white"
@@ -147,7 +147,7 @@
 		{
 			"path": "pages/main/name/create",
 			"style": {
-				"navigationBarTitleText": "起名",
+				"navigationBarTitleText": "创建起名",
 				"enablePullDownRefresh": false,
 				"navigationBarBackgroundColor": "#3388fe",
 				"navigationBarTextStyle": "white"

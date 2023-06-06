@@ -20091,113 +20091,6 @@ exports.default = _default;
 /* 289 */,
 /* 290 */,
 /* 291 */
-/*!*************************************************************************************************************!*\
-  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-image/props.js ***!
-  \*************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 图片地址
-    src: {
-      type: String,
-      default: uni.$u.props.image.src
-    },
-    // 裁剪模式
-    mode: {
-      type: String,
-      default: uni.$u.props.image.mode
-    },
-    // 宽度，单位任意
-    width: {
-      type: [String, Number],
-      default: uni.$u.props.image.width
-    },
-    // 高度，单位任意
-    height: {
-      type: [String, Number],
-      default: uni.$u.props.image.height
-    },
-    // 图片形状，circle-圆形，square-方形
-    shape: {
-      type: String,
-      default: uni.$u.props.image.shape
-    },
-    // 圆角，单位任意
-    radius: {
-      type: [String, Number],
-      default: uni.$u.props.image.radius
-    },
-    // 是否懒加载，微信小程序、App、百度小程序、字节跳动小程序
-    lazyLoad: {
-      type: Boolean,
-      default: uni.$u.props.image.lazyLoad
-    },
-    // 开启长按图片显示识别微信小程序码菜单
-    showMenuByLongpress: {
-      type: Boolean,
-      default: uni.$u.props.image.showMenuByLongpress
-    },
-    // 加载中的图标，或者小图片
-    loadingIcon: {
-      type: String,
-      default: uni.$u.props.image.loadingIcon
-    },
-    // 加载失败的图标，或者小图片
-    errorIcon: {
-      type: String,
-      default: uni.$u.props.image.errorIcon
-    },
-    // 是否显示加载中的图标或者自定义的slot
-    showLoading: {
-      type: Boolean,
-      default: uni.$u.props.image.showLoading
-    },
-    // 是否显示加载错误的图标或者自定义的slot
-    showError: {
-      type: Boolean,
-      default: uni.$u.props.image.showError
-    },
-    // 是否需要淡入效果
-    fade: {
-      type: Boolean,
-      default: uni.$u.props.image.fade
-    },
-    // 只支持网络资源，只对微信小程序有效
-    webp: {
-      type: Boolean,
-      default: uni.$u.props.image.webp
-    },
-    // 过渡时间，单位ms
-    duration: {
-      type: [String, Number],
-      default: uni.$u.props.image.duration
-    },
-    // 背景颜色，用于深色页面加载图片时，为了和背景色融合
-    bgColor: {
-      type: String,
-      default: uni.$u.props.image.bgColor
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 292 */,
-/* 293 */,
-/* 294 */,
-/* 295 */,
-/* 296 */,
-/* 297 */
 /*!************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-icon/icons.js ***!
   \************************************************************************************************************/
@@ -20428,7 +20321,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 298 */
+/* 292 */
 /*!************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-icon/props.js ***!
   \************************************************************************************************************/
@@ -20535,14 +20428,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
 /* 299 */,
-/* 300 */,
-/* 301 */,
-/* 302 */,
-/* 303 */,
-/* 304 */,
-/* 305 */,
-/* 306 */
+/* 300 */
 /*!***************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-divider/props.js ***!
   \***************************************************************************************************************/
@@ -20604,14 +20497,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
 /* 307 */,
-/* 308 */,
-/* 309 */,
-/* 310 */,
-/* 311 */,
-/* 312 */,
-/* 313 */,
-/* 314 */
+/* 308 */
 /*!*************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-popup/props.js ***!
   \*************************************************************************************************************/
@@ -20708,14 +20601,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 309 */,
+/* 310 */,
+/* 311 */,
+/* 312 */,
+/* 313 */,
+/* 314 */,
 /* 315 */,
-/* 316 */,
-/* 317 */,
-/* 318 */,
-/* 319 */,
-/* 320 */,
-/* 321 */,
-/* 322 */
+/* 316 */
 /*!*************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-input/props.js ***!
   \*************************************************************************************************************/
@@ -20915,12 +20808,12 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 323 */,
-/* 324 */,
-/* 325 */,
-/* 326 */,
-/* 327 */,
-/* 328 */
+/* 317 */,
+/* 318 */,
+/* 319 */,
+/* 320 */,
+/* 321 */,
+/* 322 */
 /*!************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-code/props.js ***!
   \************************************************************************************************************/
@@ -20972,14 +20865,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 323 */,
+/* 324 */,
+/* 325 */,
+/* 326 */,
+/* 327 */,
+/* 328 */,
 /* 329 */,
-/* 330 */,
-/* 331 */,
-/* 332 */,
-/* 333 */,
-/* 334 */,
-/* 335 */,
-/* 336 */
+/* 330 */
 /*!******************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/libs/mixin/button.js ***!
   \******************************************************************************************************/
@@ -21009,7 +20902,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 337 */
+/* 331 */
 /*!********************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/libs/mixin/openType.js ***!
   \********************************************************************************************************/
@@ -21051,7 +20944,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 338 */
+/* 332 */
 /*!**************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-button/props.js ***!
   \**************************************************************************************************************/
@@ -21230,14 +21123,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 333 */,
+/* 334 */,
+/* 335 */,
+/* 336 */,
+/* 337 */,
+/* 338 */,
 /* 339 */,
-/* 340 */,
-/* 341 */,
-/* 342 */,
-/* 343 */,
-/* 344 */,
-/* 345 */,
-/* 346 */
+/* 340 */
 /*!****************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-loadmore/props.js ***!
   \****************************************************************************************************************/
@@ -21334,14 +21227,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 341 */,
+/* 342 */,
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */,
 /* 347 */,
-/* 348 */,
-/* 349 */,
-/* 350 */,
-/* 351 */,
-/* 352 */,
-/* 353 */,
-/* 354 */
+/* 348 */
 /*!***********************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-row/props.js ***!
   \***********************************************************************************************************/
@@ -21378,14 +21271,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
 /* 355 */,
-/* 356 */,
-/* 357 */,
-/* 358 */,
-/* 359 */,
-/* 360 */,
-/* 361 */,
-/* 362 */
+/* 356 */
 /*!***********************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-col/props.js ***!
   \***********************************************************************************************************/
@@ -21432,14 +21325,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */,
 /* 363 */,
-/* 364 */,
-/* 365 */,
-/* 366 */,
-/* 367 */,
-/* 368 */,
-/* 369 */,
-/* 370 */
+/* 364 */
 /*!******************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/parser.js ***!
   \******************************************************************************************/
@@ -22657,7 +22550,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"], __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/wx.js */ 1)["default"]))
 
 /***/ }),
-/* 371 */
+/* 365 */
 /*!**************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/markdown/index.js ***!
   \**************************************************************************************************/
@@ -22672,7 +22565,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _marked = _interopRequireDefault(__webpack_require__(/*! ./marked.min */ 372));
+var _marked = _interopRequireDefault(__webpack_require__(/*! ./marked.min */ 366));
 /**
  * @fileoverview markdown 插件
  * Include marked (https://github.com/markedjs/marked)
@@ -22706,7 +22599,7 @@ var _default = Markdown;
 exports.default = _default;
 
 /***/ }),
-/* 372 */
+/* 366 */
 /*!*******************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/markdown/marked.min.js ***!
   \*******************************************************************************************************/
@@ -23833,7 +23726,7 @@ var _default = t();
 exports.default = _default;
 
 /***/ }),
-/* 373 */
+/* 367 */
 /*!***********************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/audio/index.js ***!
   \***********************************************************************************************/
@@ -23848,7 +23741,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _context = _interopRequireDefault(__webpack_require__(/*! ./context */ 374));
+var _context = _interopRequireDefault(__webpack_require__(/*! ./context */ 368));
 /**
  * @fileoverview audio 插件
  */
@@ -23882,7 +23775,7 @@ var _default = Audio;
 exports.default = _default;
 
 /***/ }),
-/* 374 */
+/* 368 */
 /*!*************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/audio/context.js ***!
   \*************************************************************************************************/
@@ -23911,7 +23804,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 375 */
+/* 369 */
 /*!***********************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/emoji/index.js ***!
   \***********************************************************************************************/
@@ -24125,7 +24018,7 @@ var _default = Emoji;
 exports.default = _default;
 
 /***/ }),
-/* 376 */
+/* 370 */
 /*!***************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/highlight/index.js ***!
   \***************************************************************************************************/
@@ -24140,9 +24033,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _prism = _interopRequireDefault(__webpack_require__(/*! ./prism.min */ 377));
-var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 378));
-var _parser = _interopRequireDefault(__webpack_require__(/*! ../parser */ 370));
+var _prism = _interopRequireDefault(__webpack_require__(/*! ./prism.min */ 371));
+var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 372));
+var _parser = _interopRequireDefault(__webpack_require__(/*! ../parser */ 364));
 /**
  * @fileoverview highlight 插件
  * Include prismjs (https://prismjs.com)
@@ -24238,7 +24131,7 @@ var _default = Highlight;
 exports.default = _default;
 
 /***/ }),
-/* 377 */
+/* 371 */
 /*!*******************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/highlight/prism.min.js ***!
   \*******************************************************************************************************/
@@ -25920,7 +25813,7 @@ Prism.languages.python = {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 3)))
 
 /***/ }),
-/* 378 */
+/* 372 */
 /*!****************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/highlight/config.js ***!
   \****************************************************************************************************/
@@ -25944,7 +25837,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 379 */
+/* 373 */
 /*!***********************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/style/index.js ***!
   \***********************************************************************************************/
@@ -25959,7 +25852,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _parser = _interopRequireDefault(__webpack_require__(/*! ./parser */ 380));
+var _parser = _interopRequireDefault(__webpack_require__(/*! ./parser */ 374));
 /**
  * @fileoverview style 插件
  */
@@ -26088,7 +25981,7 @@ var _default = Style;
 exports.default = _default;
 
 /***/ }),
-/* 380 */
+/* 374 */
 /*!************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/style/parser.js ***!
   \************************************************************************************************/
@@ -26274,7 +26167,7 @@ var _default = Parser;
 exports.default = _default;
 
 /***/ }),
-/* 381 */
+/* 375 */
 /*!***************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/img-cache/index.js ***!
   \***************************************************************************************************/
@@ -26366,7 +26259,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 382 */
+/* 376 */
 /*!**************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/editable/index.js ***!
   \**************************************************************************************************/
@@ -26381,8 +26274,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 383));
-var _parser = _interopRequireDefault(__webpack_require__(/*! ../parser */ 370));
+var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 377));
+var _parser = _interopRequireDefault(__webpack_require__(/*! ../parser */ 364));
 /**
  * @fileoverview editable 插件
  */
@@ -26916,7 +26809,7 @@ var _default = Editable;
 exports.default = _default;
 
 /***/ }),
-/* 383 */
+/* 377 */
 /*!***************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/mp-html/editable/config.js ***!
   \***************************************************************************************************/
@@ -26944,14 +26837,14 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
+/* 378 */,
+/* 379 */,
+/* 380 */,
+/* 381 */,
+/* 382 */,
+/* 383 */,
 /* 384 */,
-/* 385 */,
-/* 386 */,
-/* 387 */,
-/* 388 */,
-/* 389 */,
-/* 390 */,
-/* 391 */
+/* 385 */
 /*!**************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-avatar/props.js ***!
   \**************************************************************************************************************/
@@ -27047,8 +26940,115 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 386 */,
+/* 387 */,
+/* 388 */,
+/* 389 */,
+/* 390 */,
+/* 391 */,
 /* 392 */,
-/* 393 */,
+/* 393 */
+/*!*************************************************************************************************************!*\
+  !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-image/props.js ***!
+  \*************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 图片地址
+    src: {
+      type: String,
+      default: uni.$u.props.image.src
+    },
+    // 裁剪模式
+    mode: {
+      type: String,
+      default: uni.$u.props.image.mode
+    },
+    // 宽度，单位任意
+    width: {
+      type: [String, Number],
+      default: uni.$u.props.image.width
+    },
+    // 高度，单位任意
+    height: {
+      type: [String, Number],
+      default: uni.$u.props.image.height
+    },
+    // 图片形状，circle-圆形，square-方形
+    shape: {
+      type: String,
+      default: uni.$u.props.image.shape
+    },
+    // 圆角，单位任意
+    radius: {
+      type: [String, Number],
+      default: uni.$u.props.image.radius
+    },
+    // 是否懒加载，微信小程序、App、百度小程序、字节跳动小程序
+    lazyLoad: {
+      type: Boolean,
+      default: uni.$u.props.image.lazyLoad
+    },
+    // 开启长按图片显示识别微信小程序码菜单
+    showMenuByLongpress: {
+      type: Boolean,
+      default: uni.$u.props.image.showMenuByLongpress
+    },
+    // 加载中的图标，或者小图片
+    loadingIcon: {
+      type: String,
+      default: uni.$u.props.image.loadingIcon
+    },
+    // 加载失败的图标，或者小图片
+    errorIcon: {
+      type: String,
+      default: uni.$u.props.image.errorIcon
+    },
+    // 是否显示加载中的图标或者自定义的slot
+    showLoading: {
+      type: Boolean,
+      default: uni.$u.props.image.showLoading
+    },
+    // 是否显示加载错误的图标或者自定义的slot
+    showError: {
+      type: Boolean,
+      default: uni.$u.props.image.showError
+    },
+    // 是否需要淡入效果
+    fade: {
+      type: Boolean,
+      default: uni.$u.props.image.fade
+    },
+    // 只支持网络资源，只对微信小程序有效
+    webp: {
+      type: Boolean,
+      default: uni.$u.props.image.webp
+    },
+    // 过渡时间，单位ms
+    duration: {
+      type: [String, Number],
+      default: uni.$u.props.image.duration
+    },
+    // 背景颜色，用于深色页面加载图片时，为了和背景色融合
+    bgColor: {
+      type: String,
+      default: uni.$u.props.image.bgColor
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
 /* 394 */,
 /* 395 */,
 /* 396 */,
@@ -29276,14 +29276,7 @@ exports.default = _default;
 /* 491 */,
 /* 492 */,
 /* 493 */,
-/* 494 */,
-/* 495 */,
-/* 496 */,
-/* 497 */,
-/* 498 */,
-/* 499 */,
-/* 500 */,
-/* 501 */
+/* 494 */
 /*!************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-line/props.js ***!
   \************************************************************************************************************/
@@ -29334,14 +29327,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 502 */,
-/* 503 */,
-/* 504 */,
-/* 505 */,
-/* 506 */,
-/* 507 */,
-/* 508 */,
-/* 509 */
+/* 495 */,
+/* 496 */,
+/* 497 */,
+/* 498 */,
+/* 499 */,
+/* 500 */,
+/* 501 */,
+/* 502 */
 /*!***************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-overlay/props.js ***!
   \***************************************************************************************************************/
@@ -29383,14 +29376,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 510 */,
-/* 511 */,
-/* 512 */,
-/* 513 */,
-/* 514 */,
-/* 515 */,
-/* 516 */,
-/* 517 */
+/* 503 */,
+/* 504 */,
+/* 505 */,
+/* 506 */,
+/* 507 */,
+/* 508 */,
+/* 509 */,
+/* 510 */
 /*!******************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-transition/props.js ***!
   \******************************************************************************************************************/
@@ -29432,7 +29425,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 518 */
+/* 511 */
 /*!***********************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-transition/transition.js ***!
   \***********************************************************************************************************************/
@@ -29449,7 +29442,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 58));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 60));
-var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 519));
+var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 512));
 // 定义一个一定时间后自动成功的promise，让调用nextTick方法处，进入下一个then方法
 var nextTick = function nextTick() {
   return new Promise(function (resolve) {
@@ -29541,7 +29534,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 519 */
+/* 512 */
 /*!*************************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-transition/nvue.ani-map.js ***!
   \*************************************************************************************************************************/
@@ -29734,14 +29727,14 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 520 */,
-/* 521 */,
-/* 522 */,
-/* 523 */,
-/* 524 */,
-/* 525 */,
-/* 526 */,
-/* 527 */
+/* 513 */,
+/* 514 */,
+/* 515 */,
+/* 516 */,
+/* 517 */,
+/* 518 */,
+/* 519 */,
+/* 520 */
 /*!******************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-status-bar/props.js ***!
   \******************************************************************************************************************/
@@ -29767,14 +29760,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 528 */,
-/* 529 */,
-/* 530 */,
-/* 531 */,
-/* 532 */,
-/* 533 */,
-/* 534 */,
-/* 535 */
+/* 521 */,
+/* 522 */,
+/* 523 */,
+/* 524 */,
+/* 525 */,
+/* 526 */,
+/* 527 */,
+/* 528 */
 /*!*******************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-safe-bottom/props.js ***!
   \*******************************************************************************************************************/
@@ -29794,14 +29787,14 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 536 */,
-/* 537 */,
-/* 538 */,
-/* 539 */,
-/* 540 */,
-/* 541 */,
-/* 542 */,
-/* 543 */
+/* 529 */,
+/* 530 */,
+/* 531 */,
+/* 532 */,
+/* 533 */,
+/* 534 */,
+/* 535 */,
+/* 536 */
 /*!********************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-loading-icon/props.js ***!
   \********************************************************************************************************************/
@@ -29878,6 +29871,13 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 537 */,
+/* 538 */,
+/* 539 */,
+/* 540 */,
+/* 541 */,
+/* 542 */,
+/* 543 */,
 /* 544 */,
 /* 545 */,
 /* 546 */,
@@ -29887,14 +29887,7 @@ exports.default = _default;
 /* 550 */,
 /* 551 */,
 /* 552 */,
-/* 553 */,
-/* 554 */,
-/* 555 */,
-/* 556 */,
-/* 557 */,
-/* 558 */,
-/* 559 */,
-/* 560 */
+/* 553 */
 /*!************************************************************************************************************!*\
   !*** /Users/andyhu/Documents/project/chatgpt_wechat_font/node_modules/uview-ui/components/u-text/props.js ***!
   \************************************************************************************************************/
@@ -30022,6 +30015,13 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
+/* 554 */,
+/* 555 */,
+/* 556 */,
+/* 557 */,
+/* 558 */,
+/* 559 */,
+/* 560 */,
 /* 561 */,
 /* 562 */,
 /* 563 */,
