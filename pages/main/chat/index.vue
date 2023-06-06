@@ -399,7 +399,7 @@
 					this.userInfo = userInfo;
 					//此部设置用户信息,
 					this.isLoginStatus = true
-					this.placeholder = '请用简短的一句话描述您的内容'
+					this.placeholder = '继续追问大师，请输入你的问题'
 				}
 			},
 			//是否登录
@@ -465,9 +465,10 @@
 				setTimeout(() => {
 					if (util.isNotBlank(this.firstAskMsg)) {
 						var msg =  this.firstAskMsg
-						this.answer(msg)
+						this.requestChatApi(msg)
+						this.firstAskMsg = ''
 					}
-				}, 3000)
+				}, 500)
 			},
 			// 回答问题的业务逻辑
 			answer(askItem) {

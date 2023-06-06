@@ -575,7 +575,7 @@ var _default = {
         this.userInfo = userInfo;
         //此部设置用户信息,
         this.isLoginStatus = true;
-        this.placeholder = '请用简短的一句话描述您的内容';
+        this.placeholder = '继续追问大师，请输入你的问题';
       }
     },
     //是否登录
@@ -637,9 +637,10 @@ var _default = {
       setTimeout(function () {
         if (_util.default.isNotBlank(_this4.firstAskMsg)) {
           var msg = _this4.firstAskMsg;
-          _this4.answer(msg);
+          _this4.requestChatApi(msg);
+          _this4.firstAskMsg = '';
         }
-      }, 3000);
+      }, 500);
     },
     // 回答问题的业务逻辑
     answer: function answer(askItem) {
