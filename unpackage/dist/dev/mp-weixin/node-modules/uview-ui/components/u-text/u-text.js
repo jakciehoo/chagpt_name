@@ -80,7 +80,7 @@ var components
 try {
   components = {
     uIcon: function () {
-      return Promise.all(/*! import() | node-modules/uview-ui/components/u-icon/u-icon */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-icon/u-icon")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-icon/u-icon.vue */ 286))
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u-icon/u-icon */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-icon/u-icon")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-icon/u-icon.vue */ 292))
     },
     uLink: function () {
       return Promise.all(/*! import() | node-modules/uview-ui/components/u-link/u-link */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-link/u-link")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-link/u-link.vue */ 617))
@@ -172,9 +172,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _value = _interopRequireDefault(__webpack_require__(/*! ./value.js */ 606));
-var _button = _interopRequireDefault(__webpack_require__(/*! ../../libs/mixin/button.js */ 330));
-var _openType = _interopRequireDefault(__webpack_require__(/*! ../../libs/mixin/openType.js */ 331));
-var _props = _interopRequireDefault(__webpack_require__(/*! ./props.js */ 553));
+var _button = _interopRequireDefault(__webpack_require__(/*! ../../libs/mixin/button.js */ 336));
+var _openType = _interopRequireDefault(__webpack_require__(/*! ../../libs/mixin/openType.js */ 337));
+var _props = _interopRequireDefault(__webpack_require__(/*! ./props.js */ 560));
 //
 //
 //

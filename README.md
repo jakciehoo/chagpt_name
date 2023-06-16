@@ -1,37 +1,23 @@
-<h4 align="center">chatgpt全网开源程序功能最全版本</h4>
+<h4 align="center">chatgpt+uniapp+起名全网开源程序功能最全版本</h4>
 
 
-## 前端介绍
-
-* 服务端源码: [点我进入](https://gitee.com/e0cia/chatgpt_wechat_houtai)
-
-* 后台管理源码: [点我进入](https://gitee.com/e0cia/chatgpt_wechat_manager)
-
-* github地址： [点我进入](https://github.com/e0cia)
 
 
-## 搭建教学（有问题可以加群交流）
-###  **_超简单安装教程_**  : [点我进入](https://yaiwiki.likesrt.com/archives/239.html)
-###  **_部署常见问题处理_**  : [点我进入](https://yaiwiki.likesrt.com/archives/304.html)
-```
+
+
+
 ##源码部署教程
 所需环境：
 HBuilderX
 微信开发者工具
+
 1. 拉取代码
-1.1 不可以npm install 不可以yarn install 不可以pnpm install
 2. 修改配置文件
 3. 运行到微信开发者工具
-```
 
-## 交流群
-<table>
-    <tr>
-        <td>QQ群<img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/qqgroup.jpg"/></td>
-        <td>微信群<img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/wxgroup.png"/></td>
-    </tr>
-</table>
-## 小程序简介
+
+
+## 起名小程序（也支持H5）简介
 
 **功能简介** 
 
@@ -85,51 +71,62 @@ HBuilderX
 ## 小程序演示
 <table>
     <tr>
-        <td><img src="https://image.hongchiqingyun.com/gh_35c30216652f_258.jpg"/></td>
+        <td><img src="image/mini program.jpg"/></td>
     </tr>
 </table>
 
+### 小程序截图
+
 <table>
     <tr>
-        <td><img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/qiantai/1.png"/></td>
-        <td><img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/qiantai/2.png"/></td>
-        <td><img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/qiantai/3.png"/></td>
+        <td><img src="image/1.png"/></td>
+        <td><img src="image/2.png"/></td>
+        <td><img src="image/3.png"/></td>
     </tr>
     <tr>
-        <td><img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/qiantai/4.png"/></td>
-        <td><img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/qiantai/5.png"/></td>        
-        <td><img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/qiantai/6.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/qiantai/7.png"/></td>
+        <td><img src="image/4.png"/></td>
         <td><img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/qiantai/8.png"/></td> 
          <td><img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/qiantai/9.png"/></td>
     </tr>
     <tr>
+    
         <td><img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/qiantai/10.png"/></td>
         <td><img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/qiantai/11.png"/></td> 
     </tr>	 
  
 </table>
 
-
-
-
-## 后台演示
+### 后台截图
 <table>
     <tr>
-        <td><img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/houtai/1.png"/></td>
-        <td><img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/houtai/2.png"/></td>
-        <td><img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/houtai/3.png"/></td>
+        <td><img src="image/11.png"/></td>
+        <td><img src="image/12.png"/></td>
+        
     </tr>
     <tr>
-        <td><img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/houtai/4.png"/></td>
-        <td><img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/houtai/5.png"/></td>
-        <td><img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/houtai/6.png"/></td>
+    	  <td><img src="image/13.png"/></td>
+        <td><img src="image/14.png"/></td>
     </tr>
-     <tr>
-        <td><img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/houtai/7.png"/></td>
-        <td><img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/houtai/8.png"/></td>
-        <td><img src="https://yuan-ai.oss-cn-beijing.aliyuncs.com/houtai/9.png"/></td>
-    </tr>
+ 
 </table>
+
+
+
+## 后台+后端代码
+ 
+## 其他服务
+1.功能咨询服务（免费，可提供演示,有使用和安装步骤文档）
+
+[H5地址](https://name001.love/)
+
+2.后端+后台+小程序H5完整代码（包安装服务，收费）
+
+
+
+## 交流群
+
+加V: joshuahjh
+
+<img src="image/wechat.JPG"/>
+
+

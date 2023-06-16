@@ -286,4 +286,10 @@ page {
 	top: 12rpx;
 	right: 12rpx;
 }
+.beian {
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 90%;
+	text-align: center;
+}
 

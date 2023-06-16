@@ -22,7 +22,7 @@
 			</view>
 			<view style="margin-bottom: 100rpx;">
 				<view class="row" style="  margin-top: 30rpx;">
-					<image class="headImg" src="../../../static/logo.png"></image>
+					<image class="headImg" src="../../../static/logo.jpeg"></image>
 					<view class='leftDialog leftU-tri'>
 						<view v-if="isLoadding">
 							<view class="loading">

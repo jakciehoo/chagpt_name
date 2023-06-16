@@ -31,6 +31,12 @@
 
 		</view>
 		<view class="rule">违规微信社区规定发言将会被限制对话</view>
+		<!--  #ifdef H5 -->
+		<view class="beian">
+		<uni-link href="https://beian.miit.gov.cn/" text="您的备案号:"></uni-link>
+		<uni-link href="https://beian.miit.gov.cn/" text="京ICP备2023013810号"></uni-link>
+		</view>
+		<!--  #endif -->
 	</view>
 </template>
 
@@ -665,5 +671,11 @@
 		position: absolute;
 		top: 12rpx;
 		right: 12rpx;
+	}
+	.beian {
+		margin: 0 auto;
+		margin-top: 100px;
+		width: 90%;
+		text-align: center;
 	}
 </style>
